@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasmToBoogie.Core", "WasmToBoogie.Core\WasmToBoogie.Core.csproj", "{DA1EADE7-B7B7-4D7C-B3DF-5A097D42BE79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasmToBoogie.Tests", "WasmToBoogie.Tests\WasmToBoogie.Tests.csproj", "{C01DDCB5-42B8-43A6-8C8D-9BDC0412E129}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA1EADE7-B7B7-4D7C-B3DF-5A097D42BE79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA1EADE7-B7B7-4D7C-B3DF-5A097D42BE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA1EADE7-B7B7-4D7C-B3DF-5A097D42BE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA1EADE7-B7B7-4D7C-B3DF-5A097D42BE79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C01DDCB5-42B8-43A6-8C8D-9BDC0412E129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C01DDCB5-42B8-43A6-8C8D-9BDC0412E129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C01DDCB5-42B8-43A6-8C8D-9BDC0412E129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C01DDCB5-42B8-43A6-8C8D-9BDC0412E129}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+/home/hamoud/Desktop/lip6/verisol/WasmToBoogie/WasmToBoogie.Core/obj/Debug/net9.0/WasmToBoogie.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/hamoud/Desktop/lip6/verisol/WasmToBoogie/WasmToBoogie.Core/obj/Debug/net9.0/WasmToBoogie.Core.AssemblyInfoInputs.cache
+/home/hamoud/Desktop/lip6/verisol/WasmToBoogie/WasmToBoogie.Core/obj/Debug/net9.0/WasmToBoogie.Core.AssemblyInfo.cs
+/home/hamoud/Desktop/lip6/verisol/WasmToBoogie/WasmToBoogie.Core/obj/Debug/net9.0/WasmToBoogie.Core.csproj.CoreCompileInputs.cache
+/home/hamoud/Desktop/lip6/verisol/WasmToBoogie/WasmToBoogie.Core/obj/Debug/net9.0/WasmToBoogie.Core.sourcelink.json
+/home/hamoud/Desktop/lip6/verisol/WasmToBoogie/WasmToBoogie.Core/bin/Debug/net9.0/WasmToBoogie.Core.deps.json
+/home/hamoud/Desktop/lip6/verisol/WasmToBoogie/WasmToBoogie.Core/bin/Debug/net9.0/WasmToBoogie.Core.dll
+/home/hamoud/Desktop/lip6/verisol/WasmToBoogie/WasmToBoogie.Core/bin/Debug/net9.0/WasmToBoogie.Core.pdb
+/home/hamoud/Desktop/lip6/verisol/WasmToBoogie/WasmToBoogie.Core/obj/Debug/net9.0/WasmToBoogie.Core.dll
+/home/hamoud/Desktop/lip6/verisol/WasmToBoogie/WasmToBoogie.Core/obj/Debug/net9.0/refint/WasmToBoogie.Core.dll
+/home/hamoud/Desktop/lip6/verisol/WasmToBoogie/WasmToBoogie.Core/obj/Debug/net9.0/WasmToBoogie.Core.pdb
+/home/hamoud/Desktop/lip6/verisol/WasmToBoogie/WasmToBoogie.Core/obj/Debug/net9.0/ref/WasmToBoogie.Core.dll
