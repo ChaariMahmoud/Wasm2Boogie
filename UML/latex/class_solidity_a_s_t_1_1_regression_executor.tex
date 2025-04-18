@@ -1,0 +1,250 @@
+\hypertarget{class_solidity_a_s_t_1_1_regression_executor}{}\doxysection{Solidity\+AST.\+Regression\+Executor Class Reference}
+\label{class_solidity_a_s_t_1_1_regression_executor}\index{SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}}
+
+
+Collaboration diagram for Solidity\+AST.\+Regression\+Executor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{class_solidity_a_s_t_1_1_regression_executor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_regression_executor_a2b11fc0697b3002a929e53ec2b9aacab}{Regression\+Executor}} (string \mbox{\hyperlink{class_solidity_a_s_t_1_1_regression_executor_a11c603d68ad6c47cddd1b97aa2815657}{solc\+Path}}, string \mbox{\hyperlink{class_solidity_a_s_t_1_1_regression_executor_ad26e17169d808f39ec94eb55ababea06}{test\+Directory}}, ILogger \mbox{\hyperlink{class_solidity_a_s_t_1_1_regression_executor_a9b9240dfa38e0c0c2907eb94286817ba}{logger}})
+\item 
+bool \mbox{\hyperlink{class_solidity_a_s_t_1_1_regression_executor_abd39635c9b633d2a12518c08ae9b4d92}{Batch\+Execute}} ()
+\item 
+bool \mbox{\hyperlink{class_solidity_a_s_t_1_1_regression_executor_a139ad5d5500cb0ef6a49d0eba1edf06f}{Execute}} (string filename)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_solidity_a_s_t_1_1_regression_executor_ad7311aa25eaa3ffcc78bcd8dfd265f43}{Text\+Compare}} (string original\+Text, string ast\+Text)
+\item 
+string \mbox{\hyperlink{class_solidity_a_s_t_1_1_regression_executor_adebc74fb597e7cfa9a1d8fc0e9cae5a1}{Concat\+String\+Array}} (string\mbox{[}$\,$\mbox{]} array, string delim)
+\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_solidity_a_s_t_1_1_regression_executor_a7cc46da21119e3f1a0bea65f512073b1}{Normalize\+Keywords}} (string\mbox{[}$\,$\mbox{]} words)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_solidity_a_s_t_1_1_regression_executor_a11c603d68ad6c47cddd1b97aa2815657}{solc\+Path}}
+\item 
+string \mbox{\hyperlink{class_solidity_a_s_t_1_1_regression_executor_ad26e17169d808f39ec94eb55ababea06}{test\+Directory}}
+\item 
+ILogger \mbox{\hyperlink{class_solidity_a_s_t_1_1_regression_executor_a9b9240dfa38e0c0c2907eb94286817ba}{logger}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 12 of file Regression\+Executor.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_regression_executor_a2b11fc0697b3002a929e53ec2b9aacab}\label{class_solidity_a_s_t_1_1_regression_executor_a2b11fc0697b3002a929e53ec2b9aacab}} 
+\index{SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}!RegressionExecutor@{RegressionExecutor}}
+\index{RegressionExecutor@{RegressionExecutor}!SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{RegressionExecutor()}{RegressionExecutor()}}
+{\footnotesize\ttfamily Solidity\+AST.\+Regression\+Executor.\+Regression\+Executor (\begin{DoxyParamCaption}\item[{string}]{solc\+Path,  }\item[{string}]{test\+Directory,  }\item[{ILogger}]{logger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 20 of file Regression\+Executor.\+cs.
+
+
+
+References Solidity\+AST.\+Regression\+Executor.\+logger, Solidity\+AST.\+Regression\+Executor.\+solc\+Path, and Solidity\+AST.\+Regression\+Executor.\+test\+Directory.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_regression_executor_abd39635c9b633d2a12518c08ae9b4d92}\label{class_solidity_a_s_t_1_1_regression_executor_abd39635c9b633d2a12518c08ae9b4d92}} 
+\index{SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}!BatchExecute@{BatchExecute}}
+\index{BatchExecute@{BatchExecute}!SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{BatchExecute()}{BatchExecute()}}
+{\footnotesize\ttfamily bool Solidity\+AST.\+Regression\+Executor.\+Batch\+Execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 27 of file Regression\+Executor.\+cs.
+
+
+
+References Solidity\+AST.\+Regression\+Executor.\+Execute(), Solidity\+AST.\+Regression\+Executor.\+logger, and Solidity\+AST.\+Regression\+Executor.\+test\+Directory.
+
+
+
+Referenced by Solidity\+AST.\+Test\+Main.\+Main(), and Sol\+To\+Boogie\+Test.\+Program.\+Main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_regression_executor_abd39635c9b633d2a12518c08ae9b4d92_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_regression_executor_abd39635c9b633d2a12518c08ae9b4d92_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_regression_executor_adebc74fb597e7cfa9a1d8fc0e9cae5a1}\label{class_solidity_a_s_t_1_1_regression_executor_adebc74fb597e7cfa9a1d8fc0e9cae5a1}} 
+\index{SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}!ConcatStringArray@{ConcatStringArray}}
+\index{ConcatStringArray@{ConcatStringArray}!SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{ConcatStringArray()}{ConcatStringArray()}}
+{\footnotesize\ttfamily string Solidity\+AST.\+Regression\+Executor.\+Concat\+String\+Array (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{array,  }\item[{string}]{delim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 123 of file Regression\+Executor.\+cs.
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_regression_executor_a139ad5d5500cb0ef6a49d0eba1edf06f}\label{class_solidity_a_s_t_1_1_regression_executor_a139ad5d5500cb0ef6a49d0eba1edf06f}} 
+\index{SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}!Execute@{Execute}}
+\index{Execute@{Execute}!SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily bool Solidity\+AST.\+Regression\+Executor.\+Execute (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 64 of file Regression\+Executor.\+cs.
+
+
+
+References Solidity\+AST.\+Solidity\+Compiler.\+Compile(), Solidity\+AST.\+AST.\+Get\+Source\+Units(), Solidity\+AST.\+Regression\+Executor.\+solc\+Path, Solidity\+AST.\+Regression\+Executor.\+test\+Directory, and Solidity\+AST.\+Regression\+Executor.\+Text\+Compare().
+
+
+
+Referenced by Solidity\+AST.\+Regression\+Executor.\+Batch\+Execute(), and Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Batch\+Execute().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_regression_executor_a139ad5d5500cb0ef6a49d0eba1edf06f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_regression_executor_a139ad5d5500cb0ef6a49d0eba1edf06f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_regression_executor_a7cc46da21119e3f1a0bea65f512073b1}\label{class_solidity_a_s_t_1_1_regression_executor_a7cc46da21119e3f1a0bea65f512073b1}} 
+\index{SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}!NormalizeKeywords@{NormalizeKeywords}}
+\index{NormalizeKeywords@{NormalizeKeywords}!SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{NormalizeKeywords()}{NormalizeKeywords()}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Solidity\+AST.\+Regression\+Executor.\+Normalize\+Keywords (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{words }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 145 of file Regression\+Executor.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+Regression\+Executor.\+Text\+Compare().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_regression_executor_a7cc46da21119e3f1a0bea65f512073b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_regression_executor_ad7311aa25eaa3ffcc78bcd8dfd265f43}\label{class_solidity_a_s_t_1_1_regression_executor_ad7311aa25eaa3ffcc78bcd8dfd265f43}} 
+\index{SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}!TextCompare@{TextCompare}}
+\index{TextCompare@{TextCompare}!SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{TextCompare()}{TextCompare()}}
+{\footnotesize\ttfamily bool Solidity\+AST.\+Regression\+Executor.\+Text\+Compare (\begin{DoxyParamCaption}\item[{string}]{original\+Text,  }\item[{string}]{ast\+Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 80 of file Regression\+Executor.\+cs.
+
+
+
+References Solidity\+AST.\+Regression\+Executor.\+logger, and Solidity\+AST.\+Regression\+Executor.\+Normalize\+Keywords().
+
+
+
+Referenced by Solidity\+AST.\+Regression\+Executor.\+Execute().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_regression_executor_ad7311aa25eaa3ffcc78bcd8dfd265f43_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_regression_executor_ad7311aa25eaa3ffcc78bcd8dfd265f43_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_regression_executor_a9b9240dfa38e0c0c2907eb94286817ba}\label{class_solidity_a_s_t_1_1_regression_executor_a9b9240dfa38e0c0c2907eb94286817ba}} 
+\index{SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}!logger@{logger}}
+\index{logger@{logger}!SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily ILogger Solidity\+AST.\+Regression\+Executor.\+logger\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 18 of file Regression\+Executor.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+Regression\+Executor.\+Batch\+Execute(), Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Batch\+Execute(), Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Parse\+Translator\+Flags(), Solidity\+AST.\+Regression\+Executor.\+Regression\+Executor(), Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Regression\+Executor(), and Solidity\+AST.\+Regression\+Executor.\+Text\+Compare().
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_regression_executor_a11c603d68ad6c47cddd1b97aa2815657}\label{class_solidity_a_s_t_1_1_regression_executor_a11c603d68ad6c47cddd1b97aa2815657}} 
+\index{SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}!solcPath@{solcPath}}
+\index{solcPath@{solcPath}!SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{solcPath}{solcPath}}
+{\footnotesize\ttfamily string Solidity\+AST.\+Regression\+Executor.\+solc\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 14 of file Regression\+Executor.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+Regression\+Executor.\+Execute(), Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Execute(), and Solidity\+AST.\+Regression\+Executor.\+Regression\+Executor().
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_regression_executor_ad26e17169d808f39ec94eb55ababea06}\label{class_solidity_a_s_t_1_1_regression_executor_ad26e17169d808f39ec94eb55ababea06}} 
+\index{SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}!testDirectory@{testDirectory}}
+\index{testDirectory@{testDirectory}!SolidityAST.RegressionExecutor@{SolidityAST.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{testDirectory}{testDirectory}}
+{\footnotesize\ttfamily string Solidity\+AST.\+Regression\+Executor.\+test\+Directory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 16 of file Regression\+Executor.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+Regression\+Executor.\+Batch\+Execute(), Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Batch\+Execute(), Solidity\+AST.\+Regression\+Executor.\+Execute(), Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Execute(), Solidity\+AST.\+Regression\+Executor.\+Regression\+Executor(), and Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Regression\+Executor().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Solidity\+AST/\mbox{\hyperlink{_solidity_a_s_t_2_regression_executor_8cs}{Regression\+Executor.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,162 @@
+\hypertarget{class_solidity_a_s_t_1_1_variable_declaration_statement}{}\doxysection{Solidity\+AST.\+Variable\+Declaration\+Statement Class Reference}
+\label{class_solidity_a_s_t_1_1_variable_declaration_statement}\index{SolidityAST.VariableDeclarationStatement@{SolidityAST.VariableDeclarationStatement}}
+
+
+Inheritance diagram for Solidity\+AST.\+Variable\+Declaration\+Statement\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{class_solidity_a_s_t_1_1_variable_declaration_statement__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Solidity\+AST.\+Variable\+Declaration\+Statement\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{class_solidity_a_s_t_1_1_variable_declaration_statement__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration_statement_ae854693d5f3a94a42cd29ba87f9c5a52}{Accept}} (\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_visitor}{IASTVisitor}} visitor)
+\item 
+override T \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration_statement_aef0c582ba79a785e2ad8e4524f82d5bc}{Accept$<$ T $>$}} (\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_generic_visitor}{IASTGeneric\+Visitor}}$<$ T $>$ visitor)
+\item 
+override string \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration_statement_a884f1a70e8566be3067bcd4e26b90599}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ int $>$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration_statement_a73dc66daf873c97d47be94da83442da5}{Assignments}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} $>$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration_statement_a0e3ba30c554f2096bc00cdc397f8ec20}{Declarations}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}} \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration_statement_ae7e82a476240359a7f2cdec2954c281b}{Initial\+Value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 1262 of file Solidity\+AST.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_variable_declaration_statement_ae854693d5f3a94a42cd29ba87f9c5a52}\label{class_solidity_a_s_t_1_1_variable_declaration_statement_ae854693d5f3a94a42cd29ba87f9c5a52}} 
+\index{SolidityAST.VariableDeclarationStatement@{SolidityAST.VariableDeclarationStatement}!Accept@{Accept}}
+\index{Accept@{Accept}!SolidityAST.VariableDeclarationStatement@{SolidityAST.VariableDeclarationStatement}}
+\doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily override void Solidity\+AST.\+Variable\+Declaration\+Statement.\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_visitor}{IASTVisitor}}}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a31655aeae6213266768f8f5182ba5fec}{Solidity\+AST.\+ASTNode}}.
+
+
+
+Definition at line 1270 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+ASTNode.\+Accept(), Solidity\+AST.\+Variable\+Declaration\+Statement.\+Declarations, Solidity\+AST.\+IASTVisitor.\+End\+Visit(), Solidity\+AST.\+Variable\+Declaration\+Statement.\+Initial\+Value, and Solidity\+AST.\+IASTVisitor.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_variable_declaration_statement_ae854693d5f3a94a42cd29ba87f9c5a52_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_variable_declaration_statement_aef0c582ba79a785e2ad8e4524f82d5bc}\label{class_solidity_a_s_t_1_1_variable_declaration_statement_aef0c582ba79a785e2ad8e4524f82d5bc}} 
+\index{SolidityAST.VariableDeclarationStatement@{SolidityAST.VariableDeclarationStatement}!Accept$<$ T $>$@{Accept$<$ T $>$}}
+\index{Accept$<$ T $>$@{Accept$<$ T $>$}!SolidityAST.VariableDeclarationStatement@{SolidityAST.VariableDeclarationStatement}}
+\doxysubsubsection{\texorpdfstring{Accept$<$ T $>$()}{Accept< T >()}}
+{\footnotesize\ttfamily override T \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration_statement_ae854693d5f3a94a42cd29ba87f9c5a52}{Solidity\+AST.\+Variable\+Declaration\+Statement.\+Accept}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_generic_visitor}{IASTGeneric\+Visitor}}$<$ T $>$}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a57b9fd6602c95260988f9cc6f1729200}{Solidity\+AST.\+ASTNode}}.
+
+
+
+Definition at line 1284 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+IASTGeneric\+Visitor$<$ T $>$.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_variable_declaration_statement_aef0c582ba79a785e2ad8e4524f82d5bc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_variable_declaration_statement_a884f1a70e8566be3067bcd4e26b90599}\label{class_solidity_a_s_t_1_1_variable_declaration_statement_a884f1a70e8566be3067bcd4e26b90599}} 
+\index{SolidityAST.VariableDeclarationStatement@{SolidityAST.VariableDeclarationStatement}!ToString@{ToString}}
+\index{ToString@{ToString}!SolidityAST.VariableDeclarationStatement@{SolidityAST.VariableDeclarationStatement}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Solidity\+AST.\+Variable\+Declaration\+Statement.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1289 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+Variable\+Declaration\+Statement.\+Declarations, and Solidity\+AST.\+Variable\+Declaration\+Statement.\+Initial\+Value.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_variable_declaration_statement_a73dc66daf873c97d47be94da83442da5}\label{class_solidity_a_s_t_1_1_variable_declaration_statement_a73dc66daf873c97d47be94da83442da5}} 
+\index{SolidityAST.VariableDeclarationStatement@{SolidityAST.VariableDeclarationStatement}!Assignments@{Assignments}}
+\index{Assignments@{Assignments}!SolidityAST.VariableDeclarationStatement@{SolidityAST.VariableDeclarationStatement}}
+\doxysubsubsection{\texorpdfstring{Assignments}{Assignments}}
+{\footnotesize\ttfamily List$<$int$>$ Solidity\+AST.\+Variable\+Declaration\+Statement.\+Assignments\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 1264 of file Solidity\+AST.\+cs.
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_variable_declaration_statement_a0e3ba30c554f2096bc00cdc397f8ec20}\label{class_solidity_a_s_t_1_1_variable_declaration_statement_a0e3ba30c554f2096bc00cdc397f8ec20}} 
+\index{SolidityAST.VariableDeclarationStatement@{SolidityAST.VariableDeclarationStatement}!Declarations@{Declarations}}
+\index{Declarations@{Declarations}!SolidityAST.VariableDeclarationStatement@{SolidityAST.VariableDeclarationStatement}}
+\doxysubsubsection{\texorpdfstring{Declarations}{Declarations}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}$>$ Solidity\+AST.\+Variable\+Declaration\+Statement.\+Declarations\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 1266 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+Variable\+Declaration\+Statement.\+Accept(), and Solidity\+AST.\+Variable\+Declaration\+Statement.\+To\+String().
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_variable_declaration_statement_ae7e82a476240359a7f2cdec2954c281b}\label{class_solidity_a_s_t_1_1_variable_declaration_statement_ae7e82a476240359a7f2cdec2954c281b}} 
+\index{SolidityAST.VariableDeclarationStatement@{SolidityAST.VariableDeclarationStatement}!InitialValue@{InitialValue}}
+\index{InitialValue@{InitialValue}!SolidityAST.VariableDeclarationStatement@{SolidityAST.VariableDeclarationStatement}}
+\doxysubsubsection{\texorpdfstring{InitialValue}{InitialValue}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}} Solidity\+AST.\+Variable\+Declaration\+Statement.\+Initial\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 1268 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+Variable\+Declaration\+Statement.\+Accept(), and Solidity\+AST.\+Variable\+Declaration\+Statement.\+To\+String().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Solidity\+AST/\mbox{\hyperlink{_solidity_a_s_t_8cs}{Solidity\+AST.\+cs}}\end{DoxyCompactItemize}

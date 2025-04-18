@@ -1,0 +1,28 @@
+var class_sol_to_boogie_1_1_translator_flags =
+[
+    [ "TranslatorFlags", "class_sol_to_boogie_1_1_translator_flags.html#a0efe7510a9acae76ca7ea8dcbc8f6584", null ],
+    [ "ModelStubsAsCallbacks", "class_sol_to_boogie_1_1_translator_flags.html#a2bc820daaf1f88938a0725186085a4f5", null ],
+    [ "ModelStubsAsHavocs", "class_sol_to_boogie_1_1_translator_flags.html#a028e052683cb87a665186ad0b005c6d8", null ],
+    [ "ModelStubsAsSkips", "class_sol_to_boogie_1_1_translator_flags.html#a73d9b24cea735c4c45939c40943b3cd2", null ],
+    [ "CreateMainHarness", "class_sol_to_boogie_1_1_translator_flags.html#a5b78e46fc2f8ce54afe5f2efcd2b8b3d", null ],
+    [ "DoModSetAnalysis", "class_sol_to_boogie_1_1_translator_flags.html#a1fd679316119a96ec2875a6113f75f0a", null ],
+    [ "GenerateInlineAttributes", "class_sol_to_boogie_1_1_translator_flags.html#a144fc5d3147292e4ab7b915a0515ec90", null ],
+    [ "InlineDepthForBoogie", "class_sol_to_boogie_1_1_translator_flags.html#ab25be581c373f3871c9eb8a8ec00112d", null ],
+    [ "InstrumentGas", "class_sol_to_boogie_1_1_translator_flags.html#a81e7e0f8271f4316cefc319236e3d2d8", null ],
+    [ "InstrumentSums", "class_sol_to_boogie_1_1_translator_flags.html#a19dd3aa8215efbe36e81cc79033b6b93", null ],
+    [ "LazyNestedAlloc", "class_sol_to_boogie_1_1_translator_flags.html#ac14c0b84cb753fb49a8512ee816c0ae0", null ],
+    [ "ModelOfStubs", "class_sol_to_boogie_1_1_translator_flags.html#a4682bcb5ae5f78e5ae10483ca0f51e74", null ],
+    [ "ModelReverts", "class_sol_to_boogie_1_1_translator_flags.html#ad01635b77a2d3c53fd3007f52eed098c", null ],
+    [ "NoAxiomsFlag", "class_sol_to_boogie_1_1_translator_flags.html#ac358b859e9e323cf124122a1c819ab01", null ],
+    [ "NoBoogieHarness", "class_sol_to_boogie_1_1_translator_flags.html#ac2938d14e99bc50b1f0ea92a873de8c4", null ],
+    [ "NoCustomTypes", "class_sol_to_boogie_1_1_translator_flags.html#aeed83663eccef8eac7c04ea3bdc0a5b8", null ],
+    [ "NoDataValuesInfoFlag", "class_sol_to_boogie_1_1_translator_flags.html#a31a7c3d35e72425fc126359a6b0744b5", null ],
+    [ "NoHarness", "class_sol_to_boogie_1_1_translator_flags.html#aeed62afa43909ecf607146b1b84448ea", null ],
+    [ "NoSourceLineInfoFlag", "class_sol_to_boogie_1_1_translator_flags.html#ab9d2aa2b0eeb4c80cff56f98abb210c6", null ],
+    [ "NoUnsignedAssumesFlag", "class_sol_to_boogie_1_1_translator_flags.html#a269a392ade24695c321c36fb1cf146a8", null ],
+    [ "OmitAssumeFalseForDynDispatch", "class_sol_to_boogie_1_1_translator_flags.html#a29034a7b295573be7663f8f8d0a90d96", null ],
+    [ "PerformContractInferce", "class_sol_to_boogie_1_1_translator_flags.html#a9cda297689304da1c8912612502dca45", null ],
+    [ "QuantFreeAllocs", "class_sol_to_boogie_1_1_translator_flags.html#aaeba82c55905e1e0aec8922a070d1a2a", null ],
+    [ "RemoveScopeInVarName", "class_sol_to_boogie_1_1_translator_flags.html#a16a727611c7c925fea4f26c17468d86d", null ],
+    [ "UseModularArithmetic", "class_sol_to_boogie_1_1_translator_flags.html#a4ed21845dbd4b293e2ead50d90774b06", null ]
+];

@@ -1,0 +1,110 @@
+\hypertarget{class_sol_to_boogie_1_1_state_variable_collector}{}\doxysection{Sol\+To\+Boogie.\+State\+Variable\+Collector Class Reference}
+\label{class_sol_to_boogie_1_1_state_variable_collector}\index{SolToBoogie.StateVariableCollector@{SolToBoogie.StateVariableCollector}}
+
+
+Inheritance diagram for Sol\+To\+Boogie.\+State\+Variable\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_state_variable_collector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+State\+Variable\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_state_variable_collector__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_state_variable_collector_a9742c8ed5318207382bd190335550682}{State\+Variable\+Collector}} (\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_state_variable_collector_afe82df7d4ccaab605732554464dbb45d}{context}})
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_state_variable_collector_a7197459590328e70a7a21a83c35bad98}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_state_variable_collector_afe82df7d4ccaab605732554464dbb45d}{context}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 8 of file State\+Variable\+Collector.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_state_variable_collector_a9742c8ed5318207382bd190335550682}\label{class_sol_to_boogie_1_1_state_variable_collector_a9742c8ed5318207382bd190335550682}} 
+\index{SolToBoogie.StateVariableCollector@{SolToBoogie.StateVariableCollector}!StateVariableCollector@{StateVariableCollector}}
+\index{StateVariableCollector@{StateVariableCollector}!SolToBoogie.StateVariableCollector@{SolToBoogie.StateVariableCollector}}
+\doxysubsubsection{\texorpdfstring{StateVariableCollector()}{StateVariableCollector()}}
+{\footnotesize\ttfamily Sol\+To\+Boogie.\+State\+Variable\+Collector.\+State\+Variable\+Collector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 12 of file State\+Variable\+Collector.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+State\+Variable\+Collector.\+context.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_state_variable_collector_a7197459590328e70a7a21a83c35bad98}\label{class_sol_to_boogie_1_1_state_variable_collector_a7197459590328e70a7a21a83c35bad98}} 
+\index{SolToBoogie.StateVariableCollector@{SolToBoogie.StateVariableCollector}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.StateVariableCollector@{SolToBoogie.StateVariableCollector}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+State\+Variable\+Collector.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a2dcc371c9e76915a820664dd74e8e02a}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 17 of file State\+Variable\+Collector.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Add\+State\+Var\+To\+Contract(), and Sol\+To\+Boogie.\+State\+Variable\+Collector.\+context.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_state_variable_collector_a7197459590328e70a7a21a83c35bad98_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_state_variable_collector_afe82df7d4ccaab605732554464dbb45d}\label{class_sol_to_boogie_1_1_state_variable_collector_afe82df7d4ccaab605732554464dbb45d}} 
+\index{SolToBoogie.StateVariableCollector@{SolToBoogie.StateVariableCollector}!context@{context}}
+\index{context@{context}!SolToBoogie.StateVariableCollector@{SolToBoogie.StateVariableCollector}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} Sol\+To\+Boogie.\+State\+Variable\+Collector.\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 10 of file State\+Variable\+Collector.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+State\+Variable\+Collector.\+State\+Variable\+Collector(), and Sol\+To\+Boogie.\+State\+Variable\+Collector.\+Visit().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_state_variable_collector_8cs}{State\+Variable\+Collector.\+cs}}\end{DoxyCompactItemize}

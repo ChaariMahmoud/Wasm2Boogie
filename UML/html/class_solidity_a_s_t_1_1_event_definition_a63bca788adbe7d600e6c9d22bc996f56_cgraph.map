@@ -1,0 +1,6 @@
+<map id="SolidityAST.EventDefinition.Accept" name="SolidityAST.EventDefinition.Accept">
+<area shape="rect" id="node1" title=" " alt="" coords="5,51,208,92"/>
+<area shape="rect" id="node2" href="$class_solidity_a_s_t_1_1_parameter_list.html#ac4bf2b3ad43b8e5a0b60f5e68b558bc3" title=" " alt="" coords="256,51,449,92"/>
+<area shape="rect" id="node3" href="$interface_solidity_a_s_t_1_1_i_a_s_t_visitor.html#a7710ac3ceaf6ec668c0ba5c6f6003dcd" title=" " alt="" coords="497,5,671,47"/>
+<area shape="rect" id="node4" href="$interface_solidity_a_s_t_1_1_i_a_s_t_visitor.html#aaf5a4b14ed79dbc96d641c540934ab4f" title=" " alt="" coords="497,84,671,125"/>
+</map>

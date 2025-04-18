@@ -1,0 +1,1948 @@
+\hypertarget{class_sol_to_boogie_1_1_translator_context}{}\doxysection{Sol\+To\+Boogie.\+Translator\+Context Class Reference}
+\label{class_sol_to_boogie_1_1_translator_context}\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+Translator\+Context\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_translator_context__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_aedacffce8ba98ae3816e97039edea8de}{Translator\+Context}} (Hash\+Set$<$ Tuple$<$ string, string $>$$>$ ignore\+Methods, bool \+\_\+gen\+Inline\+Attr\+In\+Bpl, \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags}{Translator\+Flags}} \+\_\+translate\+Flags=null, String entry\+Point\+Contract=\char`\"{}\char`\"{})
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a176bf4309b9c036a98875f80699cbeee}{Has\+ASTNode\+Id}} (int id)
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a178768a7697f51dcc6010f2358af9bf6}{Get\+ASTNode\+By\+Id}} (int id)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a8f8e76a8974d6e52e3573c94dac5557c}{Add\+Source\+Info\+For\+ASTNode}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} node, string absolute\+Path, int line\+Number)
+\item 
+string \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_adb9f7a6bd931ec10359e88910c5e848b}{Get\+Absolute\+Source\+Path\+Of\+ASTNode}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} node)
+\item 
+int \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a5a49b15fb67ada72aedcab7bbba138d3}{Get\+Line\+Number\+Of\+ASTNode}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} node)
+\item 
+Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_af0932f276d179daeb114c86448504a81}{Get\+Func\+Defintions\+In\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_event_definition}{Event\+Definition}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a151cea398c5ac8d1edbca9694f91ebb3}{Get\+Event\+Defintions\+In\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a767fd32d6fc4cb223a55367c787a4e73}{Add\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_ad296f1523f48f17597bed754f754d9a1}{Has\+Contract\+Name}} (string contract\+Name)
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a2be8616364d47b5a53518d965283ca9f}{Get\+Contract\+By\+Name}} (string contract\+Name)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a1bc2963267a9abe9e22b6092131b4552}{Add\+Sub\+Type\+To\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} subtype)
+\item 
+Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a1f5170c92bea062979267c913969222e}{Get\+Sub\+Types\+Of\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a400eb65e0c0348d6fcf007c40833d519}{Add\+State\+Var\+To\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} var\+Decl)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a7d7e5740b67e1927496cf6ee9898b01e}{Add\+Mappingto\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} mapping\+Decl)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_ad17642259b652e337db592db01e9e470}{Add\+Array\+To\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} array\+Decl)
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a75d9dd38de25d1a2faa933d10f5a1608}{Has\+State\+Var\+In\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} var\+Decl)
+\item 
+Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a1bdb28478c84548b78a127300dbe01c7}{Get\+State\+Vars\+By\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a80868f8080be1e1cc1b0f6fc3d739af5}{Add\+Constructor\+To\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} ctor)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_ac1101a5b11f2e031abb969473a48ef5b}{Add\+Fallback\+To\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} fallback)
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a654db2cc86b8ecf787c0e28d83c54239}{Is\+Constructor\+Defined}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_aa2a8206276ebd4fa4ec8fc9c459d3d45}{Get\+Constructor\+By\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_adaf7a47d739048a57cefb396b2ce796d}{Add\+Event\+To\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, \mbox{\hyperlink{class_solidity_a_s_t_1_1_event_definition}{Event\+Definition}} event\+Def)
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a6fed9de0f91bdc77417d326b6f800c75}{Has\+Event\+Name\+In\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, string event\+Name)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_ae44a22bcb35947911d2ec6347214b6f6}{Add\+Function\+To\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} func\+Def)
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_ada6d02385d542f0a420f506c163015f4}{Has\+Func\+Sig\+In\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, string signature)
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_af2cd08f6b6aa0b15c51c3ac734f74d68}{Get\+Function\+By\+Signature}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, string signature)
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_acd54e91d935b88b6a7ff1f1bc3967869}{Get\+Contract\+By\+Function}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} func\+Def)
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a71c87a0bc05ad478f2780cdf9b58622e}{Has\+Func\+Sig\+In\+Dynamic\+Type}} (string func\+Sig, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} dynamic\+Type)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_aa10f75d1a8801d07021b6e0206df2b42}{Add\+Function\+To\+Dynamic\+Type}} (string func\+Sig, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} dynamic\+Type, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} func\+Def)
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_af78e698b0ed2066b129db4f7a7f5dfd0}{Has\+Func\+Signature}} (string func\+Sig)
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_af34d8789303d96af9b22a16e3dd0a87b}{Get\+All\+Func\+Definitions}} (string func\+Sig)
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a2b3ec55dcacdab52b27eb4607048b292}{Get\+Function\+By\+Dynamic\+Type}} (string func\+Sig, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} dynamic\+Type)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a011d57349d865d8820e107e33e65a676}{Add\+State\+Var\+To\+Dynamic\+Type}} (string var\+Name, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} dynamic\+Type, \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} var\+Decl)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_adbc876fe7b5a452e9ee388fe30ff7b63}{Add\+Visible\+Function\+To\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} func\+Def, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a67e6b4e22aa1e089bf7efec2d489f4ec}{Get\+Visible\+Functions\+By\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a75787e17768e6db26780e26634e5475e}{Get\+Contract\+By\+State\+Var\+Decl}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} var\+Decl)
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_ad6d4616b046e4f55986436f197646483}{Has\+State\+Var\+Name}} (string var\+Name)
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_aa82e90bb3804c08f215f93fe99d06d48}{Get\+State\+Var\+By\+Dynamic\+Type}} (string var\+Name, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} dynamic\+Type)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a98e422526b862f12ef69bb502e8f8c01}{Add\+Visible\+State\+Var\+To\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} var\+Decl, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a0c9b9c1b6a9ab1bbead67ca2c45a6423}{Get\+Visible\+State\+Vars\+By\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_typed_ident}{Boogie\+Typed\+Ident}} \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a9738da10b77fc83ff86d01837d8a9d94}{Make\+Fresh\+Typed\+Ident}} (\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}} type)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a282f786140b5c53a7ed0c9d01012e43c}{Add\+Modifer\+To\+Pre\+Proc}} (string modifier, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}} procedure)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a402eeb3bf74ce7d8d81bd2c2aeba440d}{Add\+Modifer\+To\+Post\+Proc}} (string modifier, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}} procedure)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a606c952ba31ded938724aa18a3ffe3bb}{Add\+Modifer\+To\+Pre\+Impl}} (string modifier, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} procedure)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a6be6ab820f1fdf6ee14f424f3aa84296}{Add\+Modifer\+To\+Post\+Impl}} (string modifier, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} procedure)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a5b8efd284ae2e42952c8729fc54e2b83}{Add\+Prelude\+Locals\+To\+Modifier}} (string modifier, List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_local_variable}{Boogie\+Local\+Variable}} $>$ local\+Vars)
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a51a0304d46c600c6b01fc7aa005ceb9f}{Is\+Method\+In\+Ignored\+Set}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} func, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a453da2fd563a76b1e0280207a4d293b2}{MAX\+\_\+\+GAS\+\_\+\+LIMIT}} = 8000000
+\item 
+static int \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_af8585e512c9ed80b64d40a18f20612a2}{MIN\+\_\+\+GAS\+\_\+\+LIMIT}} = 4000000
+\item 
+static int \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a045f9c47524a3f1900e81f3e0ea559fa}{TX\+\_\+\+GAS\+\_\+\+COST}} = 21000
+\item 
+static int \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a88eb7cf3857927d7a200833c1ae7df63}{CREATE\+\_\+\+GAS\+\_\+\+COST}} = 53000
+\item 
+static int \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_abb3fcb1cc6d794831c98e281cf518266}{CALL\+\_\+\+GAS\+\_\+\+STIPEND}} = 2300
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_program}{Boogie\+Program}} \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a685beb4085ee6cc825bcd1699d98e670}{Program}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ int, \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a5c97abcd2456a9a0d7067d8f1f59fdc1}{Id\+To\+Node\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a8537051f9218df8eda62edf1fe9d6516}{Source\+Directory}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}, string $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a986cd017eb7ea26db5bbb405dd949213}{ASTNode\+To\+Source\+Path\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}, int $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a1301659b58c6398e6964a8d14625ad63}{ASTNode\+To\+Source\+Line\+Number\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_af3e5f86789a515527574196ef0778dc1}{Contract\+Definitions}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_ac4d6acc42954885d835f5d2d00383501}{Contract\+To\+Sub\+Types\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a71905e7e289b57be6d017a7f73c066c5}{Contract\+To\+State\+Vars\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a232d75eb17446d07f8527692f17fa140}{State\+Var\+To\+Contract\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a3f151f1836f60af84661adb87beeeb0b}{Contract\+To\+Mappings\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a8d77f923ee2e38eae5896e4b75cab629}{Contract\+To\+Arrays\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_ade55eed5548a153ca8fdcfd48e1b1a5a}{Contract\+To\+Constructor\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a66024fff36d6e93edf7b11a984bcb756}{Contract\+To\+Fallback\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_event_definition}{Event\+Definition}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a68987c44140a0fb92f474c8a9b5baf39}{Contract\+To\+Events\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_event_definition}{Event\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a03f215660174b95cd4782a37f23b3746}{Event\+To\+Contract\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a8e7e3e7f1c79dc3f8166b39d6c989394}{Contract\+To\+Functions\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$ string $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_ad2a73b7923dcabe0f4854c6d9755b35d}{Contract\+To\+Func\+Sigs\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_acedb0a878986380d16b8c744484e9c46}{Function\+To\+Contract\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ string, Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a32e89f781570f857c337d67430c3c0ca}{Func\+Sig\+Resolution\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a554595ecf1d55d1de523d23d4673842f}{Contract\+To\+Visible\+Functions\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ string, Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_ada31a098e62d613c0c9f120cfb8a83e5}{State\+Var\+Name\+Resolution\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a22ffd7369fb61986449a54ea9911e5df}{Contract\+To\+Visible\+State\+Vars\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a9202677b69b4d67701618abef38be311}{Modifier\+To\+Boogie\+Pre\+Proc}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a515ec4b952d0b887f22be67d32a0eeb2}{Modifier\+To\+Boogie\+Post\+Proc}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a04b016c35ac04b19181ee5472828d66d}{Modifier\+To\+Boogie\+Pre\+Impl}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a1c34844d0645ba672cac5cfbd2d9816c}{Modifier\+To\+Boogie\+Post\+Impl}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ string, List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_local_variable}{Boogie\+Local\+Variable}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a9df614e7dfe80013812f40212da138b3}{Modifier\+To\+Prelude\+Local\+Vars}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+String \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_aa88d576e7841398737d5be357bd8eda7}{Entry\+Point\+Contract}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags}{Translator\+Flags}} \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a68dc1d56e211dcc70279e51f9ed9d846}{Translate\+Flags}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_user_defined_type_name}{User\+Defined\+Type\+Name}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_type_name}{Type\+Name}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a9d9b37f9e748f5e65799c8fdd6644601}{Using\+Map}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a58aa16a10c2754eff6e3839ae53483cf}{fresh\+Identifier\+Count}} = 0
+\item 
+Hash\+Set$<$ Tuple$<$ string, string $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a4ff81477517ef0c17979be315ea9f4d2}{Ignore\+Methods}}
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_ac5cb1ebf26977593d53d2bfed6773855}{gen\+Inline\+Attr\+In\+Bpl}}
+\item 
+readonly Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Dictionary$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_user_defined_type_name}{User\+Defined\+Type\+Name}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_type_name}{Type\+Name}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context_a6279f9c18281d8a7796d3fb58717c1e2}{using\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 12 of file Translator\+Context.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_aedacffce8ba98ae3816e97039edea8de}\label{class_sol_to_boogie_1_1_translator_context_aedacffce8ba98ae3816e97039edea8de}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!TranslatorContext@{TranslatorContext}}
+\index{TranslatorContext@{TranslatorContext}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{TranslatorContext()}{TranslatorContext()}}
+{\footnotesize\ttfamily Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context (\begin{DoxyParamCaption}\item[{Hash\+Set$<$ Tuple$<$ string, string $>$$>$}]{ignore\+Methods,  }\item[{bool}]{\+\_\+gen\+Inline\+Attr\+In\+Bpl,  }\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags}{Translator\+Flags}}}]{\+\_\+translate\+Flags = {\ttfamily null},  }\item[{String}]{entry\+Point\+Contract = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 115 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+ASTNode\+To\+Source\+Line\+Number\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+ASTNode\+To\+Source\+Path\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+Definitions, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Arrays\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Constructor\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Events\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Fallback\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Func\+Sigs\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Functions\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Mappings\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+State\+Vars\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Sub\+Types\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Visible\+Functions\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Visible\+State\+Vars\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Entry\+Point\+Contract, Sol\+To\+Boogie.\+Translator\+Context.\+Event\+To\+Contract\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Func\+Sig\+Resolution\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Function\+To\+Contract\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+gen\+Inline\+Attr\+In\+Bpl, Sol\+To\+Boogie.\+Translator\+Context.\+Ignore\+Methods, Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Post\+Impl, Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Post\+Proc, Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Pre\+Impl, Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Pre\+Proc, Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Prelude\+Local\+Vars, Sol\+To\+Boogie.\+Translator\+Context.\+Program, Sol\+To\+Boogie.\+Translator\+Context.\+State\+Var\+Name\+Resolution\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+State\+Var\+To\+Contract\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Translate\+Flags, and Sol\+To\+Boogie.\+Translator\+Context.\+using\+Map.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_ad17642259b652e337db592db01e9e470}\label{class_sol_to_boogie_1_1_translator_context_ad17642259b652e337db592db01e9e470}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddArrayToContract@{AddArrayToContract}}
+\index{AddArrayToContract@{AddArrayToContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddArrayToContract()}{AddArrayToContract()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Array\+To\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}}]{array\+Decl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 269 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Arrays\+Map, and Solidity\+AST.\+Variable\+Declaration.\+Type\+Name.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Map\+Array\+Collector.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_ad17642259b652e337db592db01e9e470_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a80868f8080be1e1cc1b0f6fc3d739af5}\label{class_sol_to_boogie_1_1_translator_context_a80868f8080be1e1cc1b0f6fc3d739af5}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddConstructorToContract@{AddConstructorToContract}}
+\index{AddConstructorToContract@{AddConstructorToContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddConstructorToContract()}{AddConstructorToContract()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Constructor\+To\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}}]{ctor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 294 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Constructor\+Map, and Solidity\+AST.\+Function\+Definition.\+Is\+Constructor.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Constructor\+Collector.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a80868f8080be1e1cc1b0f6fc3d739af5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a767fd32d6fc4cb223a55367c787a4e73}\label{class_sol_to_boogie_1_1_translator_context_a767fd32d6fc4cb223a55367c787a4e73}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddContract@{AddContract}}
+\index{AddContract@{AddContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddContract()}{AddContract()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 198 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+Definitions.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Contract\+Collector.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a767fd32d6fc4cb223a55367c787a4e73_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_adaf7a47d739048a57cefb396b2ce796d}\label{class_sol_to_boogie_1_1_translator_context_adaf7a47d739048a57cefb396b2ce796d}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddEventToContract@{AddEventToContract}}
+\index{AddEventToContract@{AddEventToContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddEventToContract()}{AddEventToContract()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Event\+To\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_event_definition}{Event\+Definition}}}]{event\+Def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 323 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Events\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Resolve\+Functions(), and Sol\+To\+Boogie.\+Function\+Event\+Collector.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_adaf7a47d739048a57cefb396b2ce796d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_ac1101a5b11f2e031abb969473a48ef5b}\label{class_sol_to_boogie_1_1_translator_context_ac1101a5b11f2e031abb969473a48ef5b}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddFallbackToContract@{AddFallbackToContract}}
+\index{AddFallbackToContract@{AddFallbackToContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddFallbackToContract()}{AddFallbackToContract()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Fallback\+To\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}}]{fallback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 301 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Fallback\+Map, and Solidity\+AST.\+Function\+Definition.\+Is\+Fallback.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Constructor\+Collector.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_ac1101a5b11f2e031abb969473a48ef5b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_ae44a22bcb35947911d2ec6347214b6f6}\label{class_sol_to_boogie_1_1_translator_context_ae44a22bcb35947911d2ec6347214b6f6}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddFunctionToContract@{AddFunctionToContract}}
+\index{AddFunctionToContract@{AddFunctionToContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddFunctionToContract()}{AddFunctionToContract()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Function\+To\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}}]{func\+Def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 355 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Trans\+Utils.\+Compute\+Function\+Signature(), Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Func\+Sigs\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Functions\+Map, and Sol\+To\+Boogie.\+Translator\+Context.\+Function\+To\+Contract\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Function\+Event\+Collector.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_ae44a22bcb35947911d2ec6347214b6f6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_ae44a22bcb35947911d2ec6347214b6f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_aa10f75d1a8801d07021b6e0206df2b42}\label{class_sol_to_boogie_1_1_translator_context_aa10f75d1a8801d07021b6e0206df2b42}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddFunctionToDynamicType@{AddFunctionToDynamicType}}
+\index{AddFunctionToDynamicType@{AddFunctionToDynamicType}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddFunctionToDynamicType()}{AddFunctionToDynamicType()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Function\+To\+Dynamic\+Type (\begin{DoxyParamCaption}\item[{string}]{func\+Sig,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{dynamic\+Type,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}}]{func\+Def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 408 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Func\+Sig\+Resolution\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Resolve\+Functions().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_aa10f75d1a8801d07021b6e0206df2b42_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a7d7e5740b67e1927496cf6ee9898b01e}\label{class_sol_to_boogie_1_1_translator_context_a7d7e5740b67e1927496cf6ee9898b01e}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddMappingtoContract@{AddMappingtoContract}}
+\index{AddMappingtoContract@{AddMappingtoContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddMappingtoContract()}{AddMappingtoContract()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Mappingto\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}}]{mapping\+Decl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 258 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Mappings\+Map, and Solidity\+AST.\+Variable\+Declaration.\+Type\+Name.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Map\+Array\+Collector.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a7d7e5740b67e1927496cf6ee9898b01e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a6be6ab820f1fdf6ee14f424f3aa84296}\label{class_sol_to_boogie_1_1_translator_context_a6be6ab820f1fdf6ee14f424f3aa84296}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddModiferToPostImpl@{AddModiferToPostImpl}}
+\index{AddModiferToPostImpl@{AddModiferToPostImpl}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddModiferToPostImpl()}{AddModiferToPostImpl()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Modifer\+To\+Post\+Impl (\begin{DoxyParamCaption}\item[{string}]{modifier,  }\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}}}]{procedure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 538 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Post\+Impl.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Modifier\+Collector.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a6be6ab820f1fdf6ee14f424f3aa84296_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a402eeb3bf74ce7d8d81bd2c2aeba440d}\label{class_sol_to_boogie_1_1_translator_context_a402eeb3bf74ce7d8d81bd2c2aeba440d}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddModiferToPostProc@{AddModiferToPostProc}}
+\index{AddModiferToPostProc@{AddModiferToPostProc}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddModiferToPostProc()}{AddModiferToPostProc()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Modifer\+To\+Post\+Proc (\begin{DoxyParamCaption}\item[{string}]{modifier,  }\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}}}]{procedure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 514 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Post\+Proc.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Modifier\+Collector.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a402eeb3bf74ce7d8d81bd2c2aeba440d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a606c952ba31ded938724aa18a3ffe3bb}\label{class_sol_to_boogie_1_1_translator_context_a606c952ba31ded938724aa18a3ffe3bb}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddModiferToPreImpl@{AddModiferToPreImpl}}
+\index{AddModiferToPreImpl@{AddModiferToPreImpl}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddModiferToPreImpl()}{AddModiferToPreImpl()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Modifer\+To\+Pre\+Impl (\begin{DoxyParamCaption}\item[{string}]{modifier,  }\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}}}]{procedure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 526 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Pre\+Impl.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Modifier\+Collector.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a606c952ba31ded938724aa18a3ffe3bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a282f786140b5c53a7ed0c9d01012e43c}\label{class_sol_to_boogie_1_1_translator_context_a282f786140b5c53a7ed0c9d01012e43c}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddModiferToPreProc@{AddModiferToPreProc}}
+\index{AddModiferToPreProc@{AddModiferToPreProc}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddModiferToPreProc()}{AddModiferToPreProc()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Modifer\+To\+Pre\+Proc (\begin{DoxyParamCaption}\item[{string}]{modifier,  }\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}}}]{procedure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 502 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Pre\+Proc.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Modifier\+Collector.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a282f786140b5c53a7ed0c9d01012e43c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a5b8efd284ae2e42952c8729fc54e2b83}\label{class_sol_to_boogie_1_1_translator_context_a5b8efd284ae2e42952c8729fc54e2b83}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddPreludeLocalsToModifier@{AddPreludeLocalsToModifier}}
+\index{AddPreludeLocalsToModifier@{AddPreludeLocalsToModifier}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddPreludeLocalsToModifier()}{AddPreludeLocalsToModifier()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Prelude\+Locals\+To\+Modifier (\begin{DoxyParamCaption}\item[{string}]{modifier,  }\item[{List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_local_variable}{Boogie\+Local\+Variable}} $>$}]{local\+Vars }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 550 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Prelude\+Local\+Vars.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Modifier\+Collector.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a5b8efd284ae2e42952c8729fc54e2b83_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a8f8e76a8974d6e52e3573c94dac5557c}\label{class_sol_to_boogie_1_1_translator_context_a8f8e76a8974d6e52e3573c94dac5557c}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddSourceInfoForASTNode@{AddSourceInfoForASTNode}}
+\index{AddSourceInfoForASTNode@{AddSourceInfoForASTNode}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddSourceInfoForASTNode()}{AddSourceInfoForASTNode()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Source\+Info\+For\+ASTNode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}}]{node,  }\item[{string}]{absolute\+Path,  }\item[{int}]{line\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 160 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+ASTNode\+To\+Source\+Line\+Number\+Map, and Sol\+To\+Boogie.\+Translator\+Context.\+ASTNode\+To\+Source\+Path\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Source\+Info\+Collector.\+Common\+End\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a8f8e76a8974d6e52e3573c94dac5557c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a400eb65e0c0348d6fcf007c40833d519}\label{class_sol_to_boogie_1_1_translator_context_a400eb65e0c0348d6fcf007c40833d519}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddStateVarToContract@{AddStateVarToContract}}
+\index{AddStateVarToContract@{AddStateVarToContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddStateVarToContract()}{AddStateVarToContract()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+State\+Var\+To\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}}]{var\+Decl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 243 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+State\+Vars\+Map, Solidity\+AST.\+Variable\+Declaration.\+State\+Variable, and Sol\+To\+Boogie.\+Translator\+Context.\+State\+Var\+To\+Contract\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+State\+Variable\+Collector.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a400eb65e0c0348d6fcf007c40833d519_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a011d57349d865d8820e107e33e65a676}\label{class_sol_to_boogie_1_1_translator_context_a011d57349d865d8820e107e33e65a676}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddStateVarToDynamicType@{AddStateVarToDynamicType}}
+\index{AddStateVarToDynamicType@{AddStateVarToDynamicType}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddStateVarToDynamicType()}{AddStateVarToDynamicType()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+State\+Var\+To\+Dynamic\+Type (\begin{DoxyParamCaption}\item[{string}]{var\+Name,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{dynamic\+Type,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}}]{var\+Decl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 434 of file Translator\+Context.\+cs.
+
+
+
+References Solidity\+AST.\+Variable\+Declaration.\+State\+Variable, and Sol\+To\+Boogie.\+Translator\+Context.\+State\+Var\+Name\+Resolution\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Resolve\+State\+Variables().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a011d57349d865d8820e107e33e65a676_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a1bc2963267a9abe9e22b6092131b4552}\label{class_sol_to_boogie_1_1_translator_context_a1bc2963267a9abe9e22b6092131b4552}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddSubTypeToContract@{AddSubTypeToContract}}
+\index{AddSubTypeToContract@{AddSubTypeToContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddSubTypeToContract()}{AddSubTypeToContract()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Sub\+Type\+To\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{subtype }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 228 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Sub\+Types\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Inheritance\+Collector.\+Collect().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a1bc2963267a9abe9e22b6092131b4552_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_adbc876fe7b5a452e9ee388fe30ff7b63}\label{class_sol_to_boogie_1_1_translator_context_adbc876fe7b5a452e9ee388fe30ff7b63}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddVisibleFunctionToContract@{AddVisibleFunctionToContract}}
+\index{AddVisibleFunctionToContract@{AddVisibleFunctionToContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddVisibleFunctionToContract()}{AddVisibleFunctionToContract()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Visible\+Function\+To\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}}]{func\+Def,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 447 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Visible\+Functions\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Compute\+Visible\+Functions().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_adbc876fe7b5a452e9ee388fe30ff7b63_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a98e422526b862f12ef69bb502e8f8c01}\label{class_sol_to_boogie_1_1_translator_context_a98e422526b862f12ef69bb502e8f8c01}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!AddVisibleStateVarToContract@{AddVisibleStateVarToContract}}
+\index{AddVisibleStateVarToContract@{AddVisibleStateVarToContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{AddVisibleStateVarToContract()}{AddVisibleStateVarToContract()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Visible\+State\+Var\+To\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}}]{var\+Decl,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 479 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Visible\+State\+Vars\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Compute\+Visible\+State\+Variables().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a98e422526b862f12ef69bb502e8f8c01_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_adb9f7a6bd931ec10359e88910c5e848b}\label{class_sol_to_boogie_1_1_translator_context_adb9f7a6bd931ec10359e88910c5e848b}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetAbsoluteSourcePathOfASTNode@{GetAbsoluteSourcePathOfASTNode}}
+\index{GetAbsoluteSourcePathOfASTNode@{GetAbsoluteSourcePathOfASTNode}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetAbsoluteSourcePathOfASTNode()}{GetAbsoluteSourcePathOfASTNode()}}
+{\footnotesize\ttfamily string Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Absolute\+Source\+Path\+Of\+ASTNode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 168 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+ASTNode\+To\+Source\+Path\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Trans\+Utils.\+Generate\+Source\+Info\+Annotation().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_adb9f7a6bd931ec10359e88910c5e848b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_af34d8789303d96af9b22a16e3dd0a87b}\label{class_sol_to_boogie_1_1_translator_context_af34d8789303d96af9b22a16e3dd0a87b}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetAllFuncDefinitions@{GetAllFuncDefinitions}}
+\index{GetAllFuncDefinitions@{GetAllFuncDefinitions}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetAllFuncDefinitions()}{GetAllFuncDefinitions()}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Get\+All\+Func\+Definitions (\begin{DoxyParamCaption}\item[{string}]{func\+Sig }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 424 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Func\+Sig\+Resolution\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Dynamic\+Dispatch\+Call(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Using\+Library\+Call().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_af34d8789303d96af9b22a16e3dd0a87b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a178768a7697f51dcc6010f2358af9bf6}\label{class_sol_to_boogie_1_1_translator_context_a178768a7697f51dcc6010f2358af9bf6}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetASTNodeById@{GetASTNodeById}}
+\index{GetASTNodeById@{GetASTNodeById}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetASTNodeById()}{GetASTNodeById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} Sol\+To\+Boogie.\+Translator\+Context.\+Get\+ASTNode\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 154 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Id\+To\+Node\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Resolution\+Helper.\+All\+Dependencies\+Visited(), Sol\+To\+Boogie.\+Inheritance\+Collector.\+Collect(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Constructor\+With\+Base\+Calls(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Default\+Constructor(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Get\+Modifier\+Invocation\+Of\+Base(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Get\+Static\+Dispatching\+Contract(), Sol\+To\+Boogie.\+Trans\+Utils.\+Infer\+Function\+Signature(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Is\+External\+Function\+Call(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Is\+Library\+Function\+Call(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Is\+Static\+Dispatching(), Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Resolve\+Functions(), Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Resolve\+State\+Variables(), Sol\+To\+Boogie.\+Resolution\+Helper.\+Topological\+Sort\+Impl(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+New\+Statement(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Type\+Cast(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Using\+Library\+Call(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a178768a7697f51dcc6010f2358af9bf6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_aa2a8206276ebd4fa4ec8fc9c459d3d45}\label{class_sol_to_boogie_1_1_translator_context_aa2a8206276ebd4fa4ec8fc9c459d3d45}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetConstructorByContract@{GetConstructorByContract}}
+\index{GetConstructorByContract@{GetConstructorByContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetConstructorByContract()}{GetConstructorByContract()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Constructor\+By\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 314 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Constructor\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Constructor\+Call(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Constructor\+With\+Base\+Calls(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Default\+Constructor().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_aa2a8206276ebd4fa4ec8fc9c459d3d45_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_acd54e91d935b88b6a7ff1f1bc3967869}\label{class_sol_to_boogie_1_1_translator_context_acd54e91d935b88b6a7ff1f1bc3967869}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetContractByFunction@{GetContractByFunction}}
+\index{GetContractByFunction@{GetContractByFunction}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetContractByFunction()}{GetContractByFunction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Contract\+By\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}}]{func\+Def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 393 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Function\+To\+Contract\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Constructor\+With\+Base\+Calls(), Sol\+To\+Boogie.\+Trans\+Utils.\+Get\+Canonical\+Function\+Name(), and Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Print\+Function\+Resolution\+Map().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_acd54e91d935b88b6a7ff1f1bc3967869_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a2be8616364d47b5a53518d965283ca9f}\label{class_sol_to_boogie_1_1_translator_context_a2be8616364d47b5a53518d965283ca9f}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetContractByName@{GetContractByName}}
+\index{GetContractByName@{GetContractByName}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetContractByName()}{GetContractByName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Contract\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{contract\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 215 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+Definitions, and Solidity\+AST.\+Contract\+Definition.\+Name.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Is\+Getter\+For\+Public\+Variable().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a2be8616364d47b5a53518d965283ca9f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a75787e17768e6db26780e26634e5475e}\label{class_sol_to_boogie_1_1_translator_context_a75787e17768e6db26780e26634e5475e}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetContractByStateVarDecl@{GetContractByStateVarDecl}}
+\index{GetContractByStateVarDecl@{GetContractByStateVarDecl}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetContractByStateVarDecl()}{GetContractByStateVarDecl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Contract\+By\+State\+Var\+Decl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}}]{var\+Decl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 463 of file Translator\+Context.\+cs.
+
+
+
+References Solidity\+AST.\+Variable\+Declaration.\+State\+Variable, and Sol\+To\+Boogie.\+Translator\+Context.\+State\+Var\+To\+Contract\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Print\+State\+Var\+Resolution\+Map().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a75787e17768e6db26780e26634e5475e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a151cea398c5ac8d1edbca9694f91ebb3}\label{class_sol_to_boogie_1_1_translator_context_a151cea398c5ac8d1edbca9694f91ebb3}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetEventDefintionsInContract@{GetEventDefintionsInContract}}
+\index{GetEventDefintionsInContract@{GetEventDefintionsInContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetEventDefintionsInContract()}{GetEventDefintionsInContract()}}
+{\footnotesize\ttfamily Hash\+Set$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_event_definition}{Event\+Definition}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Event\+Defintions\+In\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 188 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Events\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Resolve\+Functions().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a151cea398c5ac8d1edbca9694f91ebb3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_af0932f276d179daeb114c86448504a81}\label{class_sol_to_boogie_1_1_translator_context_af0932f276d179daeb114c86448504a81}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetFuncDefintionsInContract@{GetFuncDefintionsInContract}}
+\index{GetFuncDefintionsInContract@{GetFuncDefintionsInContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetFuncDefintionsInContract()}{GetFuncDefintionsInContract()}}
+{\footnotesize\ttfamily Hash\+Set$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Func\+Defintions\+In\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 180 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Functions\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Resolve\+Functions().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_af0932f276d179daeb114c86448504a81_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a2b3ec55dcacdab52b27eb4607048b292}\label{class_sol_to_boogie_1_1_translator_context_a2b3ec55dcacdab52b27eb4607048b292}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetFunctionByDynamicType@{GetFunctionByDynamicType}}
+\index{GetFunctionByDynamicType@{GetFunctionByDynamicType}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetFunctionByDynamicType()}{GetFunctionByDynamicType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Function\+By\+Dynamic\+Type (\begin{DoxyParamCaption}\item[{string}]{func\+Sig,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{dynamic\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 429 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Func\+Sig\+Resolution\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Print\+Function\+Resolution\+Map().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a2b3ec55dcacdab52b27eb4607048b292_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_af2cd08f6b6aa0b15c51c3ac734f74d68}\label{class_sol_to_boogie_1_1_translator_context_af2cd08f6b6aa0b15c51c3ac734f74d68}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetFunctionBySignature@{GetFunctionBySignature}}
+\index{GetFunctionBySignature@{GetFunctionBySignature}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetFunctionBySignature()}{GetFunctionBySignature()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Function\+By\+Signature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{string}]{signature }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 380 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Trans\+Utils.\+Compute\+Function\+Signature(), and Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Functions\+Map.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_af2cd08f6b6aa0b15c51c3ac734f74d68_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a5a49b15fb67ada72aedcab7bbba138d3}\label{class_sol_to_boogie_1_1_translator_context_a5a49b15fb67ada72aedcab7bbba138d3}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetLineNumberOfASTNode@{GetLineNumberOfASTNode}}
+\index{GetLineNumberOfASTNode@{GetLineNumberOfASTNode}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetLineNumberOfASTNode()}{GetLineNumberOfASTNode()}}
+{\footnotesize\ttfamily int Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Line\+Number\+Of\+ASTNode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 174 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+ASTNode\+To\+Source\+Line\+Number\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Trans\+Utils.\+Generate\+Source\+Info\+Annotation().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a5a49b15fb67ada72aedcab7bbba138d3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_aa82e90bb3804c08f215f93fe99d06d48}\label{class_sol_to_boogie_1_1_translator_context_aa82e90bb3804c08f215f93fe99d06d48}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetStateVarByDynamicType@{GetStateVarByDynamicType}}
+\index{GetStateVarByDynamicType@{GetStateVarByDynamicType}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetStateVarByDynamicType()}{GetStateVarByDynamicType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} Sol\+To\+Boogie.\+Translator\+Context.\+Get\+State\+Var\+By\+Dynamic\+Type (\begin{DoxyParamCaption}\item[{string}]{var\+Name,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{dynamic\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 474 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+State\+Var\+Name\+Resolution\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Is\+Getter\+For\+Public\+Variable(), and Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Print\+State\+Var\+Resolution\+Map().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_aa82e90bb3804c08f215f93fe99d06d48_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a1bdb28478c84548b78a127300dbe01c7}\label{class_sol_to_boogie_1_1_translator_context_a1bdb28478c84548b78a127300dbe01c7}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetStateVarsByContract@{GetStateVarsByContract}}
+\index{GetStateVarsByContract@{GetStateVarsByContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetStateVarsByContract()}{GetStateVarsByContract()}}
+{\footnotesize\ttfamily Hash\+Set$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Get\+State\+Vars\+By\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 289 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+State\+Vars\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Initialization\+Stmts(), and Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Resolve\+State\+Variables().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a1bdb28478c84548b78a127300dbe01c7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a1f5170c92bea062979267c913969222e}\label{class_sol_to_boogie_1_1_translator_context_a1f5170c92bea062979267c913969222e}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetSubTypesOfContract@{GetSubTypesOfContract}}
+\index{GetSubTypesOfContract@{GetSubTypesOfContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetSubTypesOfContract()}{GetSubTypesOfContract()}}
+{\footnotesize\ttfamily Hash\+Set$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Sub\+Types\+Of\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 237 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Sub\+Types\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Dynamic\+Type\+Assumes(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Dynamic\+Dispatch\+Call(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Type\+Cast().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a1f5170c92bea062979267c913969222e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a67e6b4e22aa1e089bf7efec2d489f4ec}\label{class_sol_to_boogie_1_1_translator_context_a67e6b4e22aa1e089bf7efec2d489f4ec}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetVisibleFunctionsByContract@{GetVisibleFunctionsByContract}}
+\index{GetVisibleFunctionsByContract@{GetVisibleFunctionsByContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetVisibleFunctionsByContract()}{GetVisibleFunctionsByContract()}}
+{\footnotesize\ttfamily Hash\+Set$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Visible\+Functions\+By\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 456 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Visible\+Functions\+Map.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a0c9b9c1b6a9ab1bbead67ca2c45a6423}\label{class_sol_to_boogie_1_1_translator_context_a0c9b9c1b6a9ab1bbead67ca2c45a6423}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!GetVisibleStateVarsByContract@{GetVisibleStateVarsByContract}}
+\index{GetVisibleStateVarsByContract@{GetVisibleStateVarsByContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{GetVisibleStateVarsByContract()}{GetVisibleStateVarsByContract()}}
+{\footnotesize\ttfamily Hash\+Set$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Visible\+State\+Vars\+By\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 488 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Visible\+State\+Vars\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Houdini\+Helper.\+Generate\+Houdini\+Var\+Mapping().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a0c9b9c1b6a9ab1bbead67ca2c45a6423_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a176bf4309b9c036a98875f80699cbeee}\label{class_sol_to_boogie_1_1_translator_context_a176bf4309b9c036a98875f80699cbeee}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!HasASTNodeId@{HasASTNodeId}}
+\index{HasASTNodeId@{HasASTNodeId}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{HasASTNodeId()}{HasASTNodeId()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Context.\+Has\+ASTNode\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 149 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Id\+To\+Node\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a176bf4309b9c036a98875f80699cbeee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_ad296f1523f48f17597bed754f754d9a1}\label{class_sol_to_boogie_1_1_translator_context_ad296f1523f48f17597bed754f754d9a1}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!HasContractName@{HasContractName}}
+\index{HasContractName@{HasContractName}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{HasContractName()}{HasContractName()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Context.\+Has\+Contract\+Name (\begin{DoxyParamCaption}\item[{string}]{contract\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 203 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+Definitions, and Solidity\+AST.\+Contract\+Definition.\+Name.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a6fed9de0f91bdc77417d326b6f800c75}\label{class_sol_to_boogie_1_1_translator_context_a6fed9de0f91bdc77417d326b6f800c75}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!HasEventNameInContract@{HasEventNameInContract}}
+\index{HasEventNameInContract@{HasEventNameInContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{HasEventNameInContract()}{HasEventNameInContract()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Context.\+Has\+Event\+Name\+In\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{string}]{event\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 338 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Events\+Map, and Solidity\+AST.\+Event\+Definition.\+Name.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a6fed9de0f91bdc77417d326b6f800c75_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_ada6d02385d542f0a420f506c163015f4}\label{class_sol_to_boogie_1_1_translator_context_ada6d02385d542f0a420f506c163015f4}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!HasFuncSigInContract@{HasFuncSigInContract}}
+\index{HasFuncSigInContract@{HasFuncSigInContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{HasFuncSigInContract()}{HasFuncSigInContract()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Context.\+Has\+Func\+Sig\+In\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{string}]{signature }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 375 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Func\+Sigs\+Map.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a71c87a0bc05ad478f2780cdf9b58622e}\label{class_sol_to_boogie_1_1_translator_context_a71c87a0bc05ad478f2780cdf9b58622e}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!HasFuncSigInDynamicType@{HasFuncSigInDynamicType}}
+\index{HasFuncSigInDynamicType@{HasFuncSigInDynamicType}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{HasFuncSigInDynamicType()}{HasFuncSigInDynamicType()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Context.\+Has\+Func\+Sig\+In\+Dynamic\+Type (\begin{DoxyParamCaption}\item[{string}]{func\+Sig,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{dynamic\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 399 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Func\+Sig\+Resolution\+Map.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_af78e698b0ed2066b129db4f7a7f5dfd0}\label{class_sol_to_boogie_1_1_translator_context_af78e698b0ed2066b129db4f7a7f5dfd0}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!HasFuncSignature@{HasFuncSignature}}
+\index{HasFuncSignature@{HasFuncSignature}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{HasFuncSignature()}{HasFuncSignature()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Context.\+Has\+Func\+Signature (\begin{DoxyParamCaption}\item[{string}]{func\+Sig }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 419 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Func\+Sig\+Resolution\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Dynamic\+Dispatch\+Call(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Using\+Library\+Call().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_af78e698b0ed2066b129db4f7a7f5dfd0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a75d9dd38de25d1a2faa933d10f5a1608}\label{class_sol_to_boogie_1_1_translator_context_a75d9dd38de25d1a2faa933d10f5a1608}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!HasStateVarInContract@{HasStateVarInContract}}
+\index{HasStateVarInContract@{HasStateVarInContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{HasStateVarInContract()}{HasStateVarInContract()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Context.\+Has\+State\+Var\+In\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}}]{var\+Decl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 280 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+State\+Vars\+Map.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_ad6d4616b046e4f55986436f197646483}\label{class_sol_to_boogie_1_1_translator_context_ad6d4616b046e4f55986436f197646483}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!HasStateVarName@{HasStateVarName}}
+\index{HasStateVarName@{HasStateVarName}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{HasStateVarName()}{HasStateVarName()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Context.\+Has\+State\+Var\+Name (\begin{DoxyParamCaption}\item[{string}]{var\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 469 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+State\+Var\+Name\+Resolution\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Is\+Getter\+For\+Public\+Variable().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_ad6d4616b046e4f55986436f197646483_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a654db2cc86b8ecf787c0e28d83c54239}\label{class_sol_to_boogie_1_1_translator_context_a654db2cc86b8ecf787c0e28d83c54239}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!IsConstructorDefined@{IsConstructorDefined}}
+\index{IsConstructorDefined@{IsConstructorDefined}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{IsConstructorDefined()}{IsConstructorDefined()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Context.\+Is\+Constructor\+Defined (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 309 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Constructor\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Constructor\+Call(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Constructor\+With\+Base\+Calls(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Default\+Constructor(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a654db2cc86b8ecf787c0e28d83c54239_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a51a0304d46c600c6b01fc7aa005ceb9f}\label{class_sol_to_boogie_1_1_translator_context_a51a0304d46c600c6b01fc7aa005ceb9f}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!IsMethodInIgnoredSet@{IsMethodInIgnoredSet}}
+\index{IsMethodInIgnoredSet@{IsMethodInIgnoredSet}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{IsMethodInIgnoredSet()}{IsMethodInIgnoredSet()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Context.\+Is\+Method\+In\+Ignored\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}}]{func,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 562 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Ignore\+Methods, Solidity\+AST.\+Contract\+Definition.\+Name, and Solidity\+AST.\+Function\+Definition.\+Name.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Constructor\+With\+Base\+Calls(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a51a0304d46c600c6b01fc7aa005ceb9f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a9738da10b77fc83ff86d01837d8a9d94}\label{class_sol_to_boogie_1_1_translator_context_a9738da10b77fc83ff86d01837d8a9d94}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!MakeFreshTypedIdent@{MakeFreshTypedIdent}}
+\index{MakeFreshTypedIdent@{MakeFreshTypedIdent}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{MakeFreshTypedIdent()}{MakeFreshTypedIdent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_typed_ident}{Boogie\+Typed\+Ident}} Sol\+To\+Boogie.\+Translator\+Context.\+Make\+Fresh\+Typed\+Ident (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 495 of file Translator\+Context.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+fresh\+Identifier\+Count.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Create\+Distinct\+Array\+Mapping\+Address(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Initialization\+For\+Struct\+State\+Var(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Mk\+New\+Local\+Variable\+With\+Type(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Dynamic\+Array\+Push(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+External\+Function\+Call(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+New\+Statement(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Struct\+Constructor().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_context_a9738da10b77fc83ff86d01837d8a9d94_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_abb3fcb1cc6d794831c98e281cf518266}\label{class_sol_to_boogie_1_1_translator_context_abb3fcb1cc6d794831c98e281cf518266}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!CALL\_GAS\_STIPEND@{CALL\_GAS\_STIPEND}}
+\index{CALL\_GAS\_STIPEND@{CALL\_GAS\_STIPEND}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{CALL\_GAS\_STIPEND}{CALL\_GAS\_STIPEND}}
+{\footnotesize\ttfamily int Sol\+To\+Boogie.\+Translator\+Context.\+CALL\+\_\+\+GAS\+\_\+\+STIPEND = 2300\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 23 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Send\+Call\+Stmt(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Transfer\+Call\+Stmt().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a88eb7cf3857927d7a200833c1ae7df63}\label{class_sol_to_boogie_1_1_translator_context_a88eb7cf3857927d7a200833c1ae7df63}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!CREATE\_GAS\_COST@{CREATE\_GAS\_COST}}
+\index{CREATE\_GAS\_COST@{CREATE\_GAS\_COST}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{CREATE\_GAS\_COST}{CREATE\_GAS\_COST}}
+{\footnotesize\ttfamily int Sol\+To\+Boogie.\+Translator\+Context.\+CREATE\+\_\+\+GAS\+\_\+\+COST = 53000\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 21 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Constructor\+Call().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a58aa16a10c2754eff6e3839ae53483cf}\label{class_sol_to_boogie_1_1_translator_context_a58aa16a10c2754eff6e3839ae53483cf}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!freshIdentifierCount@{freshIdentifierCount}}
+\index{freshIdentifierCount@{freshIdentifierCount}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{freshIdentifierCount}{freshIdentifierCount}}
+{\footnotesize\ttfamily int Sol\+To\+Boogie.\+Translator\+Context.\+fresh\+Identifier\+Count = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 103 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Make\+Fresh\+Typed\+Ident().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_ac5cb1ebf26977593d53d2bfed6773855}\label{class_sol_to_boogie_1_1_translator_context_ac5cb1ebf26977593d53d2bfed6773855}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!genInlineAttrInBpl@{genInlineAttrInBpl}}
+\index{genInlineAttrInBpl@{genInlineAttrInBpl}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{genInlineAttrInBpl}{genInlineAttrInBpl}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Context.\+gen\+Inline\+Attr\+In\+Bpl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 109 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a4ff81477517ef0c17979be315ea9f4d2}\label{class_sol_to_boogie_1_1_translator_context_a4ff81477517ef0c17979be315ea9f4d2}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!IgnoreMethods@{IgnoreMethods}}
+\index{IgnoreMethods@{IgnoreMethods}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{IgnoreMethods}{IgnoreMethods}}
+{\footnotesize\ttfamily Hash\+Set$<$Tuple$<$string, string$>$ $>$ Sol\+To\+Boogie.\+Translator\+Context.\+Ignore\+Methods\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 106 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Is\+Method\+In\+Ignored\+Set(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a453da2fd563a76b1e0280207a4d293b2}\label{class_sol_to_boogie_1_1_translator_context_a453da2fd563a76b1e0280207a4d293b2}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!MAX\_GAS\_LIMIT@{MAX\_GAS\_LIMIT}}
+\index{MAX\_GAS\_LIMIT@{MAX\_GAS\_LIMIT}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{MAX\_GAS\_LIMIT}{MAX\_GAS\_LIMIT}}
+{\footnotesize\ttfamily int Sol\+To\+Boogie.\+Translator\+Context.\+MAX\+\_\+\+GAS\+\_\+\+LIMIT = 8000000\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 15 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Trans\+Utils.\+havoc\+Gas().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_af8585e512c9ed80b64d40a18f20612a2}\label{class_sol_to_boogie_1_1_translator_context_af8585e512c9ed80b64d40a18f20612a2}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!MIN\_GAS\_LIMIT@{MIN\_GAS\_LIMIT}}
+\index{MIN\_GAS\_LIMIT@{MIN\_GAS\_LIMIT}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{MIN\_GAS\_LIMIT}{MIN\_GAS\_LIMIT}}
+{\footnotesize\ttfamily int Sol\+To\+Boogie.\+Translator\+Context.\+MIN\+\_\+\+GAS\+\_\+\+LIMIT = 4000000\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 17 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Trans\+Utils.\+havoc\+Gas().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a045f9c47524a3f1900e81f3e0ea559fa}\label{class_sol_to_boogie_1_1_translator_context_a045f9c47524a3f1900e81f3e0ea559fa}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!TX\_GAS\_COST@{TX\_GAS\_COST}}
+\index{TX\_GAS\_COST@{TX\_GAS\_COST}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{TX\_GAS\_COST}{TX\_GAS\_COST}}
+{\footnotesize\ttfamily int Sol\+To\+Boogie.\+Translator\+Context.\+TX\+\_\+\+GAS\+\_\+\+COST = 21000\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 19 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Trans\+Utils.\+Generate\+Choice\+Block().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a6279f9c18281d8a7796d3fb58717c1e2}\label{class_sol_to_boogie_1_1_translator_context_a6279f9c18281d8a7796d3fb58717c1e2}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!usingMap@{usingMap}}
+\index{usingMap@{usingMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{usingMap}{usingMap}}
+{\footnotesize\ttfamily readonly Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_user_defined_type_name}{User\+Defined\+Type\+Name}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_type_name}{Type\+Name}}$>$ $>$ Sol\+To\+Boogie.\+Translator\+Context.\+using\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 113 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a1301659b58c6398e6964a8d14625ad63}\label{class_sol_to_boogie_1_1_translator_context_a1301659b58c6398e6964a8d14625ad63}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ASTNodeToSourceLineNumberMap@{ASTNodeToSourceLineNumberMap}}
+\index{ASTNodeToSourceLineNumberMap@{ASTNodeToSourceLineNumberMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ASTNodeToSourceLineNumberMap}{ASTNodeToSourceLineNumberMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}, int$>$ Sol\+To\+Boogie.\+Translator\+Context.\+ASTNode\+To\+Source\+Line\+Number\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 35 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Source\+Info\+For\+ASTNode(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Line\+Number\+Of\+ASTNode(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a986cd017eb7ea26db5bbb405dd949213}\label{class_sol_to_boogie_1_1_translator_context_a986cd017eb7ea26db5bbb405dd949213}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ASTNodeToSourcePathMap@{ASTNodeToSourcePathMap}}
+\index{ASTNodeToSourcePathMap@{ASTNodeToSourcePathMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ASTNodeToSourcePathMap}{ASTNodeToSourcePathMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}, string$>$ Sol\+To\+Boogie.\+Translator\+Context.\+ASTNode\+To\+Source\+Path\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 32 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Source\+Info\+For\+ASTNode(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Absolute\+Source\+Path\+Of\+ASTNode(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_af3e5f86789a515527574196ef0778dc1}\label{class_sol_to_boogie_1_1_translator_context_af3e5f86789a515527574196ef0778dc1}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ContractDefinitions@{ContractDefinitions}}
+\index{ContractDefinitions@{ContractDefinitions}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ContractDefinitions}{ContractDefinitions}}
+{\footnotesize\ttfamily Hash\+Set$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+Definitions\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 38 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Contract(), Sol\+To\+Boogie.\+Inheritance\+Collector.\+Collect(), Sol\+To\+Boogie.\+Fallback\+Generator.\+Create\+Body\+Of\+Unknown\+Fallback(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate(), Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate\+Body\+Of\+Fallback\+Dispatch(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Constants(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Havoc\+Block(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Struct\+Constructors(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Contract\+By\+Name(), Sol\+To\+Boogie.\+Translator\+Context.\+Has\+Contract\+Name(), Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Resolve\+Functions(), Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Resolve\+State\+Variables(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Revert\+Logic\+Generator(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a8d77f923ee2e38eae5896e4b75cab629}\label{class_sol_to_boogie_1_1_translator_context_a8d77f923ee2e38eae5896e4b75cab629}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ContractToArraysMap@{ContractToArraysMap}}
+\index{ContractToArraysMap@{ContractToArraysMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ContractToArraysMap}{ContractToArraysMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}$>$ $>$ Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Arrays\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 50 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Array\+To\+Contract(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Memory\+Variables(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_ade55eed5548a153ca8fdcfd48e1b1a5a}\label{class_sol_to_boogie_1_1_translator_context_ade55eed5548a153ca8fdcfd48e1b1a5a}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ContractToConstructorMap@{ContractToConstructorMap}}
+\index{ContractToConstructorMap@{ContractToConstructorMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ContractToConstructorMap}{ContractToConstructorMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Constructor\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 54 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Constructor\+To\+Contract(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Constructor\+By\+Contract(), Sol\+To\+Boogie.\+Translator\+Context.\+Is\+Constructor\+Defined(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a68987c44140a0fb92f474c8a9b5baf39}\label{class_sol_to_boogie_1_1_translator_context_a68987c44140a0fb92f474c8a9b5baf39}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ContractToEventsMap@{ContractToEventsMap}}
+\index{ContractToEventsMap@{ContractToEventsMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ContractToEventsMap}{ContractToEventsMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_event_definition}{Event\+Definition}}$>$ $>$ Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Events\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 61 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Event\+To\+Contract(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Event\+Defintions\+In\+Contract(), Sol\+To\+Boogie.\+Translator\+Context.\+Has\+Event\+Name\+In\+Contract(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a66024fff36d6e93edf7b11a984bcb756}\label{class_sol_to_boogie_1_1_translator_context_a66024fff36d6e93edf7b11a984bcb756}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ContractToFallbackMap@{ContractToFallbackMap}}
+\index{ContractToFallbackMap@{ContractToFallbackMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ContractToFallbackMap}{ContractToFallbackMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Fallback\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 58 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Fallback\+To\+Contract(), Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate\+Body\+Of\+Fallback\+Dispatch(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_ad2a73b7923dcabe0f4854c6d9755b35d}\label{class_sol_to_boogie_1_1_translator_context_ad2a73b7923dcabe0f4854c6d9755b35d}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ContractToFuncSigsMap@{ContractToFuncSigsMap}}
+\index{ContractToFuncSigsMap@{ContractToFuncSigsMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ContractToFuncSigsMap}{ContractToFuncSigsMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$string$>$ $>$ Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Func\+Sigs\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 67 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Function\+To\+Contract(), Sol\+To\+Boogie.\+Translator\+Context.\+Has\+Func\+Sig\+In\+Contract(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a8e7e3e7f1c79dc3f8166b39d6c989394}\label{class_sol_to_boogie_1_1_translator_context_a8e7e3e7f1c79dc3f8166b39d6c989394}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ContractToFunctionsMap@{ContractToFunctionsMap}}
+\index{ContractToFunctionsMap@{ContractToFunctionsMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ContractToFunctionsMap}{ContractToFunctionsMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}$>$ $>$ Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Functions\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 66 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Function\+To\+Contract(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Func\+Defintions\+In\+Contract(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Function\+By\+Signature(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a3f151f1836f60af84661adb87beeeb0b}\label{class_sol_to_boogie_1_1_translator_context_a3f151f1836f60af84661adb87beeeb0b}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ContractToMappingsMap@{ContractToMappingsMap}}
+\index{ContractToMappingsMap@{ContractToMappingsMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ContractToMappingsMap}{ContractToMappingsMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}$>$ $>$ Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Mappings\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 48 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Mappingto\+Contract(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Memory\+Variables(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a71905e7e289b57be6d017a7f73c066c5}\label{class_sol_to_boogie_1_1_translator_context_a71905e7e289b57be6d017a7f73c066c5}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ContractToStateVarsMap@{ContractToStateVarsMap}}
+\index{ContractToStateVarsMap@{ContractToStateVarsMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ContractToStateVarsMap}{ContractToStateVarsMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}$>$ $>$ Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+State\+Vars\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 44 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+State\+Var\+To\+Contract(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+State\+Vars\+By\+Contract(), Sol\+To\+Boogie.\+Translator\+Context.\+Has\+State\+Var\+In\+Contract(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_ac4d6acc42954885d835f5d2d00383501}\label{class_sol_to_boogie_1_1_translator_context_ac4d6acc42954885d835f5d2d00383501}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ContractToSubTypesMap@{ContractToSubTypesMap}}
+\index{ContractToSubTypesMap@{ContractToSubTypesMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ContractToSubTypesMap}{ContractToSubTypesMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}$>$ $>$ Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Sub\+Types\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 41 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Sub\+Type\+To\+Contract(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Sub\+Types\+Of\+Contract(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a554595ecf1d55d1de523d23d4673842f}\label{class_sol_to_boogie_1_1_translator_context_a554595ecf1d55d1de523d23d4673842f}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ContractToVisibleFunctionsMap@{ContractToVisibleFunctionsMap}}
+\index{ContractToVisibleFunctionsMap@{ContractToVisibleFunctionsMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ContractToVisibleFunctionsMap}{ContractToVisibleFunctionsMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}$>$ $>$ Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Visible\+Functions\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 73 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Visible\+Function\+To\+Contract(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Visible\+Functions\+By\+Contract(), Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Print\+Visible\+Functions(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a22ffd7369fb61986449a54ea9911e5df}\label{class_sol_to_boogie_1_1_translator_context_a22ffd7369fb61986449a54ea9911e5df}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ContractToVisibleStateVarsMap@{ContractToVisibleStateVarsMap}}
+\index{ContractToVisibleStateVarsMap@{ContractToVisibleStateVarsMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ContractToVisibleStateVarsMap}{ContractToVisibleStateVarsMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Hash\+Set$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}$>$ $>$ Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Visible\+State\+Vars\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 78 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Visible\+State\+Var\+To\+Contract(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Visible\+State\+Vars\+By\+Contract(), Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Print\+Visible\+State\+Vars(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_aa88d576e7841398737d5be357bd8eda7}\label{class_sol_to_boogie_1_1_translator_context_aa88d576e7841398737d5be357bd8eda7}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!EntryPointContract@{EntryPointContract}}
+\index{EntryPointContract@{EntryPointContract}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{EntryPointContract}{EntryPointContract}}
+{\footnotesize\ttfamily String Sol\+To\+Boogie.\+Translator\+Context.\+Entry\+Point\+Contract\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 95 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a03f215660174b95cd4782a37f23b3746}\label{class_sol_to_boogie_1_1_translator_context_a03f215660174b95cd4782a37f23b3746}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!EventToContractMap@{EventToContractMap}}
+\index{EventToContractMap@{EventToContractMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{EventToContractMap}{EventToContractMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_event_definition}{Event\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Event\+To\+Contract\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 62 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a32e89f781570f857c337d67430c3c0ca}\label{class_sol_to_boogie_1_1_translator_context_a32e89f781570f857c337d67430c3c0ca}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!FuncSigResolutionMap@{FuncSigResolutionMap}}
+\index{FuncSigResolutionMap@{FuncSigResolutionMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{FuncSigResolutionMap}{FuncSigResolutionMap}}
+{\footnotesize\ttfamily Dictionary$<$string, Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}$>$ $>$ Sol\+To\+Boogie.\+Translator\+Context.\+Func\+Sig\+Resolution\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 71 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Function\+To\+Dynamic\+Type(), Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Compute\+Visible\+Functions(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+All\+Func\+Definitions(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Function\+By\+Dynamic\+Type(), Sol\+To\+Boogie.\+Translator\+Context.\+Has\+Func\+Sig\+In\+Dynamic\+Type(), Sol\+To\+Boogie.\+Translator\+Context.\+Has\+Func\+Signature(), Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Print\+Function\+Resolution\+Map(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_acedb0a878986380d16b8c744484e9c46}\label{class_sol_to_boogie_1_1_translator_context_acedb0a878986380d16b8c744484e9c46}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!FunctionToContractMap@{FunctionToContractMap}}
+\index{FunctionToContractMap@{FunctionToContractMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{FunctionToContractMap}{FunctionToContractMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Function\+To\+Contract\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 68 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Function\+To\+Contract(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Contract\+By\+Function(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a5c97abcd2456a9a0d7067d8f1f59fdc1}\label{class_sol_to_boogie_1_1_translator_context_a5c97abcd2456a9a0d7067d8f1f59fdc1}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!IdToNodeMap@{IdToNodeMap}}
+\index{IdToNodeMap@{IdToNodeMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{IdToNodeMap}{IdToNodeMap}}
+{\footnotesize\ttfamily Dictionary$<$int, \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Id\+To\+Node\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 27 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Get\+ASTNode\+By\+Id(), Sol\+To\+Boogie.\+Translator\+Context.\+Has\+ASTNode\+Id(), and Sol\+To\+Boogie.\+Boogie\+Translator.\+Translate().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a1c34844d0645ba672cac5cfbd2d9816c}\label{class_sol_to_boogie_1_1_translator_context_a1c34844d0645ba672cac5cfbd2d9816c}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ModifierToBoogiePostImpl@{ModifierToBoogiePostImpl}}
+\index{ModifierToBoogiePostImpl@{ModifierToBoogiePostImpl}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ModifierToBoogiePostImpl}{ModifierToBoogiePostImpl}}
+{\footnotesize\ttfamily Dictionary$<$string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Post\+Impl\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 90 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Modifer\+To\+Post\+Impl(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Modifiers(), Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a515ec4b952d0b887f22be67d32a0eeb2}\label{class_sol_to_boogie_1_1_translator_context_a515ec4b952d0b887f22be67d32a0eeb2}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ModifierToBoogiePostProc@{ModifierToBoogiePostProc}}
+\index{ModifierToBoogiePostProc@{ModifierToBoogiePostProc}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ModifierToBoogiePostProc}{ModifierToBoogiePostProc}}
+{\footnotesize\ttfamily Dictionary$<$string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Post\+Proc\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 84 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Modifer\+To\+Post\+Proc(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Modifiers(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a04b016c35ac04b19181ee5472828d66d}\label{class_sol_to_boogie_1_1_translator_context_a04b016c35ac04b19181ee5472828d66d}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ModifierToBoogiePreImpl@{ModifierToBoogiePreImpl}}
+\index{ModifierToBoogiePreImpl@{ModifierToBoogiePreImpl}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ModifierToBoogiePreImpl}{ModifierToBoogiePreImpl}}
+{\footnotesize\ttfamily Dictionary$<$string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Pre\+Impl\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 87 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Modifer\+To\+Pre\+Impl(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Modifiers(), Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a9202677b69b4d67701618abef38be311}\label{class_sol_to_boogie_1_1_translator_context_a9202677b69b4d67701618abef38be311}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ModifierToBoogiePreProc@{ModifierToBoogiePreProc}}
+\index{ModifierToBoogiePreProc@{ModifierToBoogiePreProc}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ModifierToBoogiePreProc}{ModifierToBoogiePreProc}}
+{\footnotesize\ttfamily Dictionary$<$string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Pre\+Proc\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 81 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Modifer\+To\+Pre\+Proc(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Modifiers(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a9df614e7dfe80013812f40212da138b3}\label{class_sol_to_boogie_1_1_translator_context_a9df614e7dfe80013812f40212da138b3}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!ModifierToPreludeLocalVars@{ModifierToPreludeLocalVars}}
+\index{ModifierToPreludeLocalVars@{ModifierToPreludeLocalVars}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{ModifierToPreludeLocalVars}{ModifierToPreludeLocalVars}}
+{\footnotesize\ttfamily Dictionary$<$string, List$<$\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_local_variable}{Boogie\+Local\+Variable}}$>$ $>$ Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Prelude\+Local\+Vars\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 93 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Prelude\+Locals\+To\+Modifier(), Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a685beb4085ee6cc825bcd1699d98e670}\label{class_sol_to_boogie_1_1_translator_context_a685beb4085ee6cc825bcd1699d98e670}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!Program@{Program}}
+\index{Program@{Program}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{Program}{Program}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_program}{Boogie\+Program}} Sol\+To\+Boogie.\+Translator\+Context.\+Program\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 25 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Axioms(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Boogie\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Boogie\+Record(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Constants(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Constructor\+With\+Base\+Calls(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Choice\+Proc\+For\+Contract(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Default\+Constructor(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Functions(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Global\+Procedure\+Alloc\+Many(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Global\+Procedure\+Fresh(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Global\+Variables(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Houdini\+Vars\+For\+Contract(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Modifiers(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Single\+Memory\+Variable(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Struct\+Constructors(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Types(), Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+Perform\+Mod\+Set\+Analysis(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Revert\+Logic\+Generator(), Sol\+To\+Boogie.\+Boogie\+Translator.\+Translate(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+State\+Var\+Declaration(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Struct\+Definition(), Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a8537051f9218df8eda62edf1fe9d6516}\label{class_sol_to_boogie_1_1_translator_context_a8537051f9218df8eda62edf1fe9d6516}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!SourceDirectory@{SourceDirectory}}
+\index{SourceDirectory@{SourceDirectory}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{SourceDirectory}{SourceDirectory}}
+{\footnotesize\ttfamily string Sol\+To\+Boogie.\+Translator\+Context.\+Source\+Directory\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 29 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Source\+Info\+Collector.\+Common\+End\+Visit(), Sol\+To\+Boogie.\+Boogie\+Translator.\+Translate(), and Sol\+To\+Boogie.\+Source\+Info\+Collector.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_ada31a098e62d613c0c9f120cfb8a83e5}\label{class_sol_to_boogie_1_1_translator_context_ada31a098e62d613c0c9f120cfb8a83e5}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!StateVarNameResolutionMap@{StateVarNameResolutionMap}}
+\index{StateVarNameResolutionMap@{StateVarNameResolutionMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{StateVarNameResolutionMap}{StateVarNameResolutionMap}}
+{\footnotesize\ttfamily Dictionary$<$string, Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}$>$ $>$ Sol\+To\+Boogie.\+Translator\+Context.\+State\+Var\+Name\+Resolution\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 76 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+State\+Var\+To\+Dynamic\+Type(), Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Compute\+Visible\+State\+Variables(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+State\+Var\+By\+Dynamic\+Type(), Sol\+To\+Boogie.\+Translator\+Context.\+Has\+State\+Var\+Name(), Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Print\+State\+Var\+Resolution\+Map(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a232d75eb17446d07f8527692f17fa140}\label{class_sol_to_boogie_1_1_translator_context_a232d75eb17446d07f8527692f17fa140}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!StateVarToContractMap@{StateVarToContractMap}}
+\index{StateVarToContractMap@{StateVarToContractMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{StateVarToContractMap}{StateVarToContractMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}$>$ Sol\+To\+Boogie.\+Translator\+Context.\+State\+Var\+To\+Contract\+Map\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 45 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Context.\+Add\+State\+Var\+To\+Contract(), Sol\+To\+Boogie.\+Trans\+Utils.\+Get\+Canonical\+State\+Variable\+Name(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Contract\+By\+State\+Var\+Decl(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a68dc1d56e211dcc70279e51f9ed9d846}\label{class_sol_to_boogie_1_1_translator_context_a68dc1d56e211dcc70279e51f9ed9d846}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!TranslateFlags@{TranslateFlags}}
+\index{TranslateFlags@{TranslateFlags}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{TranslateFlags}{TranslateFlags}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags}{Translator\+Flags}} Sol\+To\+Boogie.\+Translator\+Context.\+Translate\+Flags\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 98 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Add\+Assume\+For\+Uints(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Add\+Modulo\+Op(), Sol\+To\+Boogie.\+Fallback\+Generator.\+Create\+Body\+Of\+Unknown\+Fallback(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Create\+Send\+Fail(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Create\+Send\+Sucess(), Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Axioms(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Boogie\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Boogie\+Record(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Constructor\+Call(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Constructor\+With\+Base\+Calls(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Default\+Constructor(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Dynamic\+Type\+Assumes(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Functions(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Global\+Procedure\+Alloc\+Many(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Global\+Procedure\+Fresh(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Global\+Variables(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Havoc\+Block(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Initialization\+For\+Array\+State\+Var(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Initialization\+For\+Elementary\+Types(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Initialization\+For\+Mapping\+State\+Var(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Struct\+Constructors(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Types(), Sol\+To\+Boogie.\+Trans\+Utils.\+Get\+Canonical\+Local\+Variable\+Name(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Initialize\+Nested\+Array\+Mapping\+State\+Var(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Instrument\+For\+Printing\+Data(), Sol\+To\+Boogie.\+Procedure\+Translator.\+pre\+Translation\+Action(), Sol\+To\+Boogie.\+Boogie\+Translator.\+Translate(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Dynamic\+Array\+Push(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Dynamic\+Dispatch\+Call(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Send\+Call\+Stmt(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Statement(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+State\+Var\+Declaration(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Transfer\+Call\+Stmt(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Type\+Cast(), Sol\+To\+Boogie.\+Translator\+Context.\+Translator\+Context(), Sol\+To\+Boogie.\+Modifier\+Collector.\+Visit(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_context_a9d9b37f9e748f5e65799c8fdd6644601}\label{class_sol_to_boogie_1_1_translator_context_a9d9b37f9e748f5e65799c8fdd6644601}} 
+\index{SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}!UsingMap@{UsingMap}}
+\index{UsingMap@{UsingMap}!SolToBoogie.TranslatorContext@{SolToBoogie.TranslatorContext}}
+\doxysubsubsection{\texorpdfstring{UsingMap}{UsingMap}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}, Dictionary$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_user_defined_type_name}{User\+Defined\+Type\+Name}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_type_name}{Type\+Name}}$>$ $>$ Sol\+To\+Boogie.\+Translator\+Context.\+Using\+Map\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 100 of file Translator\+Context.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Using\+Library\+Call(), and Sol\+To\+Boogie.\+Using\+Collector.\+Visit().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_translator_context_8cs}{Translator\+Context.\+cs}}\end{DoxyCompactItemize}

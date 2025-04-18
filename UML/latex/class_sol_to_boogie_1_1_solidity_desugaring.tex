@@ -1,0 +1,841 @@
+\hypertarget{class_sol_to_boogie_1_1_solidity_desugaring}{}\doxysection{Sol\+To\+Boogie.\+Solidity\+Desugaring Class Reference}
+\label{class_sol_to_boogie_1_1_solidity_desugaring}\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+
+
+Inheritance diagram for Sol\+To\+Boogie.\+Solidity\+Desugaring\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_solidity_desugaring__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+Solidity\+Desugaring\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_solidity_desugaring__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a2ff510c4daf14a2904ac35d174ad0cbc}{Solidity\+Desugaring}} (\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a1ae194a53868df903dbf702482b990bc}{context}})
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a822dcb148d3a3bde5648401ac4eb887b}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a4010607b9691195dcf86816a1c1d0af7}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a97bbe64b96f96646307d309cf6e18271}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a500e60999d6a6c12b105babf8be58032}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_placeholder_statement}{Placeholder\+Statement}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_aade72053492da0cb15ca15a76be25647}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_if_statement}{If\+Statement}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a86c7fa301ee6f72a81c8f76223712280}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_while_statement}{While\+Statement}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a31f6edacc6bc960c5acde99d01e074d0}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_do_while_statement}{Do\+While\+Statement}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a0e363c7332f6e3c218ac7a79d4933821}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_for_statement}{For\+Statement}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a40d1388a8410474b6c9aa62a4223cd75}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_continue}{Continue}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a50ef8938016fd53f319673d37e44508e}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_break}{Break}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a64006038fdc3eeb36870d8735c88e27b}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_return}{Return}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a4f04f249a025cdd0ca8fc01817e761ab}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_throw}{Throw}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a0b263e909379bbd21beaf827b03fc842}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_emit_statement}{Emit\+Statement}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a640a60de021b3b54e069497203657920}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration_statement}{Variable\+Declaration\+Statement}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a185067fe108d5c0d95dac4c8e182c1b3}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_inline_assembly}{Inline\+Assembly}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a62e01b68e95c0645276be06e6312ee4c}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression_statement}{Expression\+Statement}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a092db7fb87002313c87afb4bdc5de220}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_placeholder_statement}{Placeholder\+Statement}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_aa0b3bc9af0a488c4ab97c79311479388}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_if_statement}{If\+Statement}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a1818dd435b3b1e845563e956a33d558c}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_while_statement}{While\+Statement}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a8edd46ad32214dbd251582e13126598a}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_do_while_statement}{Do\+While\+Statement}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a11ce6ec50ef6b21669423a5b2f121f1d}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_for_statement}{For\+Statement}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a093711828082ffc726a5e9e3bf4f9546}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_continue}{Continue}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a249d8c66e85639013b5ff7a352dae49e}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_break}{Break}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a6bfdac457d473ca033bfbd957dd596f4}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_return}{Return}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a49803738f8e594a09dc140c38e03d5ee}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_throw}{Throw}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_ac8b275f6bab0a2c90829d5fb8ad76ade}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_emit_statement}{Emit\+Statement}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_af2eb9bb8c8bf2264dd28ce6ee2340845}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration_statement}{Variable\+Declaration\+Statement}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_ac60ccb7c490509f56747c73e9f2de22c}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_inline_assembly}{Inline\+Assembly}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a0fb65ffe8cec148342ef29713c1a5be7}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression_statement}{Expression\+Statement}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a26dd099a78e4905bf02234545ef8a9cb}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_call}{Function\+Call}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a80ceba272055ec6fbfb20d8094ff868c}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_call}{Function\+Call}} node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_aea1f20fd2992d5a29f358d2812678110}{Insert\+Statement\+Before}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} function, \mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}} before\+This, \mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}} stmt)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a9291f3485d9f24ddb48812f05e68751a}{Insert\+Statement\+Before\+Impl}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_block}{Block}} block, \mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}} before\+This, \mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}} stmt)
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_block}{Block}} \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a166494abb0096c545386cb9545ee2e10}{Create\+Block\+From\+Two\+Statements}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}} stmt1, \mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}} stmt2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_a1ae194a53868df903dbf702482b990bc}{context}}
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_ab8da23434af41742728357228bfac485}{current\+Contract}}
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_af45066ade31a7447a6d925c591399788}{current\+Function}}
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}} \mbox{\hyperlink{class_sol_to_boogie_1_1_solidity_desugaring_ad9513642a2ee7f8a338bd750bc2de9ad}{current\+Statement}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 10 of file Solidity\+Desugaring.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a2ff510c4daf14a2904ac35d174ad0cbc}\label{class_sol_to_boogie_1_1_solidity_desugaring_a2ff510c4daf14a2904ac35d174ad0cbc}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!SolidityDesugaring@{SolidityDesugaring}}
+\index{SolidityDesugaring@{SolidityDesugaring}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{SolidityDesugaring()}{SolidityDesugaring()}}
+{\footnotesize\ttfamily Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Solidity\+Desugaring (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 23 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+context.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a166494abb0096c545386cb9545ee2e10}\label{class_sol_to_boogie_1_1_solidity_desugaring_a166494abb0096c545386cb9545ee2e10}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!CreateBlockFromTwoStatements@{CreateBlockFromTwoStatements}}
+\index{CreateBlockFromTwoStatements@{CreateBlockFromTwoStatements}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{CreateBlockFromTwoStatements()}{CreateBlockFromTwoStatements()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_block}{Block}} Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Create\+Block\+From\+Two\+Statements (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}}}]{stmt1,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}}}]{stmt2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 332 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Solidity\+AST.\+Block.\+Scope, and Solidity\+AST.\+Block.\+Statements.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Insert\+Statement\+Before\+Impl().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_solidity_desugaring_a166494abb0096c545386cb9545ee2e10_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a249d8c66e85639013b5ff7a352dae49e}\label{class_sol_to_boogie_1_1_solidity_desugaring_a249d8c66e85639013b5ff7a352dae49e}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/15]}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_break}{Break}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a5cc8b04ef5cc58b2164de5d497698397}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 171 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a093711828082ffc726a5e9e3bf4f9546}\label{class_sol_to_boogie_1_1_solidity_desugaring_a093711828082ffc726a5e9e3bf4f9546}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/15]}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_continue}{Continue}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a704018f5ed7f862c905bfb5601f6a142}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 166 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a4010607b9691195dcf86816a1c1d0af7}\label{class_sol_to_boogie_1_1_solidity_desugaring_a4010607b9691195dcf86816a1c1d0af7}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/15]}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_abf1b5dfe60f9bbf5acee08dcc72d8bd5}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 34 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Contract.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a8edd46ad32214dbd251582e13126598a}\label{class_sol_to_boogie_1_1_solidity_desugaring_a8edd46ad32214dbd251582e13126598a}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [4/15]}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_do_while_statement}{Do\+While\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a7e0f56fef50822582433f2f04ab305bc}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 156 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_ac8b275f6bab0a2c90829d5fb8ad76ade}\label{class_sol_to_boogie_1_1_solidity_desugaring_ac8b275f6bab0a2c90829d5fb8ad76ade}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [5/15]}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_emit_statement}{Emit\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a6dde280bedeee317c83c4f11118135d2}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 186 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a0fb65ffe8cec148342ef29713c1a5be7}\label{class_sol_to_boogie_1_1_solidity_desugaring_a0fb65ffe8cec148342ef29713c1a5be7}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [6/15]}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression_statement}{Expression\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a6e4680be286fd1f9bfc9bebb3c5b953e}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 201 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a11ce6ec50ef6b21669423a5b2f121f1d}\label{class_sol_to_boogie_1_1_solidity_desugaring_a11ce6ec50ef6b21669423a5b2f121f1d}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [7/15]}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_for_statement}{For\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_ae478912bb7a9e7918bc552e677393eae}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 161 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a80ceba272055ec6fbfb20d8094ff868c}\label{class_sol_to_boogie_1_1_solidity_desugaring_a80ceba272055ec6fbfb20d8094ff868c}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [8/15]}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_call}{Function\+Call}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_ad107a8b7582eed399466a757d18e7d64}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 252 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_aa0b3bc9af0a488c4ab97c79311479388}\label{class_sol_to_boogie_1_1_solidity_desugaring_aa0b3bc9af0a488c4ab97c79311479388}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [9/15]}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_if_statement}{If\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a14edd84c31a6b3c766c5162fb2f4c507}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 146 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_ac60ccb7c490509f56747c73e9f2de22c}\label{class_sol_to_boogie_1_1_solidity_desugaring_ac60ccb7c490509f56747c73e9f2de22c}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [10/15]}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_inline_assembly}{Inline\+Assembly}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a163bdf789f3d96d9d759292894fca9fe}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 196 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a092db7fb87002313c87afb4bdc5de220}\label{class_sol_to_boogie_1_1_solidity_desugaring_a092db7fb87002313c87afb4bdc5de220}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [11/15]}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_placeholder_statement}{Placeholder\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_aab8fb4c6c9abd7fbe3939287b175d1db}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 141 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a6bfdac457d473ca033bfbd957dd596f4}\label{class_sol_to_boogie_1_1_solidity_desugaring_a6bfdac457d473ca033bfbd957dd596f4}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [12/15]}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_return}{Return}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a956e357a4bc0081234ddfd91c55dd318}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 176 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a49803738f8e594a09dc140c38e03d5ee}\label{class_sol_to_boogie_1_1_solidity_desugaring_a49803738f8e594a09dc140c38e03d5ee}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [13/15]}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_throw}{Throw}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a501f2a2d3f155cd93569448c09e72f75}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 181 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_af2eb9bb8c8bf2264dd28ce6ee2340845}\label{class_sol_to_boogie_1_1_solidity_desugaring_af2eb9bb8c8bf2264dd28ce6ee2340845}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [14/15]}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration_statement}{Variable\+Declaration\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a4dec0412b8d431297f024a91c8e40157}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 191 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a1818dd435b3b1e845563e956a33d558c}\label{class_sol_to_boogie_1_1_solidity_desugaring_a1818dd435b3b1e845563e956a33d558c}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}\hspace{0.1cm}{\footnotesize\ttfamily [15/15]}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_while_statement}{While\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_aac636a7d052f868e22b71f30e5fc6070}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 151 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_aea1f20fd2992d5a29f358d2812678110}\label{class_sol_to_boogie_1_1_solidity_desugaring_aea1f20fd2992d5a29f358d2812678110}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!InsertStatementBefore@{InsertStatementBefore}}
+\index{InsertStatementBefore@{InsertStatementBefore}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{InsertStatementBefore()}{InsertStatementBefore()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Insert\+Statement\+Before (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}}]{function,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}}}]{before\+This,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}}}]{stmt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 258 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Insert\+Statement\+Before\+Impl().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_solidity_desugaring_aea1f20fd2992d5a29f358d2812678110_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a9291f3485d9f24ddb48812f05e68751a}\label{class_sol_to_boogie_1_1_solidity_desugaring_a9291f3485d9f24ddb48812f05e68751a}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!InsertStatementBeforeImpl@{InsertStatementBeforeImpl}}
+\index{InsertStatementBeforeImpl@{InsertStatementBeforeImpl}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{InsertStatementBeforeImpl()}{InsertStatementBeforeImpl()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Insert\+Statement\+Before\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_block}{Block}}}]{block,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}}}]{before\+This,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}}}]{stmt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 263 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Create\+Block\+From\+Two\+Statements(), and Solidity\+AST.\+Block.\+Statements.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Insert\+Statement\+Before().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_solidity_desugaring_a9291f3485d9f24ddb48812f05e68751a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_solidity_desugaring_a9291f3485d9f24ddb48812f05e68751a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a50ef8938016fd53f319673d37e44508e}\label{class_sol_to_boogie_1_1_solidity_desugaring_a50ef8938016fd53f319673d37e44508e}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_break}{Break}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a72ec296032d255ea15a861caed400d39}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 99 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a40d1388a8410474b6c9aa62a4223cd75}\label{class_sol_to_boogie_1_1_solidity_desugaring_a40d1388a8410474b6c9aa62a4223cd75}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_continue}{Continue}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a7e8be2e1cd3871ca32e44381befd790b}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 93 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a822dcb148d3a3bde5648401ac4eb887b}\label{class_sol_to_boogie_1_1_solidity_desugaring_a822dcb148d3a3bde5648401ac4eb887b}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a2dcc371c9e76915a820664dd74e8e02a}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 28 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Contract.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a31f6edacc6bc960c5acde99d01e074d0}\label{class_sol_to_boogie_1_1_solidity_desugaring_a31f6edacc6bc960c5acde99d01e074d0}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [4/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_do_while_statement}{Do\+While\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a975bb1e83b9b818aa2d8e5ba8998e66b}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 81 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a0b263e909379bbd21beaf827b03fc842}\label{class_sol_to_boogie_1_1_solidity_desugaring_a0b263e909379bbd21beaf827b03fc842}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [5/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_emit_statement}{Emit\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a847551a1a21da972c7b92af716d9f05f}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 117 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a62e01b68e95c0645276be06e6312ee4c}\label{class_sol_to_boogie_1_1_solidity_desugaring_a62e01b68e95c0645276be06e6312ee4c}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [6/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression_statement}{Expression\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_acc19f065de2efe1c904fcea050a09cdb}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 135 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a0e363c7332f6e3c218ac7a79d4933821}\label{class_sol_to_boogie_1_1_solidity_desugaring_a0e363c7332f6e3c218ac7a79d4933821}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [7/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_for_statement}{For\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a030ee2fa9d0c0de126bc85266b8ded74}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 87 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a26dd099a78e4905bf02234545ef8a9cb}\label{class_sol_to_boogie_1_1_solidity_desugaring_a26dd099a78e4905bf02234545ef8a9cb}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [8/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_call}{Function\+Call}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a75da50abd12d1911764916fba172eb05}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 206 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Solidity\+AST.\+Function\+Call.\+Expression, Solidity\+AST.\+Function\+Call.\+Msg\+Gas, and Solidity\+AST.\+Function\+Call.\+Msg\+Value.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a97bbe64b96f96646307d309cf6e18271}\label{class_sol_to_boogie_1_1_solidity_desugaring_a97bbe64b96f96646307d309cf6e18271}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [9/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_afc5eb4e5b2ffefac9ab72638d556f952}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 39 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Contract, Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Function, Solidity\+AST.\+Function\+Definition.\+Is\+Constructor, Solidity\+AST.\+Function\+Definition.\+Is\+Fallback, Solidity\+AST.\+Contract\+Definition.\+Name, Solidity\+AST.\+Function\+Definition.\+Name, and Solidity\+AST.\+Function\+Definition.\+Visibility.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_aade72053492da0cb15ca15a76be25647}\label{class_sol_to_boogie_1_1_solidity_desugaring_aade72053492da0cb15ca15a76be25647}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [10/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_if_statement}{If\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a224b624bec9601eb7a337b4acdc10e29}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 69 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a185067fe108d5c0d95dac4c8e182c1b3}\label{class_sol_to_boogie_1_1_solidity_desugaring_a185067fe108d5c0d95dac4c8e182c1b3}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [11/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_inline_assembly}{Inline\+Assembly}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a00d8aa23650b848ade356b33eed50341}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 129 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a500e60999d6a6c12b105babf8be58032}\label{class_sol_to_boogie_1_1_solidity_desugaring_a500e60999d6a6c12b105babf8be58032}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [12/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_placeholder_statement}{Placeholder\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a40d954fb3f19b900f7b406aa32893648}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 63 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a64006038fdc3eeb36870d8735c88e27b}\label{class_sol_to_boogie_1_1_solidity_desugaring_a64006038fdc3eeb36870d8735c88e27b}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [13/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_return}{Return}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_ade9a8cb89e51d38fab742330dfc927b8}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 105 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a4f04f249a025cdd0ca8fc01817e761ab}\label{class_sol_to_boogie_1_1_solidity_desugaring_a4f04f249a025cdd0ca8fc01817e761ab}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [14/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_throw}{Throw}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a5c11a50485147f1765d0096ae977fff5}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 111 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a640a60de021b3b54e069497203657920}\label{class_sol_to_boogie_1_1_solidity_desugaring_a640a60de021b3b54e069497203657920}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [15/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration_statement}{Variable\+Declaration\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_aac2c36af853c6aa0cf36290a4cf99c54}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 123 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a86c7fa301ee6f72a81c8f76223712280}\label{class_sol_to_boogie_1_1_solidity_desugaring_a86c7fa301ee6f72a81c8f76223712280}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [16/16]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_while_statement}{While\+Statement}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a90e3ec60d4a9a09b9a7727cd883bd495}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 75 of file Solidity\+Desugaring.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_a1ae194a53868df903dbf702482b990bc}\label{class_sol_to_boogie_1_1_solidity_desugaring_a1ae194a53868df903dbf702482b990bc}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!context@{context}}
+\index{context@{context}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} Sol\+To\+Boogie.\+Solidity\+Desugaring.\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 12 of file Solidity\+Desugaring.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Solidity\+Desugaring().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_ab8da23434af41742728357228bfac485}\label{class_sol_to_boogie_1_1_solidity_desugaring_ab8da23434af41742728357228bfac485}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!currentContract@{currentContract}}
+\index{currentContract@{currentContract}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{currentContract}{currentContract}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Contract\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 15 of file Solidity\+Desugaring.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit(), and Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_af45066ade31a7447a6d925c591399788}\label{class_sol_to_boogie_1_1_solidity_desugaring_af45066ade31a7447a6d925c591399788}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!currentFunction@{currentFunction}}
+\index{currentFunction@{currentFunction}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{currentFunction}{currentFunction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Function\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 18 of file Solidity\+Desugaring.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_solidity_desugaring_ad9513642a2ee7f8a338bd750bc2de9ad}\label{class_sol_to_boogie_1_1_solidity_desugaring_ad9513642a2ee7f8a338bd750bc2de9ad}} 
+\index{SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}!currentStatement@{currentStatement}}
+\index{currentStatement@{currentStatement}!SolToBoogie.SolidityDesugaring@{SolToBoogie.SolidityDesugaring}}
+\doxysubsubsection{\texorpdfstring{currentStatement}{currentStatement}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}} Sol\+To\+Boogie.\+Solidity\+Desugaring.\+current\+Statement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 21 of file Solidity\+Desugaring.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Solidity\+Desugaring.\+End\+Visit(), and Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Visit().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_solidity_desugaring_8cs}{Solidity\+Desugaring.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,218 @@
+\hypertarget{class_sol_to_boogie_1_1_fallback_generator}{}\doxysection{Sol\+To\+Boogie.\+Fallback\+Generator Class Reference}
+\label{class_sol_to_boogie_1_1_fallback_generator}\index{SolToBoogie.FallbackGenerator@{SolToBoogie.FallbackGenerator}}
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+Fallback\+Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_fallback_generator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_fallback_generator_aca27816a1b0049d538ae1ab2bd1e729b}{Fallback\+Generator}} (\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \+\_\+context)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_fallback_generator_ac25dd4df06f91cc996d5f5153b27b2c5}{Generate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list}{Boogie\+Stmt\+List}} \mbox{\hyperlink{class_sol_to_boogie_1_1_fallback_generator_a62b5e40053470d115115069da1d2a2d4}{Create\+Body\+Of\+Send}} (List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$ in\+Params, List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$ out\+Params, string fb\+Proc\+Name)
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list}{Boogie\+Stmt\+List}} \mbox{\hyperlink{class_sol_to_boogie_1_1_fallback_generator_af692b2b1dc4e2f772b3709cf5ff6cb9e}{Create\+Body\+Of\+Unknown\+Fallback}} (List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$ fb\+Local\+Vars, List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$ in\+Params)
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list}{Boogie\+Stmt\+List}} \mbox{\hyperlink{class_sol_to_boogie_1_1_fallback_generator_a882e97b1f4e75feb9befc26c1d989429}{Generate\+Body\+Of\+Fallback\+Dispatch}} (List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$ in\+Params, string fb\+Unknown\+Proc\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_fallback_generator_a3d43920c8c57fe7ae2635e7d86ff376a}{context}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 16 of file Fallback\+Generator.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_fallback_generator_aca27816a1b0049d538ae1ab2bd1e729b}\label{class_sol_to_boogie_1_1_fallback_generator_aca27816a1b0049d538ae1ab2bd1e729b}} 
+\index{SolToBoogie.FallbackGenerator@{SolToBoogie.FallbackGenerator}!FallbackGenerator@{FallbackGenerator}}
+\index{FallbackGenerator@{FallbackGenerator}!SolToBoogie.FallbackGenerator@{SolToBoogie.FallbackGenerator}}
+\doxysubsubsection{\texorpdfstring{FallbackGenerator()}{FallbackGenerator()}}
+{\footnotesize\ttfamily Sol\+To\+Boogie.\+Fallback\+Generator.\+Fallback\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}}}]{\+\_\+context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 20 of file Fallback\+Generator.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Fallback\+Generator.\+context.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_fallback_generator_a62b5e40053470d115115069da1d2a2d4}\label{class_sol_to_boogie_1_1_fallback_generator_a62b5e40053470d115115069da1d2a2d4}} 
+\index{SolToBoogie.FallbackGenerator@{SolToBoogie.FallbackGenerator}!CreateBodyOfSend@{CreateBodyOfSend}}
+\index{CreateBodyOfSend@{CreateBodyOfSend}!SolToBoogie.FallbackGenerator@{SolToBoogie.FallbackGenerator}}
+\doxysubsubsection{\texorpdfstring{CreateBodyOfSend()}{CreateBodyOfSend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list}{Boogie\+Stmt\+List}} Sol\+To\+Boogie.\+Fallback\+Generator.\+Create\+Body\+Of\+Send (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$}]{in\+Params,  }\item[{List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$}]{out\+Params,  }\item[{string}]{fb\+Proc\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 88 of file Fallback\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Stmt\+List.\+Make\+Singleton\+Stmt\+List().
+
+
+
+Referenced by Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_fallback_generator_a62b5e40053470d115115069da1d2a2d4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_fallback_generator_a62b5e40053470d115115069da1d2a2d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_fallback_generator_af692b2b1dc4e2f772b3709cf5ff6cb9e}\label{class_sol_to_boogie_1_1_fallback_generator_af692b2b1dc4e2f772b3709cf5ff6cb9e}} 
+\index{SolToBoogie.FallbackGenerator@{SolToBoogie.FallbackGenerator}!CreateBodyOfUnknownFallback@{CreateBodyOfUnknownFallback}}
+\index{CreateBodyOfUnknownFallback@{CreateBodyOfUnknownFallback}!SolToBoogie.FallbackGenerator@{SolToBoogie.FallbackGenerator}}
+\doxysubsubsection{\texorpdfstring{CreateBodyOfUnknownFallback()}{CreateBodyOfUnknownFallback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list}{Boogie\+Stmt\+List}} Sol\+To\+Boogie.\+Fallback\+Generator.\+Create\+Body\+Of\+Unknown\+Fallback (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$}]{fb\+Local\+Vars,  }\item[{List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$}]{in\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 115 of file Fallback\+Generator.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Trans\+Utils.\+Collect\+Local\+Vars(), Sol\+To\+Boogie.\+Fallback\+Generator.\+context, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+Definitions, Sol\+To\+Boogie.\+Trans\+Utils.\+Generate\+Choice\+Block(), Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Stubs\+As\+Callbacks(), Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Stubs\+As\+Skips(), and Sol\+To\+Boogie.\+Translator\+Context.\+Translate\+Flags.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_fallback_generator_af692b2b1dc4e2f772b3709cf5ff6cb9e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_fallback_generator_af692b2b1dc4e2f772b3709cf5ff6cb9e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_fallback_generator_ac25dd4df06f91cc996d5f5153b27b2c5}\label{class_sol_to_boogie_1_1_fallback_generator_ac25dd4df06f91cc996d5f5153b27b2c5}} 
+\index{SolToBoogie.FallbackGenerator@{SolToBoogie.FallbackGenerator}!Generate@{Generate}}
+\index{Generate@{Generate}!SolToBoogie.FallbackGenerator@{SolToBoogie.FallbackGenerator}}
+\doxysubsubsection{\texorpdfstring{Generate()}{Generate()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 25 of file Fallback\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Program.\+Add\+Declaration(), Boogie\+AST.\+Boogie\+Stmt\+List.\+Add\+Statement(), Boogie\+AST.\+Boogie\+Stmt\+List.\+Append\+Stmt\+List(), Boogie\+AST.\+Boogie\+Type.\+Bool, Sol\+To\+Boogie.\+Fallback\+Generator.\+context, Sol\+To\+Boogie.\+Fallback\+Generator.\+Create\+Body\+Of\+Send(), Sol\+To\+Boogie.\+Fallback\+Generator.\+Create\+Body\+Of\+Unknown\+Fallback(), Boogie\+AST.\+Boogie\+Program.\+Declarations, Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate\+Body\+Of\+Fallback\+Dispatch(), Sol\+To\+Boogie.\+Translator\+Flags.\+Generate\+Inline\+Attributes, Boogie\+AST.\+Boogie\+Type.\+Int, Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Stubs\+As\+Callbacks(), Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Stubs\+As\+Havocs(), Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Stubs\+As\+Skips(), Sol\+To\+Boogie.\+Translator\+Context.\+Program, Boogie\+AST.\+Boogie\+Type.\+Ref, and Sol\+To\+Boogie.\+Translator\+Context.\+Translate\+Flags.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Boogie\+Translator.\+Translate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_fallback_generator_ac25dd4df06f91cc996d5f5153b27b2c5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_fallback_generator_ac25dd4df06f91cc996d5f5153b27b2c5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_fallback_generator_a882e97b1f4e75feb9befc26c1d989429}\label{class_sol_to_boogie_1_1_fallback_generator_a882e97b1f4e75feb9befc26c1d989429}} 
+\index{SolToBoogie.FallbackGenerator@{SolToBoogie.FallbackGenerator}!GenerateBodyOfFallbackDispatch@{GenerateBodyOfFallbackDispatch}}
+\index{GenerateBodyOfFallbackDispatch@{GenerateBodyOfFallbackDispatch}!SolToBoogie.FallbackGenerator@{SolToBoogie.FallbackGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateBodyOfFallbackDispatch()}{GenerateBodyOfFallbackDispatch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list}{Boogie\+Stmt\+List}} Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate\+Body\+Of\+Fallback\+Dispatch (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$}]{in\+Params,  }\item[{string}]{fb\+Unknown\+Proc\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 145 of file Fallback\+Generator.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Fallback\+Generator.\+context, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+Definitions, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Fallback\+Map, Sol\+To\+Boogie.\+Trans\+Utils.\+Get\+Canonical\+Function\+Name(), and Boogie\+AST.\+Boogie\+Stmt\+List.\+Make\+Singleton\+Stmt\+List().
+
+
+
+Referenced by Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_fallback_generator_a882e97b1f4e75feb9befc26c1d989429_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_fallback_generator_a882e97b1f4e75feb9befc26c1d989429_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_fallback_generator_a3d43920c8c57fe7ae2635e7d86ff376a}\label{class_sol_to_boogie_1_1_fallback_generator_a3d43920c8c57fe7ae2635e7d86ff376a}} 
+\index{SolToBoogie.FallbackGenerator@{SolToBoogie.FallbackGenerator}!context@{context}}
+\index{context@{context}!SolToBoogie.FallbackGenerator@{SolToBoogie.FallbackGenerator}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} Sol\+To\+Boogie.\+Fallback\+Generator.\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 18 of file Fallback\+Generator.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Fallback\+Generator.\+Create\+Body\+Of\+Unknown\+Fallback(), Sol\+To\+Boogie.\+Fallback\+Generator.\+Fallback\+Generator(), Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate(), and Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate\+Body\+Of\+Fallback\+Dispatch().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_fallback_generator_8cs}{Fallback\+Generator.\+cs}}\end{DoxyCompactItemize}

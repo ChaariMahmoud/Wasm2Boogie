@@ -1,0 +1,8 @@
+<map id="SolToBoogie.TransUtils.GenerateChoiceBlock" name="SolToBoogie.TransUtils.GenerateChoiceBlock">
+<area shape="rect" id="node1" title="generate a non&#45;deterministic choice block to call every public visible functions except constructors" alt="" coords="5,71,239,112"/>
+<area shape="rect" id="node2" href="$class_sol_to_boogie_1_1_trans_utils.html#aec663b186414f918588546ef45ac8380" title=" " alt="" coords="295,5,491,47"/>
+<area shape="rect" id="node4" href="$class_sol_to_boogie_1_1_trans_utils.html#a96f57433e661acc376da9d6833383cf2" title=" " alt="" coords="287,71,499,112"/>
+<area shape="rect" id="node5" href="$class_boogie_a_s_t_1_1_boogie_stmt_list.html#acb7e0811182cb44c34f20b552451dd90" title=" " alt="" coords="293,136,492,177"/>
+<area shape="rect" id="node3" href="$class_sol_to_boogie_1_1_translator_context.html#acd54e91d935b88b6a7ff1f1bc3967869" title=" " alt="" coords="547,5,771,47"/>
+<area shape="rect" id="node6" href="$class_boogie_a_s_t_1_1_boogie_stmt_list.html#af985c023b0e6961f120aedb4fd04397a" title=" " alt="" coords="559,136,758,177"/>
+</map>

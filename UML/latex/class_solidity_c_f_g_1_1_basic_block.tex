@@ -1,0 +1,191 @@
+\hypertarget{class_solidity_c_f_g_1_1_basic_block}{}\doxysection{Solidity\+CFG.\+Basic\+Block Class Reference}
+\label{class_solidity_c_f_g_1_1_basic_block}\index{SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}}
+
+
+Collaboration diagram for Solidity\+CFG.\+Basic\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{class_solidity_c_f_g_1_1_basic_block__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_solidity_c_f_g_1_1_basic_block_a3141ecdae8c9883db4febd1d30316963}{Basic\+Block}} ()
+\item 
+List$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}} $>$ \mbox{\hyperlink{class_solidity_c_f_g_1_1_basic_block_acae6d80a41ab3073b73eecf38f263853}{Get\+Expressions}} ()
+\item 
+void \mbox{\hyperlink{class_solidity_c_f_g_1_1_basic_block_aa5479432b38ca9c5e6f7ad1073659b91}{Add\+Expression}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}} expression)
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}} \mbox{\hyperlink{class_solidity_c_f_g_1_1_basic_block_a5ede8727daec27c0be55a27c38cfbf10}{Get\+Predicate}} ()
+\item 
+void \mbox{\hyperlink{class_solidity_c_f_g_1_1_basic_block_a7a1244608a69f81a21297f1649b861f8}{Set\+Predicate}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}} \mbox{\hyperlink{class_solidity_c_f_g_1_1_basic_block_adaa3ec7fd357ad5b9d9e9f109b5dd239}{predicate}})
+\item 
+override string \mbox{\hyperlink{class_solidity_c_f_g_1_1_basic_block_accf7492dba695044245bcbd2511721f8}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}} $>$ \mbox{\hyperlink{class_solidity_c_f_g_1_1_basic_block_ae80a03c16b9cbe0e0bce54b5fac5a525}{expressions}}
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}} \mbox{\hyperlink{class_solidity_c_f_g_1_1_basic_block_adaa3ec7fd357ad5b9d9e9f109b5dd239}{predicate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 72 of file Solidity\+CFG.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_basic_block_a3141ecdae8c9883db4febd1d30316963}\label{class_solidity_c_f_g_1_1_basic_block_a3141ecdae8c9883db4febd1d30316963}} 
+\index{SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}!BasicBlock@{BasicBlock}}
+\index{BasicBlock@{BasicBlock}!SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{BasicBlock()}{BasicBlock()}}
+{\footnotesize\ttfamily Solidity\+CFG.\+Basic\+Block.\+Basic\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 79 of file Solidity\+CFG.\+cs.
+
+
+
+References Solidity\+CFG.\+Basic\+Block.\+expressions, and Solidity\+CFG.\+Basic\+Block.\+predicate.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_basic_block_aa5479432b38ca9c5e6f7ad1073659b91}\label{class_solidity_c_f_g_1_1_basic_block_aa5479432b38ca9c5e6f7ad1073659b91}} 
+\index{SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}!AddExpression@{AddExpression}}
+\index{AddExpression@{AddExpression}!SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{AddExpression()}{AddExpression()}}
+{\footnotesize\ttfamily void Solidity\+CFG.\+Basic\+Block.\+Add\+Expression (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}}}]{expression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 90 of file Solidity\+CFG.\+cs.
+
+
+
+References Solidity\+CFG.\+Basic\+Block.\+expressions.
+
+
+
+Referenced by Solidity\+CFG.\+CFGBuilder.\+Common\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_basic_block_aa5479432b38ca9c5e6f7ad1073659b91_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_basic_block_acae6d80a41ab3073b73eecf38f263853}\label{class_solidity_c_f_g_1_1_basic_block_acae6d80a41ab3073b73eecf38f263853}} 
+\index{SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}!GetExpressions@{GetExpressions}}
+\index{GetExpressions@{GetExpressions}!SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{GetExpressions()}{GetExpressions()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}}$>$ Solidity\+CFG.\+Basic\+Block.\+Get\+Expressions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 85 of file Solidity\+CFG.\+cs.
+
+
+
+References Solidity\+CFG.\+Basic\+Block.\+expressions.
+
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_basic_block_a5ede8727daec27c0be55a27c38cfbf10}\label{class_solidity_c_f_g_1_1_basic_block_a5ede8727daec27c0be55a27c38cfbf10}} 
+\index{SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}!GetPredicate@{GetPredicate}}
+\index{GetPredicate@{GetPredicate}!SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{GetPredicate()}{GetPredicate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}} Solidity\+CFG.\+Basic\+Block.\+Get\+Predicate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 95 of file Solidity\+CFG.\+cs.
+
+
+
+References Solidity\+CFG.\+Basic\+Block.\+predicate.
+
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_basic_block_a7a1244608a69f81a21297f1649b861f8}\label{class_solidity_c_f_g_1_1_basic_block_a7a1244608a69f81a21297f1649b861f8}} 
+\index{SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}!SetPredicate@{SetPredicate}}
+\index{SetPredicate@{SetPredicate}!SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{SetPredicate()}{SetPredicate()}}
+{\footnotesize\ttfamily void Solidity\+CFG.\+Basic\+Block.\+Set\+Predicate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}}}]{predicate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 100 of file Solidity\+CFG.\+cs.
+
+
+
+References Solidity\+CFG.\+Basic\+Block.\+predicate.
+
+
+
+Referenced by Solidity\+CFG.\+CFGBuilder.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_basic_block_a7a1244608a69f81a21297f1649b861f8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_basic_block_accf7492dba695044245bcbd2511721f8}\label{class_solidity_c_f_g_1_1_basic_block_accf7492dba695044245bcbd2511721f8}} 
+\index{SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}!ToString@{ToString}}
+\index{ToString@{ToString}!SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Solidity\+CFG.\+Basic\+Block.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 105 of file Solidity\+CFG.\+cs.
+
+
+
+References Solidity\+CFG.\+Basic\+Block.\+expressions, and Solidity\+CFG.\+Basic\+Block.\+predicate.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_basic_block_ae80a03c16b9cbe0e0bce54b5fac5a525}\label{class_solidity_c_f_g_1_1_basic_block_ae80a03c16b9cbe0e0bce54b5fac5a525}} 
+\index{SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}!expressions@{expressions}}
+\index{expressions@{expressions}!SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{expressions}{expressions}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}}$>$ Solidity\+CFG.\+Basic\+Block.\+expressions\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 74 of file Solidity\+CFG.\+cs.
+
+
+
+Referenced by Solidity\+CFG.\+Basic\+Block.\+Add\+Expression(), Solidity\+CFG.\+Basic\+Block.\+Basic\+Block(), Solidity\+CFG.\+Basic\+Block.\+Get\+Expressions(), and Solidity\+CFG.\+Basic\+Block.\+To\+String().
+
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_basic_block_adaa3ec7fd357ad5b9d9e9f109b5dd239}\label{class_solidity_c_f_g_1_1_basic_block_adaa3ec7fd357ad5b9d9e9f109b5dd239}} 
+\index{SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}!predicate@{predicate}}
+\index{predicate@{predicate}!SolidityCFG.BasicBlock@{SolidityCFG.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{predicate}{predicate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}} Solidity\+CFG.\+Basic\+Block.\+predicate\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 77 of file Solidity\+CFG.\+cs.
+
+
+
+Referenced by Solidity\+CFG.\+Basic\+Block.\+Basic\+Block(), Solidity\+CFG.\+Basic\+Block.\+Get\+Predicate(), Solidity\+CFG.\+Basic\+Block.\+Set\+Predicate(), and Solidity\+CFG.\+Basic\+Block.\+To\+String().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Solidity\+CFG/\mbox{\hyperlink{_solidity_c_f_g_8cs}{Solidity\+CFG.\+cs}}\end{DoxyCompactItemize}

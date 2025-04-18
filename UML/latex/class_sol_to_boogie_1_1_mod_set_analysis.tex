@@ -1,0 +1,230 @@
+\hypertarget{class_sol_to_boogie_1_1_mod_set_analysis}{}\doxysection{Sol\+To\+Boogie.\+Mod\+Set\+Analysis Class Reference}
+\label{class_sol_to_boogie_1_1_mod_set_analysis}\index{SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}}
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+Mod\+Set\+Analysis\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_mod_set_analysis__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_mod_set_analysis_a50dbf7eea88545e68b4fdc7d28dbc865}{Mod\+Set\+Analysis}} (\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_mod_set_analysis_a07988e3a71a5beec2062db1787be0f6b}{context}})
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_mod_set_analysis_a47fd868366a42311111b6e54b4d42a31}{Perform\+Mod\+Set\+Analysis}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_identifier_expr}{Boogie\+Identifier\+Expr}} \mbox{\hyperlink{class_sol_to_boogie_1_1_mod_set_analysis_aa98094d70ca71c1bbb161a9e639a897d}{find\+Outermost\+Identifier\+Expr}} (\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_map_select}{Boogie\+Map\+Select}} select)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_mod_set_analysis_a9c6f1181ae09d119dd7e35d2bbd7532f}{calculate\+Flatten\+Cmd\+Lists}} (List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} $>$ impls)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_mod_set_analysis_a70a01a151257643250c4b27c5c3338ad}{collect\+Boogie\+Cmds}} (\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}} cmd, List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}} $>$ cmds)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_mod_set_analysis_a07988e3a71a5beec2062db1787be0f6b}{context}}
+\item 
+Dictionary$<$ string, Hash\+Set$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_global_variable}{Boogie\+Global\+Variable}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_mod_set_analysis_a3b326dc97619b81d0dacc7cb10eecc49}{mod\+Sets}} = new Dictionary$<$string, Hash\+Set$<$\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_global_variable}{Boogie\+Global\+Variable}}$>$$>$()
+\item 
+Dictionary$<$ string, List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_mod_set_analysis_a74a4e2d5218f0103fbe8a6d260558c4a}{flattened\+Cmd\+Lists}} = new Dictionary$<$string, List$<$\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}}$>$$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 10 of file Mod\+Set\+Analysis.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_mod_set_analysis_a50dbf7eea88545e68b4fdc7d28dbc865}\label{class_sol_to_boogie_1_1_mod_set_analysis_a50dbf7eea88545e68b4fdc7d28dbc865}} 
+\index{SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}!ModSetAnalysis@{ModSetAnalysis}}
+\index{ModSetAnalysis@{ModSetAnalysis}!SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}}
+\doxysubsubsection{\texorpdfstring{ModSetAnalysis()}{ModSetAnalysis()}}
+{\footnotesize\ttfamily Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+Mod\+Set\+Analysis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 18 of file Mod\+Set\+Analysis.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+context.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_mod_set_analysis_a9c6f1181ae09d119dd7e35d2bbd7532f}\label{class_sol_to_boogie_1_1_mod_set_analysis_a9c6f1181ae09d119dd7e35d2bbd7532f}} 
+\index{SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}!calculateFlattenCmdLists@{calculateFlattenCmdLists}}
+\index{calculateFlattenCmdLists@{calculateFlattenCmdLists}!SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}}
+\doxysubsubsection{\texorpdfstring{calculateFlattenCmdLists()}{calculateFlattenCmdLists()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+calculate\+Flatten\+Cmd\+Lists (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} $>$}]{impls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 136 of file Mod\+Set\+Analysis.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+collect\+Boogie\+Cmds(), and Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+flattened\+Cmd\+Lists.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+Perform\+Mod\+Set\+Analysis().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_mod_set_analysis_a9c6f1181ae09d119dd7e35d2bbd7532f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_mod_set_analysis_a9c6f1181ae09d119dd7e35d2bbd7532f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_mod_set_analysis_a70a01a151257643250c4b27c5c3338ad}\label{class_sol_to_boogie_1_1_mod_set_analysis_a70a01a151257643250c4b27c5c3338ad}} 
+\index{SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}!collectBoogieCmds@{collectBoogieCmds}}
+\index{collectBoogieCmds@{collectBoogieCmds}!SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}}
+\doxysubsubsection{\texorpdfstring{collectBoogieCmds()}{collectBoogieCmds()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+collect\+Boogie\+Cmds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}}}]{cmd,  }\item[{List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}} $>$}]{cmds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 149 of file Mod\+Set\+Analysis.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+calculate\+Flatten\+Cmd\+Lists().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_mod_set_analysis_a70a01a151257643250c4b27c5c3338ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_mod_set_analysis_aa98094d70ca71c1bbb161a9e639a897d}\label{class_sol_to_boogie_1_1_mod_set_analysis_aa98094d70ca71c1bbb161a9e639a897d}} 
+\index{SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}!findOutermostIdentifierExpr@{findOutermostIdentifierExpr}}
+\index{findOutermostIdentifierExpr@{findOutermostIdentifierExpr}!SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}}
+\doxysubsubsection{\texorpdfstring{findOutermostIdentifierExpr()}{findOutermostIdentifierExpr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_identifier_expr}{Boogie\+Identifier\+Expr}} Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+find\+Outermost\+Identifier\+Expr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_map_select}{Boogie\+Map\+Select}}}]{select }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 128 of file Mod\+Set\+Analysis.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Map\+Select.\+Base\+Expr.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+Perform\+Mod\+Set\+Analysis().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_mod_set_analysis_aa98094d70ca71c1bbb161a9e639a897d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_mod_set_analysis_a47fd868366a42311111b6e54b4d42a31}\label{class_sol_to_boogie_1_1_mod_set_analysis_a47fd868366a42311111b6e54b4d42a31}} 
+\index{SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}!PerformModSetAnalysis@{PerformModSetAnalysis}}
+\index{PerformModSetAnalysis@{PerformModSetAnalysis}!SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}}
+\doxysubsubsection{\texorpdfstring{PerformModSetAnalysis()}{PerformModSetAnalysis()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+Perform\+Mod\+Set\+Analysis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 23 of file Mod\+Set\+Analysis.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+calculate\+Flatten\+Cmd\+Lists(), Boogie\+AST.\+Boogie\+Call\+Cmd.\+Callee, Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+context, Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+find\+Outermost\+Identifier\+Expr(), Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+flattened\+Cmd\+Lists, Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+mod\+Sets, Boogie\+AST.\+Boogie\+Named\+Decl.\+Name, Boogie\+AST.\+Boogie\+Identifier\+Expr.\+Name, and Sol\+To\+Boogie.\+Translator\+Context.\+Program.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Boogie\+Translator.\+Translate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_mod_set_analysis_a47fd868366a42311111b6e54b4d42a31_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_mod_set_analysis_a47fd868366a42311111b6e54b4d42a31_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_mod_set_analysis_a07988e3a71a5beec2062db1787be0f6b}\label{class_sol_to_boogie_1_1_mod_set_analysis_a07988e3a71a5beec2062db1787be0f6b}} 
+\index{SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}!context@{context}}
+\index{context@{context}!SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 12 of file Mod\+Set\+Analysis.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+Mod\+Set\+Analysis(), and Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+Perform\+Mod\+Set\+Analysis().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_mod_set_analysis_a74a4e2d5218f0103fbe8a6d260558c4a}\label{class_sol_to_boogie_1_1_mod_set_analysis_a74a4e2d5218f0103fbe8a6d260558c4a}} 
+\index{SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}!flattenedCmdLists@{flattenedCmdLists}}
+\index{flattenedCmdLists@{flattenedCmdLists}!SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}}
+\doxysubsubsection{\texorpdfstring{flattenedCmdLists}{flattenedCmdLists}}
+{\footnotesize\ttfamily Dictionary$<$string, List$<$\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}}$>$ $>$ Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+flattened\+Cmd\+Lists = new Dictionary$<$string, List$<$\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}}$>$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 16 of file Mod\+Set\+Analysis.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+calculate\+Flatten\+Cmd\+Lists(), and Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+Perform\+Mod\+Set\+Analysis().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_mod_set_analysis_a3b326dc97619b81d0dacc7cb10eecc49}\label{class_sol_to_boogie_1_1_mod_set_analysis_a3b326dc97619b81d0dacc7cb10eecc49}} 
+\index{SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}!modSets@{modSets}}
+\index{modSets@{modSets}!SolToBoogie.ModSetAnalysis@{SolToBoogie.ModSetAnalysis}}
+\doxysubsubsection{\texorpdfstring{modSets}{modSets}}
+{\footnotesize\ttfamily Dictionary$<$string, Hash\+Set$<$\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_global_variable}{Boogie\+Global\+Variable}}$>$ $>$ Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+mod\+Sets = new Dictionary$<$string, Hash\+Set$<$\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_global_variable}{Boogie\+Global\+Variable}}$>$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 14 of file Mod\+Set\+Analysis.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Mod\+Set\+Analysis.\+Perform\+Mod\+Set\+Analysis().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_mod_set_analysis_8cs}{Mod\+Set\+Analysis.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,162 @@
+\hypertarget{class_solidity_a_s_t_1_1_block}{}\doxysection{Solidity\+AST.\+Block Class Reference}
+\label{class_solidity_a_s_t_1_1_block}\index{SolidityAST.Block@{SolidityAST.Block}}
+
+
+Inheritance diagram for Solidity\+AST.\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{class_solidity_a_s_t_1_1_block__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Solidity\+AST.\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{class_solidity_a_s_t_1_1_block__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_solidity_a_s_t_1_1_block_a52a079699067cc758ab6ca789dd34830}{Accept}} (\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_visitor}{IASTVisitor}} visitor)
+\item 
+override T \mbox{\hyperlink{class_solidity_a_s_t_1_1_block_a9fe7ca50aabcaae9df091e5db2d8b556}{Accept$<$ T $>$}} (\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_generic_visitor}{IASTGeneric\+Visitor}}$<$ T $>$ visitor)
+\item 
+override string \mbox{\hyperlink{class_solidity_a_s_t_1_1_block_a5f8ea1e41536ae6ba8172d77954d305e}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_solidity_a_s_t_1_1_block_a2b1e3d118c8b9035c326bf132bd29d11}{Scope}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}} $>$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_block_a2fc3f0abc074ccdf233052bbda34a67e}{Statements}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 952 of file Solidity\+AST.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_block_a52a079699067cc758ab6ca789dd34830}\label{class_solidity_a_s_t_1_1_block_a52a079699067cc758ab6ca789dd34830}} 
+\index{SolidityAST.Block@{SolidityAST.Block}!Accept@{Accept}}
+\index{Accept@{Accept}!SolidityAST.Block@{SolidityAST.Block}}
+\doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily override void Solidity\+AST.\+Block.\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_visitor}{IASTVisitor}}}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a31655aeae6213266768f8f5182ba5fec}{Solidity\+AST.\+ASTNode}}.
+
+
+
+Definition at line 958 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+IASTVisitor.\+End\+Visit(), Solidity\+AST.\+Block.\+Statements, and Solidity\+AST.\+IASTVisitor.\+Visit().
+
+
+
+Referenced by Solidity\+AST.\+Function\+Definition.\+Accept(), and Solidity\+AST.\+Modifier\+Definition.\+Accept().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_block_a52a079699067cc758ab6ca789dd34830_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_block_a52a079699067cc758ab6ca789dd34830_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_block_a9fe7ca50aabcaae9df091e5db2d8b556}\label{class_solidity_a_s_t_1_1_block_a9fe7ca50aabcaae9df091e5db2d8b556}} 
+\index{SolidityAST.Block@{SolidityAST.Block}!Accept$<$ T $>$@{Accept$<$ T $>$}}
+\index{Accept$<$ T $>$@{Accept$<$ T $>$}!SolidityAST.Block@{SolidityAST.Block}}
+\doxysubsubsection{\texorpdfstring{Accept$<$ T $>$()}{Accept< T >()}}
+{\footnotesize\ttfamily override T \mbox{\hyperlink{class_solidity_a_s_t_1_1_block_a52a079699067cc758ab6ca789dd34830}{Solidity\+AST.\+Block.\+Accept}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_generic_visitor}{IASTGeneric\+Visitor}}$<$ T $>$}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a57b9fd6602c95260988f9cc6f1729200}{Solidity\+AST.\+ASTNode}}.
+
+
+
+Definition at line 967 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+IASTGeneric\+Visitor$<$ T $>$.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_block_a9fe7ca50aabcaae9df091e5db2d8b556_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_block_a5f8ea1e41536ae6ba8172d77954d305e}\label{class_solidity_a_s_t_1_1_block_a5f8ea1e41536ae6ba8172d77954d305e}} 
+\index{SolidityAST.Block@{SolidityAST.Block}!ToString@{ToString}}
+\index{ToString@{ToString}!SolidityAST.Block@{SolidityAST.Block}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Solidity\+AST.\+Block.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 972 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+Block.\+Statements.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_block_a2b1e3d118c8b9035c326bf132bd29d11}\label{class_solidity_a_s_t_1_1_block_a2b1e3d118c8b9035c326bf132bd29d11}} 
+\index{SolidityAST.Block@{SolidityAST.Block}!Scope@{Scope}}
+\index{Scope@{Scope}!SolidityAST.Block@{SolidityAST.Block}}
+\doxysubsubsection{\texorpdfstring{Scope}{Scope}}
+{\footnotesize\ttfamily int Solidity\+AST.\+Block.\+Scope\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 954 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Create\+Block\+From\+Two\+Statements().
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_block_a2fc3f0abc074ccdf233052bbda34a67e}\label{class_solidity_a_s_t_1_1_block_a2fc3f0abc074ccdf233052bbda34a67e}} 
+\index{SolidityAST.Block@{SolidityAST.Block}!Statements@{Statements}}
+\index{Statements@{Statements}!SolidityAST.Block@{SolidityAST.Block}}
+\doxysubsubsection{\texorpdfstring{Statements}{Statements}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}}$>$ Solidity\+AST.\+Block.\+Statements\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 956 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+Block.\+Accept(), Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Create\+Block\+From\+Two\+Statements(), Sol\+To\+Boogie.\+Solidity\+Desugaring.\+Insert\+Statement\+Before\+Impl(), and Solidity\+AST.\+Block.\+To\+String().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Solidity\+AST/\mbox{\hyperlink{_solidity_a_s_t_8cs}{Solidity\+AST.\+cs}}\end{DoxyCompactItemize}

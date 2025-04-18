@@ -1,0 +1,8 @@
+<map id="SolToBoogie.SourceInfoCollector" name="SolToBoogie.SourceInfoCollector">
+<area shape="rect" id="node1" title=" " alt="" coords="209,2252,441,2403"/>
+<area shape="rect" id="node2" href="$class_solidity_a_s_t_1_1_basic_a_s_t_visitor.html" title=" " alt="" coords="5,1107,164,1947"/>
+<area shape="rect" id="node3" href="$interface_solidity_a_s_t_1_1_i_a_s_t_visitor.html" title=" " alt="" coords="27,5,143,816"/>
+<area shape="rect" id="node4" href="$class_sol_to_boogie_1_1_translator_context.html" title=" " alt="" coords="188,865,461,2189"/>
+<area shape="rect" id="node5" href="$class_solidity_a_s_t_1_1_source_unit.html" title=" " alt="" coords="486,1459,657,1595"/>
+<area shape="rect" id="node6" href="$class_solidity_a_s_t_1_1_a_s_t_node.html" title=" " alt="" coords="507,343,636,479"/>
+</map>

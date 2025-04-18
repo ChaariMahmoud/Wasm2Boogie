@@ -1,0 +1,6 @@
+<map id="SolToBoogie.StateVariableCollector" name="SolToBoogie.StateVariableCollector">
+<area shape="rect" id="node1" title=" " alt="" coords="169,2252,361,2359"/>
+<area shape="rect" id="node2" href="$class_solidity_a_s_t_1_1_basic_a_s_t_visitor.html" title=" " alt="" coords="5,1107,164,1947"/>
+<area shape="rect" id="node3" href="$interface_solidity_a_s_t_1_1_i_a_s_t_visitor.html" title=" " alt="" coords="27,5,143,816"/>
+<area shape="rect" id="node4" href="$class_sol_to_boogie_1_1_translator_context.html" title=" " alt="" coords="188,865,461,2189"/>
+</map>

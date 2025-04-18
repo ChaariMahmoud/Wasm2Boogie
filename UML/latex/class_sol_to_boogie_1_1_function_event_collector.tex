@@ -1,0 +1,194 @@
+\hypertarget{class_sol_to_boogie_1_1_function_event_collector}{}\doxysection{Sol\+To\+Boogie.\+Function\+Event\+Collector Class Reference}
+\label{class_sol_to_boogie_1_1_function_event_collector}\index{SolToBoogie.FunctionEventCollector@{SolToBoogie.FunctionEventCollector}}
+
+
+Inheritance diagram for Sol\+To\+Boogie.\+Function\+Event\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_function_event_collector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+Function\+Event\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_function_event_collector__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_collector_adccab9b2ed0ae5a348905f59a412e326}{Function\+Event\+Collector}} (\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_collector_a796892e9fca4847bba1931ba7c1038af}{context}})
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_collector_a08c8be73f02a1d0b9e657d33e10fc952}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_collector_a6c673c08bc56d71dc1292ff19774f2a6}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_collector_a33c1956187b3d2223a1cbec9a9920ce8}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_event_definition}{Event\+Definition}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_collector_a58723cd1de33a65f6ea9b3ac57612105}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_collector_a796892e9fca4847bba1931ba7c1038af}{context}}
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} \mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_collector_aa3820840fa9cdc7088b3d0a7cad80af4}{current\+Contract}} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Collect all function/event definitions and put them in the translator context. The result map only contains functions/events directly defined in each contract, but does not contain inherited functions/events. 
+
+Definition at line 13 of file Function\+Event\+Collector.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_function_event_collector_adccab9b2ed0ae5a348905f59a412e326}\label{class_sol_to_boogie_1_1_function_event_collector_adccab9b2ed0ae5a348905f59a412e326}} 
+\index{SolToBoogie.FunctionEventCollector@{SolToBoogie.FunctionEventCollector}!FunctionEventCollector@{FunctionEventCollector}}
+\index{FunctionEventCollector@{FunctionEventCollector}!SolToBoogie.FunctionEventCollector@{SolToBoogie.FunctionEventCollector}}
+\doxysubsubsection{\texorpdfstring{FunctionEventCollector()}{FunctionEventCollector()}}
+{\footnotesize\ttfamily Sol\+To\+Boogie.\+Function\+Event\+Collector.\+Function\+Event\+Collector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 20 of file Function\+Event\+Collector.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Function\+Event\+Collector.\+context.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_function_event_collector_a6c673c08bc56d71dc1292ff19774f2a6}\label{class_sol_to_boogie_1_1_function_event_collector_a6c673c08bc56d71dc1292ff19774f2a6}} 
+\index{SolToBoogie.FunctionEventCollector@{SolToBoogie.FunctionEventCollector}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.FunctionEventCollector@{SolToBoogie.FunctionEventCollector}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Function\+Event\+Collector.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_abf1b5dfe60f9bbf5acee08dcc72d8bd5}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 31 of file Function\+Event\+Collector.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Function\+Event\+Collector.\+current\+Contract.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_function_event_collector_a08c8be73f02a1d0b9e657d33e10fc952}\label{class_sol_to_boogie_1_1_function_event_collector_a08c8be73f02a1d0b9e657d33e10fc952}} 
+\index{SolToBoogie.FunctionEventCollector@{SolToBoogie.FunctionEventCollector}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.FunctionEventCollector@{SolToBoogie.FunctionEventCollector}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Function\+Event\+Collector.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a2dcc371c9e76915a820664dd74e8e02a}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 25 of file Function\+Event\+Collector.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Function\+Event\+Collector.\+current\+Contract.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_function_event_collector_a33c1956187b3d2223a1cbec9a9920ce8}\label{class_sol_to_boogie_1_1_function_event_collector_a33c1956187b3d2223a1cbec9a9920ce8}} 
+\index{SolToBoogie.FunctionEventCollector@{SolToBoogie.FunctionEventCollector}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.FunctionEventCollector@{SolToBoogie.FunctionEventCollector}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Function\+Event\+Collector.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_event_definition}{Event\+Definition}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_aca5cc3188d8098c7a64a2c00c7819d84}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 36 of file Function\+Event\+Collector.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Event\+To\+Contract(), Sol\+To\+Boogie.\+Function\+Event\+Collector.\+context, and Sol\+To\+Boogie.\+Function\+Event\+Collector.\+current\+Contract.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_function_event_collector_a33c1956187b3d2223a1cbec9a9920ce8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_function_event_collector_a58723cd1de33a65f6ea9b3ac57612105}\label{class_sol_to_boogie_1_1_function_event_collector_a58723cd1de33a65f6ea9b3ac57612105}} 
+\index{SolToBoogie.FunctionEventCollector@{SolToBoogie.FunctionEventCollector}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.FunctionEventCollector@{SolToBoogie.FunctionEventCollector}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Function\+Event\+Collector.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_afc5eb4e5b2ffefac9ab72638d556f952}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 43 of file Function\+Event\+Collector.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Function\+To\+Contract(), Sol\+To\+Boogie.\+Function\+Event\+Collector.\+context, and Sol\+To\+Boogie.\+Function\+Event\+Collector.\+current\+Contract.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_function_event_collector_a58723cd1de33a65f6ea9b3ac57612105_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_function_event_collector_a796892e9fca4847bba1931ba7c1038af}\label{class_sol_to_boogie_1_1_function_event_collector_a796892e9fca4847bba1931ba7c1038af}} 
+\index{SolToBoogie.FunctionEventCollector@{SolToBoogie.FunctionEventCollector}!context@{context}}
+\index{context@{context}!SolToBoogie.FunctionEventCollector@{SolToBoogie.FunctionEventCollector}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} Sol\+To\+Boogie.\+Function\+Event\+Collector.\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 15 of file Function\+Event\+Collector.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Function\+Event\+Collector.\+Function\+Event\+Collector(), and Sol\+To\+Boogie.\+Function\+Event\+Collector.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_function_event_collector_aa3820840fa9cdc7088b3d0a7cad80af4}\label{class_sol_to_boogie_1_1_function_event_collector_aa3820840fa9cdc7088b3d0a7cad80af4}} 
+\index{SolToBoogie.FunctionEventCollector@{SolToBoogie.FunctionEventCollector}!currentContract@{currentContract}}
+\index{currentContract@{currentContract}!SolToBoogie.FunctionEventCollector@{SolToBoogie.FunctionEventCollector}}
+\doxysubsubsection{\texorpdfstring{currentContract}{currentContract}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} Sol\+To\+Boogie.\+Function\+Event\+Collector.\+current\+Contract = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 18 of file Function\+Event\+Collector.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Function\+Event\+Collector.\+End\+Visit(), and Sol\+To\+Boogie.\+Function\+Event\+Collector.\+Visit().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_function_event_collector_8cs}{Function\+Event\+Collector.\+cs}}\end{DoxyCompactItemize}

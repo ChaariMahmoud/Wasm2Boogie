@@ -1,0 +1,222 @@
+\hypertarget{class_sol_to_boogie_1_1_state_variable_resolver}{}\doxysection{Sol\+To\+Boogie.\+State\+Variable\+Resolver Class Reference}
+\label{class_sol_to_boogie_1_1_state_variable_resolver}\index{SolToBoogie.StateVariableResolver@{SolToBoogie.StateVariableResolver}}
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+State\+Variable\+Resolver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_state_variable_resolver__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_state_variable_resolver_ac4340009c69318064a1df1df3d80d403}{State\+Variable\+Resolver}} (\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_state_variable_resolver_a3b4f499cf3ac20939f033522d44bf593}{context}})
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_state_variable_resolver_a76e55ff1c7633da259728fc427813feb}{Resolve}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_state_variable_resolver_a8500dc29c27941600c2a486feed85893}{Resolve\+State\+Variables}} ()
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_state_variable_resolver_a986595f7ada77ffbebae27e15cc42be8}{Compute\+Visible\+State\+Variables}} ()
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_state_variable_resolver_a3c264afb5096647733ff0a208709ae27}{Print\+State\+Var\+Resolution\+Map}} ()
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_state_variable_resolver_addd97ec9ac45836cebc51fbb08de7bdc}{Print\+Visible\+State\+Vars}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_state_variable_resolver_a3b4f499cf3ac20939f033522d44bf593}{context}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Determine the visible state variables for each contract considering the inheritance hierarchy, and put the information in the context. 
+
+Definition at line 14 of file State\+Variable\+Resolver.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_state_variable_resolver_ac4340009c69318064a1df1df3d80d403}\label{class_sol_to_boogie_1_1_state_variable_resolver_ac4340009c69318064a1df1df3d80d403}} 
+\index{SolToBoogie.StateVariableResolver@{SolToBoogie.StateVariableResolver}!StateVariableResolver@{StateVariableResolver}}
+\index{StateVariableResolver@{StateVariableResolver}!SolToBoogie.StateVariableResolver@{SolToBoogie.StateVariableResolver}}
+\doxysubsubsection{\texorpdfstring{StateVariableResolver()}{StateVariableResolver()}}
+{\footnotesize\ttfamily Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+State\+Variable\+Resolver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 18 of file State\+Variable\+Resolver.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+context.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_state_variable_resolver_a986595f7ada77ffbebae27e15cc42be8}\label{class_sol_to_boogie_1_1_state_variable_resolver_a986595f7ada77ffbebae27e15cc42be8}} 
+\index{SolToBoogie.StateVariableResolver@{SolToBoogie.StateVariableResolver}!ComputeVisibleStateVariables@{ComputeVisibleStateVariables}}
+\index{ComputeVisibleStateVariables@{ComputeVisibleStateVariables}!SolToBoogie.StateVariableResolver@{SolToBoogie.StateVariableResolver}}
+\doxysubsubsection{\texorpdfstring{ComputeVisibleStateVariables()}{ComputeVisibleStateVariables()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Compute\+Visible\+State\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 71 of file State\+Variable\+Resolver.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Visible\+State\+Var\+To\+Contract(), Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+context, and Sol\+To\+Boogie.\+Translator\+Context.\+State\+Var\+Name\+Resolution\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Resolve().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_state_variable_resolver_a986595f7ada77ffbebae27e15cc42be8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_state_variable_resolver_a986595f7ada77ffbebae27e15cc42be8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_state_variable_resolver_a3c264afb5096647733ff0a208709ae27}\label{class_sol_to_boogie_1_1_state_variable_resolver_a3c264afb5096647733ff0a208709ae27}} 
+\index{SolToBoogie.StateVariableResolver@{SolToBoogie.StateVariableResolver}!PrintStateVarResolutionMap@{PrintStateVarResolutionMap}}
+\index{PrintStateVarResolutionMap@{PrintStateVarResolutionMap}!SolToBoogie.StateVariableResolver@{SolToBoogie.StateVariableResolver}}
+\doxysubsubsection{\texorpdfstring{PrintStateVarResolutionMap()}{PrintStateVarResolutionMap()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Print\+State\+Var\+Resolution\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 85 of file State\+Variable\+Resolver.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+context, Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Contract\+By\+State\+Var\+Decl(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+State\+Var\+By\+Dynamic\+Type(), Solidity\+AST.\+Contract\+Definition.\+Name, Solidity\+AST.\+Variable\+Declaration.\+Name, and Sol\+To\+Boogie.\+Translator\+Context.\+State\+Var\+Name\+Resolution\+Map.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_state_variable_resolver_a3c264afb5096647733ff0a208709ae27_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_state_variable_resolver_addd97ec9ac45836cebc51fbb08de7bdc}\label{class_sol_to_boogie_1_1_state_variable_resolver_addd97ec9ac45836cebc51fbb08de7bdc}} 
+\index{SolToBoogie.StateVariableResolver@{SolToBoogie.StateVariableResolver}!PrintVisibleStateVars@{PrintVisibleStateVars}}
+\index{PrintVisibleStateVars@{PrintVisibleStateVars}!SolToBoogie.StateVariableResolver@{SolToBoogie.StateVariableResolver}}
+\doxysubsubsection{\texorpdfstring{PrintVisibleStateVars()}{PrintVisibleStateVars()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Print\+Visible\+State\+Vars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 100 of file State\+Variable\+Resolver.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+context, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Visible\+State\+Vars\+Map, and Solidity\+AST.\+Contract\+Definition.\+Name.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_state_variable_resolver_a76e55ff1c7633da259728fc427813feb}\label{class_sol_to_boogie_1_1_state_variable_resolver_a76e55ff1c7633da259728fc427813feb}} 
+\index{SolToBoogie.StateVariableResolver@{SolToBoogie.StateVariableResolver}!Resolve@{Resolve}}
+\index{Resolve@{Resolve}!SolToBoogie.StateVariableResolver@{SolToBoogie.StateVariableResolver}}
+\doxysubsubsection{\texorpdfstring{Resolve()}{Resolve()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Resolve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 23 of file State\+Variable\+Resolver.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Compute\+Visible\+State\+Variables(), and Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Resolve\+State\+Variables().
+
+
+
+Referenced by Sol\+To\+Boogie.\+Boogie\+Translator.\+Translate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_state_variable_resolver_a76e55ff1c7633da259728fc427813feb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_state_variable_resolver_a76e55ff1c7633da259728fc427813feb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_state_variable_resolver_a8500dc29c27941600c2a486feed85893}\label{class_sol_to_boogie_1_1_state_variable_resolver_a8500dc29c27941600c2a486feed85893}} 
+\index{SolToBoogie.StateVariableResolver@{SolToBoogie.StateVariableResolver}!ResolveStateVariables@{ResolveStateVariables}}
+\index{ResolveStateVariables@{ResolveStateVariables}!SolToBoogie.StateVariableResolver@{SolToBoogie.StateVariableResolver}}
+\doxysubsubsection{\texorpdfstring{ResolveStateVariables()}{ResolveStateVariables()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Resolve\+State\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 29 of file State\+Variable\+Resolver.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Add\+State\+Var\+To\+Dynamic\+Type(), Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+context, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+Definitions, Sol\+To\+Boogie.\+Translator\+Context.\+Get\+ASTNode\+By\+Id(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+State\+Vars\+By\+Contract(), Solidity\+AST.\+Contract\+Definition.\+Linearized\+Base\+Contracts, Solidity\+AST.\+Variable\+Declaration.\+Name, Sol\+To\+Boogie.\+Resolution\+Helper.\+Topological\+Sort\+By\+Dependency(), and Solidity\+AST.\+Variable\+Declaration.\+Visibility.
+
+
+
+Referenced by Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Resolve().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_state_variable_resolver_a8500dc29c27941600c2a486feed85893_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_state_variable_resolver_a8500dc29c27941600c2a486feed85893_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_state_variable_resolver_a3b4f499cf3ac20939f033522d44bf593}\label{class_sol_to_boogie_1_1_state_variable_resolver_a3b4f499cf3ac20939f033522d44bf593}} 
+\index{SolToBoogie.StateVariableResolver@{SolToBoogie.StateVariableResolver}!context@{context}}
+\index{context@{context}!SolToBoogie.StateVariableResolver@{SolToBoogie.StateVariableResolver}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 16 of file State\+Variable\+Resolver.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Compute\+Visible\+State\+Variables(), Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Print\+State\+Var\+Resolution\+Map(), Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Print\+Visible\+State\+Vars(), Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Resolve\+State\+Variables(), and Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+State\+Variable\+Resolver().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_state_variable_resolver_8cs}{State\+Variable\+Resolver.\+cs}}\end{DoxyCompactItemize}

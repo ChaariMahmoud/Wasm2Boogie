@@ -1,0 +1,6 @@
+<map id="VeriSolRunner.ExternalTools.ToolManager" name="VeriSolRunner.ExternalTools.ToolManager">
+<area shape="rect" id="node1" title=" " alt="" coords="107,5,342,185"/>
+<area shape="rect" id="node2" href="$class_veri_sol_runner_1_1_external_tools_1_1_dotnet_cli_tool_manager.html" title=" " alt="" coords="5,321,212,472"/>
+<area shape="rect" id="node3" href="$class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager.html" title=" " alt="" coords="237,233,447,560"/>
+<area shape="rect" id="node4" href="$class_veri_sol_runner_1_1_external_tools_1_1_solc_manager.html" title=" " alt="" coords="239,608,445,715"/>
+</map>

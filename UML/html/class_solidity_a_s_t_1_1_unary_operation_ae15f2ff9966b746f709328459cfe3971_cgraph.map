@@ -1,0 +1,6 @@
+<map id="SolidityAST.UnaryOperation.Accept" name="SolidityAST.UnaryOperation.Accept">
+<area shape="rect" id="node1" title=" " alt="" coords="5,57,212,98"/>
+<area shape="rect" id="node2" href="$class_solidity_a_s_t_1_1_a_s_t_node.html#a31655aeae6213266768f8f5182ba5fec" title=" " alt="" coords="260,5,467,32"/>
+<area shape="rect" id="node3" href="$interface_solidity_a_s_t_1_1_i_a_s_t_visitor.html#a7710ac3ceaf6ec668c0ba5c6f6003dcd" title=" " alt="" coords="277,57,450,98"/>
+<area shape="rect" id="node4" href="$interface_solidity_a_s_t_1_1_i_a_s_t_visitor.html#aaf5a4b14ed79dbc96d641c540934ab4f" title=" " alt="" coords="277,122,450,163"/>
+</map>

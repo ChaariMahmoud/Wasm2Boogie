@@ -1,0 +1,268 @@
+\hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation}{}\doxysection{Boogie\+AST.\+Boogie\+Binary\+Operation Class Reference}
+\label{class_boogie_a_s_t_1_1_boogie_binary_operation}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}
+
+
+Inheritance diagram for Boogie\+AST.\+Boogie\+Binary\+Operation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{class_boogie_a_s_t_1_1_boogie_binary_operation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Boogie\+AST.\+Boogie\+Binary\+Operation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{class_boogie_a_s_t_1_1_boogie_binary_operation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13}{Opcode}} \{ \newline
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a9eeb52badb613229884838847294b90d}{ADD}}
+, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a241dd841abade20fcb27b8a9f494e1eb}{SUB}}
+, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a2cdf52a55876063ec93b7d18bc741f6c}{MUL}}
+, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a29bbf66f7f8529ec47e394fb5a36c646}{DIV}}
+, \newline
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13ac5a28f4b35a2884fa3277150ac5d0967}{MOD}}
+, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a2dcbad7477fd40561e8b8198f173bd47}{EQ}}
+, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a375b332cf2e0c6d522baf007ef7cb554}{NEQ}}
+, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13acd6a9bd2a175104eed40f0d33a8b4020}{GT}}
+, \newline
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13af803729628adf4199f224c2a225038e9}{GE}}
+, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13ac562607189d77eb9dfb707464c1e7b0b}{LT}}
+, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13acfe6055d2e0503be378bb63449ec7ba6}{LE}}
+, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a558ffc8f5770d8e4f95f51d822685532}{AND}}
+, \newline
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a1d00e7dce692e8dc3f6877f035e3a616}{OR}}
+, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a6ebec19cf0a3a609354a05acde9ca8af}{IMP}}
+, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13ac1cbcd58f852f8efa45845cf292e350c}{IFF}}
+, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a696b031073e74bf2cb98e5ef201d4aa3}{UNKNOWN}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_a192ca481ebe22c85936201fd9378bbd2}{Boogie\+Binary\+Operation}} (\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13}{Opcode}} op, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} lhs, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} rhs)
+\item 
+override string \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_a1f32c5f2a748df66e39cdca94760cb9a}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_a16be78a7fef287687e1305604412607d}{Opcode\+To\+String}} (\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13}{Opcode}} op)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13}{Opcode}} \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_af0e84666c398fafebfa32a7d9b2c8be8}{Op}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_a41c66128395e51cd537db39d22176a0a}{Lhs}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_a89b14f4fb31b4bd7b2d61bae12058bc0}{Rhs}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 1193 of file Boogie\+AST.\+cs.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13}} 
+\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!Opcode@{Opcode}}
+\index{Opcode@{Opcode}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}
+\doxysubsubsection{\texorpdfstring{Opcode}{Opcode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13}{Boogie\+AST.\+Boogie\+Binary\+Operation.\+Opcode}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADD@{ADD}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!ADD@{ADD}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a9eeb52badb613229884838847294b90d}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a9eeb52badb613229884838847294b90d}} 
+ADD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUB@{SUB}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!SUB@{SUB}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a241dd841abade20fcb27b8a9f494e1eb}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a241dd841abade20fcb27b8a9f494e1eb}} 
+SUB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUL@{MUL}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!MUL@{MUL}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a2cdf52a55876063ec93b7d18bc741f6c}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a2cdf52a55876063ec93b7d18bc741f6c}} 
+MUL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIV@{DIV}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!DIV@{DIV}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a29bbf66f7f8529ec47e394fb5a36c646}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a29bbf66f7f8529ec47e394fb5a36c646}} 
+DIV&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOD@{MOD}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!MOD@{MOD}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13ac5a28f4b35a2884fa3277150ac5d0967}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13ac5a28f4b35a2884fa3277150ac5d0967}} 
+MOD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EQ@{EQ}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!EQ@{EQ}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a2dcbad7477fd40561e8b8198f173bd47}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a2dcbad7477fd40561e8b8198f173bd47}} 
+EQ&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NEQ@{NEQ}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!NEQ@{NEQ}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a375b332cf2e0c6d522baf007ef7cb554}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a375b332cf2e0c6d522baf007ef7cb554}} 
+NEQ&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GT@{GT}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!GT@{GT}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13acd6a9bd2a175104eed40f0d33a8b4020}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13acd6a9bd2a175104eed40f0d33a8b4020}} 
+GT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GE@{GE}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!GE@{GE}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13af803729628adf4199f224c2a225038e9}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13af803729628adf4199f224c2a225038e9}} 
+GE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LT@{LT}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!LT@{LT}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13ac562607189d77eb9dfb707464c1e7b0b}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13ac562607189d77eb9dfb707464c1e7b0b}} 
+LT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LE@{LE}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!LE@{LE}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13acfe6055d2e0503be378bb63449ec7ba6}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13acfe6055d2e0503be378bb63449ec7ba6}} 
+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AND@{AND}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!AND@{AND}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a558ffc8f5770d8e4f95f51d822685532}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a558ffc8f5770d8e4f95f51d822685532}} 
+AND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OR@{OR}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!OR@{OR}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a1d00e7dce692e8dc3f6877f035e3a616}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a1d00e7dce692e8dc3f6877f035e3a616}} 
+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMP@{IMP}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!IMP@{IMP}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a6ebec19cf0a3a609354a05acde9ca8af}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a6ebec19cf0a3a609354a05acde9ca8af}} 
+IMP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IFF@{IFF}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!IFF@{IFF}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13ac1cbcd58f852f8efa45845cf292e350c}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13ac1cbcd58f852f8efa45845cf292e350c}} 
+IFF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNKNOWN@{UNKNOWN}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!UNKNOWN@{UNKNOWN}}}\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a696b031073e74bf2cb98e5ef201d4aa3}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13a696b031073e74bf2cb98e5ef201d4aa3}} 
+UNKNOWN&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 1195 of file Boogie\+AST.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_a192ca481ebe22c85936201fd9378bbd2}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_a192ca481ebe22c85936201fd9378bbd2}} 
+\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!BoogieBinaryOperation@{BoogieBinaryOperation}}
+\index{BoogieBinaryOperation@{BoogieBinaryOperation}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}
+\doxysubsubsection{\texorpdfstring{BoogieBinaryOperation()}{BoogieBinaryOperation()}}
+{\footnotesize\ttfamily Boogie\+AST.\+Boogie\+Binary\+Operation.\+Boogie\+Binary\+Operation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13}{Opcode}}}]{op,  }\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}}}]{lhs,  }\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1221 of file Boogie\+AST.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Binary\+Operation.\+Lhs, Boogie\+AST.\+Boogie\+Binary\+Operation.\+Op, and Boogie\+AST.\+Boogie\+Binary\+Operation.\+Rhs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_a16be78a7fef287687e1305604412607d}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_a16be78a7fef287687e1305604412607d}} 
+\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!OpcodeToString@{OpcodeToString}}
+\index{OpcodeToString@{OpcodeToString}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}
+\doxysubsubsection{\texorpdfstring{OpcodeToString()}{OpcodeToString()}}
+{\footnotesize\ttfamily static string Boogie\+AST.\+Boogie\+Binary\+Operation.\+Opcode\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13}{Opcode}}}]{op }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 1237 of file Boogie\+AST.\+cs.
+
+
+
+Referenced by Boogie\+AST.\+Boogie\+Binary\+Operation.\+To\+String().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_boogie_a_s_t_1_1_boogie_binary_operation_a16be78a7fef287687e1305604412607d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_a1f32c5f2a748df66e39cdca94760cb9a}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_a1f32c5f2a748df66e39cdca94760cb9a}} 
+\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!ToString@{ToString}}
+\index{ToString@{ToString}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Boogie\+AST.\+Boogie\+Binary\+Operation.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1228 of file Boogie\+AST.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Binary\+Operation.\+Lhs, Boogie\+AST.\+Boogie\+Binary\+Operation.\+Op, Boogie\+AST.\+Boogie\+Binary\+Operation.\+Opcode\+To\+String(), and Boogie\+AST.\+Boogie\+Binary\+Operation.\+Rhs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_boogie_a_s_t_1_1_boogie_binary_operation_a1f32c5f2a748df66e39cdca94760cb9a_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_a41c66128395e51cd537db39d22176a0a}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_a41c66128395e51cd537db39d22176a0a}} 
+\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!Lhs@{Lhs}}
+\index{Lhs@{Lhs}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}
+\doxysubsubsection{\texorpdfstring{Lhs}{Lhs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} Boogie\+AST.\+Boogie\+Binary\+Operation.\+Lhs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 1217 of file Boogie\+AST.\+cs.
+
+
+
+Referenced by Boogie\+AST.\+Boogie\+Binary\+Operation.\+Boogie\+Binary\+Operation(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+dup\+And\+Replace\+Expr(), and Boogie\+AST.\+Boogie\+Binary\+Operation.\+To\+String().
+
+\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_af0e84666c398fafebfa32a7d9b2c8be8}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_af0e84666c398fafebfa32a7d9b2c8be8}} 
+\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!Op@{Op}}
+\index{Op@{Op}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}
+\doxysubsubsection{\texorpdfstring{Op}{Op}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_binary_operation_addc43daaf4cd082b255e383331378b13}{Opcode}} Boogie\+AST.\+Boogie\+Binary\+Operation.\+Op\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 1215 of file Boogie\+AST.\+cs.
+
+
+
+Referenced by Boogie\+AST.\+Boogie\+Binary\+Operation.\+Boogie\+Binary\+Operation(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+dup\+And\+Replace\+Expr(), and Boogie\+AST.\+Boogie\+Binary\+Operation.\+To\+String().
+
+\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_binary_operation_a89b14f4fb31b4bd7b2d61bae12058bc0}\label{class_boogie_a_s_t_1_1_boogie_binary_operation_a89b14f4fb31b4bd7b2d61bae12058bc0}} 
+\index{BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}!Rhs@{Rhs}}
+\index{Rhs@{Rhs}!BoogieAST.BoogieBinaryOperation@{BoogieAST.BoogieBinaryOperation}}
+\doxysubsubsection{\texorpdfstring{Rhs}{Rhs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} Boogie\+AST.\+Boogie\+Binary\+Operation.\+Rhs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 1219 of file Boogie\+AST.\+cs.
+
+
+
+Referenced by Boogie\+AST.\+Boogie\+Binary\+Operation.\+Boogie\+Binary\+Operation(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+dup\+And\+Replace\+Expr(), and Boogie\+AST.\+Boogie\+Binary\+Operation.\+To\+String().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Boogie\+AST/\mbox{\hyperlink{_boogie_a_s_t_8cs}{Boogie\+AST.\+cs}}\end{DoxyCompactItemize}

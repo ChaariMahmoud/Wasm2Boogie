@@ -1,0 +1,444 @@
+\hypertarget{class_sol_to_boogie_test_1_1_regression_executor}{}\doxysection{Sol\+To\+Boogie\+Test.\+Regression\+Executor Class Reference}
+\label{class_sol_to_boogie_test_1_1_regression_executor}\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+
+
+Collaboration diagram for Sol\+To\+Boogie\+Test.\+Regression\+Executor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{class_sol_to_boogie_test_1_1_regression_executor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1}{Batch\+Exe\+Result}} \{ \newline
+\mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1a505a83f220c02df2f85c3810cd9ceb38}{Success}}
+, \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1a77c22a4d9c207f6631601346b0c87507}{Solc\+Error}}
+, \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1abbd6fb87ee3cfc5d08416a1316631aa0}{Sol\+To\+Boogie\+Error}}
+, \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1af1ff759b8c562c5dbe9bbb771e62654b}{Corral\+Error}}
+, \newline
+\mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1a89d9c926c684bc5ba337650a19c912df}{Other\+Exception}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a8f5761cdc17abdec8a3d574705844e44}{Regression\+Executor}} (string \mbox{\hyperlink{class_solidity_a_s_t_1_1_regression_executor_ad26e17169d808f39ec94eb55ababea06}{test\+Directory}}, string config\+Directory, string records\+Dir, ILogger \mbox{\hyperlink{class_solidity_a_s_t_1_1_regression_executor_a9b9240dfa38e0c0c2907eb94286817ba}{logger}}, string test\+Prefix=\char`\"{}\char`\"{})
+\item 
+int \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a5c7557ccc46d7bd7c7c972f5a2452e03}{Batch\+Execute}} ()
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1}{Batch\+Exe\+Result}} \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a3e81de0c8d5818aee8496c9b2433eb9c}{Execute}} (string filename, out string expected, out string current)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_aadfa7c7ff3a0b8733b176a146184b43e}{Parse\+Translator\+Flags}} (\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags}{Translator\+Flags}} translator\+Flags, string args)
+\item 
+string \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_ab3e4e079761f7057a29c32760b8bc75c}{Run\+Corral}} (\mbox{\hyperlink{class_sol_to_boogie_test_1_1_corral_configuration}{Corral\+Configuration}} corral\+Config)
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1}{Batch\+Exe\+Result}} \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a1aba90a4b5c849350f0a15f1cea51a9f}{Compare\+Corral\+Output}} (string expected, string actual)
+\item 
+string \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a4af58018247a591a92c409049896fa7c}{Generate\+Corral\+Arguments}} (\mbox{\hyperlink{class_sol_to_boogie_test_1_1_corral_configuration}{Corral\+Configuration}} corral\+Config)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a051084740a27230fbfcea8c0409f4978}{Read\+Record}} ()
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a3bac9deb76c574ae29e45e519b425898}{Delete\+Temporary\+Files}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_af0decfa14dc0b3a9560fac2b9dd5d228}{solc\+Path}}
+\item 
+string \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a60ae5b4a3954304a10dfdaf5974fbc86}{corral\+Path}}
+\item 
+string \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a146ad79e1b803b040d1861646c659ec8}{test\+Directory}}
+\item 
+string \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_afcbca4db424b8f624b9dcc3b283fea42}{config\+Directory}}
+\item 
+string \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a419a75ad652d22ee177d8f47b2aac8f4}{records\+Dir}}
+\item 
+ILogger \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a1fa0706c59d921cd0fa0ea67a51e41cb}{logger}}
+\item 
+string \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a4351a7c0723527e327f8181b251acaee}{test\+Prefix}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly int \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a7891f1fd0ff9020f2f1a21e2214f88e9}{corral\+Timeout\+In\+Milliseconds}} = Time\+Span.\+From\+Seconds(60).Seconds $\ast$ 1000
+\item 
+static readonly string \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_ae3483ede29fdca74a0248028e63734d6}{out\+File}} = \char`\"{}\+\_\+\+\_\+\+Sol\+To\+Boogie\+Test\+\_\+out.\+bpl\char`\"{}
+\item 
+static Dictionary$<$ string, bool $>$ \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_ab8045347ca15749ed0203ae933402037}{files\+To\+Run}} = new Dictionary$<$string, bool$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 17 of file Regression\+Executor.\+cs.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1}\label{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!BatchExeResult@{BatchExeResult}}
+\index{BatchExeResult@{BatchExeResult}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{BatchExeResult}{BatchExeResult}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1}{Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Batch\+Exe\+Result}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Success@{Success}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!Success@{Success}}}\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1a505a83f220c02df2f85c3810cd9ceb38}\label{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1a505a83f220c02df2f85c3810cd9ceb38}} 
+Success&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SolcError@{SolcError}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!SolcError@{SolcError}}}\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1a77c22a4d9c207f6631601346b0c87507}\label{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1a77c22a4d9c207f6631601346b0c87507}} 
+Solc\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SolToBoogieError@{SolToBoogieError}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!SolToBoogieError@{SolToBoogieError}}}\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1abbd6fb87ee3cfc5d08416a1316631aa0}\label{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1abbd6fb87ee3cfc5d08416a1316631aa0}} 
+Sol\+To\+Boogie\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CorralError@{CorralError}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!CorralError@{CorralError}}}\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1af1ff759b8c562c5dbe9bbb771e62654b}\label{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1af1ff759b8c562c5dbe9bbb771e62654b}} 
+Corral\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OtherException@{OtherException}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!OtherException@{OtherException}}}\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1a89d9c926c684bc5ba337650a19c912df}\label{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1a89d9c926c684bc5ba337650a19c912df}} 
+Other\+Exception&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 39 of file Regression\+Executor.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a8f5761cdc17abdec8a3d574705844e44}\label{class_sol_to_boogie_test_1_1_regression_executor_a8f5761cdc17abdec8a3d574705844e44}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!RegressionExecutor@{RegressionExecutor}}
+\index{RegressionExecutor@{RegressionExecutor}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{RegressionExecutor()}{RegressionExecutor()}}
+{\footnotesize\ttfamily Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Regression\+Executor (\begin{DoxyParamCaption}\item[{string}]{test\+Directory,  }\item[{string}]{config\+Directory,  }\item[{string}]{records\+Dir,  }\item[{ILogger}]{logger,  }\item[{string}]{test\+Prefix = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 41 of file Regression\+Executor.\+cs.
+
+
+
+References Veri\+Sol\+Runner.\+External\+Tools.\+Tool\+Manager.\+Command, Veri\+Sol\+Runner.\+External\+Tools.\+External\+Tools\+Manager.\+Corral, Solidity\+AST.\+Regression\+Executor.\+logger, Veri\+Sol\+Runner.\+External\+Tools.\+External\+Tools\+Manager.\+Solc, and Solidity\+AST.\+Regression\+Executor.\+test\+Directory.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a5c7557ccc46d7bd7c7c972f5a2452e03}\label{class_sol_to_boogie_test_1_1_regression_executor_a5c7557ccc46d7bd7c7c972f5a2452e03}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!BatchExecute@{BatchExecute}}
+\index{BatchExecute@{BatchExecute}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{BatchExecute()}{BatchExecute()}}
+{\footnotesize\ttfamily int Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Batch\+Execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 52 of file Regression\+Executor.\+cs.
+
+
+
+References Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Delete\+Temporary\+Files(), Solidity\+AST.\+Regression\+Executor.\+Execute(), Solidity\+AST.\+Regression\+Executor.\+logger, Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Read\+Record(), and Solidity\+AST.\+Regression\+Executor.\+test\+Directory.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_test_1_1_regression_executor_a5c7557ccc46d7bd7c7c972f5a2452e03_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a1aba90a4b5c849350f0a15f1cea51a9f}\label{class_sol_to_boogie_test_1_1_regression_executor_a1aba90a4b5c849350f0a15f1cea51a9f}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!CompareCorralOutput@{CompareCorralOutput}}
+\index{CompareCorralOutput@{CompareCorralOutput}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{CompareCorralOutput()}{CompareCorralOutput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1}{Batch\+Exe\+Result}} Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Compare\+Corral\+Output (\begin{DoxyParamCaption}\item[{string}]{expected,  }\item[{string}]{actual }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 245 of file Regression\+Executor.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Execute().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_test_1_1_regression_executor_a1aba90a4b5c849350f0a15f1cea51a9f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a3bac9deb76c574ae29e45e519b425898}\label{class_sol_to_boogie_test_1_1_regression_executor_a3bac9deb76c574ae29e45e519b425898}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!DeleteTemporaryFiles@{DeleteTemporaryFiles}}
+\index{DeleteTemporaryFiles@{DeleteTemporaryFiles}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{DeleteTemporaryFiles()}{DeleteTemporaryFiles()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Delete\+Temporary\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 300 of file Regression\+Executor.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Batch\+Execute().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_test_1_1_regression_executor_a3bac9deb76c574ae29e45e519b425898_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a3e81de0c8d5818aee8496c9b2433eb9c}\label{class_sol_to_boogie_test_1_1_regression_executor_a3e81de0c8d5818aee8496c9b2433eb9c}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!Execute@{Execute}}
+\index{Execute@{Execute}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_test_1_1_regression_executor_a8c4f071e6ae36386b56b2e262b7a88a1}{Batch\+Exe\+Result}} Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Execute (\begin{DoxyParamCaption}\item[{string}]{filename,  }\item[{out string}]{expected,  }\item[{out string}]{current }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 155 of file Regression\+Executor.\+cs.
+
+
+
+References Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Compare\+Corral\+Output(), Solidity\+AST.\+Solidity\+Compiler.\+Compile(), Solidity\+AST.\+Compiler\+Output.\+Contains\+Error(), Sol\+To\+Boogie\+Test.\+Corral\+Configuration.\+Expected\+Result, Boogie\+AST.\+Boogie\+AST.\+Get\+Root(), Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Parse\+Translator\+Flags(), Solidity\+AST.\+Compiler\+Output.\+Print\+Errors\+To\+Console(), Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Run\+Corral(), Solidity\+AST.\+Regression\+Executor.\+solc\+Path, Solidity\+AST.\+Regression\+Executor.\+test\+Directory, Sol\+To\+Boogie.\+Boogie\+Translator.\+Translate(), and Sol\+To\+Boogie\+Test.\+Corral\+Configuration.\+Translator\+Options.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_test_1_1_regression_executor_a3e81de0c8d5818aee8496c9b2433eb9c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a4af58018247a591a92c409049896fa7c}\label{class_sol_to_boogie_test_1_1_regression_executor_a4af58018247a591a92c409049896fa7c}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!GenerateCorralArguments@{GenerateCorralArguments}}
+\index{GenerateCorralArguments@{GenerateCorralArguments}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{GenerateCorralArguments()}{GenerateCorralArguments()}}
+{\footnotesize\ttfamily string Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Generate\+Corral\+Arguments (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sol_to_boogie_test_1_1_corral_configuration}{Corral\+Configuration}}}]{corral\+Config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 266 of file Regression\+Executor.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Run\+Corral().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_test_1_1_regression_executor_a4af58018247a591a92c409049896fa7c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_aadfa7c7ff3a0b8733b176a146184b43e}\label{class_sol_to_boogie_test_1_1_regression_executor_aadfa7c7ff3a0b8733b176a146184b43e}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!ParseTranslatorFlags@{ParseTranslatorFlags}}
+\index{ParseTranslatorFlags@{ParseTranslatorFlags}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{ParseTranslatorFlags()}{ParseTranslatorFlags()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Parse\+Translator\+Flags (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags}{Translator\+Flags}}}]{translator\+Flags,  }\item[{string}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 132 of file Regression\+Executor.\+cs.
+
+
+
+References Solidity\+AST.\+Regression\+Executor.\+logger, and Sol\+To\+Boogie.\+Parse\+Utils.\+Parse\+Command\+Line\+Args().
+
+
+
+Referenced by Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Execute().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_test_1_1_regression_executor_aadfa7c7ff3a0b8733b176a146184b43e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_test_1_1_regression_executor_aadfa7c7ff3a0b8733b176a146184b43e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a051084740a27230fbfcea8c0409f4978}\label{class_sol_to_boogie_test_1_1_regression_executor_a051084740a27230fbfcea8c0409f4978}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!ReadRecord@{ReadRecord}}
+\index{ReadRecord@{ReadRecord}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{ReadRecord()}{ReadRecord()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Read\+Record (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 282 of file Regression\+Executor.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Batch\+Execute().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_test_1_1_regression_executor_a051084740a27230fbfcea8c0409f4978_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_ab3e4e079761f7057a29c32760b8bc75c}\label{class_sol_to_boogie_test_1_1_regression_executor_ab3e4e079761f7057a29c32760b8bc75c}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!RunCorral@{RunCorral}}
+\index{RunCorral@{RunCorral}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{RunCorral()}{RunCorral()}}
+{\footnotesize\ttfamily string Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Run\+Corral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sol_to_boogie_test_1_1_corral_configuration}{Corral\+Configuration}}}]{corral\+Config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 216 of file Regression\+Executor.\+cs.
+
+
+
+References Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Generate\+Corral\+Arguments().
+
+
+
+Referenced by Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Execute().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_test_1_1_regression_executor_ab3e4e079761f7057a29c32760b8bc75c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_test_1_1_regression_executor_ab3e4e079761f7057a29c32760b8bc75c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_afcbca4db424b8f624b9dcc3b283fea42}\label{class_sol_to_boogie_test_1_1_regression_executor_afcbca4db424b8f624b9dcc3b283fea42}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!configDirectory@{configDirectory}}
+\index{configDirectory@{configDirectory}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{configDirectory}{configDirectory}}
+{\footnotesize\ttfamily string Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+config\+Directory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 25 of file Regression\+Executor.\+cs.
+
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a60ae5b4a3954304a10dfdaf5974fbc86}\label{class_sol_to_boogie_test_1_1_regression_executor_a60ae5b4a3954304a10dfdaf5974fbc86}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!corralPath@{corralPath}}
+\index{corralPath@{corralPath}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{corralPath}{corralPath}}
+{\footnotesize\ttfamily string Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+corral\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 21 of file Regression\+Executor.\+cs.
+
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a7891f1fd0ff9020f2f1a21e2214f88e9}\label{class_sol_to_boogie_test_1_1_regression_executor_a7891f1fd0ff9020f2f1a21e2214f88e9}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!corralTimeoutInMilliseconds@{corralTimeoutInMilliseconds}}
+\index{corralTimeoutInMilliseconds@{corralTimeoutInMilliseconds}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{corralTimeoutInMilliseconds}{corralTimeoutInMilliseconds}}
+{\footnotesize\ttfamily readonly int Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+corral\+Timeout\+In\+Milliseconds = Time\+Span.\+From\+Seconds(60).Seconds $\ast$ 1000\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 33 of file Regression\+Executor.\+cs.
+
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_ab8045347ca15749ed0203ae933402037}\label{class_sol_to_boogie_test_1_1_regression_executor_ab8045347ca15749ed0203ae933402037}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!filesToRun@{filesToRun}}
+\index{filesToRun@{filesToRun}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{filesToRun}{filesToRun}}
+{\footnotesize\ttfamily Dictionary$<$string, bool$>$ Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+files\+To\+Run = new Dictionary$<$string, bool$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 37 of file Regression\+Executor.\+cs.
+
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a1fa0706c59d921cd0fa0ea67a51e41cb}\label{class_sol_to_boogie_test_1_1_regression_executor_a1fa0706c59d921cd0fa0ea67a51e41cb}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!logger@{logger}}
+\index{logger@{logger}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily ILogger Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+logger\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file Regression\+Executor.\+cs.
+
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_ae3483ede29fdca74a0248028e63734d6}\label{class_sol_to_boogie_test_1_1_regression_executor_ae3483ede29fdca74a0248028e63734d6}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!outFile@{outFile}}
+\index{outFile@{outFile}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{outFile}{outFile}}
+{\footnotesize\ttfamily readonly string Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+out\+File = \char`\"{}\+\_\+\+\_\+\+Sol\+To\+Boogie\+Test\+\_\+out.\+bpl\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Regression\+Executor.\+cs.
+
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a419a75ad652d22ee177d8f47b2aac8f4}\label{class_sol_to_boogie_test_1_1_regression_executor_a419a75ad652d22ee177d8f47b2aac8f4}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!recordsDir@{recordsDir}}
+\index{recordsDir@{recordsDir}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{recordsDir}{recordsDir}}
+{\footnotesize\ttfamily string Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+records\+Dir\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 27 of file Regression\+Executor.\+cs.
+
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_af0decfa14dc0b3a9560fac2b9dd5d228}\label{class_sol_to_boogie_test_1_1_regression_executor_af0decfa14dc0b3a9560fac2b9dd5d228}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!solcPath@{solcPath}}
+\index{solcPath@{solcPath}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{solcPath}{solcPath}}
+{\footnotesize\ttfamily string Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+solc\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 19 of file Regression\+Executor.\+cs.
+
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a146ad79e1b803b040d1861646c659ec8}\label{class_sol_to_boogie_test_1_1_regression_executor_a146ad79e1b803b040d1861646c659ec8}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!testDirectory@{testDirectory}}
+\index{testDirectory@{testDirectory}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{testDirectory}{testDirectory}}
+{\footnotesize\ttfamily string Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+test\+Directory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 23 of file Regression\+Executor.\+cs.
+
+\mbox{\Hypertarget{class_sol_to_boogie_test_1_1_regression_executor_a4351a7c0723527e327f8181b251acaee}\label{class_sol_to_boogie_test_1_1_regression_executor_a4351a7c0723527e327f8181b251acaee}} 
+\index{SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}!testPrefix@{testPrefix}}
+\index{testPrefix@{testPrefix}!SolToBoogieTest.RegressionExecutor@{SolToBoogieTest.RegressionExecutor}}
+\doxysubsubsection{\texorpdfstring{testPrefix}{testPrefix}}
+{\footnotesize\ttfamily string Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+test\+Prefix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 31 of file Regression\+Executor.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie\+Test/\mbox{\hyperlink{_sol_to_boogie_test_2_regression_executor_8cs}{Regression\+Executor.\+cs}}\end{DoxyCompactItemize}

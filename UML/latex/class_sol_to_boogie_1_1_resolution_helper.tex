@@ -1,0 +1,182 @@
+\hypertarget{class_sol_to_boogie_1_1_resolution_helper}{}\doxysection{Sol\+To\+Boogie.\+Resolution\+Helper Class Reference}
+\label{class_sol_to_boogie_1_1_resolution_helper}\index{SolToBoogie.ResolutionHelper@{SolToBoogie.ResolutionHelper}}
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+Resolution\+Helper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_resolution_helper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_resolution_helper_a68c354a7a0cd2fb3bf4ce9fa31b00b5a}{Resolution\+Helper}} (\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_resolution_helper_a5380e19f6c6335cefc8d99918f03a5e4}{context}})
+\item 
+List$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_resolution_helper_a724e271457edf2f273c758b9401fb884}{Topological\+Sort\+By\+Dependency}} (Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} $>$ contracts)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_resolution_helper_af24d53eb37662230602a47dc765cb4e8}{Topological\+Sort\+Impl}} (Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} $>$ visited, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, List$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} $>$ result)
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_resolution_helper_ae16a25c9a79612c0612d9e6a8818e283}{All\+Dependencies\+Visited}} (Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} $>$ visited, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_resolution_helper_a5380e19f6c6335cefc8d99918f03a5e4}{context}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 9 of file Resolution\+Helper.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_resolution_helper_a68c354a7a0cd2fb3bf4ce9fa31b00b5a}\label{class_sol_to_boogie_1_1_resolution_helper_a68c354a7a0cd2fb3bf4ce9fa31b00b5a}} 
+\index{SolToBoogie.ResolutionHelper@{SolToBoogie.ResolutionHelper}!ResolutionHelper@{ResolutionHelper}}
+\index{ResolutionHelper@{ResolutionHelper}!SolToBoogie.ResolutionHelper@{SolToBoogie.ResolutionHelper}}
+\doxysubsubsection{\texorpdfstring{ResolutionHelper()}{ResolutionHelper()}}
+{\footnotesize\ttfamily Sol\+To\+Boogie.\+Resolution\+Helper.\+Resolution\+Helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 13 of file Resolution\+Helper.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Resolution\+Helper.\+context.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_resolution_helper_ae16a25c9a79612c0612d9e6a8818e283}\label{class_sol_to_boogie_1_1_resolution_helper_ae16a25c9a79612c0612d9e6a8818e283}} 
+\index{SolToBoogie.ResolutionHelper@{SolToBoogie.ResolutionHelper}!AllDependenciesVisited@{AllDependenciesVisited}}
+\index{AllDependenciesVisited@{AllDependenciesVisited}!SolToBoogie.ResolutionHelper@{SolToBoogie.ResolutionHelper}}
+\doxysubsubsection{\texorpdfstring{AllDependenciesVisited()}{AllDependenciesVisited()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Resolution\+Helper.\+All\+Dependencies\+Visited (\begin{DoxyParamCaption}\item[{Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} $>$}]{visited,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 55 of file Resolution\+Helper.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Resolution\+Helper.\+context, Solidity\+AST.\+Contract\+Definition.\+Contract\+Dependencies, and Sol\+To\+Boogie.\+Translator\+Context.\+Get\+ASTNode\+By\+Id().
+
+
+
+Referenced by Sol\+To\+Boogie.\+Resolution\+Helper.\+Topological\+Sort\+Impl().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_resolution_helper_ae16a25c9a79612c0612d9e6a8818e283_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_resolution_helper_ae16a25c9a79612c0612d9e6a8818e283_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_resolution_helper_a724e271457edf2f273c758b9401fb884}\label{class_sol_to_boogie_1_1_resolution_helper_a724e271457edf2f273c758b9401fb884}} 
+\index{SolToBoogie.ResolutionHelper@{SolToBoogie.ResolutionHelper}!TopologicalSortByDependency@{TopologicalSortByDependency}}
+\index{TopologicalSortByDependency@{TopologicalSortByDependency}!SolToBoogie.ResolutionHelper@{SolToBoogie.ResolutionHelper}}
+\doxysubsubsection{\texorpdfstring{TopologicalSortByDependency()}{TopologicalSortByDependency()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}$>$ Sol\+To\+Boogie.\+Resolution\+Helper.\+Topological\+Sort\+By\+Dependency (\begin{DoxyParamCaption}\item[{Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} $>$}]{contracts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 20 of file Resolution\+Helper.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Resolution\+Helper.\+Topological\+Sort\+Impl().
+
+
+
+Referenced by Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Resolve\+Functions(), and Sol\+To\+Boogie.\+State\+Variable\+Resolver.\+Resolve\+State\+Variables().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_resolution_helper_a724e271457edf2f273c758b9401fb884_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_resolution_helper_a724e271457edf2f273c758b9401fb884_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_resolution_helper_af24d53eb37662230602a47dc765cb4e8}\label{class_sol_to_boogie_1_1_resolution_helper_af24d53eb37662230602a47dc765cb4e8}} 
+\index{SolToBoogie.ResolutionHelper@{SolToBoogie.ResolutionHelper}!TopologicalSortImpl@{TopologicalSortImpl}}
+\index{TopologicalSortImpl@{TopologicalSortImpl}!SolToBoogie.ResolutionHelper@{SolToBoogie.ResolutionHelper}}
+\doxysubsubsection{\texorpdfstring{TopologicalSortImpl()}{TopologicalSortImpl()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Resolution\+Helper.\+Topological\+Sort\+Impl (\begin{DoxyParamCaption}\item[{Hash\+Set$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} $>$}]{visited,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{List$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} $>$}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 37 of file Resolution\+Helper.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Resolution\+Helper.\+All\+Dependencies\+Visited(), Sol\+To\+Boogie.\+Resolution\+Helper.\+context, Solidity\+AST.\+Contract\+Definition.\+Contract\+Dependencies, and Sol\+To\+Boogie.\+Translator\+Context.\+Get\+ASTNode\+By\+Id().
+
+
+
+Referenced by Sol\+To\+Boogie.\+Resolution\+Helper.\+Topological\+Sort\+By\+Dependency().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_resolution_helper_af24d53eb37662230602a47dc765cb4e8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_resolution_helper_af24d53eb37662230602a47dc765cb4e8_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_resolution_helper_a5380e19f6c6335cefc8d99918f03a5e4}\label{class_sol_to_boogie_1_1_resolution_helper_a5380e19f6c6335cefc8d99918f03a5e4}} 
+\index{SolToBoogie.ResolutionHelper@{SolToBoogie.ResolutionHelper}!context@{context}}
+\index{context@{context}!SolToBoogie.ResolutionHelper@{SolToBoogie.ResolutionHelper}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} Sol\+To\+Boogie.\+Resolution\+Helper.\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 11 of file Resolution\+Helper.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Resolution\+Helper.\+All\+Dependencies\+Visited(), Sol\+To\+Boogie.\+Resolution\+Helper.\+Resolution\+Helper(), and Sol\+To\+Boogie.\+Resolution\+Helper.\+Topological\+Sort\+Impl().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_resolution_helper_8cs}{Resolution\+Helper.\+cs}}\end{DoxyCompactItemize}

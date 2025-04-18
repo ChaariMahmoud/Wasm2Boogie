@@ -1,0 +1,8 @@
+<map id="SolidityAST.PrimaryExpression" name="SolidityAST.PrimaryExpression">
+<area shape="rect" id="node1" title=" " alt="" coords="221,388,442,465"/>
+<area shape="rect" id="node4" href="$class_solidity_a_s_t_1_1_elementary_type_name_expression.html" title=" " alt="" coords="5,528,209,649"/>
+<area shape="rect" id="node5" href="$class_solidity_a_s_t_1_1_identifier.html" title=" " alt="" coords="234,521,429,657"/>
+<area shape="rect" id="node6" href="$class_solidity_a_s_t_1_1_literal.html" title=" " alt="" coords="453,513,604,664"/>
+<area shape="rect" id="node2" href="$class_solidity_a_s_t_1_1_expression.html" title=" " alt="" coords="257,189,405,340"/>
+<area shape="rect" id="node3" href="$class_solidity_a_s_t_1_1_a_s_t_node.html" title=" " alt="" coords="267,5,396,141"/>
+</map>

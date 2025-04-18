@@ -1,0 +1,158 @@
+\hypertarget{class_sol_to_boogie_1_1_using_collector}{}\doxysection{Sol\+To\+Boogie.\+Using\+Collector Class Reference}
+\label{class_sol_to_boogie_1_1_using_collector}\index{SolToBoogie.UsingCollector@{SolToBoogie.UsingCollector}}
+
+
+Inheritance diagram for Sol\+To\+Boogie.\+Using\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_using_collector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+Using\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_using_collector__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_using_collector_ada2199985299794afcf159c08bb7e02f}{Using\+Collector}} (\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_using_collector_af54cecb28e5e4a100e4a36a1c8ba2971}{context}})
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_using_collector_abbec993125f271137a8d21461faf6ca9}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} node)
+\item 
+override void \mbox{\hyperlink{class_sol_to_boogie_1_1_using_collector_abbc41206df6b6673bbff41f8af961b52}{End\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} node)
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_using_collector_a77f11c02627bc88be672c90abcd867ea}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_using_for_directive}{Using\+For\+Directive}} node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_using_collector_af54cecb28e5e4a100e4a36a1c8ba2971}{context}}
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} \mbox{\hyperlink{class_sol_to_boogie_1_1_using_collector_aad41261f940c451af998845c1c8b5aa9}{current\+Contract}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Collect all using definitions and put them in the translator context. 
+
+Definition at line 14 of file Using\+Collector.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_using_collector_ada2199985299794afcf159c08bb7e02f}\label{class_sol_to_boogie_1_1_using_collector_ada2199985299794afcf159c08bb7e02f}} 
+\index{SolToBoogie.UsingCollector@{SolToBoogie.UsingCollector}!UsingCollector@{UsingCollector}}
+\index{UsingCollector@{UsingCollector}!SolToBoogie.UsingCollector@{SolToBoogie.UsingCollector}}
+\doxysubsubsection{\texorpdfstring{UsingCollector()}{UsingCollector()}}
+{\footnotesize\ttfamily Sol\+To\+Boogie.\+Using\+Collector.\+Using\+Collector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 19 of file Using\+Collector.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Using\+Collector.\+context.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_using_collector_abbc41206df6b6673bbff41f8af961b52}\label{class_sol_to_boogie_1_1_using_collector_abbc41206df6b6673bbff41f8af961b52}} 
+\index{SolToBoogie.UsingCollector@{SolToBoogie.UsingCollector}!EndVisit@{EndVisit}}
+\index{EndVisit@{EndVisit}!SolToBoogie.UsingCollector@{SolToBoogie.UsingCollector}}
+\doxysubsubsection{\texorpdfstring{EndVisit()}{EndVisit()}}
+{\footnotesize\ttfamily override void Sol\+To\+Boogie.\+Using\+Collector.\+End\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_abf1b5dfe60f9bbf5acee08dcc72d8bd5}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 31 of file Using\+Collector.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Using\+Collector.\+current\+Contract.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_using_collector_abbec993125f271137a8d21461faf6ca9}\label{class_sol_to_boogie_1_1_using_collector_abbec993125f271137a8d21461faf6ca9}} 
+\index{SolToBoogie.UsingCollector@{SolToBoogie.UsingCollector}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.UsingCollector@{SolToBoogie.UsingCollector}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Using\+Collector.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a2dcc371c9e76915a820664dd74e8e02a}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 24 of file Using\+Collector.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Using\+Collector.\+context, Sol\+To\+Boogie.\+Using\+Collector.\+current\+Contract, and Sol\+To\+Boogie.\+Translator\+Context.\+Using\+Map.
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_using_collector_a77f11c02627bc88be672c90abcd867ea}\label{class_sol_to_boogie_1_1_using_collector_a77f11c02627bc88be672c90abcd867ea}} 
+\index{SolToBoogie.UsingCollector@{SolToBoogie.UsingCollector}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.UsingCollector@{SolToBoogie.UsingCollector}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Using\+Collector.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_using_for_directive}{Using\+For\+Directive}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_adb4f776f1404fe1dd40c501e3b95ba2e}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 36 of file Using\+Collector.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Using\+Collector.\+context, Sol\+To\+Boogie.\+Using\+Collector.\+current\+Contract, Solidity\+AST.\+Using\+For\+Directive.\+Library\+Name, Solidity\+AST.\+Using\+For\+Directive.\+Type\+Name, and Sol\+To\+Boogie.\+Translator\+Context.\+Using\+Map.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_using_collector_af54cecb28e5e4a100e4a36a1c8ba2971}\label{class_sol_to_boogie_1_1_using_collector_af54cecb28e5e4a100e4a36a1c8ba2971}} 
+\index{SolToBoogie.UsingCollector@{SolToBoogie.UsingCollector}!context@{context}}
+\index{context@{context}!SolToBoogie.UsingCollector@{SolToBoogie.UsingCollector}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} Sol\+To\+Boogie.\+Using\+Collector.\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 16 of file Using\+Collector.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Using\+Collector.\+Using\+Collector(), and Sol\+To\+Boogie.\+Using\+Collector.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_using_collector_aad41261f940c451af998845c1c8b5aa9}\label{class_sol_to_boogie_1_1_using_collector_aad41261f940c451af998845c1c8b5aa9}} 
+\index{SolToBoogie.UsingCollector@{SolToBoogie.UsingCollector}!currentContract@{currentContract}}
+\index{currentContract@{currentContract}!SolToBoogie.UsingCollector@{SolToBoogie.UsingCollector}}
+\doxysubsubsection{\texorpdfstring{currentContract}{currentContract}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} Sol\+To\+Boogie.\+Using\+Collector.\+current\+Contract\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 17 of file Using\+Collector.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Using\+Collector.\+End\+Visit(), and Sol\+To\+Boogie.\+Using\+Collector.\+Visit().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_using_collector_8cs}{Using\+Collector.\+cs}}\end{DoxyCompactItemize}

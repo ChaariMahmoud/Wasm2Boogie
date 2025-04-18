@@ -1,0 +1,146 @@
+\hypertarget{class_solidity_a_s_t_1_1_a_s_t_node}{}\doxysection{Solidity\+AST.\+ASTNode Class Reference}
+\label{class_solidity_a_s_t_1_1_a_s_t_node}\index{SolidityAST.ASTNode@{SolidityAST.ASTNode}}
+
+
+Inheritance diagram for Solidity\+AST.\+ASTNode\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_a_s_t_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Solidity\+AST.\+ASTNode\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_solidity_a_s_t_1_1_a_s_t_node__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a31655aeae6213266768f8f5182ba5fec}{Accept}} (\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_visitor}{IASTVisitor}} visitor)
+\item 
+abstract T \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a57b9fd6602c95260988f9cc6f1729200}{Accept$<$ T $>$}} (\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_generic_visitor}{IASTGeneric\+Visitor}}$<$ T $>$ visitor)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a77d1c922cbe9927a8e33efa881f5100b}{Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_ae7099acc9df8d35a12040e27fa25fdb2}{Gas\+Cost}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a755f2b216a1dfbf13c4ec038cb8731c4}{Node\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a87023e3a09f66a42acdc08bf04647e1f}{Src}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 160 of file Solidity\+AST.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_a_s_t_node_a31655aeae6213266768f8f5182ba5fec}\label{class_solidity_a_s_t_1_1_a_s_t_node_a31655aeae6213266768f8f5182ba5fec}} 
+\index{SolidityAST.ASTNode@{SolidityAST.ASTNode}!Accept@{Accept}}
+\index{Accept@{Accept}!SolidityAST.ASTNode@{SolidityAST.ASTNode}}
+\doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily abstract void Solidity\+AST.\+ASTNode.\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_visitor}{IASTVisitor}}}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_solidity_a_s_t_1_1_index_access_a5b67970761aad71a1281be0982477d92}{Solidity\+AST.\+Index\+Access}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_member_access_aed939908573f5172a1bda09b7205f349}{Solidity\+AST.\+Member\+Access}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_new_expression_a4f47401700c703ccf72c2f00b75fbea2}{Solidity\+AST.\+New\+Expression}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_call_a10f1db545569e16f9408166acc4e4518}{Solidity\+AST.\+Function\+Call}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_tuple_expression_a22d24e8611014b9d793ef6aae039a416}{Solidity\+AST.\+Tuple\+Expression}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_assignment_a964a7a6d976d491921df7fc001e89a0c}{Solidity\+AST.\+Assignment}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_conditional_a4e354bf2db2db991e2728dff174748f5}{Solidity\+AST.\+Conditional}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_binary_operation_aa14047e7a77ea8c76becf9230e97e8a6}{Solidity\+AST.\+Binary\+Operation}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_unary_operation_ae15f2ff9966b746f709328459cfe3971}{Solidity\+AST.\+Unary\+Operation}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_elementary_type_name_expression_ad2f1a49dd16d060d6ed5f435cc401b94}{Solidity\+AST.\+Elementary\+Type\+Name\+Expression}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_identifier_aad9ca7b6d0ff8d503d5e55fec65c0bde}{Solidity\+AST.\+Identifier}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_literal_a0485f4dea87452026728e8560cfcd1fb}{Solidity\+AST.\+Literal}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_expression_statement_a86329bbedbf34fb5e9fbd8348c1fb086}{Solidity\+AST.\+Expression\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_inline_assembly_a886338727da81be39fb430a7a1d60940}{Solidity\+AST.\+Inline\+Assembly}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration_statement_ae854693d5f3a94a42cd29ba87f9c5a52}{Solidity\+AST.\+Variable\+Declaration\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_emit_statement_a0110d7f6cf3dc16115383e79c55e2f86}{Solidity\+AST.\+Emit\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_throw_ae0d2d30048608297203e11265da705f8}{Solidity\+AST.\+Throw}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_return_acfbee62454b408eacd6af664a31c1b94}{Solidity\+AST.\+Return}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_break_a318e97837f702da242a80749ac5f819a}{Solidity\+AST.\+Break}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_continue_ae0ce385f99f2b418aa5745d76139a595}{Solidity\+AST.\+Continue}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_for_statement_a9157474c570825ac8021f11019304aa4}{Solidity\+AST.\+For\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_do_while_statement_a40a10e433cc25debea7c2e51d58a894b}{Solidity\+AST.\+Do\+While\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_while_statement_a478c38c573308074dabdd304aa4046ed}{Solidity\+AST.\+While\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_if_statement_aec62a24aa607d586325f21ebb54288e0}{Solidity\+AST.\+If\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_placeholder_statement_a040c20cc3a72cc49d9d7905d594c37fd}{Solidity\+AST.\+Placeholder\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_block_a52a079699067cc758ab6ca789dd34830}{Solidity\+AST.\+Block}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_array_type_name_ac18aadf506bd7f9edd0a19f058d6473b}{Solidity\+AST.\+Array\+Type\+Name}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_mapping_a184fed0c99cc9b94ad2dc6ccd19412fc}{Solidity\+AST.\+Mapping}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_user_defined_type_name_a16f350b1142297acb042563b78b5acb7}{Solidity\+AST.\+User\+Defined\+Type\+Name}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_elementary_type_name_abe7f838f9fca58654399d45bf345c707}{Solidity\+AST.\+Elementary\+Type\+Name}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration_aca00d8b34ccc4b875a814a256509423f}{Solidity\+AST.\+Variable\+Declaration}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_enum_value_a5dbd18296ee2a228f54167b40a798e2c}{Solidity\+AST.\+Enum\+Value}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_enum_definition_afb2f70bfcf082369caa5558e50ff2bb9}{Solidity\+AST.\+Enum\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_struct_definition_aad817fa9bf4f6e8e5395e17c2bd86868}{Solidity\+AST.\+Struct\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_event_definition_a63bca788adbe7d600e6c9d22bc996f56}{Solidity\+AST.\+Event\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_modifier_invocation_af9327ffe2ab46133cc67eb4c83899ad5}{Solidity\+AST.\+Modifier\+Invocation}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_modifier_definition_a6771846a5fd53f6692e19bce476e1e3f}{Solidity\+AST.\+Modifier\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_parameter_list_ac4bf2b3ad43b8e5a0b60f5e68b558bc3}{Solidity\+AST.\+Parameter\+List}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition_a74c39374456675f8bcd16c137b4b7feb}{Solidity\+AST.\+Function\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_inheritance_specifier_a3051f14da378f3f1350ea57e4abd593c}{Solidity\+AST.\+Inheritance\+Specifier}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition_a44ead602fc9dc93e7bec3d75d9f6324e}{Solidity\+AST.\+Contract\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_import_directive_a06ca7a6249d2e0f54e2aa1866d5917ae}{Solidity\+AST.\+Import\+Directive}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_using_for_directive_a02d253e703dcecf1af772aaa57f1c178}{Solidity\+AST.\+Using\+For\+Directive}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_pragma_directive_acc4c2528058f6f4055f7bf6ed2353336}{Solidity\+AST.\+Pragma\+Directive}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_source_unit_acd53418155c18219b60d73ff76b19905}{Solidity\+AST.\+Source\+Unit}}, and \mbox{\hyperlink{class_solidity_a_s_t_1_1_source_unit_list_a04dd8d48deaa1ccb6b507b7c36a4f0ad}{Solidity\+AST.\+Source\+Unit\+List}}.
+
+
+
+Referenced by Solidity\+AST.\+Using\+For\+Directive.\+Accept(), Solidity\+AST.\+Variable\+Declaration.\+Accept(), Solidity\+AST.\+Mapping.\+Accept(), Solidity\+AST.\+Array\+Type\+Name.\+Accept(), Solidity\+AST.\+If\+Statement.\+Accept(), Solidity\+AST.\+While\+Statement.\+Accept(), Solidity\+AST.\+Do\+While\+Statement.\+Accept(), Solidity\+AST.\+For\+Statement.\+Accept(), Solidity\+AST.\+Return.\+Accept(), Solidity\+AST.\+Variable\+Declaration\+Statement.\+Accept(), Solidity\+AST.\+Expression\+Statement.\+Accept(), Solidity\+AST.\+Unary\+Operation.\+Accept(), Solidity\+AST.\+Binary\+Operation.\+Accept(), Solidity\+AST.\+Conditional.\+Accept(), Solidity\+AST.\+Assignment.\+Accept(), Solidity\+AST.\+Function\+Call.\+Accept(), Solidity\+AST.\+New\+Expression.\+Accept(), Solidity\+AST.\+Member\+Access.\+Accept(), Solidity\+AST.\+Index\+Access.\+Accept(), Solidity\+AST.\+Utils.\+Accept\+List$<$ T $>$(), Solidity\+CFG.\+CFGBuilder.\+Append\+Control\+Flow(), Solidity\+AST.\+Node\+Mapper.\+Node\+Mapper(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Expr(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Statement(), Solidity\+CFG.\+CFGBuilder.\+Visit(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_a_s_t_node_a31655aeae6213266768f8f5182ba5fec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_a_s_t_node_a57b9fd6602c95260988f9cc6f1729200}\label{class_solidity_a_s_t_1_1_a_s_t_node_a57b9fd6602c95260988f9cc6f1729200}} 
+\index{SolidityAST.ASTNode@{SolidityAST.ASTNode}!Accept$<$ T $>$@{Accept$<$ T $>$}}
+\index{Accept$<$ T $>$@{Accept$<$ T $>$}!SolidityAST.ASTNode@{SolidityAST.ASTNode}}
+\doxysubsubsection{\texorpdfstring{Accept$<$ T $>$()}{Accept< T >()}}
+{\footnotesize\ttfamily abstract T \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a31655aeae6213266768f8f5182ba5fec}{Solidity\+AST.\+ASTNode.\+Accept}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_generic_visitor}{IASTGeneric\+Visitor}}$<$ T $>$}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_solidity_a_s_t_1_1_index_access_a1167e67268e54b23cf916077a0c775a3}{Solidity\+AST.\+Index\+Access}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_member_access_a1d44bff3eb2f59792633a584c434a258}{Solidity\+AST.\+Member\+Access}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_new_expression_ad3c9ecab51f85977d5f3c603ed90092b}{Solidity\+AST.\+New\+Expression}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_call_a487ecb6dcbd738e5b761b5d44d7f469e}{Solidity\+AST.\+Function\+Call}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_tuple_expression_a46ffcf5419319370b03fa03e808753fc}{Solidity\+AST.\+Tuple\+Expression}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_assignment_a8f6e0c78bfd8db1528f542f1c938e0be}{Solidity\+AST.\+Assignment}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_conditional_a8222f19b7d81959a81ca803b49ed3e04}{Solidity\+AST.\+Conditional}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_binary_operation_aecf3db7857b7dba404b034fa086ec47e}{Solidity\+AST.\+Binary\+Operation}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_unary_operation_a0eb402865bd40bcdae9858ec847da009}{Solidity\+AST.\+Unary\+Operation}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_elementary_type_name_expression_a8781716866b5030f0800044460999cd4}{Solidity\+AST.\+Elementary\+Type\+Name\+Expression}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_identifier_a6e49c9f2f9e42300ddd0892fb2a5c193}{Solidity\+AST.\+Identifier}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_literal_a23df93e07a80523b555e1373961a18ba}{Solidity\+AST.\+Literal}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_expression_statement_ae2baf6f70fa69cecaabdd4c5c67829b4}{Solidity\+AST.\+Expression\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_inline_assembly_afc54e367be3e5f97c7ca98b295f82445}{Solidity\+AST.\+Inline\+Assembly}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration_statement_aef0c582ba79a785e2ad8e4524f82d5bc}{Solidity\+AST.\+Variable\+Declaration\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_emit_statement_ac333d4a2cdbabd5aba47a0fcd3b5bcbd}{Solidity\+AST.\+Emit\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_throw_abdba65a7e3767d08026818cdede63570}{Solidity\+AST.\+Throw}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_return_ae1455f5e9f24b7be135b94da66d647c0}{Solidity\+AST.\+Return}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_break_af45dcad852031f5758f162814e4c495c}{Solidity\+AST.\+Break}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_continue_a996e9b29e0e362698ff1ffdfe4553768}{Solidity\+AST.\+Continue}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_for_statement_a872a66840c3e6bc6beb5834fa2a98cd6}{Solidity\+AST.\+For\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_do_while_statement_a58190dadd0accff038a6a3eb04d4d2da}{Solidity\+AST.\+Do\+While\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_while_statement_a7efc87699f4c3f9faeb6bd69133c9528}{Solidity\+AST.\+While\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_if_statement_a43f45d8b594a4be93057057e74d8e048}{Solidity\+AST.\+If\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_placeholder_statement_a76561c86554dd77e41403889a7d2d465}{Solidity\+AST.\+Placeholder\+Statement}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_block_a9fe7ca50aabcaae9df091e5db2d8b556}{Solidity\+AST.\+Block}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_array_type_name_ab0218b82c0e201fcc7e2c2cee309bacc}{Solidity\+AST.\+Array\+Type\+Name}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_mapping_a02d195b9884203a857488307a292e877}{Solidity\+AST.\+Mapping}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_user_defined_type_name_ad8110c1755f69cf73e22ca7331ba40d5}{Solidity\+AST.\+User\+Defined\+Type\+Name}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_elementary_type_name_adc20efc42ee17973f37a0eaf21b2d66f}{Solidity\+AST.\+Elementary\+Type\+Name}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration_a8375debe8f12a8a57bfe68e7dd5ae917}{Solidity\+AST.\+Variable\+Declaration}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_enum_value_ae52ba4367813122dc8e7adae3a1db963}{Solidity\+AST.\+Enum\+Value}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_enum_definition_a352708e3fa3f79465e7ec067cc748978}{Solidity\+AST.\+Enum\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_struct_definition_a1467a80b6d947229b76a0133a760c61f}{Solidity\+AST.\+Struct\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_event_definition_ad5d505308711d7828deee9a2492f4854}{Solidity\+AST.\+Event\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_modifier_invocation_a3991fa4fcc4a4ce369ee10dc590e6e31}{Solidity\+AST.\+Modifier\+Invocation}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_modifier_definition_a794a635f13f14acaa03c48ee19ae9c28}{Solidity\+AST.\+Modifier\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_parameter_list_a9155368e037089740af50b979cfa3e84}{Solidity\+AST.\+Parameter\+List}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition_abbf29323fd11d6c8c63f163b2a6f2a54}{Solidity\+AST.\+Function\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_inheritance_specifier_a590722822a920a40c8dd4367dce8eec8}{Solidity\+AST.\+Inheritance\+Specifier}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition_a23d648699ac2e9d99b8c279239f16e65}{Solidity\+AST.\+Contract\+Definition}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_import_directive_a39cd336f6da41168c7e4e1b01b0efd11}{Solidity\+AST.\+Import\+Directive}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_using_for_directive_aaecc687ac6a1d58dcedd634182bcb025}{Solidity\+AST.\+Using\+For\+Directive}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_pragma_directive_a843c4d631b4a824265fe1c02f4506c39}{Solidity\+AST.\+Pragma\+Directive}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_source_unit_ae125a1720c54bcbc801ff1a68d277e79}{Solidity\+AST.\+Source\+Unit}}, and \mbox{\hyperlink{class_solidity_a_s_t_1_1_source_unit_list_a4748789f777dadac115b1901a98fffa1}{Solidity\+AST.\+Source\+Unit\+List}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_a_s_t_node_ae7099acc9df8d35a12040e27fa25fdb2}\label{class_solidity_a_s_t_1_1_a_s_t_node_ae7099acc9df8d35a12040e27fa25fdb2}} 
+\index{SolidityAST.ASTNode@{SolidityAST.ASTNode}!GasCost@{GasCost}}
+\index{GasCost@{GasCost}!SolidityAST.ASTNode@{SolidityAST.ASTNode}}
+\doxysubsubsection{\texorpdfstring{GasCost}{GasCost}}
+{\footnotesize\ttfamily int Solidity\+AST.\+ASTNode.\+Gas\+Cost\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 164 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+pre\+Translation\+Action().
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_a_s_t_node_a77d1c922cbe9927a8e33efa881f5100b}\label{class_solidity_a_s_t_1_1_a_s_t_node_a77d1c922cbe9927a8e33efa881f5100b}} 
+\index{SolidityAST.ASTNode@{SolidityAST.ASTNode}!Id@{Id}}
+\index{Id@{Id}!SolidityAST.ASTNode@{SolidityAST.ASTNode}}
+\doxysubsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily int Solidity\+AST.\+ASTNode.\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 162 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+Node\+Mapper.\+Common\+Visit(), Solidity\+AST.\+Source\+Unit\+List.\+Source\+Unit\+List(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Dynamic\+Dispatch\+Call(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_a_s_t_node_a755f2b216a1dfbf13c4ec038cb8731c4}\label{class_solidity_a_s_t_1_1_a_s_t_node_a755f2b216a1dfbf13c4ec038cb8731c4}} 
+\index{SolidityAST.ASTNode@{SolidityAST.ASTNode}!NodeType@{NodeType}}
+\index{NodeType@{NodeType}!SolidityAST.ASTNode@{SolidityAST.ASTNode}}
+\doxysubsubsection{\texorpdfstring{NodeType}{NodeType}}
+{\footnotesize\ttfamily string Solidity\+AST.\+ASTNode.\+Node\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 166 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+Source\+Unit\+List.\+Source\+Unit\+List().
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_a_s_t_node_a87023e3a09f66a42acdc08bf04647e1f}\label{class_solidity_a_s_t_1_1_a_s_t_node_a87023e3a09f66a42acdc08bf04647e1f}} 
+\index{SolidityAST.ASTNode@{SolidityAST.ASTNode}!Src@{Src}}
+\index{Src@{Src}!SolidityAST.ASTNode@{SolidityAST.ASTNode}}
+\doxysubsubsection{\texorpdfstring{Src}{Src}}
+{\footnotesize\ttfamily string Solidity\+AST.\+ASTNode.\+Src\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 168 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Source\+Info\+Collector.\+Common\+End\+Visit(), and Solidity\+AST.\+Source\+Unit\+List.\+Source\+Unit\+List().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Solidity\+AST/\mbox{\hyperlink{_solidity_a_s_t_8cs}{Solidity\+AST.\+cs}}\end{DoxyCompactItemize}

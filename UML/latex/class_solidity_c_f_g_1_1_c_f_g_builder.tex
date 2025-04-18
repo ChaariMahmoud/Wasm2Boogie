@@ -1,0 +1,457 @@
+\hypertarget{class_solidity_c_f_g_1_1_c_f_g_builder}{}\doxysection{Solidity\+CFG.\+CFGBuilder Class Reference}
+\label{class_solidity_c_f_g_1_1_c_f_g_builder}\index{SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}}
+
+
+Inheritance diagram for Solidity\+CFG.\+CFGBuilder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_solidity_c_f_g_1_1_c_f_g_builder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Solidity\+CFG.\+CFGBuilder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_solidity_c_f_g_1_1_c_f_g_builder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_ab1ff8847f1eb58cdf0271f9213355ab5}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_binary_operation}{Binary\+Operation}} ast\+Node)
+\item 
+override bool \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_a73565ae54171b41b3b398db5e61190f5}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_conditional}{Conditional}} ast\+Node)
+\item 
+override bool \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_acedf26b14dbb527e1dc71326b97e7c25}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_if_statement}{If\+Statement}} ast\+Node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_solidity_c_f_g_1_1_function_c_f_g}{Function\+CFG}} \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_a9a41d78152bbef58bc1088a9c0207660}{Build\+Function\+CFG}} (\mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node_factory}{CFGNode\+Factory}} \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_a6991960a0dafdb91a29e26f1b7a9b93e}{factory}}, \mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} func)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_a41e61d3d1be5065f0d88d0fb883eb04c}{Common\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} ast\+Node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_aba237331f8f30051224b747c4fd5ac61}{CFGBuilder}} (\mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node_factory}{CFGNode\+Factory}} \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_a6991960a0dafdb91a29e26f1b7a9b93e}{factory}}, \mbox{\hyperlink{class_solidity_c_f_g_1_1_function_c_f_g}{Function\+CFG}} \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_ab4af8b7716c6646238b1028eea71259a}{current\+CFG}})
+\item 
+void \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_a9ef2f5bfda83f0088d5583c6041501ca}{Append\+Control\+Flow}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} ast\+Node)
+\item 
+\mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}} \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_a7d63ba7bec99ba278535f0e8f8a5619c}{Create\+Control\+Flow}} (\mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}} entry, \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} ast\+Node)
+\item 
+List$<$ \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}} $>$ \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_a4b5a32d8566b0c1d7fc233867dad4a91}{Split\+Control\+Flow}} (int num)
+\item 
+void \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_a0a077bca9079a55480d62eaa554f1431}{Merge\+Control\+Flow}} (List$<$ \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}} $>$ nodes, \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}} destination=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_a5ba2daa2e938e17a504e5a8e48fa244c}{Connect\+Control\+Flow}} (\mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}} from, \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}} to)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node_factory}{CFGNode\+Factory}} \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_a6991960a0dafdb91a29e26f1b7a9b93e}{factory}}
+\item 
+\mbox{\hyperlink{class_solidity_c_f_g_1_1_function_c_f_g}{Function\+CFG}} \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_ab4af8b7716c6646238b1028eea71259a}{current\+CFG}}
+\item 
+\mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}} \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_builder_a362e2bc40dd16754420c1c32ca69dbc1}{current\+Node}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 10 of file CFGBuilder.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_c_f_g_builder_aba237331f8f30051224b747c4fd5ac61}\label{class_solidity_c_f_g_1_1_c_f_g_builder_aba237331f8f30051224b747c4fd5ac61}} 
+\index{SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}!CFGBuilder@{CFGBuilder}}
+\index{CFGBuilder@{CFGBuilder}!SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}}
+\doxysubsubsection{\texorpdfstring{CFGBuilder()}{CFGBuilder()}}
+{\footnotesize\ttfamily Solidity\+CFG.\+CFGBuilder.\+CFGBuilder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node_factory}{CFGNode\+Factory}}}]{factory,  }\item[{\mbox{\hyperlink{class_solidity_c_f_g_1_1_function_c_f_g}{Function\+CFG}}}]{current\+CFG }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 37 of file CFGBuilder.\+cs.
+
+
+
+References Solidity\+CFG.\+CFGBuilder.\+current\+CFG, Solidity\+CFG.\+Function\+CFG.\+Entry, and Solidity\+CFG.\+CFGBuilder.\+factory.
+
+
+
+Referenced by Solidity\+CFG.\+CFGBuilder.\+Build\+Function\+CFG().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_aba237331f8f30051224b747c4fd5ac61_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_c_f_g_builder_a9ef2f5bfda83f0088d5583c6041501ca}\label{class_solidity_c_f_g_1_1_c_f_g_builder_a9ef2f5bfda83f0088d5583c6041501ca}} 
+\index{SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}!AppendControlFlow@{AppendControlFlow}}
+\index{AppendControlFlow@{AppendControlFlow}!SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}}
+\doxysubsubsection{\texorpdfstring{AppendControlFlow()}{AppendControlFlow()}}
+{\footnotesize\ttfamily void Solidity\+CFG.\+CFGBuilder.\+Append\+Control\+Flow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}}]{ast\+Node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 44 of file CFGBuilder.\+cs.
+
+
+
+References Solidity\+AST.\+ASTNode.\+Accept().
+
+
+
+Referenced by Solidity\+CFG.\+CFGBuilder.\+Build\+Function\+CFG(), Solidity\+CFG.\+CFGBuilder.\+Create\+Control\+Flow(), and Solidity\+CFG.\+CFGBuilder.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_a9ef2f5bfda83f0088d5583c6041501ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_a9ef2f5bfda83f0088d5583c6041501ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_c_f_g_builder_a9a41d78152bbef58bc1088a9c0207660}\label{class_solidity_c_f_g_1_1_c_f_g_builder_a9a41d78152bbef58bc1088a9c0207660}} 
+\index{SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}!BuildFunctionCFG@{BuildFunctionCFG}}
+\index{BuildFunctionCFG@{BuildFunctionCFG}!SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}}
+\doxysubsubsection{\texorpdfstring{BuildFunctionCFG()}{BuildFunctionCFG()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_solidity_c_f_g_1_1_function_c_f_g}{Function\+CFG}} Solidity\+CFG.\+CFGBuilder.\+Build\+Function\+CFG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node_factory}{CFGNode\+Factory}}}]{factory,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 18 of file CFGBuilder.\+cs.
+
+
+
+References Solidity\+CFG.\+CFGBuilder.\+Append\+Control\+Flow(), Solidity\+CFG.\+CFGBuilder.\+CFGBuilder(), Solidity\+CFG.\+CFGBuilder.\+Connect\+Control\+Flow(), Solidity\+CFG.\+CFGBuilder.\+current\+Node, Solidity\+CFG.\+CFGBuilder.\+factory, and Solidity\+CFG.\+CFGNode\+Factory.\+Make\+Node().
+
+
+
+Referenced by Solidity\+CFG.\+Test\+Main.\+Test().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_a9a41d78152bbef58bc1088a9c0207660_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_a9a41d78152bbef58bc1088a9c0207660_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_c_f_g_builder_a41e61d3d1be5065f0d88d0fb883eb04c}\label{class_solidity_c_f_g_1_1_c_f_g_builder_a41e61d3d1be5065f0d88d0fb883eb04c}} 
+\index{SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}!CommonVisit@{CommonVisit}}
+\index{CommonVisit@{CommonVisit}!SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}}
+\doxysubsubsection{\texorpdfstring{CommonVisit()}{CommonVisit()}}
+{\footnotesize\ttfamily override bool Solidity\+CFG.\+CFGBuilder.\+Common\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}}]{ast\+Node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a25b7d506b2746411ec5c1848a45495d1}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 91 of file CFGBuilder.\+cs.
+
+
+
+References Solidity\+CFG.\+Basic\+Block.\+Add\+Expression(), Solidity\+CFG.\+CFGNode.\+Block, and Solidity\+CFG.\+CFGBuilder.\+current\+Node.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_a41e61d3d1be5065f0d88d0fb883eb04c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_c_f_g_builder_a5ba2daa2e938e17a504e5a8e48fa244c}\label{class_solidity_c_f_g_1_1_c_f_g_builder_a5ba2daa2e938e17a504e5a8e48fa244c}} 
+\index{SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}!ConnectControlFlow@{ConnectControlFlow}}
+\index{ConnectControlFlow@{ConnectControlFlow}!SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}}
+\doxysubsubsection{\texorpdfstring{ConnectControlFlow()}{ConnectControlFlow()}}
+{\footnotesize\ttfamily static void Solidity\+CFG.\+CFGBuilder.\+Connect\+Control\+Flow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}}}]{from,  }\item[{\mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}}}]{to }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 29 of file CFGBuilder.\+cs.
+
+
+
+References Solidity\+CFG.\+CFGNode.\+Entries, and Solidity\+CFG.\+CFGNode.\+Exits.
+
+
+
+Referenced by Solidity\+CFG.\+CFGBuilder.\+Build\+Function\+CFG(), Solidity\+CFG.\+CFGBuilder.\+Merge\+Control\+Flow(), and Solidity\+CFG.\+CFGBuilder.\+Split\+Control\+Flow().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_a5ba2daa2e938e17a504e5a8e48fa244c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_c_f_g_builder_a7d63ba7bec99ba278535f0e8f8a5619c}\label{class_solidity_c_f_g_1_1_c_f_g_builder_a7d63ba7bec99ba278535f0e8f8a5619c}} 
+\index{SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}!CreateControlFlow@{CreateControlFlow}}
+\index{CreateControlFlow@{CreateControlFlow}!SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}}
+\doxysubsubsection{\texorpdfstring{CreateControlFlow()}{CreateControlFlow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}} Solidity\+CFG.\+CFGBuilder.\+Create\+Control\+Flow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}}}]{entry,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}}]{ast\+Node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 49 of file CFGBuilder.\+cs.
+
+
+
+References Solidity\+CFG.\+CFGBuilder.\+Append\+Control\+Flow(), and Solidity\+CFG.\+CFGBuilder.\+current\+Node.
+
+
+
+Referenced by Solidity\+CFG.\+CFGBuilder.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_a7d63ba7bec99ba278535f0e8f8a5619c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_a7d63ba7bec99ba278535f0e8f8a5619c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_c_f_g_builder_a0a077bca9079a55480d62eaa554f1431}\label{class_solidity_c_f_g_1_1_c_f_g_builder_a0a077bca9079a55480d62eaa554f1431}} 
+\index{SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}!MergeControlFlow@{MergeControlFlow}}
+\index{MergeControlFlow@{MergeControlFlow}!SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}}
+\doxysubsubsection{\texorpdfstring{MergeControlFlow()}{MergeControlFlow()}}
+{\footnotesize\ttfamily void Solidity\+CFG.\+CFGBuilder.\+Merge\+Control\+Flow (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}} $>$}]{nodes,  }\item[{\mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}}}]{destination = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 74 of file CFGBuilder.\+cs.
+
+
+
+References Solidity\+CFG.\+CFGBuilder.\+Connect\+Control\+Flow(), Solidity\+CFG.\+CFGBuilder.\+current\+Node, Solidity\+CFG.\+CFGBuilder.\+factory, and Solidity\+CFG.\+CFGNode\+Factory.\+Make\+Node().
+
+
+
+Referenced by Solidity\+CFG.\+CFGBuilder.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_a0a077bca9079a55480d62eaa554f1431_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_a0a077bca9079a55480d62eaa554f1431_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_c_f_g_builder_a4b5a32d8566b0c1d7fc233867dad4a91}\label{class_solidity_c_f_g_1_1_c_f_g_builder_a4b5a32d8566b0c1d7fc233867dad4a91}} 
+\index{SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}!SplitControlFlow@{SplitControlFlow}}
+\index{SplitControlFlow@{SplitControlFlow}!SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}}
+\doxysubsubsection{\texorpdfstring{SplitControlFlow()}{SplitControlFlow()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}}$>$ Solidity\+CFG.\+CFGBuilder.\+Split\+Control\+Flow (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 59 of file CFGBuilder.\+cs.
+
+
+
+References Solidity\+CFG.\+CFGBuilder.\+Connect\+Control\+Flow(), Solidity\+CFG.\+CFGBuilder.\+current\+Node, Solidity\+CFG.\+CFGBuilder.\+factory, and Solidity\+CFG.\+CFGNode\+Factory.\+Make\+Node().
+
+
+
+Referenced by Solidity\+CFG.\+CFGBuilder.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_a4b5a32d8566b0c1d7fc233867dad4a91_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_a4b5a32d8566b0c1d7fc233867dad4a91_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_c_f_g_builder_ab1ff8847f1eb58cdf0271f9213355ab5}\label{class_solidity_c_f_g_1_1_c_f_g_builder_ab1ff8847f1eb58cdf0271f9213355ab5}} 
+\index{SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}!Visit@{Visit}}
+\index{Visit@{Visit}!SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily override bool Solidity\+CFG.\+CFGBuilder.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_binary_operation}{Binary\+Operation}}}]{ast\+Node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_ac8c41c1364546f07ef509373736f4306}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 100 of file CFGBuilder.\+cs.
+
+
+
+References Solidity\+CFG.\+CFGBuilder.\+Append\+Control\+Flow(), Solidity\+CFG.\+CFGNode.\+Block, Solidity\+CFG.\+CFGBuilder.\+Create\+Control\+Flow(), Solidity\+CFG.\+CFGBuilder.\+current\+Node, Solidity\+AST.\+Binary\+Operation.\+Left\+Expression, Solidity\+CFG.\+CFGBuilder.\+Merge\+Control\+Flow(), Solidity\+AST.\+Binary\+Operation.\+Operator, Solidity\+AST.\+Binary\+Operation.\+Right\+Expression, Solidity\+CFG.\+Basic\+Block.\+Set\+Predicate(), and Solidity\+CFG.\+CFGBuilder.\+Split\+Control\+Flow().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_ab1ff8847f1eb58cdf0271f9213355ab5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_c_f_g_builder_a73565ae54171b41b3b398db5e61190f5}\label{class_solidity_c_f_g_1_1_c_f_g_builder_a73565ae54171b41b3b398db5e61190f5}} 
+\index{SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}!Visit@{Visit}}
+\index{Visit@{Visit}!SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily override bool Solidity\+CFG.\+CFGBuilder.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_conditional}{Conditional}}}]{ast\+Node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a80b263058a63a05896bf8ffcb2a14af6}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 134 of file CFGBuilder.\+cs.
+
+
+
+References Solidity\+AST.\+ASTNode.\+Accept(), Solidity\+AST.\+Conditional.\+Condition, Solidity\+CFG.\+CFGBuilder.\+Create\+Control\+Flow(), Solidity\+AST.\+Conditional.\+False\+Expression, Solidity\+CFG.\+CFGBuilder.\+Merge\+Control\+Flow(), Solidity\+CFG.\+CFGBuilder.\+Split\+Control\+Flow(), and Solidity\+AST.\+Conditional.\+True\+Expression.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_a73565ae54171b41b3b398db5e61190f5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_c_f_g_builder_acedf26b14dbb527e1dc71326b97e7c25}\label{class_solidity_c_f_g_1_1_c_f_g_builder_acedf26b14dbb527e1dc71326b97e7c25}} 
+\index{SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}!Visit@{Visit}}
+\index{Visit@{Visit}!SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily override bool Solidity\+CFG.\+CFGBuilder.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_if_statement}{If\+Statement}}}]{ast\+Node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a224b624bec9601eb7a337b4acdc10e29}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 148 of file CFGBuilder.\+cs.
+
+
+
+References Solidity\+AST.\+ASTNode.\+Accept(), Solidity\+CFG.\+CFGNode.\+Block, Solidity\+AST.\+If\+Statement.\+Condition, Solidity\+CFG.\+CFGBuilder.\+Create\+Control\+Flow(), Solidity\+CFG.\+CFGBuilder.\+current\+Node, Solidity\+AST.\+If\+Statement.\+False\+Body, Solidity\+CFG.\+CFGBuilder.\+Merge\+Control\+Flow(), Solidity\+CFG.\+Basic\+Block.\+Set\+Predicate(), Solidity\+CFG.\+CFGBuilder.\+Split\+Control\+Flow(), and Solidity\+AST.\+If\+Statement.\+True\+Body.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_c_f_g_1_1_c_f_g_builder_acedf26b14dbb527e1dc71326b97e7c25_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_c_f_g_builder_ab4af8b7716c6646238b1028eea71259a}\label{class_solidity_c_f_g_1_1_c_f_g_builder_ab4af8b7716c6646238b1028eea71259a}} 
+\index{SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}!currentCFG@{currentCFG}}
+\index{currentCFG@{currentCFG}!SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}}
+\doxysubsubsection{\texorpdfstring{currentCFG}{currentCFG}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_c_f_g_1_1_function_c_f_g}{Function\+CFG}} Solidity\+CFG.\+CFGBuilder.\+current\+CFG\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 14 of file CFGBuilder.\+cs.
+
+
+
+Referenced by Solidity\+CFG.\+CFGBuilder.\+CFGBuilder().
+
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_c_f_g_builder_a362e2bc40dd16754420c1c32ca69dbc1}\label{class_solidity_c_f_g_1_1_c_f_g_builder_a362e2bc40dd16754420c1c32ca69dbc1}} 
+\index{SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}!currentNode@{currentNode}}
+\index{currentNode@{currentNode}!SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}}
+\doxysubsubsection{\texorpdfstring{currentNode}{currentNode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node}{CFGNode}} Solidity\+CFG.\+CFGBuilder.\+current\+Node\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 16 of file CFGBuilder.\+cs.
+
+
+
+Referenced by Solidity\+CFG.\+CFGBuilder.\+Build\+Function\+CFG(), Solidity\+CFG.\+CFGBuilder.\+Common\+Visit(), Solidity\+CFG.\+CFGBuilder.\+Create\+Control\+Flow(), Solidity\+CFG.\+CFGBuilder.\+Merge\+Control\+Flow(), Solidity\+CFG.\+CFGBuilder.\+Split\+Control\+Flow(), and Solidity\+CFG.\+CFGBuilder.\+Visit().
+
+\mbox{\Hypertarget{class_solidity_c_f_g_1_1_c_f_g_builder_a6991960a0dafdb91a29e26f1b7a9b93e}\label{class_solidity_c_f_g_1_1_c_f_g_builder_a6991960a0dafdb91a29e26f1b7a9b93e}} 
+\index{SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}!factory@{factory}}
+\index{factory@{factory}!SolidityCFG.CFGBuilder@{SolidityCFG.CFGBuilder}}
+\doxysubsubsection{\texorpdfstring{factory}{factory}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_c_f_g_1_1_c_f_g_node_factory}{CFGNode\+Factory}} Solidity\+CFG.\+CFGBuilder.\+factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 12 of file CFGBuilder.\+cs.
+
+
+
+Referenced by Solidity\+CFG.\+CFGBuilder.\+Build\+Function\+CFG(), Solidity\+CFG.\+CFGBuilder.\+CFGBuilder(), Solidity\+CFG.\+CFGBuilder.\+Merge\+Control\+Flow(), and Solidity\+CFG.\+CFGBuilder.\+Split\+Control\+Flow().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Solidity\+CFG/\mbox{\hyperlink{_c_f_g_builder_8cs}{CFGBuilder.\+cs}}\end{DoxyCompactItemize}

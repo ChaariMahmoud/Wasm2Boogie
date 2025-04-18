@@ -1,0 +1,133 @@
+\hypertarget{class_solidity_a_s_t_1_1_solidity_compiler}{}\doxysection{Solidity\+AST.\+Solidity\+Compiler Class Reference}
+\label{class_solidity_a_s_t_1_1_solidity_compiler}\index{SolidityAST.SolidityCompiler@{SolidityAST.SolidityCompiler}}
+
+
+Collaboration diagram for Solidity\+AST.\+Solidity\+Compiler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{class_solidity_a_s_t_1_1_solidity_compiler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_compiler_output}{Compiler\+Output}} \mbox{\hyperlink{class_solidity_a_s_t_1_1_solidity_compiler_a6623aaee6a8f936af4e4a26c66ccd42a}{Compile}} (string solc\+Path, string derived\+File\+Path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_solidity_a_s_t_1_1_solidity_compiler_af2282592eac02d8f8e4332b11041c422}{Run\+Solc}} (string solc\+Path, string derived\+File\+Path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_solidity_a_s_t_1_1_solidity_compiler_a1de562241175f2d5190096fd7ed34986}{solc\+Timeout\+In\+Milliseconds}} = Time\+Span.\+From\+Seconds(5).Seconds $\ast$ 1000
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 11 of file Solidity\+Compiler.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_solidity_compiler_a6623aaee6a8f936af4e4a26c66ccd42a}\label{class_solidity_a_s_t_1_1_solidity_compiler_a6623aaee6a8f936af4e4a26c66ccd42a}} 
+\index{SolidityAST.SolidityCompiler@{SolidityAST.SolidityCompiler}!Compile@{Compile}}
+\index{Compile@{Compile}!SolidityAST.SolidityCompiler@{SolidityAST.SolidityCompiler}}
+\doxysubsubsection{\texorpdfstring{Compile()}{Compile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_compiler_output}{Compiler\+Output}} Solidity\+AST.\+Solidity\+Compiler.\+Compile (\begin{DoxyParamCaption}\item[{string}]{solc\+Path,  }\item[{string}]{derived\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 15 of file Solidity\+Compiler.\+cs.
+
+
+
+References Solidity\+AST.\+Solidity\+Compiler.\+Run\+Solc().
+
+
+
+Referenced by Solidity\+AST.\+Regression\+Executor.\+Execute(), Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Execute(), Veri\+Sol\+Runner.\+Veri\+Sol\+Executor.\+Execute\+Sol\+To\+Boogie(), Solidity\+AST.\+Test\+Main.\+Legacy\+Main(), and Solidity\+CFG.\+Test\+Main.\+Main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_solidity_compiler_a6623aaee6a8f936af4e4a26c66ccd42a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_solidity_compiler_a6623aaee6a8f936af4e4a26c66ccd42a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_solidity_compiler_af2282592eac02d8f8e4332b11041c422}\label{class_solidity_a_s_t_1_1_solidity_compiler_af2282592eac02d8f8e4332b11041c422}} 
+\index{SolidityAST.SolidityCompiler@{SolidityAST.SolidityCompiler}!RunSolc@{RunSolc}}
+\index{RunSolc@{RunSolc}!SolidityAST.SolidityCompiler@{SolidityAST.SolidityCompiler}}
+\doxysubsubsection{\texorpdfstring{RunSolc()}{RunSolc()}}
+{\footnotesize\ttfamily string Solidity\+AST.\+Solidity\+Compiler.\+Run\+Solc (\begin{DoxyParamCaption}\item[{string}]{solc\+Path,  }\item[{string}]{derived\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em solc\+Path} & \\
+\hline
+{\em derived\+File\+Path} & Path to the top-\/level solidty file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 49 of file Solidity\+Compiler.\+cs.
+
+
+
+References Solidity\+AST.\+Solidity\+Compiler.\+solc\+Timeout\+In\+Milliseconds.
+
+
+
+Referenced by Solidity\+AST.\+Solidity\+Compiler.\+Compile().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_solidity_compiler_af2282592eac02d8f8e4332b11041c422_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_solidity_compiler_a1de562241175f2d5190096fd7ed34986}\label{class_solidity_a_s_t_1_1_solidity_compiler_a1de562241175f2d5190096fd7ed34986}} 
+\index{SolidityAST.SolidityCompiler@{SolidityAST.SolidityCompiler}!solcTimeoutInMilliseconds@{solcTimeoutInMilliseconds}}
+\index{solcTimeoutInMilliseconds@{solcTimeoutInMilliseconds}!SolidityAST.SolidityCompiler@{SolidityAST.SolidityCompiler}}
+\doxysubsubsection{\texorpdfstring{solcTimeoutInMilliseconds}{solcTimeoutInMilliseconds}}
+{\footnotesize\ttfamily int Solidity\+AST.\+Solidity\+Compiler.\+solc\+Timeout\+In\+Milliseconds = Time\+Span.\+From\+Seconds(5).Seconds $\ast$ 1000\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 13 of file Solidity\+Compiler.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+Solidity\+Compiler.\+Run\+Solc().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Solidity\+AST/\mbox{\hyperlink{_solidity_compiler_8cs}{Solidity\+Compiler.\+cs}}\end{DoxyCompactItemize}

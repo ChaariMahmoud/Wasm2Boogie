@@ -1,0 +1,528 @@
+\hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager}{}\doxysection{Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager Class Reference}
+\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager}\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+
+
+Inheritance diagram for Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a64f30fa17b41d46eb1c676b961ef90d9}{Install}} ()
+\item 
+void \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_ab37ea16328d0994470527a8af2da593d}{Download\+And\+Un\+Zip}} ()
+\item 
+void \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a1c4cb1c4a478862a97b4f36d778a321f}{Download\+And\+Copy}} ()
+\item 
+void \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_aa7396fad2091a96f4c51647027ed498d}{Create\+Symbolic\+Link}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_ad6e98bd8bf20aa8b83c387d5ebb9cc6f}{Downloaded\+Tool\+Manager}} (\mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_tool_source_settings}{Tool\+Source\+Settings}} \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_tool_manager_afbf68da4c75ba94ec8b1d13db7c9f7a8}{settings}})
+\item 
+override void \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_af9b6cdf84f3c1ec1f426895f8532931c}{Ensure\+Existed}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a9967a0ed98bef90330385a302732caba}{Download\+URL}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_ab32bc65cefce8806594cdb20349414b7}{Exe\+Path\+Within\+Zip}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a5b5b861bbb6642db2dad047340fe4453}{Zip\+File\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a102bdade046f716ac886f6bb775af011}{Temp\+Directory}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a6d637fcd51d05ae646f193ccae826e8a}{Zip\+File\+Path}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a83583e6d95cf63fe3951f61abdf1ce4a}{Extract\+Path}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a2f99812f2ef3cf478b3b856bcf20773f}{Exe\+Temp\+Path}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a5a0852084a60567e9e515333d23c33be}{Change\+Permission}} ()
+\item 
+void \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_afe9d9cf7e71d60d73a56d5d54f56d404}{Run\+Cmd}} (string cmd\+Name, string arguments)
+\item 
+void \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a5a991846a723c0cec53f69df67ae8589}{Prepare\+Temp\+Directory}} ()
+\item 
+void \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a6a4d8ec91c046db93549d11c33895cc6}{Copy\+To\+Command}} (string exe\+Temp\+Path)
+\item 
+void \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a414cbf8b222d3b6fb128e0c6b5dafc35}{Download}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 10 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_ad6e98bd8bf20aa8b83c387d5ebb9cc6f}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_ad6e98bd8bf20aa8b83c387d5ebb9cc6f}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!DownloadedToolManager@{DownloadedToolManager}}
+\index{DownloadedToolManager@{DownloadedToolManager}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{DownloadedToolManager()}{DownloadedToolManager()}}
+{\footnotesize\ttfamily Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Downloaded\+Tool\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_tool_source_settings}{Tool\+Source\+Settings}}}]{settings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}}
+
+
+
+Definition at line 68 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a5a0852084a60567e9e515333d23c33be}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a5a0852084a60567e9e515333d23c33be}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!ChangePermission@{ChangePermission}}
+\index{ChangePermission@{ChangePermission}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{ChangePermission()}{ChangePermission()}}
+{\footnotesize\ttfamily void Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Change\+Permission (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 87 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+References Veri\+Sol\+Runner.\+External\+Tools.\+Tool\+Manager.\+Os\+Name, and Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Run\+Cmd().
+
+
+
+Referenced by Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Ensure\+Existed().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a5a0852084a60567e9e515333d23c33be_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a5a0852084a60567e9e515333d23c33be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a6a4d8ec91c046db93549d11c33895cc6}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a6a4d8ec91c046db93549d11c33895cc6}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!CopyToCommand@{CopyToCommand}}
+\index{CopyToCommand@{CopyToCommand}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{CopyToCommand()}{CopyToCommand()}}
+{\footnotesize\ttfamily void Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Copy\+To\+Command (\begin{DoxyParamCaption}\item[{string}]{exe\+Temp\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 182 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+References Veri\+Sol\+Runner.\+External\+Tools.\+Tool\+Manager.\+Command, and Veri\+Sol\+Runner.\+External\+Tools.\+External\+Tools\+Manager.\+Log().
+
+
+
+Referenced by Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download\+And\+Copy(), and Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download\+And\+Un\+Zip().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a6a4d8ec91c046db93549d11c33895cc6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a6a4d8ec91c046db93549d11c33895cc6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_aa7396fad2091a96f4c51647027ed498d}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_aa7396fad2091a96f4c51647027ed498d}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!CreateSymbolicLink@{CreateSymbolicLink}}
+\index{CreateSymbolicLink@{CreateSymbolicLink}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{CreateSymbolicLink()}{CreateSymbolicLink()}}
+{\footnotesize\ttfamily void Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Create\+Symbolic\+Link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 151 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+References Veri\+Sol\+Runner.\+External\+Tools.\+Tool\+Manager.\+Os\+Name, and Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Run\+Cmd().
+
+
+
+Referenced by Veri\+Sol\+Runner.\+External\+Tools.\+Solc\+Manager.\+Install().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_aa7396fad2091a96f4c51647027ed498d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_aa7396fad2091a96f4c51647027ed498d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a414cbf8b222d3b6fb128e0c6b5dafc35}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a414cbf8b222d3b6fb128e0c6b5dafc35}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!Download@{Download}}
+\index{Download@{Download}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{Download()}{Download()}}
+{\footnotesize\ttfamily void Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 188 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+References Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download\+URL, Veri\+Sol\+Runner.\+External\+Tools.\+External\+Tools\+Manager.\+Log(), and Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Zip\+File\+Path.
+
+
+
+Referenced by Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download\+And\+Copy(), and Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download\+And\+Un\+Zip().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a414cbf8b222d3b6fb128e0c6b5dafc35_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a414cbf8b222d3b6fb128e0c6b5dafc35_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a1c4cb1c4a478862a97b4f36d778a321f}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a1c4cb1c4a478862a97b4f36d778a321f}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!DownloadAndCopy@{DownloadAndCopy}}
+\index{DownloadAndCopy@{DownloadAndCopy}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{DownloadAndCopy()}{DownloadAndCopy()}}
+{\footnotesize\ttfamily void Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download\+And\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 140 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+References Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Copy\+To\+Command(), Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download(), Veri\+Sol\+Runner.\+External\+Tools.\+External\+Tools\+Manager.\+Log(), Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Prepare\+Temp\+Directory(), and Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Zip\+File\+Path.
+
+
+
+Referenced by Veri\+Sol\+Runner.\+External\+Tools.\+Solc\+Manager.\+Install().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a1c4cb1c4a478862a97b4f36d778a321f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a1c4cb1c4a478862a97b4f36d778a321f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_ab37ea16328d0994470527a8af2da593d}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_ab37ea16328d0994470527a8af2da593d}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!DownloadAndUnZip@{DownloadAndUnZip}}
+\index{DownloadAndUnZip@{DownloadAndUnZip}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{DownloadAndUnZip()}{DownloadAndUnZip()}}
+{\footnotesize\ttfamily void Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download\+And\+Un\+Zip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 124 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+References Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Copy\+To\+Command(), Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download(), Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Exe\+Temp\+Path, Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Extract\+Path, Veri\+Sol\+Runner.\+External\+Tools.\+External\+Tools\+Manager.\+Log(), Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Prepare\+Temp\+Directory(), and Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Zip\+File\+Path.
+
+
+
+Referenced by Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Install(), and Veri\+Sol\+Runner.\+External\+Tools.\+Solc\+Manager.\+Install().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_ab37ea16328d0994470527a8af2da593d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_ab37ea16328d0994470527a8af2da593d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_af9b6cdf84f3c1ec1f426895f8532931c}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_af9b6cdf84f3c1ec1f426895f8532931c}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!EnsureExisted@{EnsureExisted}}
+\index{EnsureExisted@{EnsureExisted}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{EnsureExisted()}{EnsureExisted()}}
+{\footnotesize\ttfamily override void Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Ensure\+Existed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [package]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_tool_manager_a3bea281bf39c73af99aad9c3d5fe179e}{Veri\+Sol\+Runner.\+External\+Tools.\+Tool\+Manager}}.
+
+
+
+Definition at line 72 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+References Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Change\+Permission(), Veri\+Sol\+Runner.\+External\+Tools.\+Tool\+Manager.\+Ensure\+Command\+Path\+Existed(), Veri\+Sol\+Runner.\+External\+Tools.\+Tool\+Manager.\+Exists(), Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Install(), and Veri\+Sol\+Runner.\+External\+Tools.\+External\+Tools\+Manager.\+Log().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_af9b6cdf84f3c1ec1f426895f8532931c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a64f30fa17b41d46eb1c676b961ef90d9}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a64f30fa17b41d46eb1c676b961ef90d9}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!Install@{Install}}
+\index{Install@{Install}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{Install()}{Install()}}
+{\footnotesize\ttfamily virtual void Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Install (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_veri_sol_runner_1_1_external_tools_1_1_solc_manager_aa517b1146e3529d0c7ae6e4b52ee0d0a}{Veri\+Sol\+Runner.\+External\+Tools.\+Solc\+Manager}}.
+
+
+
+Definition at line 119 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+References Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download\+And\+Un\+Zip().
+
+
+
+Referenced by Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Ensure\+Existed().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a64f30fa17b41d46eb1c676b961ef90d9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a64f30fa17b41d46eb1c676b961ef90d9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a5a991846a723c0cec53f69df67ae8589}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a5a991846a723c0cec53f69df67ae8589}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!PrepareTempDirectory@{PrepareTempDirectory}}
+\index{PrepareTempDirectory@{PrepareTempDirectory}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{PrepareTempDirectory()}{PrepareTempDirectory()}}
+{\footnotesize\ttfamily void Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Prepare\+Temp\+Directory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 159 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+References Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Extract\+Path, Veri\+Sol\+Runner.\+External\+Tools.\+External\+Tools\+Manager.\+Log(), Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Temp\+Directory, and Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Zip\+File\+Path.
+
+
+
+Referenced by Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download\+And\+Copy(), and Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download\+And\+Un\+Zip().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a5a991846a723c0cec53f69df67ae8589_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a5a991846a723c0cec53f69df67ae8589_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_afe9d9cf7e71d60d73a56d5d54f56d404}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_afe9d9cf7e71d60d73a56d5d54f56d404}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!RunCmd@{RunCmd}}
+\index{RunCmd@{RunCmd}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{RunCmd()}{RunCmd()}}
+{\footnotesize\ttfamily void Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Run\+Cmd (\begin{DoxyParamCaption}\item[{string}]{cmd\+Name,  }\item[{string}]{arguments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 95 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+References Veri\+Sol\+Runner.\+External\+Tools.\+External\+Tools\+Manager.\+Log().
+
+
+
+Referenced by Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Change\+Permission(), and Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Create\+Symbolic\+Link().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_afe9d9cf7e71d60d73a56d5d54f56d404_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_afe9d9cf7e71d60d73a56d5d54f56d404_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a9967a0ed98bef90330385a302732caba}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a9967a0ed98bef90330385a302732caba}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!DownloadURL@{DownloadURL}}
+\index{DownloadURL@{DownloadURL}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{DownloadURL}{DownloadURL}}
+{\footnotesize\ttfamily string Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download\+URL\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Definition at line 12 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+Referenced by Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download().
+
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_ab32bc65cefce8806594cdb20349414b7}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_ab32bc65cefce8806594cdb20349414b7}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!ExePathWithinZip@{ExePathWithinZip}}
+\index{ExePathWithinZip@{ExePathWithinZip}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{ExePathWithinZip}{ExePathWithinZip}}
+{\footnotesize\ttfamily string Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Exe\+Path\+Within\+Zip\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Definition at line 20 of file Downloaded\+Tool\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a2f99812f2ef3cf478b3b856bcf20773f}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a2f99812f2ef3cf478b3b856bcf20773f}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!ExeTempPath@{ExeTempPath}}
+\index{ExeTempPath@{ExeTempPath}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{ExeTempPath}{ExeTempPath}}
+{\footnotesize\ttfamily string Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Exe\+Temp\+Path\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Definition at line 60 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+Referenced by Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download\+And\+Un\+Zip().
+
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a83583e6d95cf63fe3951f61abdf1ce4a}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a83583e6d95cf63fe3951f61abdf1ce4a}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!ExtractPath@{ExtractPath}}
+\index{ExtractPath@{ExtractPath}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{ExtractPath}{ExtractPath}}
+{\footnotesize\ttfamily string Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Extract\+Path\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Definition at line 52 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+Referenced by Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download\+And\+Un\+Zip(), and Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Prepare\+Temp\+Directory().
+
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a102bdade046f716ac886f6bb775af011}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a102bdade046f716ac886f6bb775af011}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!TempDirectory@{TempDirectory}}
+\index{TempDirectory@{TempDirectory}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{TempDirectory}{TempDirectory}}
+{\footnotesize\ttfamily string Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Temp\+Directory\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Definition at line 36 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+Referenced by Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Prepare\+Temp\+Directory().
+
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a5b5b861bbb6642db2dad047340fe4453}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a5b5b861bbb6642db2dad047340fe4453}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!ZipFileName@{ZipFileName}}
+\index{ZipFileName@{ZipFileName}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{ZipFileName}{ZipFileName}}
+{\footnotesize\ttfamily string Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Zip\+File\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Definition at line 28 of file Downloaded\+Tool\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a6d637fcd51d05ae646f193ccae826e8a}\label{class_veri_sol_runner_1_1_external_tools_1_1_downloaded_tool_manager_a6d637fcd51d05ae646f193ccae826e8a}} 
+\index{VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}!ZipFilePath@{ZipFilePath}}
+\index{ZipFilePath@{ZipFilePath}!VeriSolRunner.ExternalTools.DownloadedToolManager@{VeriSolRunner.ExternalTools.DownloadedToolManager}}
+\doxysubsubsection{\texorpdfstring{ZipFilePath}{ZipFilePath}}
+{\footnotesize\ttfamily string Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Zip\+File\+Path\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Definition at line 44 of file Downloaded\+Tool\+Manager.\+cs.
+
+
+
+Referenced by Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download(), Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download\+And\+Copy(), Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Download\+And\+Un\+Zip(), and Veri\+Sol\+Runner.\+External\+Tools.\+Downloaded\+Tool\+Manager.\+Prepare\+Temp\+Directory().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+External\+Tools\+Manager/\mbox{\hyperlink{_downloaded_tool_manager_8cs}{Downloaded\+Tool\+Manager.\+cs}}\end{DoxyCompactItemize}

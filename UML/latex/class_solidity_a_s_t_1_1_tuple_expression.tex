@@ -1,0 +1,162 @@
+\hypertarget{class_solidity_a_s_t_1_1_tuple_expression}{}\doxysection{Solidity\+AST.\+Tuple\+Expression Class Reference}
+\label{class_solidity_a_s_t_1_1_tuple_expression}\index{SolidityAST.TupleExpression@{SolidityAST.TupleExpression}}
+
+
+Inheritance diagram for Solidity\+AST.\+Tuple\+Expression\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{class_solidity_a_s_t_1_1_tuple_expression__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Solidity\+AST.\+Tuple\+Expression\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{class_solidity_a_s_t_1_1_tuple_expression__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_solidity_a_s_t_1_1_tuple_expression_a60d7632e2894fb806292c18fd12f661e}{Length}} ()
+\item 
+override void \mbox{\hyperlink{class_solidity_a_s_t_1_1_tuple_expression_a22d24e8611014b9d793ef6aae039a416}{Accept}} (\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_visitor}{IASTVisitor}} visitor)
+\item 
+override T \mbox{\hyperlink{class_solidity_a_s_t_1_1_tuple_expression_a46ffcf5419319370b03fa03e808753fc}{Accept$<$ T $>$}} (\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_generic_visitor}{IASTGeneric\+Visitor}}$<$ T $>$ visitor)
+\item 
+override string \mbox{\hyperlink{class_solidity_a_s_t_1_1_tuple_expression_a06939fee663e9e3d3e48f86727124031}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}} $>$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_tuple_expression_aeb2ad65128916b642603303de976490c}{Components}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_solidity_a_s_t_1_1_tuple_expression_ab37d0494915fbbf9e2f0e1ee435b76e4}{Is\+Inline\+Array}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 1603 of file Solidity\+AST.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_tuple_expression_a22d24e8611014b9d793ef6aae039a416}\label{class_solidity_a_s_t_1_1_tuple_expression_a22d24e8611014b9d793ef6aae039a416}} 
+\index{SolidityAST.TupleExpression@{SolidityAST.TupleExpression}!Accept@{Accept}}
+\index{Accept@{Accept}!SolidityAST.TupleExpression@{SolidityAST.TupleExpression}}
+\doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily override void Solidity\+AST.\+Tuple\+Expression.\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_visitor}{IASTVisitor}}}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a31655aeae6213266768f8f5182ba5fec}{Solidity\+AST.\+ASTNode}}.
+
+
+
+Definition at line 1614 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+Tuple\+Expression.\+Components, Solidity\+AST.\+IASTVisitor.\+End\+Visit(), and Solidity\+AST.\+IASTVisitor.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_tuple_expression_a22d24e8611014b9d793ef6aae039a416_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_tuple_expression_a46ffcf5419319370b03fa03e808753fc}\label{class_solidity_a_s_t_1_1_tuple_expression_a46ffcf5419319370b03fa03e808753fc}} 
+\index{SolidityAST.TupleExpression@{SolidityAST.TupleExpression}!Accept$<$ T $>$@{Accept$<$ T $>$}}
+\index{Accept$<$ T $>$@{Accept$<$ T $>$}!SolidityAST.TupleExpression@{SolidityAST.TupleExpression}}
+\doxysubsubsection{\texorpdfstring{Accept$<$ T $>$()}{Accept< T >()}}
+{\footnotesize\ttfamily override T \mbox{\hyperlink{class_solidity_a_s_t_1_1_tuple_expression_a22d24e8611014b9d793ef6aae039a416}{Solidity\+AST.\+Tuple\+Expression.\+Accept}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_generic_visitor}{IASTGeneric\+Visitor}}$<$ T $>$}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a57b9fd6602c95260988f9cc6f1729200}{Solidity\+AST.\+ASTNode}}.
+
+
+
+Definition at line 1628 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+IASTGeneric\+Visitor$<$ T $>$.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_tuple_expression_a46ffcf5419319370b03fa03e808753fc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_tuple_expression_a60d7632e2894fb806292c18fd12f661e}\label{class_solidity_a_s_t_1_1_tuple_expression_a60d7632e2894fb806292c18fd12f661e}} 
+\index{SolidityAST.TupleExpression@{SolidityAST.TupleExpression}!Length@{Length}}
+\index{Length@{Length}!SolidityAST.TupleExpression@{SolidityAST.TupleExpression}}
+\doxysubsubsection{\texorpdfstring{Length()}{Length()}}
+{\footnotesize\ttfamily int Solidity\+AST.\+Tuple\+Expression.\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1609 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+Tuple\+Expression.\+Components.
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_tuple_expression_a06939fee663e9e3d3e48f86727124031}\label{class_solidity_a_s_t_1_1_tuple_expression_a06939fee663e9e3d3e48f86727124031}} 
+\index{SolidityAST.TupleExpression@{SolidityAST.TupleExpression}!ToString@{ToString}}
+\index{ToString@{ToString}!SolidityAST.TupleExpression@{SolidityAST.TupleExpression}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Solidity\+AST.\+Tuple\+Expression.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1633 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+Tuple\+Expression.\+Components.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_tuple_expression_aeb2ad65128916b642603303de976490c}\label{class_solidity_a_s_t_1_1_tuple_expression_aeb2ad65128916b642603303de976490c}} 
+\index{SolidityAST.TupleExpression@{SolidityAST.TupleExpression}!Components@{Components}}
+\index{Components@{Components}!SolidityAST.TupleExpression@{SolidityAST.TupleExpression}}
+\doxysubsubsection{\texorpdfstring{Components}{Components}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}}$>$ Solidity\+AST.\+Tuple\+Expression.\+Components\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 1605 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+Tuple\+Expression.\+Accept(), Solidity\+AST.\+Tuple\+Expression.\+Length(), and Solidity\+AST.\+Tuple\+Expression.\+To\+String().
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_tuple_expression_ab37d0494915fbbf9e2f0e1ee435b76e4}\label{class_solidity_a_s_t_1_1_tuple_expression_ab37d0494915fbbf9e2f0e1ee435b76e4}} 
+\index{SolidityAST.TupleExpression@{SolidityAST.TupleExpression}!IsInlineArray@{IsInlineArray}}
+\index{IsInlineArray@{IsInlineArray}!SolidityAST.TupleExpression@{SolidityAST.TupleExpression}}
+\doxysubsubsection{\texorpdfstring{IsInlineArray}{IsInlineArray}}
+{\footnotesize\ttfamily bool Solidity\+AST.\+Tuple\+Expression.\+Is\+Inline\+Array\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 1607 of file Solidity\+AST.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Solidity\+AST/\mbox{\hyperlink{_solidity_a_s_t_8cs}{Solidity\+AST.\+cs}}\end{DoxyCompactItemize}

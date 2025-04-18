@@ -1,0 +1,12 @@
+<map id="SolToBoogie.SolidityDesugaring" name="SolToBoogie.SolidityDesugaring">
+<area shape="rect" id="node1" title=" " alt="" coords="169,2848,422,3424"/>
+<area shape="rect" id="node2" href="$class_solidity_a_s_t_1_1_basic_a_s_t_visitor.html" title=" " alt="" coords="5,1703,164,2543"/>
+<area shape="rect" id="node3" href="$interface_solidity_a_s_t_1_1_i_a_s_t_visitor.html" title=" " alt="" coords="27,393,143,1204"/>
+<area shape="rect" id="node4" href="$class_solidity_a_s_t_1_1_statement.html" title=" " alt="" coords="187,292,353,369"/>
+<area shape="rect" id="node5" href="$class_solidity_a_s_t_1_1_a_s_t_node.html" title=" " alt="" coords="264,5,393,141"/>
+<area shape="rect" id="node8" href="$class_solidity_a_s_t_1_1_declaration.html" title=" " alt="" coords="393,191,491,268"/>
+<area shape="rect" id="node6" href="$class_sol_to_boogie_1_1_translator_context.html" title=" " alt="" coords="672,1461,945,2785"/>
+<area shape="rect" id="node7" href="$class_solidity_a_s_t_1_1_contract_definition.html" title=" " alt="" coords="333,1228,551,1437"/>
+<area shape="rect" id="node10" href="$class_solidity_a_s_t_1_1_callable_declaration.html" title=" " alt="" coords="486,753,641,845"/>
+<area shape="rect" id="node9" href="$class_solidity_a_s_t_1_1_function_definition.html" title=" " alt="" coords="431,1982,648,2265"/>
+</map>

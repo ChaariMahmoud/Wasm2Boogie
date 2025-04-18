@@ -1,0 +1,122 @@
+\hypertarget{class_sol_to_boogie_1_1_modifier_collector}{}\doxysection{Sol\+To\+Boogie.\+Modifier\+Collector Class Reference}
+\label{class_sol_to_boogie_1_1_modifier_collector}\index{SolToBoogie.ModifierCollector@{SolToBoogie.ModifierCollector}}
+
+
+Inheritance diagram for Sol\+To\+Boogie.\+Modifier\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_modifier_collector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+Modifier\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_modifier_collector__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_modifier_collector_ae8a7e9a1eea1726c28c70e4f6c7479bc}{Modifier\+Collector}} (\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_modifier_collector_af79fff75ae66c6e1ca56f5e1d63f08bf}{context}})
+\item 
+override bool \mbox{\hyperlink{class_sol_to_boogie_1_1_modifier_collector_a4cd53ea849e97f091cd2b5420fce7f4c}{Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_modifier_definition}{Modifier\+Definition}} modifier)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_modifier_collector_af79fff75ae66c6e1ca56f5e1d63f08bf}{context}}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_procedure_translator}{Procedure\+Translator}} \mbox{\hyperlink{class_sol_to_boogie_1_1_modifier_collector_ab778db69ba5d14760a50c9811525c7a3}{local\+Translator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Collect all modifier definitions and put them in the translator context. 
+
+Definition at line 15 of file Modifier\+Collector.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_modifier_collector_ae8a7e9a1eea1726c28c70e4f6c7479bc}\label{class_sol_to_boogie_1_1_modifier_collector_ae8a7e9a1eea1726c28c70e4f6c7479bc}} 
+\index{SolToBoogie.ModifierCollector@{SolToBoogie.ModifierCollector}!ModifierCollector@{ModifierCollector}}
+\index{ModifierCollector@{ModifierCollector}!SolToBoogie.ModifierCollector@{SolToBoogie.ModifierCollector}}
+\doxysubsubsection{\texorpdfstring{ModifierCollector()}{ModifierCollector()}}
+{\footnotesize\ttfamily Sol\+To\+Boogie.\+Modifier\+Collector.\+Modifier\+Collector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 20 of file Modifier\+Collector.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Modifier\+Collector.\+context.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_modifier_collector_a4cd53ea849e97f091cd2b5420fce7f4c}\label{class_sol_to_boogie_1_1_modifier_collector_a4cd53ea849e97f091cd2b5420fce7f4c}} 
+\index{SolToBoogie.ModifierCollector@{SolToBoogie.ModifierCollector}!Visit@{Visit}}
+\index{Visit@{Visit}!SolToBoogie.ModifierCollector@{SolToBoogie.ModifierCollector}}
+\doxysubsubsection{\texorpdfstring{Visit()}{Visit()}}
+{\footnotesize\ttfamily override bool Sol\+To\+Boogie.\+Modifier\+Collector.\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_modifier_definition}{Modifier\+Definition}}}]{modifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a72716ff614f15da647a4d86faae8f177}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 26 of file Modifier\+Collector.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Modifer\+To\+Post\+Impl(), Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Modifer\+To\+Post\+Proc(), Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Modifer\+To\+Pre\+Impl(), Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Modifer\+To\+Pre\+Proc(), Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Prelude\+Locals\+To\+Modifier(), Sol\+To\+Boogie.\+Modifier\+Collector.\+context, Sol\+To\+Boogie.\+Trans\+Utils.\+Get\+Boogie\+Type\+From\+Solidity\+Type\+Name(), Sol\+To\+Boogie.\+Trans\+Utils.\+Get\+Canonical\+Local\+Variable\+Name(), Sol\+To\+Boogie.\+Trans\+Utils.\+Get\+Default\+In\+Params(), Sol\+To\+Boogie.\+Translator\+Context.\+Translate\+Flags, Solidity\+AST.\+Variable\+Declaration.\+Type\+Descriptions, Solidity\+AST.\+Variable\+Declaration.\+Type\+Name, and Sol\+To\+Boogie.\+Translator\+Flags.\+Use\+Modular\+Arithmetic.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_modifier_collector_a4cd53ea849e97f091cd2b5420fce7f4c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_modifier_collector_af79fff75ae66c6e1ca56f5e1d63f08bf}\label{class_sol_to_boogie_1_1_modifier_collector_af79fff75ae66c6e1ca56f5e1d63f08bf}} 
+\index{SolToBoogie.ModifierCollector@{SolToBoogie.ModifierCollector}!context@{context}}
+\index{context@{context}!SolToBoogie.ModifierCollector@{SolToBoogie.ModifierCollector}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} Sol\+To\+Boogie.\+Modifier\+Collector.\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 17 of file Modifier\+Collector.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Modifier\+Collector.\+Modifier\+Collector(), and Sol\+To\+Boogie.\+Modifier\+Collector.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_modifier_collector_ab778db69ba5d14760a50c9811525c7a3}\label{class_sol_to_boogie_1_1_modifier_collector_ab778db69ba5d14760a50c9811525c7a3}} 
+\index{SolToBoogie.ModifierCollector@{SolToBoogie.ModifierCollector}!localTranslator@{localTranslator}}
+\index{localTranslator@{localTranslator}!SolToBoogie.ModifierCollector@{SolToBoogie.ModifierCollector}}
+\doxysubsubsection{\texorpdfstring{localTranslator}{localTranslator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_1_1_procedure_translator}{Procedure\+Translator}} Sol\+To\+Boogie.\+Modifier\+Collector.\+local\+Translator\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 18 of file Modifier\+Collector.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_modifier_collector_8cs}{Modifier\+Collector.\+cs}}\end{DoxyCompactItemize}

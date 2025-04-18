@@ -1,0 +1,162 @@
+\hypertarget{class_solidity_a_s_t_1_1_source_unit}{}\doxysection{Solidity\+AST.\+Source\+Unit Class Reference}
+\label{class_solidity_a_s_t_1_1_source_unit}\index{SolidityAST.SourceUnit@{SolidityAST.SourceUnit}}
+
+
+Inheritance diagram for Solidity\+AST.\+Source\+Unit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_solidity_a_s_t_1_1_source_unit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Solidity\+AST.\+Source\+Unit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_solidity_a_s_t_1_1_source_unit__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_solidity_a_s_t_1_1_source_unit_acd53418155c18219b60d73ff76b19905}{Accept}} (\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_visitor}{IASTVisitor}} visitor)
+\item 
+override T \mbox{\hyperlink{class_solidity_a_s_t_1_1_source_unit_ae125a1720c54bcbc801ff1a68d277e79}{Accept$<$ T $>$}} (\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_generic_visitor}{IASTGeneric\+Visitor}}$<$ T $>$ visitor)
+\item 
+override string \mbox{\hyperlink{class_solidity_a_s_t_1_1_source_unit_afefb2bd85c81394a0c0822b71e7a62af}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_solidity_a_s_t_1_1_source_unit_af0411c039b42b8e67c4413835bc99825}{Absolute\+Path}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Dictionary$<$ string, List$<$ int $>$ $>$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_source_unit_aa59362b9f1abac4c72e985632e483bd3}{Exported\+Symbols}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} $>$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_source_unit_a442a8e76eecdc768fbbcd8eb25a02f37}{Nodes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 175 of file Solidity\+AST.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_source_unit_acd53418155c18219b60d73ff76b19905}\label{class_solidity_a_s_t_1_1_source_unit_acd53418155c18219b60d73ff76b19905}} 
+\index{SolidityAST.SourceUnit@{SolidityAST.SourceUnit}!Accept@{Accept}}
+\index{Accept@{Accept}!SolidityAST.SourceUnit@{SolidityAST.SourceUnit}}
+\doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily override void Solidity\+AST.\+Source\+Unit.\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_visitor}{IASTVisitor}}}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a31655aeae6213266768f8f5182ba5fec}{Solidity\+AST.\+ASTNode}}.
+
+
+
+Definition at line 183 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+IASTVisitor.\+End\+Visit(), Solidity\+AST.\+Source\+Unit.\+Nodes, and Solidity\+AST.\+IASTVisitor.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_source_unit_acd53418155c18219b60d73ff76b19905_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_source_unit_ae125a1720c54bcbc801ff1a68d277e79}\label{class_solidity_a_s_t_1_1_source_unit_ae125a1720c54bcbc801ff1a68d277e79}} 
+\index{SolidityAST.SourceUnit@{SolidityAST.SourceUnit}!Accept$<$ T $>$@{Accept$<$ T $>$}}
+\index{Accept$<$ T $>$@{Accept$<$ T $>$}!SolidityAST.SourceUnit@{SolidityAST.SourceUnit}}
+\doxysubsubsection{\texorpdfstring{Accept$<$ T $>$()}{Accept< T >()}}
+{\footnotesize\ttfamily override T \mbox{\hyperlink{class_solidity_a_s_t_1_1_source_unit_acd53418155c18219b60d73ff76b19905}{Solidity\+AST.\+Source\+Unit.\+Accept}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_generic_visitor}{IASTGeneric\+Visitor}}$<$ T $>$}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a57b9fd6602c95260988f9cc6f1729200}{Solidity\+AST.\+ASTNode}}.
+
+
+
+Definition at line 192 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+IASTGeneric\+Visitor$<$ T $>$.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_source_unit_ae125a1720c54bcbc801ff1a68d277e79_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_source_unit_afefb2bd85c81394a0c0822b71e7a62af}\label{class_solidity_a_s_t_1_1_source_unit_afefb2bd85c81394a0c0822b71e7a62af}} 
+\index{SolidityAST.SourceUnit@{SolidityAST.SourceUnit}!ToString@{ToString}}
+\index{ToString@{ToString}!SolidityAST.SourceUnit@{SolidityAST.SourceUnit}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Solidity\+AST.\+Source\+Unit.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 197 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+Source\+Unit.\+Nodes.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_source_unit_af0411c039b42b8e67c4413835bc99825}\label{class_solidity_a_s_t_1_1_source_unit_af0411c039b42b8e67c4413835bc99825}} 
+\index{SolidityAST.SourceUnit@{SolidityAST.SourceUnit}!AbsolutePath@{AbsolutePath}}
+\index{AbsolutePath@{AbsolutePath}!SolidityAST.SourceUnit@{SolidityAST.SourceUnit}}
+\doxysubsubsection{\texorpdfstring{AbsolutePath}{AbsolutePath}}
+{\footnotesize\ttfamily string Solidity\+AST.\+Source\+Unit.\+Absolute\+Path\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 177 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Source\+Info\+Collector.\+Common\+End\+Visit().
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_source_unit_aa59362b9f1abac4c72e985632e483bd3}\label{class_solidity_a_s_t_1_1_source_unit_aa59362b9f1abac4c72e985632e483bd3}} 
+\index{SolidityAST.SourceUnit@{SolidityAST.SourceUnit}!ExportedSymbols@{ExportedSymbols}}
+\index{ExportedSymbols@{ExportedSymbols}!SolidityAST.SourceUnit@{SolidityAST.SourceUnit}}
+\doxysubsubsection{\texorpdfstring{ExportedSymbols}{ExportedSymbols}}
+{\footnotesize\ttfamily Dictionary$<$string, List$<$int$>$ $>$ Solidity\+AST.\+Source\+Unit.\+Exported\+Symbols\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 179 of file Solidity\+AST.\+cs.
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_source_unit_a442a8e76eecdc768fbbcd8eb25a02f37}\label{class_solidity_a_s_t_1_1_source_unit_a442a8e76eecdc768fbbcd8eb25a02f37}} 
+\index{SolidityAST.SourceUnit@{SolidityAST.SourceUnit}!Nodes@{Nodes}}
+\index{Nodes@{Nodes}!SolidityAST.SourceUnit@{SolidityAST.SourceUnit}}
+\doxysubsubsection{\texorpdfstring{Nodes}{Nodes}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}$>$ Solidity\+AST.\+Source\+Unit.\+Nodes\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 181 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+Source\+Unit.\+Accept(), and Solidity\+AST.\+Source\+Unit.\+To\+String().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Solidity\+AST/\mbox{\hyperlink{_solidity_a_s_t_8cs}{Solidity\+AST.\+cs}}\end{DoxyCompactItemize}

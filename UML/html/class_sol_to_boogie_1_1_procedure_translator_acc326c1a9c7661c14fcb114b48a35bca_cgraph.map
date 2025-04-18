@@ -1,0 +1,13 @@
+<map id="SolToBoogie.ProcedureTranslator.MkNewLocalVariableForFunctionReturn" name="SolToBoogie.ProcedureTranslator.MkNewLocalVariableForFunctionReturn">
+<area shape="rect" id="node1" title=" " alt="" coords="5,209,281,251"/>
+<area shape="rect" id="node2" href="$class_sol_to_boogie_1_1_procedure_translator.html#ab8da13f5603be10b7d164e0c16ea5021" title=" " alt="" coords="329,128,567,169"/>
+<area shape="rect" id="node7" href="$class_sol_to_boogie_1_1_map_array_helper.html#afb90037edb075e37a0dfc029f3f6b6f4" title=" " alt="" coords="341,209,555,251"/>
+<area shape="rect" id="node10" href="$class_sol_to_boogie_1_1_procedure_translator.html#af28fe3baa860d18c20f029f37eb678a5" title=" " alt="" coords="329,307,567,348"/>
+<area shape="rect" id="node3" href="$class_boogie_a_s_t_1_1_boogie_stmt_list.html#a0677e5b1eb834f85f3549dc30bd9c9ce" title=" " alt="" coords="634,5,833,47"/>
+<area shape="rect" id="node4" href="$class_boogie_a_s_t_1_1_boogie_stmt_list.html#acb7e0811182cb44c34f20b552451dd90" title=" " alt="" coords="634,71,833,112"/>
+<area shape="rect" id="node6" href="$class_sol_to_boogie_1_1_procedure_translator.html#afa96bc768622ca12f0fb03bd96895b33" title=" " alt="" coords="615,136,852,177"/>
+<area shape="rect" id="node5" href="$class_boogie_a_s_t_1_1_boogie_stmt_list.html#af985c023b0e6961f120aedb4fd04397a" title=" " alt="" coords="900,71,1099,112"/>
+<area shape="rect" id="node8" href="$class_sol_to_boogie_1_1_map_array_helper.html#a427c2276cc0a4c3113b11dfef7e8d62e" title=" " alt="" coords="626,201,841,243"/>
+<area shape="rect" id="node9" href="$class_sol_to_boogie_1_1_map_array_helper.html#a4de68467bcd91886df01ba453cdf8795" title=" " alt="" coords="626,267,841,308"/>
+<area shape="rect" id="node11" href="$class_sol_to_boogie_1_1_translator_context.html#a9738da10b77fc83ff86d01837d8a9d94" title=" " alt="" coords="621,332,845,373"/>
+</map>

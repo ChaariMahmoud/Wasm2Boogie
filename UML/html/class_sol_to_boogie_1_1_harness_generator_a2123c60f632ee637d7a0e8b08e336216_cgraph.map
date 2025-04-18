@@ -1,0 +1,16 @@
+<map id="SolToBoogie.HarnessGenerator.GenerateCorralChoiceProcForContract" name="SolToBoogie.HarnessGenerator.GenerateCorralChoiceProcForContract">
+<area shape="rect" id="node1" title=" " alt="" coords="5,156,273,197"/>
+<area shape="rect" id="node2" href="$class_boogie_a_s_t_1_1_boogie_program.html#a7751f37ce7bd22ca1849f7e5f1f88089" title=" " alt="" coords="339,5,537,47"/>
+<area shape="rect" id="node3" href="$class_boogie_a_s_t_1_1_boogie_stmt_list.html#a8fcae5c7c550ef129368755591e93f42" title=" " alt="" coords="911,89,1110,131"/>
+<area shape="rect" id="node4" href="$class_sol_to_boogie_1_1_trans_utils.html#a853332c1391b7ce77c3c9086ca0fb0e0" title=" " alt="" coords="329,188,547,229"/>
+<area shape="rect" id="node7" href="$class_sol_to_boogie_1_1_trans_utils.html#aa80f1e657e9ceb53a8c6ce2753d3177f" title="generate a non&#45;deterministic choice block to call every public visible functions except constructors" alt="" coords="321,253,555,295"/>
+<area shape="rect" id="node12" href="$class_sol_to_boogie_1_1_harness_generator.html#a91c47f8a647a3b25a1136a9e8cf1d00c" title=" " alt="" coords="325,123,551,164"/>
+<area shape="rect" id="node14" href="$class_sol_to_boogie_1_1_harness_generator.html#a80f641fd92f027519d35d095e2abfc71" title=" " alt="" coords="325,319,551,360"/>
+<area shape="rect" id="node5" href="$class_sol_to_boogie_1_1_trans_utils.html#ae0e76f5eeae4d6f54cf4cb8fc61dee09" title=" " alt="" coords="603,173,851,215"/>
+<area shape="rect" id="node6" href="$class_sol_to_boogie_1_1_trans_utils.html#a96f57433e661acc376da9d6833383cf2" title=" " alt="" coords="621,239,833,280"/>
+<area shape="rect" id="node8" href="$class_sol_to_boogie_1_1_trans_utils.html#aec663b186414f918588546ef45ac8380" title=" " alt="" coords="629,304,825,345"/>
+<area shape="rect" id="node10" href="$class_boogie_a_s_t_1_1_boogie_stmt_list.html#acb7e0811182cb44c34f20b552451dd90" title=" " alt="" coords="627,369,826,411"/>
+<area shape="rect" id="node9" href="$class_sol_to_boogie_1_1_translator_context.html#acd54e91d935b88b6a7ff1f1bc3967869" title=" " alt="" coords="899,304,1123,345"/>
+<area shape="rect" id="node11" href="$class_boogie_a_s_t_1_1_boogie_stmt_list.html#af985c023b0e6961f120aedb4fd04397a" title=" " alt="" coords="911,369,1110,411"/>
+<area shape="rect" id="node13" href="$class_sol_to_boogie_1_1_trans_utils.html#ad5d9bf28b4261bbfaacd64d08feaf332" title=" " alt="" coords="608,122,845,149"/>
+</map>

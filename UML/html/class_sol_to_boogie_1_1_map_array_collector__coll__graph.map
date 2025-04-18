@@ -1,0 +1,9 @@
+<map id="SolToBoogie.MapArrayCollector" name="SolToBoogie.MapArrayCollector">
+<area shape="rect" id="node1" title=" " alt="" coords="211,2437,438,2559"/>
+<area shape="rect" id="node2" href="$class_solidity_a_s_t_1_1_basic_a_s_t_visitor.html" title=" " alt="" coords="5,1293,164,2133"/>
+<area shape="rect" id="node3" href="$interface_solidity_a_s_t_1_1_i_a_s_t_visitor.html" title=" " alt="" coords="27,191,143,1001"/>
+<area shape="rect" id="node4" href="$class_sol_to_boogie_1_1_translator_context.html" title=" " alt="" coords="188,1051,461,2375"/>
+<area shape="rect" id="node5" href="$class_solidity_a_s_t_1_1_contract_definition.html" title=" " alt="" coords="485,1608,703,1817"/>
+<area shape="rect" id="node6" href="$class_solidity_a_s_t_1_1_declaration.html" title=" " alt="" coords="545,557,643,635"/>
+<area shape="rect" id="node7" href="$class_solidity_a_s_t_1_1_a_s_t_node.html" title=" " alt="" coords="529,5,659,141"/>
+</map>

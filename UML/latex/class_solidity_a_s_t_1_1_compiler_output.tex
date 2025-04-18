@@ -1,0 +1,136 @@
+\hypertarget{class_solidity_a_s_t_1_1_compiler_output}{}\doxysection{Solidity\+AST.\+Compiler\+Output Class Reference}
+\label{class_solidity_a_s_t_1_1_compiler_output}\index{SolidityAST.CompilerOutput@{SolidityAST.CompilerOutput}}
+
+
+Collaboration diagram for Solidity\+AST.\+Compiler\+Output\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_solidity_a_s_t_1_1_compiler_output__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_solidity_a_s_t_1_1_compiler_output_a187a29ace9d59852f12f0a2e4c9bc09c}{Contains\+Error}} ()
+\item 
+void \mbox{\hyperlink{class_solidity_a_s_t_1_1_compiler_output_a417f3641ac9a4cfb35970925931ca8c9}{Print\+Errors\+To\+Console}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, Dictionary$<$ string, object $>$ $>$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_compiler_output_aa9ca7c3c751e47cfdbe9abd2d913bfc1}{Contracts}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_compiler_error}{Compiler\+Error}} $>$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_compiler_output_a630ffac875bdf83e1a1bc7bd80d2add8}{Errors}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Dictionary$<$ string, \mbox{\hyperlink{class_solidity_a_s_t_1_1_solidity_source_file}{Solidity\+Source\+File}} $>$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_compiler_output_a0c4088b9d9e20c0d6ded6012e06882f1}{Sources}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 9 of file Compiler\+Output.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_compiler_output_a187a29ace9d59852f12f0a2e4c9bc09c}\label{class_solidity_a_s_t_1_1_compiler_output_a187a29ace9d59852f12f0a2e4c9bc09c}} 
+\index{SolidityAST.CompilerOutput@{SolidityAST.CompilerOutput}!ContainsError@{ContainsError}}
+\index{ContainsError@{ContainsError}!SolidityAST.CompilerOutput@{SolidityAST.CompilerOutput}}
+\doxysubsubsection{\texorpdfstring{ContainsError()}{ContainsError()}}
+{\footnotesize\ttfamily bool Solidity\+AST.\+Compiler\+Output.\+Contains\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 20 of file Compiler\+Output.\+cs.
+
+
+
+References Solidity\+AST.\+Compiler\+Output.\+Errors, and Solidity\+AST.\+Compiler\+Error.\+Severity.
+
+
+
+Referenced by Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Execute(), and Veri\+Sol\+Runner.\+Veri\+Sol\+Executor.\+Execute\+Sol\+To\+Boogie().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_compiler_output_a187a29ace9d59852f12f0a2e4c9bc09c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_compiler_output_a417f3641ac9a4cfb35970925931ca8c9}\label{class_solidity_a_s_t_1_1_compiler_output_a417f3641ac9a4cfb35970925931ca8c9}} 
+\index{SolidityAST.CompilerOutput@{SolidityAST.CompilerOutput}!PrintErrorsToConsole@{PrintErrorsToConsole}}
+\index{PrintErrorsToConsole@{PrintErrorsToConsole}!SolidityAST.CompilerOutput@{SolidityAST.CompilerOutput}}
+\doxysubsubsection{\texorpdfstring{PrintErrorsToConsole()}{PrintErrorsToConsole()}}
+{\footnotesize\ttfamily void Solidity\+AST.\+Compiler\+Output.\+Print\+Errors\+To\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 33 of file Compiler\+Output.\+cs.
+
+
+
+References Solidity\+AST.\+Compiler\+Output.\+Errors, Solidity\+AST.\+Compiler\+Error.\+Formatted\+Message, and Solidity\+AST.\+Compiler\+Error.\+Severity.
+
+
+
+Referenced by Sol\+To\+Boogie\+Test.\+Regression\+Executor.\+Execute(), and Veri\+Sol\+Runner.\+Veri\+Sol\+Executor.\+Execute\+Sol\+To\+Boogie().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_compiler_output_a417f3641ac9a4cfb35970925931ca8c9_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_compiler_output_aa9ca7c3c751e47cfdbe9abd2d913bfc1}\label{class_solidity_a_s_t_1_1_compiler_output_aa9ca7c3c751e47cfdbe9abd2d913bfc1}} 
+\index{SolidityAST.CompilerOutput@{SolidityAST.CompilerOutput}!Contracts@{Contracts}}
+\index{Contracts@{Contracts}!SolidityAST.CompilerOutput@{SolidityAST.CompilerOutput}}
+\doxysubsubsection{\texorpdfstring{Contracts}{Contracts}}
+{\footnotesize\ttfamily Dictionary$<$string, Dictionary$<$string, object$>$ $>$ Solidity\+AST.\+Compiler\+Output.\+Contracts\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 12 of file Compiler\+Output.\+cs.
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_compiler_output_a630ffac875bdf83e1a1bc7bd80d2add8}\label{class_solidity_a_s_t_1_1_compiler_output_a630ffac875bdf83e1a1bc7bd80d2add8}} 
+\index{SolidityAST.CompilerOutput@{SolidityAST.CompilerOutput}!Errors@{Errors}}
+\index{Errors@{Errors}!SolidityAST.CompilerOutput@{SolidityAST.CompilerOutput}}
+\doxysubsubsection{\texorpdfstring{Errors}{Errors}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_solidity_a_s_t_1_1_compiler_error}{Compiler\+Error}}$>$ Solidity\+AST.\+Compiler\+Output.\+Errors\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 15 of file Compiler\+Output.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+Compiler\+Output.\+Contains\+Error(), and Solidity\+AST.\+Compiler\+Output.\+Print\+Errors\+To\+Console().
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_compiler_output_a0c4088b9d9e20c0d6ded6012e06882f1}\label{class_solidity_a_s_t_1_1_compiler_output_a0c4088b9d9e20c0d6ded6012e06882f1}} 
+\index{SolidityAST.CompilerOutput@{SolidityAST.CompilerOutput}!Sources@{Sources}}
+\index{Sources@{Sources}!SolidityAST.CompilerOutput@{SolidityAST.CompilerOutput}}
+\doxysubsubsection{\texorpdfstring{Sources}{Sources}}
+{\footnotesize\ttfamily Dictionary$<$string, \mbox{\hyperlink{class_solidity_a_s_t_1_1_solidity_source_file}{Solidity\+Source\+File}}$>$ Solidity\+AST.\+Compiler\+Output.\+Sources\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 18 of file Compiler\+Output.\+cs.
+
+
+
+Referenced by Solidity\+CFG.\+Test\+Main.\+Main().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Solidity\+AST/\mbox{\hyperlink{_compiler_output_8cs}{Compiler\+Output.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,16 @@
+<map id="SolToBoogie.ProcedureTranslator.Visit" name="SolToBoogie.ProcedureTranslator.Visit">
+<area shape="rect" id="node1" title=" " alt="" coords="5,246,243,287"/>
+<area shape="rect" id="node2" href="$class_solidity_a_s_t_1_1_assignment.html#a964a7a6d976d491921df7fc001e89a0c" title=" " alt="" coords="308,64,532,91"/>
+<area shape="rect" id="node6" href="$class_boogie_a_s_t_1_1_boogie_stmt_list.html#a0677e5b1eb834f85f3549dc30bd9c9ce" title=" " alt="" coords="321,115,519,157"/>
+<area shape="rect" id="node7" href="$class_sol_to_boogie_1_1_trans_utils.html#ae0e76f5eeae4d6f54cf4cb8fc61dee09" title=" " alt="" coords="296,181,544,222"/>
+<area shape="rect" id="node8" href="$class_sol_to_boogie_1_1_trans_utils.html#a96f57433e661acc376da9d6833383cf2" title=" " alt="" coords="314,246,526,287"/>
+<area shape="rect" id="node9" href="$class_boogie_a_s_t_1_1_boogie_stmt_list.html#acb7e0811182cb44c34f20b552451dd90" title=" " alt="" coords="321,311,519,353"/>
+<area shape="rect" id="node11" href="$class_sol_to_boogie_1_1_procedure_translator.html#a3767e35237cc1d33e18cc7a2140f2d7f" title=" " alt="" coords="291,377,549,418"/>
+<area shape="rect" id="node14" href="$class_sol_to_boogie_1_1_procedure_translator.html#afa96bc768622ca12f0fb03bd96895b33" title=" " alt="" coords="301,442,539,483"/>
+<area shape="rect" id="node3" href="$class_solidity_a_s_t_1_1_a_s_t_node.html#a31655aeae6213266768f8f5182ba5fec" title=" " alt="" coords="627,5,834,32"/>
+<area shape="rect" id="node4" href="$interface_solidity_a_s_t_1_1_i_a_s_t_visitor.html#a7710ac3ceaf6ec668c0ba5c6f6003dcd" title=" " alt="" coords="644,57,817,98"/>
+<area shape="rect" id="node5" href="$interface_solidity_a_s_t_1_1_i_a_s_t_visitor.html#aaf5a4b14ed79dbc96d641c540934ab4f" title=" " alt="" coords="644,122,817,163"/>
+<area shape="rect" id="node10" href="$class_boogie_a_s_t_1_1_boogie_stmt_list.html#af985c023b0e6961f120aedb4fd04397a" title=" " alt="" coords="631,311,830,353"/>
+<area shape="rect" id="node12" href="$class_boogie_a_s_t_1_1_boogie_stmt_list.html#a8fcae5c7c550ef129368755591e93f42" title=" " alt="" coords="912,403,1111,445"/>
+<area shape="rect" id="node13" href="$class_sol_to_boogie_1_1_procedure_translator.html#a25d0cd8a86d7276923210ec0ebd9f1ba" title=" " alt="" coords="597,433,864,474"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="BoogieAST.BoogieVariable" name="BoogieAST.BoogieVariable">
+<area shape="rect" id="node1" title=" " alt="" coords="372,381,565,459"/>
+<area shape="rect" id="node5" href="$class_boogie_a_s_t_1_1_boogie_constant.html" title=" " alt="" coords="5,507,204,599"/>
+<area shape="rect" id="node6" href="$class_boogie_a_s_t_1_1_boogie_formal_param.html" title=" " alt="" coords="229,514,455,591"/>
+<area shape="rect" id="node7" href="$class_boogie_a_s_t_1_1_boogie_global_variable.html" title=" " alt="" coords="479,507,714,599"/>
+<area shape="rect" id="node8" href="$class_boogie_a_s_t_1_1_boogie_local_variable.html" title=" " alt="" coords="738,514,965,591"/>
+<area shape="rect" id="node2" href="$class_boogie_a_s_t_1_1_boogie_named_decl.html" title=" " alt="" coords="397,256,540,333"/>
+<area shape="rect" id="node3" href="$class_boogie_a_s_t_1_1_boogie_declaration.html" title=" " alt="" coords="397,131,540,208"/>
+<area shape="rect" id="node4" href="$class_boogie_a_s_t_1_1_boogie_a_s_t_node.html" title=" " alt="" coords="405,5,532,83"/>
+</map>

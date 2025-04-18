@@ -1,0 +1,530 @@
+\hypertarget{class_sol_to_boogie_1_1_translator_flags}{}\doxysection{Sol\+To\+Boogie.\+Translator\+Flags Class Reference}
+\label{class_sol_to_boogie_1_1_translator_flags}\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+
+
+A set of flags to control the translation  
+
+
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+Translator\+Flags\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_sol_to_boogie_1_1_translator_flags__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a0efe7510a9acae76ca7ea8dcbc8f6584}{Translator\+Flags}} ()
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a028e052683cb87a665186ad0b005c6d8}{Model\+Stubs\+As\+Havocs}} ()
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a73d9b24cea735c4c45939c40943b3cd2}{Model\+Stubs\+As\+Skips}} ()
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a2bc820daaf1f88938a0725186085a4f5}{Model\+Stubs\+As\+Callbacks}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_aeed83663eccef8eac7c04ea3bdc0a5b8}{No\+Custom\+Types}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a5b78e46fc2f8ce54afe5f2efcd2b8b3d}{Create\+Main\+Harness}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_ac2938d14e99bc50b1f0ea92a873de8c4}{No\+Boogie\+Harness}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a19dd3aa8215efbe36e81cc79033b6b93}{Instrument\+Sums}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_ab9d2aa2b0eeb4c80cff56f98abb210c6}{No\+Source\+Line\+Info\+Flag}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Omit printing source\+File/source\+Line information \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a31a7c3d35e72425fc126359a6b0744b5}{No\+Data\+Values\+Info\+Flag}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Omit printing instrumentation to print data values in counterexample trace \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_ac358b859e9e323cf124122a1c819ab01}{No\+Axioms\+Flag}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Do not print axioms (except for allocation) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a4ed21845dbd4b293e2ead50d90774b06}{Use\+Modular\+Arithmetic}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Do not emit underflow/overflow assumes for unsigned operations x \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a269a392ade24695c321c36fb1cf146a8}{No\+Unsigned\+Assumes\+Flag}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Do not emit x $>$= 0 for unsigned expressions x \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_aeed62afa43909ecf607146b1b84448ea}{No\+Harness}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Omit generating Corral and Boogie harness \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a144fc5d3147292e4ab7b915a0515ec90}{Generate\+Inline\+Attributes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When true, add \{\+:inline 1\} attribute, can be expensive for recursive procedure analysis by Corral \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_ad01635b77a2d3c53fd3007f52eed098c}{Model\+Reverts}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Model revert logic when an exception happens. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a81e7e0f8271f4316cefc319236e3d2d8}{Instrument\+Gas}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Instrument contracts with gas consumption. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_aaeba82c55905e1e0aec8922a070d1a2a}{Quant\+Free\+Allocs}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Do not generate quantified axioms for allocation statements. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_ac14c0b84cb753fb49a8512ee816c0ae0}{Lazy\+Nested\+Alloc}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Allocate nested maps lazily, i.\+e., eliminate Havoc\+Alloc\+Many \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a29034a7b295573be7663f8f8d0a90d96}{Omit\+Assume\+False\+For\+Dyn\+Dispatch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Remove assume false for the default branch of dyn dispatch \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a4682bcb5ae5f78e5ae10483ca0f51e74}{Model\+Of\+Stubs}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_ab25be581c373f3871c9eb8a8ec00112d}{Inline\+Depth\+For\+Boogie}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a9cda297689304da1c8912612502dca45}{Perform\+Contract\+Inferce}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a1fd679316119a96ec2875a6113f75f0a}{Do\+Mod\+Set\+Analysis}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_flags_a16a727611c7c925fea4f26c17468d86d}{Remove\+Scope\+In\+Var\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A set of flags to control the translation 
+
+
+
+Definition at line 10 of file Translator\+Flags.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a0efe7510a9acae76ca7ea8dcbc8f6584}\label{class_sol_to_boogie_1_1_translator_flags_a0efe7510a9acae76ca7ea8dcbc8f6584}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!TranslatorFlags@{TranslatorFlags}}
+\index{TranslatorFlags@{TranslatorFlags}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{TranslatorFlags()}{TranslatorFlags()}}
+{\footnotesize\ttfamily Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 12 of file Translator\+Flags.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Flags.\+Create\+Main\+Harness, Sol\+To\+Boogie.\+Translator\+Flags.\+Do\+Mod\+Set\+Analysis, Sol\+To\+Boogie.\+Translator\+Flags.\+Generate\+Inline\+Attributes, Sol\+To\+Boogie.\+Translator\+Flags.\+Inline\+Depth\+For\+Boogie, Sol\+To\+Boogie.\+Translator\+Flags.\+Instrument\+Gas, Sol\+To\+Boogie.\+Translator\+Flags.\+Instrument\+Sums, Sol\+To\+Boogie.\+Translator\+Flags.\+Lazy\+Nested\+Alloc, Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Of\+Stubs, Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Reverts, Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Axioms\+Flag, Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Boogie\+Harness, Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Custom\+Types, Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Data\+Values\+Info\+Flag, Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Harness, Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Source\+Line\+Info\+Flag, Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Unsigned\+Assumes\+Flag, Sol\+To\+Boogie.\+Translator\+Flags.\+Omit\+Assume\+False\+For\+Dyn\+Dispatch, Sol\+To\+Boogie.\+Translator\+Flags.\+Perform\+Contract\+Inferce, Sol\+To\+Boogie.\+Translator\+Flags.\+Quant\+Free\+Allocs, Sol\+To\+Boogie.\+Translator\+Flags.\+Remove\+Scope\+In\+Var\+Name, and Sol\+To\+Boogie.\+Translator\+Flags.\+Use\+Modular\+Arithmetic.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a2bc820daaf1f88938a0725186085a4f5}\label{class_sol_to_boogie_1_1_translator_flags_a2bc820daaf1f88938a0725186085a4f5}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!ModelStubsAsCallbacks@{ModelStubsAsCallbacks}}
+\index{ModelStubsAsCallbacks@{ModelStubsAsCallbacks}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{ModelStubsAsCallbacks()}{ModelStubsAsCallbacks()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Stubs\+As\+Callbacks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 98 of file Translator\+Flags.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Of\+Stubs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Fallback\+Generator.\+Create\+Body\+Of\+Unknown\+Fallback(), and Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_flags_a2bc820daaf1f88938a0725186085a4f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a028e052683cb87a665186ad0b005c6d8}\label{class_sol_to_boogie_1_1_translator_flags_a028e052683cb87a665186ad0b005c6d8}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!ModelStubsAsHavocs@{ModelStubsAsHavocs}}
+\index{ModelStubsAsHavocs@{ModelStubsAsHavocs}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{ModelStubsAsHavocs()}{ModelStubsAsHavocs()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Stubs\+As\+Havocs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 96 of file Translator\+Flags.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Of\+Stubs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_flags_a028e052683cb87a665186ad0b005c6d8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a73d9b24cea735c4c45939c40943b3cd2}\label{class_sol_to_boogie_1_1_translator_flags_a73d9b24cea735c4c45939c40943b3cd2}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!ModelStubsAsSkips@{ModelStubsAsSkips}}
+\index{ModelStubsAsSkips@{ModelStubsAsSkips}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{ModelStubsAsSkips()}{ModelStubsAsSkips()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Stubs\+As\+Skips (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 97 of file Translator\+Flags.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Of\+Stubs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Fallback\+Generator.\+Create\+Body\+Of\+Unknown\+Fallback(), and Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_translator_flags_a73d9b24cea735c4c45939c40943b3cd2_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a5b78e46fc2f8ce54afe5f2efcd2b8b3d}\label{class_sol_to_boogie_1_1_translator_flags_a5b78e46fc2f8ce54afe5f2efcd2b8b3d}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!CreateMainHarness@{CreateMainHarness}}
+\index{CreateMainHarness@{CreateMainHarness}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{CreateMainHarness}{CreateMainHarness}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+Create\+Main\+Harness\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 38 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract(), and Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a1fd679316119a96ec2875a6113f75f0a}\label{class_sol_to_boogie_1_1_translator_flags_a1fd679316119a96ec2875a6113f75f0a}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!DoModSetAnalysis@{DoModSetAnalysis}}
+\index{DoModSetAnalysis@{DoModSetAnalysis}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{DoModSetAnalysis}{DoModSetAnalysis}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+Do\+Mod\+Set\+Analysis\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 105 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Boogie\+Translator.\+Translate(), and Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a144fc5d3147292e4ab7b915a0515ec90}\label{class_sol_to_boogie_1_1_translator_flags_a144fc5d3147292e4ab7b915a0515ec90}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!GenerateInlineAttributes@{GenerateInlineAttributes}}
+\index{GenerateInlineAttributes@{GenerateInlineAttributes}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{GenerateInlineAttributes}{GenerateInlineAttributes}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+Generate\+Inline\+Attributes\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When true, add \{\+:inline 1\} attribute, can be expensive for recursive procedure analysis by Corral 
+
+
+
+Definition at line 71 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Constructor\+With\+Base\+Calls(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Default\+Constructor(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Global\+Procedure\+Alloc\+Many(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Global\+Procedure\+Fresh(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Struct\+Constructors(), and Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_ab25be581c373f3871c9eb8a8ec00112d}\label{class_sol_to_boogie_1_1_translator_flags_ab25be581c373f3871c9eb8a8ec00112d}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!InlineDepthForBoogie@{InlineDepthForBoogie}}
+\index{InlineDepthForBoogie@{InlineDepthForBoogie}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{InlineDepthForBoogie}{InlineDepthForBoogie}}
+{\footnotesize\ttfamily int Sol\+To\+Boogie.\+Translator\+Flags.\+Inline\+Depth\+For\+Boogie\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 101 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a81e7e0f8271f4316cefc319236e3d2d8}\label{class_sol_to_boogie_1_1_translator_flags_a81e7e0f8271f4316cefc319236e3d2d8}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!InstrumentGas@{InstrumentGas}}
+\index{InstrumentGas@{InstrumentGas}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{InstrumentGas}{InstrumentGas}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+Instrument\+Gas\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Instrument contracts with gas consumption. 
+
+
+
+Definition at line 79 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Create\+Send\+Fail(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Create\+Send\+Sucess(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Boogie\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Constructor\+Call(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Global\+Variables(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Havoc\+Block(), Sol\+To\+Boogie.\+Procedure\+Translator.\+pre\+Translation\+Action(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Send\+Call\+Stmt(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Transfer\+Call\+Stmt(), Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a19dd3aa8215efbe36e81cc79033b6b93}\label{class_sol_to_boogie_1_1_translator_flags_a19dd3aa8215efbe36e81cc79033b6b93}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!InstrumentSums@{InstrumentSums}}
+\index{InstrumentSums@{InstrumentSums}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{InstrumentSums}{InstrumentSums}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+Instrument\+Sums\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 42 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Global\+Variables(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Initialization\+For\+Mapping\+State\+Var(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Dynamic\+Array\+Push(), Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_ac14c0b84cb753fb49a8512ee816c0ae0}\label{class_sol_to_boogie_1_1_translator_flags_ac14c0b84cb753fb49a8512ee816c0ae0}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!LazyNestedAlloc@{LazyNestedAlloc}}
+\index{LazyNestedAlloc@{LazyNestedAlloc}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{LazyNestedAlloc}{LazyNestedAlloc}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+Lazy\+Nested\+Alloc\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Allocate nested maps lazily, i.\+e., eliminate Havoc\+Alloc\+Many 
+
+
+
+Definition at line 87 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Global\+Procedure\+Alloc\+Many(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Initialize\+Nested\+Array\+Mapping\+State\+Var(), Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a4682bcb5ae5f78e5ae10483ca0f51e74}\label{class_sol_to_boogie_1_1_translator_flags_a4682bcb5ae5f78e5ae10483ca0f51e74}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!ModelOfStubs@{ModelOfStubs}}
+\index{ModelOfStubs@{ModelOfStubs}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{ModelOfStubs}{ModelOfStubs}}
+{\footnotesize\ttfamily string Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Of\+Stubs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 95 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Stubs\+As\+Callbacks(), Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Stubs\+As\+Havocs(), Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Stubs\+As\+Skips(), and Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_ad01635b77a2d3c53fd3007f52eed098c}\label{class_sol_to_boogie_1_1_translator_flags_ad01635b77a2d3c53fd3007f52eed098c}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!ModelReverts@{ModelReverts}}
+\index{ModelReverts@{ModelReverts}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{ModelReverts}{ModelReverts}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Reverts\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Model revert logic when an exception happens. 
+
+
+
+Definition at line 75 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Boogie\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Global\+Variables(), Sol\+To\+Boogie.\+Procedure\+Translator.\+pre\+Translation\+Action(), Sol\+To\+Boogie.\+Boogie\+Translator.\+Translate(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Transfer\+Call\+Stmt(), Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_ac358b859e9e323cf124122a1c819ab01}\label{class_sol_to_boogie_1_1_translator_flags_ac358b859e9e323cf124122a1c819ab01}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!NoAxiomsFlag@{NoAxiomsFlag}}
+\index{NoAxiomsFlag@{NoAxiomsFlag}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{NoAxiomsFlag}{NoAxiomsFlag}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Axioms\+Flag\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Do not print axioms (except for allocation) 
+
+
+
+Definition at line 54 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Axioms(), and Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_ac2938d14e99bc50b1f0ea92a873de8c4}\label{class_sol_to_boogie_1_1_translator_flags_ac2938d14e99bc50b1f0ea92a873de8c4}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!NoBoogieHarness@{NoBoogieHarness}}
+\index{NoBoogieHarness@{NoBoogieHarness}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{NoBoogieHarness}{NoBoogieHarness}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Boogie\+Harness\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 40 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate(), and Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_aeed83663eccef8eac7c04ea3bdc0a5b8}\label{class_sol_to_boogie_1_1_translator_flags_aeed83663eccef8eac7c04ea3bdc0a5b8}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!NoCustomTypes@{NoCustomTypes}}
+\index{NoCustomTypes@{NoCustomTypes}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{NoCustomTypes}{NoCustomTypes}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Custom\+Types\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 36 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Types(), and Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a31a7c3d35e72425fc126359a6b0744b5}\label{class_sol_to_boogie_1_1_translator_flags_a31a7c3d35e72425fc126359a6b0744b5}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!NoDataValuesInfoFlag@{NoDataValuesInfoFlag}}
+\index{NoDataValuesInfoFlag@{NoDataValuesInfoFlag}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{NoDataValuesInfoFlag}{NoDataValuesInfoFlag}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Data\+Values\+Info\+Flag\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Omit printing instrumentation to print data values in counterexample trace 
+
+
+
+Definition at line 50 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Boogie\+Record(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Instrument\+For\+Printing\+Data(), Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_aeed62afa43909ecf607146b1b84448ea}\label{class_sol_to_boogie_1_1_translator_flags_aeed62afa43909ecf607146b1b84448ea}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!NoHarness@{NoHarness}}
+\index{NoHarness@{NoHarness}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{NoHarness}{NoHarness}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Harness\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Omit generating Corral and Boogie harness 
+
+
+
+Definition at line 66 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Boogie\+Translator.\+Translate(), and Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_ab9d2aa2b0eeb4c80cff56f98abb210c6}\label{class_sol_to_boogie_1_1_translator_flags_ab9d2aa2b0eeb4c80cff56f98abb210c6}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!NoSourceLineInfoFlag@{NoSourceLineInfoFlag}}
+\index{NoSourceLineInfoFlag@{NoSourceLineInfoFlag}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{NoSourceLineInfoFlag}{NoSourceLineInfoFlag}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Source\+Line\+Info\+Flag\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Omit printing source\+File/source\+Line information 
+
+
+
+Definition at line 46 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Default\+Constructor(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Statement(), and Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a269a392ade24695c321c36fb1cf146a8}\label{class_sol_to_boogie_1_1_translator_flags_a269a392ade24695c321c36fb1cf146a8}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!NoUnsignedAssumesFlag@{NoUnsignedAssumesFlag}}
+\index{NoUnsignedAssumesFlag@{NoUnsignedAssumesFlag}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{NoUnsignedAssumesFlag}{NoUnsignedAssumesFlag}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Unsigned\+Assumes\+Flag\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Do not emit x $>$= 0 for unsigned expressions x 
+
+
+
+Definition at line 62 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Add\+Assume\+For\+Uints(), and Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a29034a7b295573be7663f8f8d0a90d96}\label{class_sol_to_boogie_1_1_translator_flags_a29034a7b295573be7663f8f8d0a90d96}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!OmitAssumeFalseForDynDispatch@{OmitAssumeFalseForDynDispatch}}
+\index{OmitAssumeFalseForDynDispatch@{OmitAssumeFalseForDynDispatch}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{OmitAssumeFalseForDynDispatch}{OmitAssumeFalseForDynDispatch}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+Omit\+Assume\+False\+For\+Dyn\+Dispatch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Remove assume false for the default branch of dyn dispatch 
+
+
+
+Definition at line 92 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Dynamic\+Type\+Assumes(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Dynamic\+Dispatch\+Call(), and Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a9cda297689304da1c8912612502dca45}\label{class_sol_to_boogie_1_1_translator_flags_a9cda297689304da1c8912612502dca45}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!PerformContractInferce@{PerformContractInferce}}
+\index{PerformContractInferce@{PerformContractInferce}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{PerformContractInferce}{PerformContractInferce}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+Perform\+Contract\+Inferce\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 102 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Veri\+Sol\+Runner.\+Veri\+Sol\+Executor.\+Find\+Proof(), and Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_aaeba82c55905e1e0aec8922a070d1a2a}\label{class_sol_to_boogie_1_1_translator_flags_aaeba82c55905e1e0aec8922a070d1a2a}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!QuantFreeAllocs@{QuantFreeAllocs}}
+\index{QuantFreeAllocs@{QuantFreeAllocs}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{QuantFreeAllocs}{QuantFreeAllocs}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+Quant\+Free\+Allocs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Do not generate quantified axioms for allocation statements. 
+
+
+
+Definition at line 83 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Functions(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Initialization\+For\+Mapping\+State\+Var(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Initialize\+Nested\+Array\+Mapping\+State\+Var(), Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a16a727611c7c925fea4f26c17468d86d}\label{class_sol_to_boogie_1_1_translator_flags_a16a727611c7c925fea4f26c17468d86d}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!RemoveScopeInVarName@{RemoveScopeInVarName}}
+\index{RemoveScopeInVarName@{RemoveScopeInVarName}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{RemoveScopeInVarName}{RemoveScopeInVarName}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+Remove\+Scope\+In\+Var\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 108 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Trans\+Utils.\+Get\+Canonical\+Local\+Variable\+Name(), and Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_translator_flags_a4ed21845dbd4b293e2ead50d90774b06}\label{class_sol_to_boogie_1_1_translator_flags_a4ed21845dbd4b293e2ead50d90774b06}} 
+\index{SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}!UseModularArithmetic@{UseModularArithmetic}}
+\index{UseModularArithmetic@{UseModularArithmetic}!SolToBoogie.TranslatorFlags@{SolToBoogie.TranslatorFlags}}
+\doxysubsubsection{\texorpdfstring{UseModularArithmetic}{UseModularArithmetic}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Translator\+Flags.\+Use\+Modular\+Arithmetic\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Do not emit underflow/overflow assumes for unsigned operations x 
+
+
+
+Definition at line 58 of file Translator\+Flags.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Add\+Assume\+For\+Uints(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Add\+Modulo\+Op(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Initialization\+For\+Array\+State\+Var(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Initialization\+For\+Elementary\+Types(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Initialization\+For\+Mapping\+State\+Var(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+State\+Var\+Declaration(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Type\+Cast(), Sol\+To\+Boogie.\+Translator\+Flags.\+Translator\+Flags(), Sol\+To\+Boogie.\+Modifier\+Collector.\+Visit(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_translator_flags_8cs}{Translator\+Flags.\+cs}}\end{DoxyCompactItemize}

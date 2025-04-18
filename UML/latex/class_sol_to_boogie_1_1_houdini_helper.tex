@@ -1,0 +1,117 @@
+\hypertarget{class_sol_to_boogie_1_1_houdini_helper}{}\doxysection{Sol\+To\+Boogie.\+Houdini\+Helper Class Reference}
+\label{class_sol_to_boogie_1_1_houdini_helper}\index{SolToBoogie.HoudiniHelper@{SolToBoogie.HoudiniHelper}}
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+Houdini\+Helper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_sol_to_boogie_1_1_houdini_helper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Dictionary$<$ int, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_houdini_helper_a1837aaae760c431105e4c995fd529156}{Generate\+Houdini\+Var\+Mapping}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} context)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_map_select}{Boogie\+Map\+Select}} \mbox{\hyperlink{class_sol_to_boogie_1_1_houdini_helper_acafd5d9543f84aace83f10b7566abbbe}{Get\+Boogie\+Expr\+Of\+State\+Var}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}} var\+Decl, \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} context)
+\item 
+static void \mbox{\hyperlink{class_sol_to_boogie_1_1_houdini_helper_ae61eceed5627111aa3d64fe30b23555a}{Print\+Houdini\+Candidate\+Map}} (Dictionary$<$ int, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} $>$ map)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 10 of file Houdini\+Helper.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_houdini_helper_a1837aaae760c431105e4c995fd529156}\label{class_sol_to_boogie_1_1_houdini_helper_a1837aaae760c431105e4c995fd529156}} 
+\index{SolToBoogie.HoudiniHelper@{SolToBoogie.HoudiniHelper}!GenerateHoudiniVarMapping@{GenerateHoudiniVarMapping}}
+\index{GenerateHoudiniVarMapping@{GenerateHoudiniVarMapping}!SolToBoogie.HoudiniHelper@{SolToBoogie.HoudiniHelper}}
+\doxysubsubsection{\texorpdfstring{GenerateHoudiniVarMapping()}{GenerateHoudiniVarMapping()}}
+{\footnotesize\ttfamily static Dictionary$<$int, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}}$>$ Sol\+To\+Boogie.\+Houdini\+Helper.\+Generate\+Houdini\+Var\+Mapping (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 13 of file Houdini\+Helper.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Houdini\+Helper.\+Get\+Boogie\+Expr\+Of\+State\+Var(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Visible\+State\+Vars\+By\+Contract(), and Solidity\+AST.\+Variable\+Declaration.\+Type\+Name.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_houdini_helper_a1837aaae760c431105e4c995fd529156_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_houdini_helper_a1837aaae760c431105e4c995fd529156_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_houdini_helper_acafd5d9543f84aace83f10b7566abbbe}\label{class_sol_to_boogie_1_1_houdini_helper_acafd5d9543f84aace83f10b7566abbbe}} 
+\index{SolToBoogie.HoudiniHelper@{SolToBoogie.HoudiniHelper}!GetBoogieExprOfStateVar@{GetBoogieExprOfStateVar}}
+\index{GetBoogieExprOfStateVar@{GetBoogieExprOfStateVar}!SolToBoogie.HoudiniHelper@{SolToBoogie.HoudiniHelper}}
+\doxysubsubsection{\texorpdfstring{GetBoogieExprOfStateVar()}{GetBoogieExprOfStateVar()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_map_select}{Boogie\+Map\+Select}} Sol\+To\+Boogie.\+Houdini\+Helper.\+Get\+Boogie\+Expr\+Of\+State\+Var (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_variable_declaration}{Variable\+Declaration}}}]{var\+Decl,  }\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 63 of file Houdini\+Helper.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Trans\+Utils.\+Get\+Canonical\+State\+Variable\+Name().
+
+
+
+Referenced by Sol\+To\+Boogie.\+Houdini\+Helper.\+Generate\+Houdini\+Var\+Mapping().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_houdini_helper_acafd5d9543f84aace83f10b7566abbbe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_houdini_helper_acafd5d9543f84aace83f10b7566abbbe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_houdini_helper_ae61eceed5627111aa3d64fe30b23555a}\label{class_sol_to_boogie_1_1_houdini_helper_ae61eceed5627111aa3d64fe30b23555a}} 
+\index{SolToBoogie.HoudiniHelper@{SolToBoogie.HoudiniHelper}!PrintHoudiniCandidateMap@{PrintHoudiniCandidateMap}}
+\index{PrintHoudiniCandidateMap@{PrintHoudiniCandidateMap}!SolToBoogie.HoudiniHelper@{SolToBoogie.HoudiniHelper}}
+\doxysubsubsection{\texorpdfstring{PrintHoudiniCandidateMap()}{PrintHoudiniCandidateMap()}}
+{\footnotesize\ttfamily static void Sol\+To\+Boogie.\+Houdini\+Helper.\+Print\+Houdini\+Candidate\+Map (\begin{DoxyParamCaption}\item[{Dictionary$<$ int, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} $>$}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 70 of file Houdini\+Helper.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_houdini_helper_8cs}{Houdini\+Helper.\+cs}}\end{DoxyCompactItemize}

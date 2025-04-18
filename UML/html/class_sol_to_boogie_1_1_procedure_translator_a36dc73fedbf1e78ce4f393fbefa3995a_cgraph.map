@@ -1,0 +1,9 @@
+<map id="SolToBoogie.ProcedureTranslator.GetBoogieTypesFromMapping" name="SolToBoogie.ProcedureTranslator.GetBoogieTypesFromMapping">
+<area shape="rect" id="node1" title=" " alt="" coords="5,104,243,145"/>
+<area shape="rect" id="node2" href="$class_sol_to_boogie_1_1_trans_utils.html#a34d9ade7e2aab2f7c1de07123c10e42a" title=" " alt="" coords="292,5,504,47"/>
+<area shape="rect" id="node3" href="$class_sol_to_boogie_1_1_map_array_helper.html#a00275b5e47fbe7218936905277272c69" title=" " alt="" coords="291,71,505,112"/>
+<area shape="rect" id="node4" href="$class_sol_to_boogie_1_1_map_array_helper.html#afb90037edb075e37a0dfc029f3f6b6f4" title=" " alt="" coords="291,136,505,177"/>
+<area shape="rect" id="node7" href="$class_solidity_a_s_t_1_1_type_description.html#aa12c7d62ad481c8b4e4abe55a2587fa0" title=" " alt="" coords="295,201,501,243"/>
+<area shape="rect" id="node5" href="$class_sol_to_boogie_1_1_map_array_helper.html#a427c2276cc0a4c3113b11dfef7e8d62e" title=" " alt="" coords="553,104,768,145"/>
+<area shape="rect" id="node6" href="$class_sol_to_boogie_1_1_map_array_helper.html#a4de68467bcd91886df01ba453cdf8795" title=" " alt="" coords="553,169,768,211"/>
+</map>

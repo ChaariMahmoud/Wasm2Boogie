@@ -1,0 +1,156 @@
+\hypertarget{class_solidity_a_s_t_1_1_node_mapper}{}\doxysection{Solidity\+AST.\+Node\+Mapper Class Reference}
+\label{class_solidity_a_s_t_1_1_node_mapper}\index{SolidityAST.NodeMapper@{SolidityAST.NodeMapper}}
+
+
+Inheritance diagram for Solidity\+AST.\+Node\+Mapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_solidity_a_s_t_1_1_node_mapper__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Solidity\+AST.\+Node\+Mapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_solidity_a_s_t_1_1_node_mapper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_node_mapper_a841b523444c871020f57ac91ee5ae855}{Node\+Mapper}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} \mbox{\hyperlink{class_solidity_a_s_t_1_1_node_mapper_ac12ce07272f75431c190cb20a88fa36e}{root}})
+\item 
+Dictionary$<$ int, \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} $>$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_node_mapper_a5fd311ef03f37683487c2a5f06211565}{Get\+Id\+To\+Node\+Map}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_solidity_a_s_t_1_1_node_mapper_ab84edf6cf4da5df838f5781d5db4566e}{Common\+Visit}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} \mbox{\hyperlink{class_solidity_a_s_t_1_1_node_mapper_ac12ce07272f75431c190cb20a88fa36e}{root}}
+\item 
+Dictionary$<$ int, \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} $>$ \mbox{\hyperlink{class_solidity_a_s_t_1_1_node_mapper_a5fcfde52e37c732dde5c6754b2eedb76}{id\+To\+Node\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 8 of file Node\+Mapper.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_node_mapper_a841b523444c871020f57ac91ee5ae855}\label{class_solidity_a_s_t_1_1_node_mapper_a841b523444c871020f57ac91ee5ae855}} 
+\index{SolidityAST.NodeMapper@{SolidityAST.NodeMapper}!NodeMapper@{NodeMapper}}
+\index{NodeMapper@{NodeMapper}!SolidityAST.NodeMapper@{SolidityAST.NodeMapper}}
+\doxysubsubsection{\texorpdfstring{NodeMapper()}{NodeMapper()}}
+{\footnotesize\ttfamily Solidity\+AST.\+Node\+Mapper.\+Node\+Mapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 14 of file Node\+Mapper.\+cs.
+
+
+
+References Solidity\+AST.\+ASTNode.\+Accept(), Solidity\+AST.\+Node\+Mapper.\+id\+To\+Node\+Map, and Solidity\+AST.\+Node\+Mapper.\+root.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_node_mapper_a841b523444c871020f57ac91ee5ae855_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_node_mapper_ab84edf6cf4da5df838f5781d5db4566e}\label{class_solidity_a_s_t_1_1_node_mapper_ab84edf6cf4da5df838f5781d5db4566e}} 
+\index{SolidityAST.NodeMapper@{SolidityAST.NodeMapper}!CommonVisit@{CommonVisit}}
+\index{CommonVisit@{CommonVisit}!SolidityAST.NodeMapper@{SolidityAST.NodeMapper}}
+\doxysubsubsection{\texorpdfstring{CommonVisit()}{CommonVisit()}}
+{\footnotesize\ttfamily override bool Solidity\+AST.\+Node\+Mapper.\+Common\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_solidity_a_s_t_1_1_basic_a_s_t_visitor_a25b7d506b2746411ec5c1848a45495d1}{Solidity\+AST.\+Basic\+ASTVisitor}}.
+
+
+
+Definition at line 26 of file Node\+Mapper.\+cs.
+
+
+
+References Solidity\+AST.\+ASTNode.\+Id, and Solidity\+AST.\+Node\+Mapper.\+id\+To\+Node\+Map.
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_node_mapper_a5fd311ef03f37683487c2a5f06211565}\label{class_solidity_a_s_t_1_1_node_mapper_a5fd311ef03f37683487c2a5f06211565}} 
+\index{SolidityAST.NodeMapper@{SolidityAST.NodeMapper}!GetIdToNodeMap@{GetIdToNodeMap}}
+\index{GetIdToNodeMap@{GetIdToNodeMap}!SolidityAST.NodeMapper@{SolidityAST.NodeMapper}}
+\doxysubsubsection{\texorpdfstring{GetIdToNodeMap()}{GetIdToNodeMap()}}
+{\footnotesize\ttfamily Dictionary$<$int, \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}$>$ Solidity\+AST.\+Node\+Mapper.\+Get\+Id\+To\+Node\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 21 of file Node\+Mapper.\+cs.
+
+
+
+References Solidity\+AST.\+Node\+Mapper.\+id\+To\+Node\+Map.
+
+
+
+Referenced by Solidity\+AST.\+AST.\+AST().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_node_mapper_a5fd311ef03f37683487c2a5f06211565_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_node_mapper_a5fcfde52e37c732dde5c6754b2eedb76}\label{class_solidity_a_s_t_1_1_node_mapper_a5fcfde52e37c732dde5c6754b2eedb76}} 
+\index{SolidityAST.NodeMapper@{SolidityAST.NodeMapper}!idToNodeMap@{idToNodeMap}}
+\index{idToNodeMap@{idToNodeMap}!SolidityAST.NodeMapper@{SolidityAST.NodeMapper}}
+\doxysubsubsection{\texorpdfstring{idToNodeMap}{idToNodeMap}}
+{\footnotesize\ttfamily Dictionary$<$int, \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}}$>$ Solidity\+AST.\+Node\+Mapper.\+id\+To\+Node\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 12 of file Node\+Mapper.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+Node\+Mapper.\+Common\+Visit(), Solidity\+AST.\+Node\+Mapper.\+Get\+Id\+To\+Node\+Map(), and Solidity\+AST.\+Node\+Mapper.\+Node\+Mapper().
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_node_mapper_ac12ce07272f75431c190cb20a88fa36e}\label{class_solidity_a_s_t_1_1_node_mapper_ac12ce07272f75431c190cb20a88fa36e}} 
+\index{SolidityAST.NodeMapper@{SolidityAST.NodeMapper}!root@{root}}
+\index{root@{root}!SolidityAST.NodeMapper@{SolidityAST.NodeMapper}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node}{ASTNode}} Solidity\+AST.\+Node\+Mapper.\+root\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 10 of file Node\+Mapper.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+Node\+Mapper.\+Node\+Mapper().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Solidity\+AST/\mbox{\hyperlink{_node_mapper_8cs}{Node\+Mapper.\+cs}}\end{DoxyCompactItemize}

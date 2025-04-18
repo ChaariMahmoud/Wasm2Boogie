@@ -1,0 +1,578 @@
+\hypertarget{class_sol_to_boogie_1_1_harness_generator}{}\doxysection{Sol\+To\+Boogie.\+Harness\+Generator Class Reference}
+\label{class_sol_to_boogie_1_1_harness_generator}\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+Harness\+Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_harness_generator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_a361657218031ff4af8da40136aad6771}{Harness\+Generator}} (\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_af5cf634e58f9684026b48be7ac2f45a2}{context}}, Dictionary$<$ string, List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} $>$$>$ \+\_\+contract\+Invariants)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_ab783ee392fda3b7c522c2b4ec720ed47}{Generate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_a4198b96ee07c5b8584a62fb6d562c6ac}{Generate\+Houdini\+Vars\+For\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, Dictionary$<$ int, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} $>$ houdini\+Var\+Map)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_a15c8acfca75e1163c98d6d8424ce5dda}{Generate\+Modifiers}} ()
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_a332dcc7ce5c6e74646857ca13eb7a8e8}{Generate\+Boogie\+Harness\+For\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, Dictionary$<$ int, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} $>$ houdini\+Var\+Map)
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_assume_cmd}{Boogie\+Assume\+Cmd}} \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_a6bb48116010b07b14d5803d276db26ff}{Generate\+Dynamic\+Type\+Assumes}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_a677e390685361a138b33b37bea0a0d61}{Generate\+Constructor\+Call}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_while_cmd}{Boogie\+While\+Cmd}} \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_adff713395bda2aedbd71bafdfb8417d8}{Generate\+While\+Loop}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, Dictionary$<$ int, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} $>$ houdini\+Var\+Map, List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$ local\+Vars)
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list}{Boogie\+Stmt\+List}} \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_a91c47f8a647a3b25a1136a9e8cf1d00c}{Generate\+Havoc\+Block}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract, List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$ local\+Vars)
+\item 
+string \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_ab25c8d86e10e2b0fad603d3012fce8ec}{Get\+Houdini\+Var\+Name}} (int id, \mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_a2123c60f632ee637d7a0e8b08e336216}{Generate\+Corral\+Choice\+Proc\+For\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_a9ac3eea28fb13d484c419eef052ad2e1}{Generate\+Corral\+Harness\+For\+Contract}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_while_cmd}{Boogie\+While\+Cmd}} \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_a6bd3d4e09c430069fc0cbc73b59a7de3}{Generate\+Corral\+While\+Loop}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}} contract)
+\item 
+List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_a80f641fd92f027519d35d095e2abfc71}{Remove\+This\+From\+Variables}} (List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$ variables)
+\item 
+List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_ab26801db813ca5fe1cf42fb3c7de1077}{Get\+Params\+Of\+Function}} (\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}} func\+Def)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_af5cf634e58f9684026b48be7ac2f45a2}{context}}
+\item 
+Dictionary$<$ string, List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} $>$ $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_harness_generator_ae445e171eb9df501d05d597e011b9498}{contract\+Invariants}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generate harness for each contract 
+
+Definition at line 13 of file Harness\+Generator.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_a361657218031ff4af8da40136aad6771}\label{class_sol_to_boogie_1_1_harness_generator_a361657218031ff4af8da40136aad6771}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!HarnessGenerator@{HarnessGenerator}}
+\index{HarnessGenerator@{HarnessGenerator}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{HarnessGenerator()}{HarnessGenerator()}}
+{\footnotesize\ttfamily Sol\+To\+Boogie.\+Harness\+Generator.\+Harness\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}}}]{context,  }\item[{Dictionary$<$ string, List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} $>$$>$}]{\+\_\+contract\+Invariants }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 18 of file Harness\+Generator.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Harness\+Generator.\+context.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_ab783ee392fda3b7c522c2b4ec720ed47}\label{class_sol_to_boogie_1_1_harness_generator_ab783ee392fda3b7c522c2b4ec720ed47}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!Generate@{Generate}}
+\index{Generate@{Generate}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{Generate()}{Generate()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Harness\+Generator.\+Generate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 24 of file Harness\+Generator.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Harness\+Generator.\+context, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+Definitions, Solidity\+AST.\+Contract\+Definition.\+Contract\+Kind, Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Boogie\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Choice\+Proc\+For\+Contract(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Houdini\+Helper.\+Generate\+Houdini\+Var\+Mapping(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Houdini\+Vars\+For\+Contract(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Modifiers(), Solidity\+AST.\+Contract\+Definition.\+Name, Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Boogie\+Harness, and Sol\+To\+Boogie.\+Translator\+Context.\+Translate\+Flags.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Boogie\+Translator.\+Translate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_ab783ee392fda3b7c522c2b4ec720ed47_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_ab783ee392fda3b7c522c2b4ec720ed47_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_a332dcc7ce5c6e74646857ca13eb7a8e8}\label{class_sol_to_boogie_1_1_harness_generator_a332dcc7ce5c6e74646857ca13eb7a8e8}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!GenerateBoogieHarnessForContract@{GenerateBoogieHarnessForContract}}
+\index{GenerateBoogieHarnessForContract@{GenerateBoogieHarnessForContract}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateBoogieHarnessForContract()}{GenerateBoogieHarnessForContract()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Boogie\+Harness\+For\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{Dictionary$<$ int, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} $>$}]{houdini\+Var\+Map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 93 of file Harness\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Program.\+Add\+Declaration(), Boogie\+AST.\+Boogie\+Stmt\+List.\+Add\+Statement(), Sol\+To\+Boogie.\+Trans\+Utils.\+Collect\+Local\+Vars(), Sol\+To\+Boogie.\+Harness\+Generator.\+context, Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Constructor\+Call(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Dynamic\+Type\+Assumes(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+While\+Loop(), Sol\+To\+Boogie.\+Translator\+Flags.\+Instrument\+Gas, Boogie\+AST.\+Boogie\+Type.\+Int, Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Reverts, Solidity\+AST.\+Contract\+Definition.\+Name, Sol\+To\+Boogie.\+Translator\+Context.\+Program, and Sol\+To\+Boogie.\+Translator\+Context.\+Translate\+Flags.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a332dcc7ce5c6e74646857ca13eb7a8e8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a332dcc7ce5c6e74646857ca13eb7a8e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_a677e390685361a138b33b37bea0a0d61}\label{class_sol_to_boogie_1_1_harness_generator_a677e390685361a138b33b37bea0a0d61}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!GenerateConstructorCall@{GenerateConstructorCall}}
+\index{GenerateConstructorCall@{GenerateConstructorCall}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateConstructorCall()}{GenerateConstructorCall()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}}$>$ Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Constructor\+Call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 148 of file Harness\+Generator.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Harness\+Generator.\+context, Sol\+To\+Boogie.\+Translator\+Context.\+CREATE\+\_\+\+GAS\+\_\+\+COST, Sol\+To\+Boogie.\+Trans\+Utils.\+Get\+Canonical\+Constructor\+Name(), Sol\+To\+Boogie.\+Trans\+Utils.\+Get\+Canonical\+Local\+Variable\+Name(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Constructor\+By\+Contract(), Sol\+To\+Boogie.\+Translator\+Flags.\+Instrument\+Gas, Sol\+To\+Boogie.\+Translator\+Context.\+Is\+Constructor\+Defined(), Sol\+To\+Boogie.\+Translator\+Context.\+Translate\+Flags, and Solidity\+AST.\+Variable\+Declaration.\+Type\+Name.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Boogie\+Harness\+For\+Contract(), and Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a677e390685361a138b33b37bea0a0d61_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a677e390685361a138b33b37bea0a0d61_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_a2123c60f632ee637d7a0e8b08e336216}\label{class_sol_to_boogie_1_1_harness_generator_a2123c60f632ee637d7a0e8b08e336216}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!GenerateCorralChoiceProcForContract@{GenerateCorralChoiceProcForContract}}
+\index{GenerateCorralChoiceProcForContract@{GenerateCorralChoiceProcForContract}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateCorralChoiceProcForContract()}{GenerateCorralChoiceProcForContract()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Choice\+Proc\+For\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 255 of file Harness\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Program.\+Add\+Declaration(), Boogie\+AST.\+Boogie\+Stmt\+List.\+Add\+Statement(), Sol\+To\+Boogie.\+Trans\+Utils.\+Collect\+Local\+Vars(), Sol\+To\+Boogie.\+Harness\+Generator.\+context, Sol\+To\+Boogie.\+Trans\+Utils.\+Generate\+Choice\+Block(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Havoc\+Block(), Boogie\+AST.\+Boogie\+Type.\+Int, Solidity\+AST.\+Contract\+Definition.\+Name, Sol\+To\+Boogie.\+Translator\+Context.\+Program, Boogie\+AST.\+Boogie\+Type.\+Ref, and Sol\+To\+Boogie.\+Harness\+Generator.\+Remove\+This\+From\+Variables().
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a2123c60f632ee637d7a0e8b08e336216_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a2123c60f632ee637d7a0e8b08e336216_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_a9ac3eea28fb13d484c419eef052ad2e1}\label{class_sol_to_boogie_1_1_harness_generator_a9ac3eea28fb13d484c419eef052ad2e1}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!GenerateCorralHarnessForContract@{GenerateCorralHarnessForContract}}
+\index{GenerateCorralHarnessForContract@{GenerateCorralHarnessForContract}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateCorralHarnessForContract()}{GenerateCorralHarnessForContract()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 274 of file Harness\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Program.\+Add\+Declaration(), Boogie\+AST.\+Boogie\+Stmt\+List.\+Add\+Statement(), Sol\+To\+Boogie.\+Harness\+Generator.\+context, Sol\+To\+Boogie.\+Translator\+Flags.\+Create\+Main\+Harness, Sol\+To\+Boogie.\+Translator\+Context.\+Entry\+Point\+Contract, Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Constructor\+Call(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+While\+Loop(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Dynamic\+Type\+Assumes(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Constructor\+By\+Contract(), Sol\+To\+Boogie.\+Harness\+Generator.\+Get\+Params\+Of\+Function(), Sol\+To\+Boogie.\+Translator\+Flags.\+Instrument\+Gas, Boogie\+AST.\+Boogie\+Type.\+Int, Sol\+To\+Boogie.\+Translator\+Context.\+Is\+Constructor\+Defined(), Sol\+To\+Boogie.\+Translator\+Flags.\+Model\+Reverts, Solidity\+AST.\+Contract\+Definition.\+Name, Sol\+To\+Boogie.\+Translator\+Flags.\+No\+Custom\+Types, Sol\+To\+Boogie.\+Translator\+Context.\+Program, Boogie\+AST.\+Boogie\+Type.\+Ref, and Sol\+To\+Boogie.\+Translator\+Context.\+Translate\+Flags.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a9ac3eea28fb13d484c419eef052ad2e1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a9ac3eea28fb13d484c419eef052ad2e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_a6bd3d4e09c430069fc0cbc73b59a7de3}\label{class_sol_to_boogie_1_1_harness_generator_a6bd3d4e09c430069fc0cbc73b59a7de3}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!GenerateCorralWhileLoop@{GenerateCorralWhileLoop}}
+\index{GenerateCorralWhileLoop@{GenerateCorralWhileLoop}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateCorralWhileLoop()}{GenerateCorralWhileLoop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_while_cmd}{Boogie\+While\+Cmd}} Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+While\+Loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 323 of file Harness\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Stmt\+List.\+Add\+Statement(), Sol\+To\+Boogie.\+Harness\+Generator.\+contract\+Invariants, and Solidity\+AST.\+Contract\+Definition.\+Name.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a6bd3d4e09c430069fc0cbc73b59a7de3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a6bd3d4e09c430069fc0cbc73b59a7de3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_a6bb48116010b07b14d5803d276db26ff}\label{class_sol_to_boogie_1_1_harness_generator_a6bb48116010b07b14d5803d276db26ff}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!GenerateDynamicTypeAssumes@{GenerateDynamicTypeAssumes}}
+\index{GenerateDynamicTypeAssumes@{GenerateDynamicTypeAssumes}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateDynamicTypeAssumes()}{GenerateDynamicTypeAssumes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_assume_cmd}{Boogie\+Assume\+Cmd}} Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Dynamic\+Type\+Assumes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 122 of file Harness\+Generator.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Harness\+Generator.\+context, Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Sub\+Types\+Of\+Contract(), Sol\+To\+Boogie.\+Translator\+Flags.\+Omit\+Assume\+False\+For\+Dyn\+Dispatch, and Sol\+To\+Boogie.\+Translator\+Context.\+Translate\+Flags.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Boogie\+Harness\+For\+Contract(), and Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a6bb48116010b07b14d5803d276db26ff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a6bb48116010b07b14d5803d276db26ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_a91c47f8a647a3b25a1136a9e8cf1d00c}\label{class_sol_to_boogie_1_1_harness_generator_a91c47f8a647a3b25a1136a9e8cf1d00c}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!GenerateHavocBlock@{GenerateHavocBlock}}
+\index{GenerateHavocBlock@{GenerateHavocBlock}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateHavocBlock()}{GenerateHavocBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list}{Boogie\+Stmt\+List}} Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Havoc\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$}]{local\+Vars }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 213 of file Harness\+Generator.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Harness\+Generator.\+context, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+Definitions, Sol\+To\+Boogie.\+Trans\+Utils.\+havoc\+Gas(), Sol\+To\+Boogie.\+Translator\+Flags.\+Instrument\+Gas, Boogie\+AST.\+Boogie\+Typed\+Ident.\+Name, Sol\+To\+Boogie.\+Translator\+Context.\+Translate\+Flags, and Boogie\+AST.\+Boogie\+Variable.\+Typed\+Ident.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Choice\+Proc\+For\+Contract(), and Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+While\+Loop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a91c47f8a647a3b25a1136a9e8cf1d00c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a91c47f8a647a3b25a1136a9e8cf1d00c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_a4198b96ee07c5b8584a62fb6d562c6ac}\label{class_sol_to_boogie_1_1_harness_generator_a4198b96ee07c5b8584a62fb6d562c6ac}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!GenerateHoudiniVarsForContract@{GenerateHoudiniVarsForContract}}
+\index{GenerateHoudiniVarsForContract@{GenerateHoudiniVarsForContract}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateHoudiniVarsForContract()}{GenerateHoudiniVarsForContract()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Houdini\+Vars\+For\+Contract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{Dictionary$<$ int, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} $>$}]{houdini\+Var\+Map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 58 of file Harness\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Program.\+Add\+Declaration(), Boogie\+AST.\+Boogie\+Declaration.\+Attributes, Boogie\+AST.\+Boogie\+Type.\+Bool, Sol\+To\+Boogie.\+Harness\+Generator.\+context, Sol\+To\+Boogie.\+Harness\+Generator.\+Get\+Houdini\+Var\+Name(), and Sol\+To\+Boogie.\+Translator\+Context.\+Program.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a4198b96ee07c5b8584a62fb6d562c6ac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a4198b96ee07c5b8584a62fb6d562c6ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_a15c8acfca75e1163c98d6d8424ce5dda}\label{class_sol_to_boogie_1_1_harness_generator_a15c8acfca75e1163c98d6d8424ce5dda}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!GenerateModifiers@{GenerateModifiers}}
+\index{GenerateModifiers@{GenerateModifiers}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateModifiers()}{GenerateModifiers()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Modifiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 72 of file Harness\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Program.\+Add\+Declaration(), Sol\+To\+Boogie.\+Harness\+Generator.\+context, Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Post\+Impl, Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Post\+Proc, Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Pre\+Impl, Sol\+To\+Boogie.\+Translator\+Context.\+Modifier\+To\+Boogie\+Pre\+Proc, and Sol\+To\+Boogie.\+Translator\+Context.\+Program.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a15c8acfca75e1163c98d6d8424ce5dda_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a15c8acfca75e1163c98d6d8424ce5dda_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_adff713395bda2aedbd71bafdfb8417d8}\label{class_sol_to_boogie_1_1_harness_generator_adff713395bda2aedbd71bafdfb8417d8}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!GenerateWhileLoop@{GenerateWhileLoop}}
+\index{GenerateWhileLoop@{GenerateWhileLoop}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateWhileLoop()}{GenerateWhileLoop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_while_cmd}{Boogie\+While\+Cmd}} Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+While\+Loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract,  }\item[{Dictionary$<$ int, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} $>$}]{houdini\+Var\+Map,  }\item[{List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$}]{local\+Vars }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 185 of file Harness\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Stmt\+List.\+Add\+Statement(), Sol\+To\+Boogie.\+Harness\+Generator.\+context, Sol\+To\+Boogie.\+Harness\+Generator.\+contract\+Invariants, Sol\+To\+Boogie.\+Trans\+Utils.\+Generate\+Choice\+Block(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Havoc\+Block(), Sol\+To\+Boogie.\+Harness\+Generator.\+Get\+Houdini\+Var\+Name(), and Solidity\+AST.\+Contract\+Definition.\+Name.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Boogie\+Harness\+For\+Contract().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_adff713395bda2aedbd71bafdfb8417d8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_adff713395bda2aedbd71bafdfb8417d8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_ab25c8d86e10e2b0fad603d3012fce8ec}\label{class_sol_to_boogie_1_1_harness_generator_ab25c8d86e10e2b0fad603d3012fce8ec}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!GetHoudiniVarName@{GetHoudiniVarName}}
+\index{GetHoudiniVarName@{GetHoudiniVarName}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{GetHoudiniVarName()}{GetHoudiniVarName()}}
+{\footnotesize\ttfamily string Sol\+To\+Boogie.\+Harness\+Generator.\+Get\+Houdini\+Var\+Name (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_contract_definition}{Contract\+Definition}}}]{contract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 250 of file Harness\+Generator.\+cs.
+
+
+
+References Solidity\+AST.\+Contract\+Definition.\+Name.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Houdini\+Vars\+For\+Contract(), and Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+While\+Loop().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_ab25c8d86e10e2b0fad603d3012fce8ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_ab26801db813ca5fe1cf42fb3c7de1077}\label{class_sol_to_boogie_1_1_harness_generator_ab26801db813ca5fe1cf42fb3c7de1077}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!GetParamsOfFunction@{GetParamsOfFunction}}
+\index{GetParamsOfFunction@{GetParamsOfFunction}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{GetParamsOfFunction()}{GetParamsOfFunction()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}}$>$ Sol\+To\+Boogie.\+Harness\+Generator.\+Get\+Params\+Of\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_solidity_a_s_t_1_1_function_definition}{Function\+Definition}}}]{func\+Def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 356 of file Harness\+Generator.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Harness\+Generator.\+context, Sol\+To\+Boogie.\+Trans\+Utils.\+Get\+Boogie\+Type\+From\+Solidity\+Type\+Name(), Sol\+To\+Boogie.\+Trans\+Utils.\+Get\+Canonical\+Local\+Variable\+Name(), Solidity\+AST.\+Variable\+Declaration.\+Name, and Solidity\+AST.\+Variable\+Declaration.\+Type\+Name.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_ab26801db813ca5fe1cf42fb3c7de1077_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_ab26801db813ca5fe1cf42fb3c7de1077_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_a80f641fd92f027519d35d095e2abfc71}\label{class_sol_to_boogie_1_1_harness_generator_a80f641fd92f027519d35d095e2abfc71}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!RemoveThisFromVariables@{RemoveThisFromVariables}}
+\index{RemoveThisFromVariables@{RemoveThisFromVariables}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{RemoveThisFromVariables()}{RemoveThisFromVariables()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}}$>$ Sol\+To\+Boogie.\+Harness\+Generator.\+Remove\+This\+From\+Variables (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_variable}{Boogie\+Variable}} $>$}]{variables }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 343 of file Harness\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Typed\+Ident.\+Name, and Boogie\+AST.\+Boogie\+Variable.\+Typed\+Ident.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Choice\+Proc\+For\+Contract().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_harness_generator_a80f641fd92f027519d35d095e2abfc71_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_af5cf634e58f9684026b48be7ac2f45a2}\label{class_sol_to_boogie_1_1_harness_generator_af5cf634e58f9684026b48be7ac2f45a2}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!context@{context}}
+\index{context@{context}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} Sol\+To\+Boogie.\+Harness\+Generator.\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 15 of file Harness\+Generator.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Boogie\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Constructor\+Call(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Choice\+Proc\+For\+Contract(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Dynamic\+Type\+Assumes(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Havoc\+Block(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Houdini\+Vars\+For\+Contract(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Modifiers(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+While\+Loop(), Sol\+To\+Boogie.\+Harness\+Generator.\+Get\+Params\+Of\+Function(), and Sol\+To\+Boogie.\+Harness\+Generator.\+Harness\+Generator().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_harness_generator_ae445e171eb9df501d05d597e011b9498}\label{class_sol_to_boogie_1_1_harness_generator_ae445e171eb9df501d05d597e011b9498}} 
+\index{SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}!contractInvariants@{contractInvariants}}
+\index{contractInvariants@{contractInvariants}!SolToBoogie.HarnessGenerator@{SolToBoogie.HarnessGenerator}}
+\doxysubsubsection{\texorpdfstring{contractInvariants}{contractInvariants}}
+{\footnotesize\ttfamily Dictionary$<$string, List$<$\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}}$>$ $>$ Sol\+To\+Boogie.\+Harness\+Generator.\+contract\+Invariants\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 16 of file Harness\+Generator.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+While\+Loop(), and Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+While\+Loop().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_harness_generator_8cs}{Harness\+Generator.\+cs}}\end{DoxyCompactItemize}

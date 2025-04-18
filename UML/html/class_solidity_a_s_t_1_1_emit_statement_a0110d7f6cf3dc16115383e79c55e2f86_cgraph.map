@@ -1,0 +1,7 @@
+<map id="SolidityAST.EmitStatement.Accept" name="SolidityAST.EmitStatement.Accept">
+<area shape="rect" id="node1" title=" " alt="" coords="5,64,207,105"/>
+<area shape="rect" id="node2" href="$class_solidity_a_s_t_1_1_function_call.html#a10f1db545569e16f9408166acc4e4518" title=" " alt="" coords="255,64,437,105"/>
+<area shape="rect" id="node4" href="$interface_solidity_a_s_t_1_1_i_a_s_t_visitor.html#a7710ac3ceaf6ec668c0ba5c6f6003dcd" title=" " alt="" coords="502,5,675,47"/>
+<area shape="rect" id="node5" href="$interface_solidity_a_s_t_1_1_i_a_s_t_visitor.html#aaf5a4b14ed79dbc96d641c540934ab4f" title=" " alt="" coords="502,123,675,164"/>
+<area shape="rect" id="node3" href="$class_solidity_a_s_t_1_1_a_s_t_node.html#a31655aeae6213266768f8f5182ba5fec" title=" " alt="" coords="485,71,692,98"/>
+</map>

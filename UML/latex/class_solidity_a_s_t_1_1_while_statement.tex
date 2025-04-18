@@ -1,0 +1,150 @@
+\hypertarget{class_solidity_a_s_t_1_1_while_statement}{}\doxysection{Solidity\+AST.\+While\+Statement Class Reference}
+\label{class_solidity_a_s_t_1_1_while_statement}\index{SolidityAST.WhileStatement@{SolidityAST.WhileStatement}}
+
+
+Inheritance diagram for Solidity\+AST.\+While\+Statement\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{class_solidity_a_s_t_1_1_while_statement__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Solidity\+AST.\+While\+Statement\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{class_solidity_a_s_t_1_1_while_statement__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_solidity_a_s_t_1_1_while_statement_a478c38c573308074dabdd304aa4046ed}{Accept}} (\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_visitor}{IASTVisitor}} visitor)
+\item 
+override T \mbox{\hyperlink{class_solidity_a_s_t_1_1_while_statement_a7efc87699f4c3f9faeb6bd69133c9528}{Accept$<$ T $>$}} (\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_generic_visitor}{IASTGeneric\+Visitor}}$<$ T $>$ visitor)
+\item 
+override string \mbox{\hyperlink{class_solidity_a_s_t_1_1_while_statement_a46a066d326d210aa4815231cc372ec37}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}} \mbox{\hyperlink{class_solidity_a_s_t_1_1_while_statement_a5398345e7516ae8d871d244a0bffccf7}{Condition}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}} \mbox{\hyperlink{class_solidity_a_s_t_1_1_while_statement_abb620dfd159744655299d53ed54a524f}{Body}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 1041 of file Solidity\+AST.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_while_statement_a478c38c573308074dabdd304aa4046ed}\label{class_solidity_a_s_t_1_1_while_statement_a478c38c573308074dabdd304aa4046ed}} 
+\index{SolidityAST.WhileStatement@{SolidityAST.WhileStatement}!Accept@{Accept}}
+\index{Accept@{Accept}!SolidityAST.WhileStatement@{SolidityAST.WhileStatement}}
+\doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily override void Solidity\+AST.\+While\+Statement.\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_visitor}{IASTVisitor}}}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a31655aeae6213266768f8f5182ba5fec}{Solidity\+AST.\+ASTNode}}.
+
+
+
+Definition at line 1047 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+ASTNode.\+Accept(), Solidity\+AST.\+While\+Statement.\+Body, Solidity\+AST.\+While\+Statement.\+Condition, Solidity\+AST.\+IASTVisitor.\+End\+Visit(), and Solidity\+AST.\+IASTVisitor.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_while_statement_a478c38c573308074dabdd304aa4046ed_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_while_statement_a7efc87699f4c3f9faeb6bd69133c9528}\label{class_solidity_a_s_t_1_1_while_statement_a7efc87699f4c3f9faeb6bd69133c9528}} 
+\index{SolidityAST.WhileStatement@{SolidityAST.WhileStatement}!Accept$<$ T $>$@{Accept$<$ T $>$}}
+\index{Accept$<$ T $>$@{Accept$<$ T $>$}!SolidityAST.WhileStatement@{SolidityAST.WhileStatement}}
+\doxysubsubsection{\texorpdfstring{Accept$<$ T $>$()}{Accept< T >()}}
+{\footnotesize\ttfamily override T \mbox{\hyperlink{class_solidity_a_s_t_1_1_while_statement_a478c38c573308074dabdd304aa4046ed}{Solidity\+AST.\+While\+Statement.\+Accept}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_generic_visitor}{IASTGeneric\+Visitor}}$<$ T $>$}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a57b9fd6602c95260988f9cc6f1729200}{Solidity\+AST.\+ASTNode}}.
+
+
+
+Definition at line 1057 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+IASTGeneric\+Visitor$<$ T $>$.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_while_statement_a7efc87699f4c3f9faeb6bd69133c9528_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_while_statement_a46a066d326d210aa4815231cc372ec37}\label{class_solidity_a_s_t_1_1_while_statement_a46a066d326d210aa4815231cc372ec37}} 
+\index{SolidityAST.WhileStatement@{SolidityAST.WhileStatement}!ToString@{ToString}}
+\index{ToString@{ToString}!SolidityAST.WhileStatement@{SolidityAST.WhileStatement}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Solidity\+AST.\+While\+Statement.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1062 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+While\+Statement.\+Body, and Solidity\+AST.\+While\+Statement.\+Condition.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_while_statement_abb620dfd159744655299d53ed54a524f}\label{class_solidity_a_s_t_1_1_while_statement_abb620dfd159744655299d53ed54a524f}} 
+\index{SolidityAST.WhileStatement@{SolidityAST.WhileStatement}!Body@{Body}}
+\index{Body@{Body}!SolidityAST.WhileStatement@{SolidityAST.WhileStatement}}
+\doxysubsubsection{\texorpdfstring{Body}{Body}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}} Solidity\+AST.\+While\+Statement.\+Body\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 1045 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+While\+Statement.\+Accept(), Solidity\+AST.\+While\+Statement.\+To\+String(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_while_statement_a5398345e7516ae8d871d244a0bffccf7}\label{class_solidity_a_s_t_1_1_while_statement_a5398345e7516ae8d871d244a0bffccf7}} 
+\index{SolidityAST.WhileStatement@{SolidityAST.WhileStatement}!Condition@{Condition}}
+\index{Condition@{Condition}!SolidityAST.WhileStatement@{SolidityAST.WhileStatement}}
+\doxysubsubsection{\texorpdfstring{Condition}{Condition}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}} Solidity\+AST.\+While\+Statement.\+Condition\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 1043 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+While\+Statement.\+Accept(), Solidity\+AST.\+While\+Statement.\+To\+String(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Solidity\+AST/\mbox{\hyperlink{_solidity_a_s_t_8cs}{Solidity\+AST.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,166 @@
+\hypertarget{class_solidity_a_s_t_1_1_if_statement}{}\doxysection{Solidity\+AST.\+If\+Statement Class Reference}
+\label{class_solidity_a_s_t_1_1_if_statement}\index{SolidityAST.IfStatement@{SolidityAST.IfStatement}}
+
+
+Inheritance diagram for Solidity\+AST.\+If\+Statement\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{class_solidity_a_s_t_1_1_if_statement__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Solidity\+AST.\+If\+Statement\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{class_solidity_a_s_t_1_1_if_statement__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_solidity_a_s_t_1_1_if_statement_aec62a24aa607d586325f21ebb54288e0}{Accept}} (\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_visitor}{IASTVisitor}} visitor)
+\item 
+override T \mbox{\hyperlink{class_solidity_a_s_t_1_1_if_statement_a43f45d8b594a4be93057057e74d8e048}{Accept$<$ T $>$}} (\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_generic_visitor}{IASTGeneric\+Visitor}}$<$ T $>$ visitor)
+\item 
+override string \mbox{\hyperlink{class_solidity_a_s_t_1_1_if_statement_a2a02eb0c4b52e2d0c6911b92bde69ce3}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}} \mbox{\hyperlink{class_solidity_a_s_t_1_1_if_statement_acf6e605f64f82c2b947837f6b27303c7}{Condition}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}} \mbox{\hyperlink{class_solidity_a_s_t_1_1_if_statement_ac7498b3d701824842d3d9f71e415fdbd}{True\+Body}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}} \mbox{\hyperlink{class_solidity_a_s_t_1_1_if_statement_a4d6870a6770ddf958cb95c70cdaaa55f}{False\+Body}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 1004 of file Solidity\+AST.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_if_statement_aec62a24aa607d586325f21ebb54288e0}\label{class_solidity_a_s_t_1_1_if_statement_aec62a24aa607d586325f21ebb54288e0}} 
+\index{SolidityAST.IfStatement@{SolidityAST.IfStatement}!Accept@{Accept}}
+\index{Accept@{Accept}!SolidityAST.IfStatement@{SolidityAST.IfStatement}}
+\doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily override void Solidity\+AST.\+If\+Statement.\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_visitor}{IASTVisitor}}}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a31655aeae6213266768f8f5182ba5fec}{Solidity\+AST.\+ASTNode}}.
+
+
+
+Definition at line 1012 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+ASTNode.\+Accept(), Solidity\+AST.\+If\+Statement.\+Condition, Solidity\+AST.\+IASTVisitor.\+End\+Visit(), Solidity\+AST.\+If\+Statement.\+False\+Body, Solidity\+AST.\+If\+Statement.\+True\+Body, and Solidity\+AST.\+IASTVisitor.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_if_statement_aec62a24aa607d586325f21ebb54288e0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_if_statement_a43f45d8b594a4be93057057e74d8e048}\label{class_solidity_a_s_t_1_1_if_statement_a43f45d8b594a4be93057057e74d8e048}} 
+\index{SolidityAST.IfStatement@{SolidityAST.IfStatement}!Accept$<$ T $>$@{Accept$<$ T $>$}}
+\index{Accept$<$ T $>$@{Accept$<$ T $>$}!SolidityAST.IfStatement@{SolidityAST.IfStatement}}
+\doxysubsubsection{\texorpdfstring{Accept$<$ T $>$()}{Accept< T >()}}
+{\footnotesize\ttfamily override T \mbox{\hyperlink{class_solidity_a_s_t_1_1_if_statement_aec62a24aa607d586325f21ebb54288e0}{Solidity\+AST.\+If\+Statement.\+Accept}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_solidity_a_s_t_1_1_i_a_s_t_generic_visitor}{IASTGeneric\+Visitor}}$<$ T $>$}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_solidity_a_s_t_1_1_a_s_t_node_a57b9fd6602c95260988f9cc6f1729200}{Solidity\+AST.\+ASTNode}}.
+
+
+
+Definition at line 1026 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+IASTGeneric\+Visitor$<$ T $>$.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solidity_a_s_t_1_1_if_statement_a43f45d8b594a4be93057057e74d8e048_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_if_statement_a2a02eb0c4b52e2d0c6911b92bde69ce3}\label{class_solidity_a_s_t_1_1_if_statement_a2a02eb0c4b52e2d0c6911b92bde69ce3}} 
+\index{SolidityAST.IfStatement@{SolidityAST.IfStatement}!ToString@{ToString}}
+\index{ToString@{ToString}!SolidityAST.IfStatement@{SolidityAST.IfStatement}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Solidity\+AST.\+If\+Statement.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1031 of file Solidity\+AST.\+cs.
+
+
+
+References Solidity\+AST.\+If\+Statement.\+Condition, Solidity\+AST.\+If\+Statement.\+False\+Body, and Solidity\+AST.\+If\+Statement.\+True\+Body.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_if_statement_acf6e605f64f82c2b947837f6b27303c7}\label{class_solidity_a_s_t_1_1_if_statement_acf6e605f64f82c2b947837f6b27303c7}} 
+\index{SolidityAST.IfStatement@{SolidityAST.IfStatement}!Condition@{Condition}}
+\index{Condition@{Condition}!SolidityAST.IfStatement@{SolidityAST.IfStatement}}
+\doxysubsubsection{\texorpdfstring{Condition}{Condition}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_expression}{Expression}} Solidity\+AST.\+If\+Statement.\+Condition\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 1006 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+If\+Statement.\+Accept(), Solidity\+AST.\+If\+Statement.\+To\+String(), Solidity\+CFG.\+CFGBuilder.\+Visit(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_if_statement_a4d6870a6770ddf958cb95c70cdaaa55f}\label{class_solidity_a_s_t_1_1_if_statement_a4d6870a6770ddf958cb95c70cdaaa55f}} 
+\index{SolidityAST.IfStatement@{SolidityAST.IfStatement}!FalseBody@{FalseBody}}
+\index{FalseBody@{FalseBody}!SolidityAST.IfStatement@{SolidityAST.IfStatement}}
+\doxysubsubsection{\texorpdfstring{FalseBody}{FalseBody}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}} Solidity\+AST.\+If\+Statement.\+False\+Body\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 1010 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+If\+Statement.\+Accept(), Solidity\+AST.\+If\+Statement.\+To\+String(), Solidity\+CFG.\+CFGBuilder.\+Visit(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+\mbox{\Hypertarget{class_solidity_a_s_t_1_1_if_statement_ac7498b3d701824842d3d9f71e415fdbd}\label{class_solidity_a_s_t_1_1_if_statement_ac7498b3d701824842d3d9f71e415fdbd}} 
+\index{SolidityAST.IfStatement@{SolidityAST.IfStatement}!TrueBody@{TrueBody}}
+\index{TrueBody@{TrueBody}!SolidityAST.IfStatement@{SolidityAST.IfStatement}}
+\doxysubsubsection{\texorpdfstring{TrueBody}{TrueBody}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solidity_a_s_t_1_1_statement}{Statement}} Solidity\+AST.\+If\+Statement.\+True\+Body\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 1008 of file Solidity\+AST.\+cs.
+
+
+
+Referenced by Solidity\+AST.\+If\+Statement.\+Accept(), Solidity\+AST.\+If\+Statement.\+To\+String(), Solidity\+CFG.\+CFGBuilder.\+Visit(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Solidity\+AST/\mbox{\hyperlink{_solidity_a_s_t_8cs}{Solidity\+AST.\+cs}}\end{DoxyCompactItemize}

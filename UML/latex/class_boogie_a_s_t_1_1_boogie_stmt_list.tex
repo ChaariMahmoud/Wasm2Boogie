@@ -1,0 +1,232 @@
+\hypertarget{class_boogie_a_s_t_1_1_boogie_stmt_list}{}\doxysection{Boogie\+AST.\+Boogie\+Stmt\+List Class Reference}
+\label{class_boogie_a_s_t_1_1_boogie_stmt_list}\index{BoogieAST.BoogieStmtList@{BoogieAST.BoogieStmtList}}
+
+
+Inheritance diagram for Boogie\+AST.\+Boogie\+Stmt\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_boogie_a_s_t_1_1_boogie_stmt_list__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Boogie\+AST.\+Boogie\+Stmt\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_boogie_a_s_t_1_1_boogie_stmt_list__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list_af985c023b0e6961f120aedb4fd04397a}{Boogie\+Stmt\+List}} ()
+\item 
+int \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list_abb89d0618c34a1e519d9f687a597e4b9}{Statement\+Count}} ()
+\item 
+void \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list_a8fcae5c7c550ef129368755591e93f42}{Add\+Statement}} (\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}} cmd)
+\item 
+void \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list_a0677e5b1eb834f85f3549dc30bd9c9ce}{Append\+Stmt\+List}} (\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list}{Boogie\+Stmt\+List}} stmt\+List)
+\item 
+override string \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list_a551f115e8abb85792c6d9a5cf75d7c62}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list}{Boogie\+Stmt\+List}} \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list_acb7e0811182cb44c34f20b552451dd90}{Make\+Singleton\+Stmt\+List}} (\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}} cmd)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_big_block}{Boogie\+Big\+Block}} $>$ \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list_a4e94cee257305ac75cff65cdaa4d2009}{Big\+Blocks}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 582 of file Boogie\+AST.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_stmt_list_af985c023b0e6961f120aedb4fd04397a}\label{class_boogie_a_s_t_1_1_boogie_stmt_list_af985c023b0e6961f120aedb4fd04397a}} 
+\index{BoogieAST.BoogieStmtList@{BoogieAST.BoogieStmtList}!BoogieStmtList@{BoogieStmtList}}
+\index{BoogieStmtList@{BoogieStmtList}!BoogieAST.BoogieStmtList@{BoogieAST.BoogieStmtList}}
+\doxysubsubsection{\texorpdfstring{BoogieStmtList()}{BoogieStmtList()}}
+{\footnotesize\ttfamily Boogie\+AST.\+Boogie\+Stmt\+List.\+Boogie\+Stmt\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 586 of file Boogie\+AST.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Stmt\+List.\+Big\+Blocks.
+
+
+
+Referenced by Boogie\+AST.\+Boogie\+Stmt\+List.\+Make\+Singleton\+Stmt\+List().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_boogie_a_s_t_1_1_boogie_stmt_list_af985c023b0e6961f120aedb4fd04397a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_stmt_list_a8fcae5c7c550ef129368755591e93f42}\label{class_boogie_a_s_t_1_1_boogie_stmt_list_a8fcae5c7c550ef129368755591e93f42}} 
+\index{BoogieAST.BoogieStmtList@{BoogieAST.BoogieStmtList}!AddStatement@{AddStatement}}
+\index{AddStatement@{AddStatement}!BoogieAST.BoogieStmtList@{BoogieAST.BoogieStmtList}}
+\doxysubsubsection{\texorpdfstring{AddStatement()}{AddStatement()}}
+{\footnotesize\ttfamily void Boogie\+AST.\+Boogie\+Stmt\+List.\+Add\+Statement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}}}]{cmd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 605 of file Boogie\+AST.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Stmt\+List.\+Big\+Blocks.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Add\+Unsigned\+Type\+Assume\+Cmd(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Create\+Distinct\+Array\+Mapping\+Address(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Create\+Send\+Sucess(), Sol\+To\+Boogie.\+Procedure\+Translator.\+emit\+Gas\+Check(), Sol\+To\+Boogie.\+Procedure\+Translator.\+emit\+Revert\+Logic(), Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Boogie\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Choice\+Proc\+For\+Contract(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+Harness\+For\+Contract(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+Corral\+While\+Loop(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Default\+Constructor(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Global\+Procedure\+Alloc\+Many(), Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Global\+Procedure\+Fresh(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Initialization\+For\+Array\+State\+Var(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Initialization\+For\+Elementary\+Types(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Initialization\+For\+Mapping\+State\+Var(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Initialization\+For\+Struct\+State\+Var(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Initialization\+Stmts(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Generate\+Non\+Det\+Expr(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+generate\+Revert\+Logic\+For\+Cmd(), Sol\+To\+Boogie.\+Harness\+Generator.\+Generate\+While\+Loop(), Sol\+To\+Boogie.\+Trans\+Utils.\+havoc\+Gas(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Initialize\+Nested\+Array\+Mapping\+State\+Var(), Sol\+To\+Boogie.\+Procedure\+Translator.\+pre\+Translation\+Action(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Print\+Arguments(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Abi\+Encoded\+Func\+Call(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Call\+Statement(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Dynamic\+Array\+Push(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Dynamic\+Dispatch\+Call(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Internal\+Function\+Call(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Keccak\+Func\+Call(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+New\+Statement(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Send\+Call\+Stmt(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Struct\+Constructor(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Transfer\+Call\+Stmt(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Type\+Cast(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Using\+Library\+Call(), Sol\+To\+Boogie.\+Procedure\+Translator.\+update\+Assigned\+Sums(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_boogie_a_s_t_1_1_boogie_stmt_list_a8fcae5c7c550ef129368755591e93f42_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_stmt_list_a0677e5b1eb834f85f3549dc30bd9c9ce}\label{class_boogie_a_s_t_1_1_boogie_stmt_list_a0677e5b1eb834f85f3549dc30bd9c9ce}} 
+\index{BoogieAST.BoogieStmtList@{BoogieAST.BoogieStmtList}!AppendStmtList@{AppendStmtList}}
+\index{AppendStmtList@{AppendStmtList}!BoogieAST.BoogieStmtList@{BoogieAST.BoogieStmtList}}
+\doxysubsubsection{\texorpdfstring{AppendStmtList()}{AppendStmtList()}}
+{\footnotesize\ttfamily void Boogie\+AST.\+Boogie\+Stmt\+List.\+Append\+Stmt\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list}{Boogie\+Stmt\+List}}}]{stmt\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 611 of file Boogie\+AST.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Stmt\+List.\+Big\+Blocks.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Add\+Assume\+For\+Uints(), Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Statement(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_boogie_a_s_t_1_1_boogie_stmt_list_a0677e5b1eb834f85f3549dc30bd9c9ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_stmt_list_acb7e0811182cb44c34f20b552451dd90}\label{class_boogie_a_s_t_1_1_boogie_stmt_list_acb7e0811182cb44c34f20b552451dd90}} 
+\index{BoogieAST.BoogieStmtList@{BoogieAST.BoogieStmtList}!MakeSingletonStmtList@{MakeSingletonStmtList}}
+\index{MakeSingletonStmtList@{MakeSingletonStmtList}!BoogieAST.BoogieStmtList@{BoogieAST.BoogieStmtList}}
+\doxysubsubsection{\texorpdfstring{MakeSingletonStmtList()}{MakeSingletonStmtList()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list}{Boogie\+Stmt\+List}} Boogie\+AST.\+Boogie\+Stmt\+List.\+Make\+Singleton\+Stmt\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}}}]{cmd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 598 of file Boogie\+AST.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Stmt\+List.\+Big\+Blocks, and Boogie\+AST.\+Boogie\+Stmt\+List.\+Boogie\+Stmt\+List().
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Add\+Assume\+For\+Uints(), Sol\+To\+Boogie.\+Fallback\+Generator.\+Create\+Body\+Of\+Send(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Create\+Send\+Fail(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Create\+Send\+Sucess(), Sol\+To\+Boogie.\+Fallback\+Generator.\+Generate\+Body\+Of\+Fallback\+Dispatch(), Sol\+To\+Boogie.\+Trans\+Utils.\+Generate\+Choice\+Block(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Dynamic\+Dispatch\+Call(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Send\+Call\+Stmt(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Statement(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Transfer\+Call\+Stmt(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_boogie_a_s_t_1_1_boogie_stmt_list_acb7e0811182cb44c34f20b552451dd90_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_boogie_a_s_t_1_1_boogie_stmt_list_acb7e0811182cb44c34f20b552451dd90_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_stmt_list_abb89d0618c34a1e519d9f687a597e4b9}\label{class_boogie_a_s_t_1_1_boogie_stmt_list_abb89d0618c34a1e519d9f687a597e4b9}} 
+\index{BoogieAST.BoogieStmtList@{BoogieAST.BoogieStmtList}!StatementCount@{StatementCount}}
+\index{StatementCount@{StatementCount}!BoogieAST.BoogieStmtList@{BoogieAST.BoogieStmtList}}
+\doxysubsubsection{\texorpdfstring{StatementCount()}{StatementCount()}}
+{\footnotesize\ttfamily int Boogie\+AST.\+Boogie\+Stmt\+List.\+Statement\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 592 of file Boogie\+AST.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Stmt\+List.\+Big\+Blocks.
+
+
+
+Referenced by Boogie\+AST.\+Boogie\+If\+Cmd.\+To\+String().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_boogie_a_s_t_1_1_boogie_stmt_list_abb89d0618c34a1e519d9f687a597e4b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_stmt_list_a551f115e8abb85792c6d9a5cf75d7c62}\label{class_boogie_a_s_t_1_1_boogie_stmt_list_a551f115e8abb85792c6d9a5cf75d7c62}} 
+\index{BoogieAST.BoogieStmtList@{BoogieAST.BoogieStmtList}!ToString@{ToString}}
+\index{ToString@{ToString}!BoogieAST.BoogieStmtList@{BoogieAST.BoogieStmtList}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Boogie\+AST.\+Boogie\+Stmt\+List.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 620 of file Boogie\+AST.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Stmt\+List.\+Big\+Blocks.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_boogie_a_s_t_1_1_boogie_stmt_list_a4e94cee257305ac75cff65cdaa4d2009}\label{class_boogie_a_s_t_1_1_boogie_stmt_list_a4e94cee257305ac75cff65cdaa4d2009}} 
+\index{BoogieAST.BoogieStmtList@{BoogieAST.BoogieStmtList}!BigBlocks@{BigBlocks}}
+\index{BigBlocks@{BigBlocks}!BoogieAST.BoogieStmtList@{BoogieAST.BoogieStmtList}}
+\doxysubsubsection{\texorpdfstring{BigBlocks}{BigBlocks}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_big_block}{Boogie\+Big\+Block}}$>$ Boogie\+AST.\+Boogie\+Stmt\+List.\+Big\+Blocks\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Definition at line 584 of file Boogie\+AST.\+cs.
+
+
+
+Referenced by Boogie\+AST.\+Boogie\+Stmt\+List.\+Add\+Statement(), Boogie\+AST.\+Boogie\+Stmt\+List.\+Append\+Stmt\+List(), Boogie\+AST.\+Boogie\+Stmt\+List.\+Boogie\+Stmt\+List(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+generate\+Revert\+Logic\+For\+Cmd(), Boogie\+AST.\+Boogie\+Stmt\+List.\+Make\+Singleton\+Stmt\+List(), Boogie\+AST.\+Boogie\+Stmt\+List.\+Statement\+Count(), Boogie\+AST.\+Boogie\+Stmt\+List.\+To\+String(), and Boogie\+AST.\+Boogie\+If\+Cmd.\+To\+String().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Boogie\+AST/\mbox{\hyperlink{_boogie_a_s_t_8cs}{Boogie\+AST.\+cs}}\end{DoxyCompactItemize}

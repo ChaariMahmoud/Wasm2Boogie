@@ -1,0 +1,230 @@
+\hypertarget{class_sol_to_boogie_1_1_function_event_resolver}{}\doxysection{Sol\+To\+Boogie.\+Function\+Event\+Resolver Class Reference}
+\label{class_sol_to_boogie_1_1_function_event_resolver}\index{SolToBoogie.FunctionEventResolver@{SolToBoogie.FunctionEventResolver}}
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+Function\+Event\+Resolver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_function_event_resolver__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_resolver_a3c40be8b816efb2334ffc3dc736a0be0}{Function\+Event\+Resolver}} (\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_resolver_a6fcaf801bd49d3799d0ebb4014eb81d6}{context}})
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_resolver_a55c324f20e359456d0cf32fbe2063b38}{Resolve}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_resolver_af15b0bfe06fa980f1861db2e97bbb00a}{Resolve\+Functions}} ()
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_resolver_a008ffb616913c59709c5b1fd6fc4c1bf}{Compute\+Visible\+Functions}} ()
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_resolver_a5bc730f02387ebe81aeb703f490d09db}{Print\+Function\+Resolution\+Map}} ()
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_resolver_a44f364fbd479b910fa79d3c6e089f535}{Print\+Visible\+Functions}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_function_event_resolver_a6fcaf801bd49d3799d0ebb4014eb81d6}{context}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Determine the visible functions/events for each contract considering the inheritance hierarchy, and put the information in the context. 
+
+Definition at line 14 of file Function\+Event\+Resolver.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_function_event_resolver_a3c40be8b816efb2334ffc3dc736a0be0}\label{class_sol_to_boogie_1_1_function_event_resolver_a3c40be8b816efb2334ffc3dc736a0be0}} 
+\index{SolToBoogie.FunctionEventResolver@{SolToBoogie.FunctionEventResolver}!FunctionEventResolver@{FunctionEventResolver}}
+\index{FunctionEventResolver@{FunctionEventResolver}!SolToBoogie.FunctionEventResolver@{SolToBoogie.FunctionEventResolver}}
+\doxysubsubsection{\texorpdfstring{FunctionEventResolver()}{FunctionEventResolver()}}
+{\footnotesize\ttfamily Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Function\+Event\+Resolver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 20 of file Function\+Event\+Resolver.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+context.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_function_event_resolver_a008ffb616913c59709c5b1fd6fc4c1bf}\label{class_sol_to_boogie_1_1_function_event_resolver_a008ffb616913c59709c5b1fd6fc4c1bf}} 
+\index{SolToBoogie.FunctionEventResolver@{SolToBoogie.FunctionEventResolver}!ComputeVisibleFunctions@{ComputeVisibleFunctions}}
+\index{ComputeVisibleFunctions@{ComputeVisibleFunctions}!SolToBoogie.FunctionEventResolver@{SolToBoogie.FunctionEventResolver}}
+\doxysubsubsection{\texorpdfstring{ComputeVisibleFunctions()}{ComputeVisibleFunctions()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Compute\+Visible\+Functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 81 of file Function\+Event\+Resolver.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Visible\+Function\+To\+Contract(), Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+context, and Sol\+To\+Boogie.\+Translator\+Context.\+Func\+Sig\+Resolution\+Map.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Resolve().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_function_event_resolver_a008ffb616913c59709c5b1fd6fc4c1bf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_function_event_resolver_a008ffb616913c59709c5b1fd6fc4c1bf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_function_event_resolver_a5bc730f02387ebe81aeb703f490d09db}\label{class_sol_to_boogie_1_1_function_event_resolver_a5bc730f02387ebe81aeb703f490d09db}} 
+\index{SolToBoogie.FunctionEventResolver@{SolToBoogie.FunctionEventResolver}!PrintFunctionResolutionMap@{PrintFunctionResolutionMap}}
+\index{PrintFunctionResolutionMap@{PrintFunctionResolutionMap}!SolToBoogie.FunctionEventResolver@{SolToBoogie.FunctionEventResolver}}
+\doxysubsubsection{\texorpdfstring{PrintFunctionResolutionMap()}{PrintFunctionResolutionMap()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Print\+Function\+Resolution\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 95 of file Function\+Event\+Resolver.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+context, Sol\+To\+Boogie.\+Translator\+Context.\+Func\+Sig\+Resolution\+Map, Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Contract\+By\+Function(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Function\+By\+Dynamic\+Type(), and Solidity\+AST.\+Contract\+Definition.\+Name.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_function_event_resolver_a5bc730f02387ebe81aeb703f490d09db_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_function_event_resolver_a44f364fbd479b910fa79d3c6e089f535}\label{class_sol_to_boogie_1_1_function_event_resolver_a44f364fbd479b910fa79d3c6e089f535}} 
+\index{SolToBoogie.FunctionEventResolver@{SolToBoogie.FunctionEventResolver}!PrintVisibleFunctions@{PrintVisibleFunctions}}
+\index{PrintVisibleFunctions@{PrintVisibleFunctions}!SolToBoogie.FunctionEventResolver@{SolToBoogie.FunctionEventResolver}}
+\doxysubsubsection{\texorpdfstring{PrintVisibleFunctions()}{PrintVisibleFunctions()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Print\+Visible\+Functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 110 of file Function\+Event\+Resolver.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+context, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+To\+Visible\+Functions\+Map, Sol\+To\+Boogie.\+Trans\+Utils.\+Get\+Canonical\+Function\+Name(), and Solidity\+AST.\+Contract\+Definition.\+Name.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_function_event_resolver_a44f364fbd479b910fa79d3c6e089f535_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_function_event_resolver_a55c324f20e359456d0cf32fbe2063b38}\label{class_sol_to_boogie_1_1_function_event_resolver_a55c324f20e359456d0cf32fbe2063b38}} 
+\index{SolToBoogie.FunctionEventResolver@{SolToBoogie.FunctionEventResolver}!Resolve@{Resolve}}
+\index{Resolve@{Resolve}!SolToBoogie.FunctionEventResolver@{SolToBoogie.FunctionEventResolver}}
+\doxysubsubsection{\texorpdfstring{Resolve()}{Resolve()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Resolve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 26 of file Function\+Event\+Resolver.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Compute\+Visible\+Functions(), and Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Resolve\+Functions().
+
+
+
+Referenced by Sol\+To\+Boogie.\+Boogie\+Translator.\+Translate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_function_event_resolver_a55c324f20e359456d0cf32fbe2063b38_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_function_event_resolver_a55c324f20e359456d0cf32fbe2063b38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_function_event_resolver_af15b0bfe06fa980f1861db2e97bbb00a}\label{class_sol_to_boogie_1_1_function_event_resolver_af15b0bfe06fa980f1861db2e97bbb00a}} 
+\index{SolToBoogie.FunctionEventResolver@{SolToBoogie.FunctionEventResolver}!ResolveFunctions@{ResolveFunctions}}
+\index{ResolveFunctions@{ResolveFunctions}!SolToBoogie.FunctionEventResolver@{SolToBoogie.FunctionEventResolver}}
+\doxysubsubsection{\texorpdfstring{ResolveFunctions()}{ResolveFunctions()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Resolve\+Functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Function\+Event\+Resolver.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Event\+To\+Contract(), Sol\+To\+Boogie.\+Translator\+Context.\+Add\+Function\+To\+Dynamic\+Type(), Sol\+To\+Boogie.\+Trans\+Utils.\+Compute\+Function\+Signature(), Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+context, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+Definitions, Sol\+To\+Boogie.\+Translator\+Context.\+Get\+ASTNode\+By\+Id(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Event\+Defintions\+In\+Contract(), Sol\+To\+Boogie.\+Translator\+Context.\+Get\+Func\+Defintions\+In\+Contract(), Solidity\+AST.\+Contract\+Definition.\+Linearized\+Base\+Contracts, and Sol\+To\+Boogie.\+Resolution\+Helper.\+Topological\+Sort\+By\+Dependency().
+
+
+
+Referenced by Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Resolve().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_function_event_resolver_af15b0bfe06fa980f1861db2e97bbb00a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_function_event_resolver_af15b0bfe06fa980f1861db2e97bbb00a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_function_event_resolver_a6fcaf801bd49d3799d0ebb4014eb81d6}\label{class_sol_to_boogie_1_1_function_event_resolver_a6fcaf801bd49d3799d0ebb4014eb81d6}} 
+\index{SolToBoogie.FunctionEventResolver@{SolToBoogie.FunctionEventResolver}!context@{context}}
+\index{context@{context}!SolToBoogie.FunctionEventResolver@{SolToBoogie.FunctionEventResolver}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 18 of file Function\+Event\+Resolver.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Compute\+Visible\+Functions(), Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Function\+Event\+Resolver(), Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Print\+Function\+Resolution\+Map(), Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Print\+Visible\+Functions(), and Sol\+To\+Boogie.\+Function\+Event\+Resolver.\+Resolve\+Functions().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_function_event_resolver_8cs}{Function\+Event\+Resolver.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,546 @@
+\hypertarget{class_sol_to_boogie_1_1_revert_logic_generator}{}\doxysection{Sol\+To\+Boogie.\+Revert\+Logic\+Generator Class Reference}
+\label{class_sol_to_boogie_1_1_revert_logic_generator}\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+Revert\+Logic\+Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_sol_to_boogie_1_1_revert_logic_generator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_ae0fd8b799ef86857142f7469dd59bae4}{Revert\+Logic\+Generator}} (\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_a9a10af21355318ed58fd5483c2128aab}{context}})
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_a423bfe2b9b09d99e0e67a548123d2353}{Generate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_a526163671e1f62ae909416398abfad4c}{must\+Have\+Shadow}} (string global\+Name)
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_a72babc5f42e1f107bd15340777ace3ad}{is\+Public}} (\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}} proc)
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}} \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_a9192d175112d8aedc74b38a8019277e3}{duplicate\+Procedure}} (\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}} proc, string new\+Name\+Suffix, bool drop\+Public=false)
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_acc67d6f3366140756216912a410442d5}{dup\+And\+Replace\+Expr}} (\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} expr, bool is\+Fail, bool in\+Harness)
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_a8d08316572c6537ed1bafc9603eb320b}{catches\+Exceptions}} (string method\+Name)
+\item 
+void \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_ada737f47b7d22f59fb8346a028df2bca}{generate\+Revert\+Logic\+For\+Cmd}} (\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}} cmd, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list}{Boogie\+Stmt\+List}} parent, bool is\+Fail, bool in\+Harness)
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_a243bf54ccd2c42dc3b0c703a453fa53d}{create\+Fail\+Implementation}} (string name, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} original\+Impl)
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_a6b26cdc4d0530c670d84da3a86ddd453}{is\+Harness\+Procudure}} (string proc\+Name)
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_af1322e227958fa02ff3c09d5ef5e8a3f}{create\+Success\+Implementation}} (string name, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} original\+Impl)
+\item 
+bool \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_a8850b082a746827efa5d539f347256a7}{is\+Constructor}} (string func\+Name)
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_a7c118393a896cb82ccdd9ee9117a5a13}{Create\+Send\+Fail}} ()
+\item 
+\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_a9ca69090ad69182e32937e98da275f53}{Create\+Send\+Sucess}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_a9a10af21355318ed58fd5483c2128aab}{context}}
+\item 
+Hash\+Set$<$ string $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_a431ba57d7070664c1b09997c6965b5dd}{constructor\+Names}}
+\item 
+Dictionary$<$ string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_global_variable}{Boogie\+Global\+Variable}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_acc2beaacf187025f5849c1253d4636d0}{shadow\+Globals}} = new Dictionary$<$string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_global_variable}{Boogie\+Global\+Variable}}$>$()
+\item 
+Dictionary$<$ string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} $>$.Key\+Collection \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_abed7cf66a9ad5450a19a9ff305f04ef0}{procs\+Wilt\+Impl\+Names}}
+\item 
+Dictionary$<$ string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}} $>$ \mbox{\hyperlink{class_sol_to_boogie_1_1_revert_logic_generator_a06e84005b4652a21dba4f38780761cfd}{procedures\+In\+Program}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 9 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_ae0fd8b799ef86857142f7469dd59bae4}\label{class_sol_to_boogie_1_1_revert_logic_generator_ae0fd8b799ef86857142f7469dd59bae4}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!RevertLogicGenerator@{RevertLogicGenerator}}
+\index{RevertLogicGenerator@{RevertLogicGenerator}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{RevertLogicGenerator()}{RevertLogicGenerator()}}
+{\footnotesize\ttfamily Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Revert\+Logic\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 259 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+context, Sol\+To\+Boogie.\+Translator\+Context.\+Contract\+Definitions, Boogie\+AST.\+Boogie\+Program.\+Declarations, Sol\+To\+Boogie.\+Trans\+Utils.\+Get\+Canonical\+Constructor\+Name(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+procedures\+In\+Program, and Sol\+To\+Boogie.\+Translator\+Context.\+Program.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_ae0fd8b799ef86857142f7469dd59bae4_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_a8d08316572c6537ed1bafc9603eb320b}\label{class_sol_to_boogie_1_1_revert_logic_generator_a8d08316572c6537ed1bafc9603eb320b}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!catchesExceptions@{catchesExceptions}}
+\index{catchesExceptions@{catchesExceptions}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{catchesExceptions()}{catchesExceptions()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+catches\+Exceptions (\begin{DoxyParamCaption}\item[{string}]{method\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 132 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+generate\+Revert\+Logic\+For\+Cmd().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_a8d08316572c6537ed1bafc9603eb320b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_a243bf54ccd2c42dc3b0c703a453fa53d}\label{class_sol_to_boogie_1_1_revert_logic_generator_a243bf54ccd2c42dc3b0c703a453fa53d}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!createFailImplementation@{createFailImplementation}}
+\index{createFailImplementation@{createFailImplementation}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{createFailImplementation()}{createFailImplementation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+create\+Fail\+Implementation (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}}}]{original\+Impl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 228 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+generate\+Revert\+Logic\+For\+Cmd(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+is\+Harness\+Procudure(), and Boogie\+AST.\+Boogie\+Named\+Decl.\+Name.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_a243bf54ccd2c42dc3b0c703a453fa53d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_a243bf54ccd2c42dc3b0c703a453fa53d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_a7c118393a896cb82ccdd9ee9117a5a13}\label{class_sol_to_boogie_1_1_revert_logic_generator_a7c118393a896cb82ccdd9ee9117a5a13}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!CreateSendFail@{CreateSendFail}}
+\index{CreateSendFail@{CreateSendFail}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{CreateSendFail()}{CreateSendFail()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Create\+Send\+Fail (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 441 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Type.\+Bool, Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+context, Sol\+To\+Boogie.\+Translator\+Flags.\+Instrument\+Gas, Boogie\+AST.\+Boogie\+Type.\+Int, Boogie\+AST.\+Boogie\+Stmt\+List.\+Make\+Singleton\+Stmt\+List(), Boogie\+AST.\+Boogie\+Type.\+Ref, Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+shadow\+Globals, and Sol\+To\+Boogie.\+Translator\+Context.\+Translate\+Flags.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_a7c118393a896cb82ccdd9ee9117a5a13_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_a7c118393a896cb82ccdd9ee9117a5a13_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_a9ca69090ad69182e32937e98da275f53}\label{class_sol_to_boogie_1_1_revert_logic_generator_a9ca69090ad69182e32937e98da275f53}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!CreateSendSucess@{CreateSendSucess}}
+\index{CreateSendSucess@{CreateSendSucess}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{CreateSendSucess()}{CreateSendSucess()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Create\+Send\+Sucess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 560 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Stmt\+List.\+Add\+Statement(), Boogie\+AST.\+Boogie\+Type.\+Bool, Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+context, Sol\+To\+Boogie.\+Translator\+Flags.\+Instrument\+Gas, Boogie\+AST.\+Boogie\+Type.\+Int, Boogie\+AST.\+Boogie\+Stmt\+List.\+Make\+Singleton\+Stmt\+List(), Boogie\+AST.\+Boogie\+Type.\+Ref, Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+shadow\+Globals, and Sol\+To\+Boogie.\+Translator\+Context.\+Translate\+Flags.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_a9ca69090ad69182e32937e98da275f53_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_a9ca69090ad69182e32937e98da275f53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_af1322e227958fa02ff3c09d5ef5e8a3f}\label{class_sol_to_boogie_1_1_revert_logic_generator_af1322e227958fa02ff3c09d5ef5e8a3f}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!createSuccessImplementation@{createSuccessImplementation}}
+\index{createSuccessImplementation@{createSuccessImplementation}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{createSuccessImplementation()}{createSuccessImplementation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}} Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+create\+Success\+Implementation (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}}}]{original\+Impl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 247 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+generate\+Revert\+Logic\+For\+Cmd(), and Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+is\+Harness\+Procudure().
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_af1322e227958fa02ff3c09d5ef5e8a3f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_af1322e227958fa02ff3c09d5ef5e8a3f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_acc67d6f3366140756216912a410442d5}\label{class_sol_to_boogie_1_1_revert_logic_generator_acc67d6f3366140756216912a410442d5}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!dupAndReplaceExpr@{dupAndReplaceExpr}}
+\index{dupAndReplaceExpr@{dupAndReplaceExpr}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{dupAndReplaceExpr()}{dupAndReplaceExpr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+dup\+And\+Replace\+Expr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}}}]{expr,  }\item[{bool}]{is\+Fail,  }\item[{bool}]{in\+Harness }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 53 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Map\+Select.\+Arguments, Boogie\+AST.\+Boogie\+Map\+Update.\+Arguments, Boogie\+AST.\+Boogie\+Func\+Call\+Expr.\+Arguments, Boogie\+AST.\+Boogie\+Tuple\+Expr.\+Arguments, Boogie\+AST.\+Boogie\+Map\+Select.\+Base\+Expr, Boogie\+AST.\+Boogie\+Map\+Update.\+Base\+Expr, Boogie\+AST.\+Boogie\+Quantified\+Expr.\+Body\+Expr, Boogie\+AST.\+Boogie\+ITE.\+Else\+Expr, Boogie\+AST.\+Boogie\+Unary\+Operation.\+Expr, Boogie\+AST.\+Boogie\+Func\+Call\+Expr.\+Function, Boogie\+AST.\+Boogie\+ITE.\+Guard, Boogie\+AST.\+Boogie\+Quantified\+Expr.\+Is\+Forall, Boogie\+AST.\+Boogie\+Binary\+Operation.\+Lhs, Boogie\+AST.\+Boogie\+Unary\+Operation.\+Op, Boogie\+AST.\+Boogie\+Binary\+Operation.\+Op, Boogie\+AST.\+Boogie\+Quantified\+Expr.\+QVars, Boogie\+AST.\+Boogie\+Quantified\+Expr.\+QVar\+Types, Boogie\+AST.\+Boogie\+Binary\+Operation.\+Rhs, Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+shadow\+Globals, Boogie\+AST.\+Boogie\+ITE.\+Then\+Expr, Boogie\+AST.\+Boogie\+Quantified\+Expr.\+Trigger, and Boogie\+AST.\+Boogie\+Map\+Update.\+Value.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+generate\+Revert\+Logic\+For\+Cmd().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_acc67d6f3366140756216912a410442d5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_a9192d175112d8aedc74b38a8019277e3}\label{class_sol_to_boogie_1_1_revert_logic_generator_a9192d175112d8aedc74b38a8019277e3}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!duplicateProcedure@{duplicateProcedure}}
+\index{duplicateProcedure@{duplicateProcedure}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{duplicateProcedure()}{duplicateProcedure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}} Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+duplicate\+Procedure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}}}]{proc,  }\item[{string}]{new\+Name\+Suffix,  }\item[{bool}]{drop\+Public = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 40 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Declaration.\+Attributes, Boogie\+AST.\+Boogie\+Decl\+With\+Formals.\+In\+Params, Boogie\+AST.\+Boogie\+Named\+Decl.\+Name, and Boogie\+AST.\+Boogie\+Decl\+With\+Formals.\+Out\+Params.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_a9192d175112d8aedc74b38a8019277e3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_a423bfe2b9b09d99e0e67a548123d2353}\label{class_sol_to_boogie_1_1_revert_logic_generator_a423bfe2b9b09d99e0e67a548123d2353}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!Generate@{Generate}}
+\index{Generate@{Generate}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{Generate()}{Generate()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 271 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Program.\+Add\+Declaration(), Boogie\+AST.\+Boogie\+Stmt\+List.\+Add\+Statement(), Boogie\+AST.\+Boogie\+Type.\+Bool, Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+context, Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+create\+Fail\+Implementation(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Create\+Send\+Fail(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Create\+Send\+Sucess(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+create\+Success\+Implementation(), Boogie\+AST.\+Boogie\+Program.\+Declarations, Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+duplicate\+Procedure(), Boogie\+AST.\+Boogie\+Decl\+With\+Formals.\+In\+Params, Sol\+To\+Boogie.\+Translator\+Flags.\+Instrument\+Gas, Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+is\+Constructor(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+is\+Harness\+Procudure(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+is\+Public(), Boogie\+AST.\+Boogie\+Implementation.\+Local\+Vars, Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+must\+Have\+Shadow(), Boogie\+AST.\+Boogie\+Named\+Decl.\+Name, Boogie\+AST.\+Boogie\+Decl\+With\+Formals.\+Out\+Params, Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+procedures\+In\+Program, Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+procs\+Wilt\+Impl\+Names, Sol\+To\+Boogie.\+Translator\+Context.\+Program, Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+shadow\+Globals, Boogie\+AST.\+Boogie\+Implementation.\+Structured\+Stmts, and Sol\+To\+Boogie.\+Translator\+Context.\+Translate\+Flags.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Boogie\+Translator.\+Translate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_a423bfe2b9b09d99e0e67a548123d2353_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_a423bfe2b9b09d99e0e67a548123d2353_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_ada737f47b7d22f59fb8346a028df2bca}\label{class_sol_to_boogie_1_1_revert_logic_generator_ada737f47b7d22f59fb8346a028df2bca}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!generateRevertLogicForCmd@{generateRevertLogicForCmd}}
+\index{generateRevertLogicForCmd@{generateRevertLogicForCmd}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{generateRevertLogicForCmd()}{generateRevertLogicForCmd()}}
+{\footnotesize\ttfamily void Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+generate\+Revert\+Logic\+For\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_cmd}{Boogie\+Cmd}}}]{cmd,  }\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_stmt_list}{Boogie\+Stmt\+List}}}]{parent,  }\item[{bool}]{is\+Fail,  }\item[{bool}]{in\+Harness }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 137 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Stmt\+List.\+Add\+Statement(), Boogie\+AST.\+Boogie\+Stmt\+List.\+Big\+Blocks, Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+catches\+Exceptions(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+dup\+And\+Replace\+Expr(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+is\+Harness\+Procudure(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+is\+Public(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+procedures\+In\+Program, and Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+procs\+Wilt\+Impl\+Names.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+create\+Fail\+Implementation(), and Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+create\+Success\+Implementation().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_ada737f47b7d22f59fb8346a028df2bca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_ada737f47b7d22f59fb8346a028df2bca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_a8850b082a746827efa5d539f347256a7}\label{class_sol_to_boogie_1_1_revert_logic_generator_a8850b082a746827efa5d539f347256a7}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!isConstructor@{isConstructor}}
+\index{isConstructor@{isConstructor}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{isConstructor()}{isConstructor()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+is\+Constructor (\begin{DoxyParamCaption}\item[{string}]{func\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 266 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+constructor\+Names.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_a8850b082a746827efa5d539f347256a7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_a6b26cdc4d0530c670d84da3a86ddd453}\label{class_sol_to_boogie_1_1_revert_logic_generator_a6b26cdc4d0530c670d84da3a86ddd453}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!isHarnessProcudure@{isHarnessProcudure}}
+\index{isHarnessProcudure@{isHarnessProcudure}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{isHarnessProcudure()}{isHarnessProcudure()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+is\+Harness\+Procudure (\begin{DoxyParamCaption}\item[{string}]{proc\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 242 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+create\+Fail\+Implementation(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+create\+Success\+Implementation(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate(), and Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+generate\+Revert\+Logic\+For\+Cmd().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_a6b26cdc4d0530c670d84da3a86ddd453_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_a72babc5f42e1f107bd15340777ace3ad}\label{class_sol_to_boogie_1_1_revert_logic_generator_a72babc5f42e1f107bd15340777ace3ad}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!isPublic@{isPublic}}
+\index{isPublic@{isPublic}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{isPublic()}{isPublic()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+is\+Public (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}}}]{proc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 26 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Declaration.\+Attributes.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate(), and Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+generate\+Revert\+Logic\+For\+Cmd().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_a72babc5f42e1f107bd15340777ace3ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_a526163671e1f62ae909416398abfad4c}\label{class_sol_to_boogie_1_1_revert_logic_generator_a526163671e1f62ae909416398abfad4c}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!mustHaveShadow@{mustHaveShadow}}
+\index{mustHaveShadow@{mustHaveShadow}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{mustHaveShadow()}{mustHaveShadow()}}
+{\footnotesize\ttfamily bool Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+must\+Have\+Shadow (\begin{DoxyParamCaption}\item[{string}]{global\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 21 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_revert_logic_generator_a526163671e1f62ae909416398abfad4c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_a431ba57d7070664c1b09997c6965b5dd}\label{class_sol_to_boogie_1_1_revert_logic_generator_a431ba57d7070664c1b09997c6965b5dd}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!constructorNames@{constructorNames}}
+\index{constructorNames@{constructorNames}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{constructorNames}{constructorNames}}
+{\footnotesize\ttfamily Hash\+Set$<$string$>$ Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+constructor\+Names\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 13 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+is\+Constructor().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_a9a10af21355318ed58fd5483c2128aab}\label{class_sol_to_boogie_1_1_revert_logic_generator_a9a10af21355318ed58fd5483c2128aab}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!context@{context}}
+\index{context@{context}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sol_to_boogie_1_1_translator_context}{Translator\+Context}} Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 11 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Create\+Send\+Fail(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Create\+Send\+Sucess(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate(), and Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Revert\+Logic\+Generator().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_a06e84005b4652a21dba4f38780761cfd}\label{class_sol_to_boogie_1_1_revert_logic_generator_a06e84005b4652a21dba4f38780761cfd}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!proceduresInProgram@{proceduresInProgram}}
+\index{proceduresInProgram@{proceduresInProgram}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{proceduresInProgram}{proceduresInProgram}}
+{\footnotesize\ttfamily Dictionary$<$string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_procedure}{Boogie\+Procedure}}$>$ Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+procedures\+In\+Program\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 19 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+generate\+Revert\+Logic\+For\+Cmd(), and Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Revert\+Logic\+Generator().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_abed7cf66a9ad5450a19a9ff305f04ef0}\label{class_sol_to_boogie_1_1_revert_logic_generator_abed7cf66a9ad5450a19a9ff305f04ef0}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!procsWiltImplNames@{procsWiltImplNames}}
+\index{procsWiltImplNames@{procsWiltImplNames}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{procsWiltImplNames}{procsWiltImplNames}}
+{\footnotesize\ttfamily Dictionary$<$string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_implementation}{Boogie\+Implementation}}$>$.Key\+Collection Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+procs\+Wilt\+Impl\+Names\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 17 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate(), and Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+generate\+Revert\+Logic\+For\+Cmd().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_revert_logic_generator_acc2beaacf187025f5849c1253d4636d0}\label{class_sol_to_boogie_1_1_revert_logic_generator_acc2beaacf187025f5849c1253d4636d0}} 
+\index{SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}!shadowGlobals@{shadowGlobals}}
+\index{shadowGlobals@{shadowGlobals}!SolToBoogie.RevertLogicGenerator@{SolToBoogie.RevertLogicGenerator}}
+\doxysubsubsection{\texorpdfstring{shadowGlobals}{shadowGlobals}}
+{\footnotesize\ttfamily Dictionary$<$string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_global_variable}{Boogie\+Global\+Variable}}$>$ Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+shadow\+Globals = new Dictionary$<$string, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_global_variable}{Boogie\+Global\+Variable}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 15 of file Revert\+Logic\+Generator.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Create\+Send\+Fail(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Create\+Send\+Sucess(), Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+dup\+And\+Replace\+Expr(), and Sol\+To\+Boogie.\+Revert\+Logic\+Generator.\+Generate().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_revert_logic_generator_8cs}{Revert\+Logic\+Generator.\+cs}}\end{DoxyCompactItemize}

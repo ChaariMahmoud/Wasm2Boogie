@@ -1,0 +1,320 @@
+\hypertarget{class_sol_to_boogie_1_1_map_array_helper}{}\doxysection{Sol\+To\+Boogie.\+Map\+Array\+Helper Class Reference}
+\label{class_sol_to_boogie_1_1_map_array_helper}\index{SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}}
+
+
+Collaboration diagram for Sol\+To\+Boogie.\+Map\+Array\+Helper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{class_sol_to_boogie_1_1_map_array_helper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_sol_to_boogie_1_1_map_array_helper_a00275b5e47fbe7218936905277272c69}{Get\+Memory\+Map\+Name}} (\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}} key\+Type, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}} val\+Type)
+\item 
+static \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} \mbox{\hyperlink{class_sol_to_boogie_1_1_map_array_helper_a09db7172a680abd6544b21cab2126e70}{Get\+Memory\+Map\+Select\+Expr}} (\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}} map\+Key\+Type, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}} map\+Val\+Type, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} base\+Expr, \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} index\+Expr)
+\item 
+static \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}} \mbox{\hyperlink{class_sol_to_boogie_1_1_map_array_helper_afb90037edb075e37a0dfc029f3f6b6f4}{Infer\+Expr\+Type\+From\+Type\+String}} (string type\+String)
+\item 
+static \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}} \mbox{\hyperlink{class_sol_to_boogie_1_1_map_array_helper_ac20e30075ef8c37639721c2a3c28668f}{Infer\+Key\+Type\+From\+Type\+String}} (string type\+String)
+\item 
+static \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}} \mbox{\hyperlink{class_sol_to_boogie_1_1_map_array_helper_ab1c184c483533f9807d99cc9f0f8bb5e}{Infer\+Value\+Type\+From\+Type\+String}} (string type\+String)
+\item 
+static string \mbox{\hyperlink{class_sol_to_boogie_1_1_map_array_helper_a7da9b1725153e5bfdcbe0805d57f897b}{Get\+Value\+Type\+String}} (string type\+String)
+\item 
+static bool \mbox{\hyperlink{class_sol_to_boogie_1_1_map_array_helper_a4de68467bcd91886df01ba453cdf8795}{Is\+Mapping\+Type\+String}} (string type\+String)
+\item 
+static bool \mbox{\hyperlink{class_sol_to_boogie_1_1_map_array_helper_a427c2276cc0a4c3113b11dfef7e8d62e}{Is\+Array\+Type\+String}} (string type\+String)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Regex \mbox{\hyperlink{class_sol_to_boogie_1_1_map_array_helper_afcc1784c85c8b7d0a7a82f119a18886d}{mapping\+Regex}} = new Regex(@\char`\"{}mapping\textbackslash{}((\textbackslash{}w+)\textbackslash{}s$\ast$\textbackslash{}w$\ast$\textbackslash{}s$\ast$=$>$\textbackslash{}s$\ast$(.+)\textbackslash{})\$\char`\"{})
+\item 
+static Regex \mbox{\hyperlink{class_sol_to_boogie_1_1_map_array_helper_abaf2c4ba18903fa8d3080f90a763b29a}{array\+Regex}} = new Regex(@\char`\"{}(.+)\textbackslash{}\mbox{[}\textbackslash{}w$\ast$\textbackslash{}\mbox{]} (storage ref$\vert$storage pointer$\vert$memory$\vert$calldata)\$\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 9 of file Map\+Array\+Helper.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_map_array_helper_a00275b5e47fbe7218936905277272c69}\label{class_sol_to_boogie_1_1_map_array_helper_a00275b5e47fbe7218936905277272c69}} 
+\index{SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}!GetMemoryMapName@{GetMemoryMapName}}
+\index{GetMemoryMapName@{GetMemoryMapName}!SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}}
+\doxysubsubsection{\texorpdfstring{GetMemoryMapName()}{GetMemoryMapName()}}
+{\footnotesize\ttfamily static string Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Get\+Memory\+Map\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}}}]{key\+Type,  }\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}}}]{val\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 17 of file Map\+Array\+Helper.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Ghost\+Var\+And\+Axiom\+Generator.\+Generate\+Single\+Memory\+Variable(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Get\+Boogie\+Types\+From\+Mapping(), Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Get\+Memory\+Map\+Select\+Expr(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Initialize\+Nested\+Array\+Mapping\+State\+Var(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Modifies\+Stmt(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Veri\+Sol\+Code\+Contract\+Func\+Call(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_map_array_helper_a00275b5e47fbe7218936905277272c69_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_map_array_helper_a09db7172a680abd6544b21cab2126e70}\label{class_sol_to_boogie_1_1_map_array_helper_a09db7172a680abd6544b21cab2126e70}} 
+\index{SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}!GetMemoryMapSelectExpr@{GetMemoryMapSelectExpr}}
+\index{GetMemoryMapSelectExpr@{GetMemoryMapSelectExpr}!SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}}
+\doxysubsubsection{\texorpdfstring{GetMemoryMapSelectExpr()}{GetMemoryMapSelectExpr()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}} Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Get\+Memory\+Map\+Select\+Expr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}}}]{map\+Key\+Type,  }\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}}}]{map\+Val\+Type,  }\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}}}]{base\+Expr,  }\item[{\mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_expr}{Boogie\+Expr}}}]{index\+Expr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 22 of file Map\+Array\+Helper.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Get\+Memory\+Map\+Name().
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Dynamic\+Array\+Push(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_map_array_helper_a09db7172a680abd6544b21cab2126e70_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_map_array_helper_a09db7172a680abd6544b21cab2126e70_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_map_array_helper_a7da9b1725153e5bfdcbe0805d57f897b}\label{class_sol_to_boogie_1_1_map_array_helper_a7da9b1725153e5bfdcbe0805d57f897b}} 
+\index{SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}!GetValueTypeString@{GetValueTypeString}}
+\index{GetValueTypeString@{GetValueTypeString}!SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}}
+\doxysubsubsection{\texorpdfstring{GetValueTypeString()}{GetValueTypeString()}}
+{\footnotesize\ttfamily static string Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Get\+Value\+Type\+String (\begin{DoxyParamCaption}\item[{string}]{type\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 136 of file Map\+Array\+Helper.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Map\+Array\+Helper.\+array\+Regex, and Sol\+To\+Boogie.\+Map\+Array\+Helper.\+mapping\+Regex.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_map_array_helper_a7da9b1725153e5bfdcbe0805d57f897b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_map_array_helper_afb90037edb075e37a0dfc029f3f6b6f4}\label{class_sol_to_boogie_1_1_map_array_helper_afb90037edb075e37a0dfc029f3f6b6f4}} 
+\index{SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}!InferExprTypeFromTypeString@{InferExprTypeFromTypeString}}
+\index{InferExprTypeFromTypeString@{InferExprTypeFromTypeString}!SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}}
+\doxysubsubsection{\texorpdfstring{InferExprTypeFromTypeString()}{InferExprTypeFromTypeString()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}} Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Infer\+Expr\+Type\+From\+Type\+String (\begin{DoxyParamCaption}\item[{string}]{type\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 31 of file Map\+Array\+Helper.\+cs.
+
+
+
+References Boogie\+AST.\+Boogie\+Type.\+Bool, Boogie\+AST.\+Boogie\+Type.\+Int, Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Is\+Array\+Type\+String(), Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Is\+Mapping\+Type\+String(), and Boogie\+AST.\+Boogie\+Type.\+Ref.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Get\+Boogie\+Types\+From\+Mapping(), Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Infer\+Key\+Type\+From\+Type\+String(), Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Infer\+Value\+Type\+From\+Type\+String(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Initialize\+Nested\+Array\+Mapping\+State\+Var(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Mk\+New\+Local\+Variable\+For\+Function\+Return(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Translate\+Dynamic\+Array\+Push(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_map_array_helper_afb90037edb075e37a0dfc029f3f6b6f4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_map_array_helper_afb90037edb075e37a0dfc029f3f6b6f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_map_array_helper_ac20e30075ef8c37639721c2a3c28668f}\label{class_sol_to_boogie_1_1_map_array_helper_ac20e30075ef8c37639721c2a3c28668f}} 
+\index{SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}!InferKeyTypeFromTypeString@{InferKeyTypeFromTypeString}}
+\index{InferKeyTypeFromTypeString@{InferKeyTypeFromTypeString}!SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}}
+\doxysubsubsection{\texorpdfstring{InferKeyTypeFromTypeString()}{InferKeyTypeFromTypeString()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}} Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Infer\+Key\+Type\+From\+Type\+String (\begin{DoxyParamCaption}\item[{string}]{type\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 84 of file Map\+Array\+Helper.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Map\+Array\+Helper.\+array\+Regex, Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Infer\+Expr\+Type\+From\+Type\+String(), Boogie\+AST.\+Boogie\+Type.\+Int, Sol\+To\+Boogie.\+Map\+Array\+Helper.\+mapping\+Regex, and Boogie\+AST.\+Boogie\+Type.\+Ref.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_map_array_helper_ac20e30075ef8c37639721c2a3c28668f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_map_array_helper_ac20e30075ef8c37639721c2a3c28668f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_map_array_helper_ab1c184c483533f9807d99cc9f0f8bb5e}\label{class_sol_to_boogie_1_1_map_array_helper_ab1c184c483533f9807d99cc9f0f8bb5e}} 
+\index{SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}!InferValueTypeFromTypeString@{InferValueTypeFromTypeString}}
+\index{InferValueTypeFromTypeString@{InferValueTypeFromTypeString}!SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}}
+\doxysubsubsection{\texorpdfstring{InferValueTypeFromTypeString()}{InferValueTypeFromTypeString()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_boogie_a_s_t_1_1_boogie_type}{Boogie\+Type}} Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Infer\+Value\+Type\+From\+Type\+String (\begin{DoxyParamCaption}\item[{string}]{type\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 110 of file Map\+Array\+Helper.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Map\+Array\+Helper.\+array\+Regex, Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Infer\+Expr\+Type\+From\+Type\+String(), Boogie\+AST.\+Boogie\+Type.\+Int, Sol\+To\+Boogie.\+Map\+Array\+Helper.\+mapping\+Regex, and Boogie\+AST.\+Boogie\+Type.\+Ref.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_map_array_helper_ab1c184c483533f9807d99cc9f0f8bb5e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_map_array_helper_ab1c184c483533f9807d99cc9f0f8bb5e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_map_array_helper_a427c2276cc0a4c3113b11dfef7e8d62e}\label{class_sol_to_boogie_1_1_map_array_helper_a427c2276cc0a4c3113b11dfef7e8d62e}} 
+\index{SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}!IsArrayTypeString@{IsArrayTypeString}}
+\index{IsArrayTypeString@{IsArrayTypeString}!SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}}
+\doxysubsubsection{\texorpdfstring{IsArrayTypeString()}{IsArrayTypeString()}}
+{\footnotesize\ttfamily static bool Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Is\+Array\+Type\+String (\begin{DoxyParamCaption}\item[{string}]{type\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 158 of file Map\+Array\+Helper.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Map\+Array\+Helper.\+array\+Regex.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Infer\+Expr\+Type\+From\+Type\+String(), Sol\+To\+Boogie.\+Procedure\+Translator.\+Is\+Dynamic\+Array\+Push(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_map_array_helper_a427c2276cc0a4c3113b11dfef7e8d62e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_map_array_helper_a4de68467bcd91886df01ba453cdf8795}\label{class_sol_to_boogie_1_1_map_array_helper_a4de68467bcd91886df01ba453cdf8795}} 
+\index{SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}!IsMappingTypeString@{IsMappingTypeString}}
+\index{IsMappingTypeString@{IsMappingTypeString}!SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}}
+\doxysubsubsection{\texorpdfstring{IsMappingTypeString()}{IsMappingTypeString()}}
+{\footnotesize\ttfamily static bool Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Is\+Mapping\+Type\+String (\begin{DoxyParamCaption}\item[{string}]{type\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 153 of file Map\+Array\+Helper.\+cs.
+
+
+
+References Sol\+To\+Boogie.\+Map\+Array\+Helper.\+mapping\+Regex.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Infer\+Expr\+Type\+From\+Type\+String(), and Sol\+To\+Boogie.\+Procedure\+Translator.\+Visit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sol_to_boogie_1_1_map_array_helper_a4de68467bcd91886df01ba453cdf8795_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_map_array_helper_abaf2c4ba18903fa8d3080f90a763b29a}\label{class_sol_to_boogie_1_1_map_array_helper_abaf2c4ba18903fa8d3080f90a763b29a}} 
+\index{SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}!arrayRegex@{arrayRegex}}
+\index{arrayRegex@{arrayRegex}!SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}}
+\doxysubsubsection{\texorpdfstring{arrayRegex}{arrayRegex}}
+{\footnotesize\ttfamily Regex Sol\+To\+Boogie.\+Map\+Array\+Helper.\+array\+Regex = new Regex(@\char`\"{}(.+)\textbackslash{}\mbox{[}\textbackslash{}w$\ast$\textbackslash{}\mbox{]} (storage ref$\vert$storage pointer$\vert$memory$\vert$calldata)\$\char`\"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 13 of file Map\+Array\+Helper.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Get\+Value\+Type\+String(), Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Infer\+Key\+Type\+From\+Type\+String(), Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Infer\+Value\+Type\+From\+Type\+String(), and Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Is\+Array\+Type\+String().
+
+\mbox{\Hypertarget{class_sol_to_boogie_1_1_map_array_helper_afcc1784c85c8b7d0a7a82f119a18886d}\label{class_sol_to_boogie_1_1_map_array_helper_afcc1784c85c8b7d0a7a82f119a18886d}} 
+\index{SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}!mappingRegex@{mappingRegex}}
+\index{mappingRegex@{mappingRegex}!SolToBoogie.MapArrayHelper@{SolToBoogie.MapArrayHelper}}
+\doxysubsubsection{\texorpdfstring{mappingRegex}{mappingRegex}}
+{\footnotesize\ttfamily Regex Sol\+To\+Boogie.\+Map\+Array\+Helper.\+mapping\+Regex = new Regex(@\char`\"{}mapping\textbackslash{}((\textbackslash{}w+)\textbackslash{}s$\ast$\textbackslash{}w$\ast$\textbackslash{}s$\ast$=$>$\textbackslash{}s$\ast$(.+)\textbackslash{})\$\char`\"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 11 of file Map\+Array\+Helper.\+cs.
+
+
+
+Referenced by Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Get\+Value\+Type\+String(), Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Infer\+Key\+Type\+From\+Type\+String(), Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Infer\+Value\+Type\+From\+Type\+String(), and Sol\+To\+Boogie.\+Map\+Array\+Helper.\+Is\+Mapping\+Type\+String().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Sol\+To\+Boogie/\mbox{\hyperlink{_map_array_helper_8cs}{Map\+Array\+Helper.\+cs}}\end{DoxyCompactItemize}
